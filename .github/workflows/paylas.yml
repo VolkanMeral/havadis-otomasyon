@@ -7,11 +7,16 @@ on:
     - cron: "0 6-20 * * *"
     # Buçuklar: sadece Vorarlberg (böylece Vorarlberg haberleri yarım saatte bir çıkar)
     - cron: "30 6-20 * * *"
+    # 15 geçe: video (Reels). Sadece VIDEO_HOURS saatlerinde paylaşır (varsayılan 08,11,14,17,20 Viyana)
+    - cron: "15 6-20 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
         description: "Deneme modu (1 = paylaşma, sadece görsel üret)"
         default: "1"
+      video:
+        description: "1 = bu çalışmada akışa video paylaş (Story de üretilir)"
+        default: "0"
       sadece_kontrol:
         description: "1 = sadece anahtarı kontrol et (paylaşım yok)"
         default: "0"
@@ -36,6 +41,10 @@ jobs:
       SKIP_CATEGORIES: ${{ vars.SKIP_CATEGORIES || 'TAZİYE' }}
       TEMPLATE: ${{ vars.TEMPLATE || 'manset' }}
       AI_LABEL: ${{ vars.AI_LABEL || 'KI-unterstützt' }}
+      RUN_SLOT: ${{ github.event.schedule == '30 6-20 * * *' && 'bucuk' || (github.event.schedule == '15 6-20 * * *' && 'video' || 'saat') }}
+      FORCE_VIDEO: ${{ github.event_name == 'workflow_dispatch' && inputs.video || '0' }}
+      VIDEO_HOURS: ${{ vars.VIDEO_HOURS || '8,11,14,17,20' }}
+      STORY_CATEGORIES: ${{ vars.STORY_CATEGORIES || 'Avusturya,Vorarlberg' }}
       INCLUDE_CATEGORIES: ${{ github.event.schedule == '30 6-20 * * *' && (vars.HALF_HOUR_CATEGORIES || 'Vorarlberg') || (vars.INCLUDE_CATEGORIES || 'Avusturya,Vorarlberg,Avrupa,Almanya') }}
     steps:
       - uses: actions/checkout@v4
@@ -69,6 +78,10 @@ jobs:
       - name: Tarayıcıyı kur
         if: steps.kontrol.outputs.yeni == 'true'
         run: python -m playwright install --with-deps chromium
+
+      - name: Video aracını kur
+        if: steps.kontrol.outputs.yeni == 'true'
+        run: which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
 
       - name: Görseli üret ve paylaş
         if: steps.kontrol.outputs.yeni == 'true'
