@@ -65,7 +65,7 @@ Anahtar: https://console.anthropic.com (kullanım başına küçük bir ücret a
 | `SKIP_CATEGORIES` | `TAZİYE` | Paylaşılmayacak kategoriler (virgülle) |
 | `MAX_AGE_HOURS` | `24` | Bundan eski haberler paylaşılmaz |
 | `BASE_HASHTAGS` | `#havadis #Avusturya #haber` | Her paylaşıma eklenen hashtag'ler |
-| `AI_LABEL` | `Yapay zekâ destekli · KI-unterstützt` | Görselin altında ve metnin sonunda küçük şeffaflık notu (AB Yapay Zekâ Yasası md. 50) |
+| `AI_LABEL` | `KI-unterstützt` | Görselin altında ve metnin sonunda küçük şeffaflık notu (AB Yapay Zekâ Yasası md. 50) |
 | `TEMPLATE` | `manset` | Tasarım: `manset` (tam ekran manşet) veya `kart` (sosyal gönderi kartı) |
 | `GRAPH_VERSION` | `v26.0` | Meta Graph API sürümü |
 
