@@ -1,0 +1,40 @@
+name: Sesli video örneği (paylaşım yapmaz)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ornek:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Kurulum
+        run: |
+          pip install -r requirements.txt piper-tts
+          python -m playwright install --with-deps chromium
+          which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - name: Türkçe ses modelini indir
+        run: |
+          mkdir -p ses
+          for v in fahrettin dfki fettah; do
+            base="https://huggingface.co/rhasspy/piper-voices/resolve/main/tr/tr_TR/$v/medium/tr_TR-$v-medium"
+            if curl -sSfL -o ses/model.onnx "$base.onnx" && curl -sSfL -o ses/model.onnx.json "$base.onnx.json"; then
+              echo "Ses: $v"; break
+            fi
+          done
+          ls -la ses
+      - name: Örnek videoyu üret
+        run: python ses_ornek.py ses/model.onnx ornek/sesli-ornek.mp4
+      - name: Kaydet
+        run: |
+          git config user.name "havadis-bot"
+          git config user.email "bot@havadis.at"
+          git add ornek/sesli-ornek.mp4
+          git commit -m "Sesli video örneği" && git pull --rebase -q && git push
