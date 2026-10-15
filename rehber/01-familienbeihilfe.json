@@ -1,0 +1,52 @@
+{
+  "id": "familienbeihilfe-2026",
+  "durum": "onay_bekliyor",
+  "baslik_beyaz": "Aile yardımı",
+  "baslik_vurgu": "Familienbeihilfe",
+  "vurgu_dil": "de",
+  "alt_baslik": "Kimler alır, ne kadar, nasıl başvurulur? 2026 güncel tutarlar.",
+  "guncel": "Ekim 2026",
+  "kaynak": "oesterreich.gv.at · Bundeskanzleramt (Familienportal)",
+  "sayfalar": [
+    {
+      "baslik": "Ayda ne kadar?",
+      "maddeler": [
+        "Çocuk başına, aylık:",
+        "<strong>0–2 yaş:</strong> 138,40 €",
+        "<strong>3–9 yaş:</strong> 148,00 €",
+        "<strong>10–18 yaş:</strong> 171,80 €",
+        "<strong>19 yaş ve üzeri:</strong> 200,40 €",
+        "2026 ve 2027'de tutarlar <strong>2025 seviyesinde kalıyor</strong>, enflasyon artışı yapılmıyor."
+      ]
+    },
+    {
+      "baslik": "Ek ödemeler",
+      "maddeler": [
+        "<strong>Çocuk vergi indirimi (Kinderabsetzbetrag):</strong> çocuk başına ayda 70,90 €, aile yardımıyla birlikte otomatik ödenir.",
+        "<strong>Kardeş eki:</strong> 2 çocukta çocuk başına +8,60 €, 3 çocukta +21,10 €, 4 çocukta +32,10 €.",
+        "<strong>Okula başlama parası (Schulstartgeld):</strong> 6–15 yaş arası çocuk başına 121,40 €, ağustosta otomatik.",
+        "<strong>Engelli çocuk için ek:</strong> ayda 189,20 €."
+      ]
+    },
+    {
+      "baslik": "Kimler alabilir?",
+      "maddeler": [
+        "Yaşam merkezi Avusturya'da olan anne ve babalar.",
+        "<strong>Türk vatandaşları dahil AB dışı ülke vatandaşları:</strong> hem sizin hem çocuğunuzun geçerli bir oturma izni olmalı.",
+        "Genellikle çocuk <strong>24 yaşına</strong> kadar (bazı durumlarda 25).",
+        "18 yaşından sonra çocuğun <strong>eğitimi ya da öğrenimi</strong> sürüyor olmalı."
+      ]
+    },
+    {
+      "baslik": "Nasıl başvurulur?",
+      "maddeler": [
+        "Avusturya'da doğan çocuklarda çoğu zaman <strong>başvuru gerekmez</strong>: vergi dairesi otomatik kontrol eder, size bilgi mektubu gelir.",
+        "Diğer durumlarda: <strong>FinanzOnline</strong> üzerinden ya da <strong>Beih100</strong> formuyla Finanzamt Österreich'a.",
+        "Başvuru <strong>ücretsiz</strong>. Geriye dönük en fazla <strong>5 yıl</strong> ödenir.",
+        "Para her ayın <strong>en geç 8'inde</strong> hesabınızda."
+      ]
+    }
+  ],
+  "metin": "Avusturya'da aile yardımı (Familienbeihilfe) 2026: çocuk başına ayda 138,40 € ile 200,40 € arası. Kimler alabilir, ek ödemeler neler, nasıl başvurulur? Hepsi bu sayfalarda 👉",
+  "hashtagler": "#Familienbeihilfe #aileyardımı #Avusturya #Vorarlberg #havadis #bilmenizgerekenler"
+}
