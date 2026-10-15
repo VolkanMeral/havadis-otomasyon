@@ -107,7 +107,7 @@ def haberleri_getir():
             tarih = None
         ozet = re.sub(r"<[^>]+>", " ", html.unescape(t("description")))
         haberler.append({
-            "baslik": html.unescape(t("title")),
+            "baslik": re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html.unescape(t("title")))).strip(),
             "link": html.unescape(t("link") or t("guid")),
             "ozet": re.sub(r"\s+", " ", ozet).strip(),
             "kategori": html.unescape(t("category")) or "Haber",
