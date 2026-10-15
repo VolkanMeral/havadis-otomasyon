@@ -43,6 +43,17 @@ PAYLASILACAK_KATEGORILER = {
     k.strip().casefold()
     for k in os.getenv("INCLUDE_CATEGORIES", "Avusturya,Vorarlberg,Avrupa,Almanya").split(",") if k.strip()
 }
+# Video ayarları
+# Akışta video (Reels) paylaşılacak saatler (Viyana saati). Video çalışmaları her saat 15 geçe başlar,
+# sadece bu saatlerde gerçekten paylaşım yapar; böylece saat başı/buçuktaki görsellerle çakışmaz.
+VIDEO_SAATLERI = {int(x) for x in os.getenv("VIDEO_HOURS", "8,11,14,17,20").split(",") if x.strip().isdigit()}
+# Bu kategorilerdeki haberler ayrıca Instagram Story'ye video olarak gider
+STORY_KATEGORILERI = {
+    k.strip().casefold() for k in os.getenv("STORY_CATEGORIES", "Avusturya,Vorarlberg").split(",") if k.strip()
+}
+CALISMA_TURU = os.getenv("RUN_SLOT", "")          # "saat" (saat başı), "bucuk" veya "video" (15 geçe)
+VIDEO_ZORLA = os.getenv("FORCE_VIDEO", "0") == "1"  # elle deneme için
+
 # Yapay zekâ / otomasyon şeffaflık etiketi (AB Yapay Zekâ Yasası md. 50). Boş bırakılırsa eklenmez.
 KI_ETIKET = os.getenv("AI_LABEL", "KI-unterstützt").strip()
 SABIT_HASHTAGLER =os.getenv("BASE_HASHTAGS", "#havadis #Avusturya #haber")
@@ -269,10 +280,13 @@ def tam_ekran_hazirla(foto, w=1080, h=1350, dikey_odak=0.3):
     return yeni
 
 
-def gorsel_uret(h, ic, cikti_yolu):
-    r = HTTP.get(h["resim"], timeout=60)
-    r.raise_for_status()
-    foto = Image.open(BytesIO(r.content)).convert("RGB")
+def sayfa_hazirla(h, ic, foto_bayt=None):
+    """Seçili şablonu haber bilgileriyle doldurup HTML olarak döndürür (görsel ve video aynı tasarımı kullanır)."""
+    if foto_bayt is None:
+        r = HTTP.get(h["resim"], timeout=60)
+        r.raise_for_status()
+        foto_bayt = r.content
+    foto = Image.open(BytesIO(foto_bayt)).convert("RGB")
     if SABLON == "manset":
         foto = tam_ekran_hazirla(foto)
     tampon = BytesIO()
@@ -281,13 +295,8 @@ def gorsel_uret(h, ic, cikti_yolu):
     tarih = h["tarih"] or dt.datetime.now()
     e = html.escape
     tam_baslik = f"{ic['baslik_beyaz']} {ic['baslik_vurgu']}".strip()
-    baslik_html = (e(ic["baslik_beyaz"]) + "<br>" if ic["baslik_beyaz"] else "") + \
+    baslik_html = (f'<span class="beyaz">{e(ic["baslik_beyaz"])}</span><br>' if ic["baslik_beyaz"] else "") + \
         f'<span class="vurgu">{e(ic["baslik_vurgu"])}</span>'
-    etiket_html = ""
-    if ic.get("etiket_ust"):
-        boy = 64 if len(ic["etiket_ust"]) <= 5 else (48 if len(ic["etiket_ust"]) <= 7 else 38)
-        etiket_html = (f'<div class="etiket-yuvarlak"><b style="font-size:{boy}px">{e(ic["etiket_ust"])}</b>'
-                       f'<span>{e(ic.get("etiket_alt", ""))}</span></div>')
     degerler = {
         "foto": veri_uri(tampon.getvalue(), "image/jpeg"),
         "logo": veri_uri(os.path.join(KOK, "assets", "logo-beyaz.png"), "image/png"),
@@ -297,15 +306,18 @@ def gorsel_uret(h, ic, cikti_yolu):
         "baslik_html": baslik_html,
         "baslik_px": f"{baslik_boyutu(tam_baslik)}px",
         "ozet_html": f'<p class="ozet">{e(ic["ozet"])}</p>' if ic.get("ozet") else "",
-        "etiket_html": etiket_html,
+        "etiket_html": "",
         "tarih_kisa": f"{tarih.day} {AYLAR_KISA[tarih.month - 1]}",
         "ki_etiket": e(KI_ETIKET),
         "kart_baslik": e(h["baslik"] if h["baslik"][-1:] in ".!?…" else h["baslik"] + "."),
         "kart_ozet": e(kisalt(ic.get("ozet") or "", 170)),
     }
     with open(os.path.join(KOK, f"sablon_{SABLON}.html"), encoding="utf-8") as f:
-        sayfa = string.Template(f.read()).safe_substitute(degerler)
+        return string.Template(f.read()).safe_substitute(degerler)
 
+
+def gorsel_uret(h, ic, cikti_yolu, foto_bayt=None):
+    sayfa = sayfa_hazirla(h, ic, foto_bayt)
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
         tarayici = p.chromium.launch()
@@ -344,43 +356,110 @@ def facebook_paylas(gorsel, metin):
     return sonuc.get("post_id", foto_id), en_buyuk["source"]
 
 
+def ig_bekle(kap_id, deneme=30, aralik=4):
+    """Instagram medya kabının işlenmesini bekler."""
+    for _ in range(deneme):
+        durum = kontrol(HTTP.get(graph(kap_id), params={"fields": "status_code,status", "access_token": PAGE_TOKEN},
+                                 timeout=30))
+        if durum.get("status_code") == "FINISHED":
+            return
+        if durum.get("status_code") in ("ERROR", "EXPIRED"):
+            raise RuntimeError(f"Instagram medyayı işleyemedi: {durum.get('status')}")
+        time.sleep(aralik)
+    raise RuntimeError("Instagram medya işleme zaman aşımı")
+
+
+def _yukle(adres, dosya):
+    """Meta'nın 'resumable upload' adresine dosyayı tek seferde yükler (herkese açık link gerekmez)."""
+    with open(dosya, "rb") as f:
+        veri = f.read()
+    return kontrol(HTTP.post(adres, data=veri, timeout=300, headers={
+        "Authorization": f"OAuth {PAGE_TOKEN}", "offset": "0", "file_size": str(len(veri))}))
+
+
+def instagram_video(video, tur, metin=None):
+    """tur: 'REELS' (akış) veya 'STORIES' (hikâye)."""
+    veri = {"media_type": tur, "upload_type": "resumable", "access_token": PAGE_TOKEN}
+    if metin:
+        veri["caption"] = metin
+    if tur == "REELS":
+        veri["share_to_feed"] = "true"
+    kap = kontrol(HTTP.post(graph(f"{IG_USER_ID}/media"), data=veri, timeout=60))
+    adres = kap.get("uri") or f"https://rupload.facebook.com/ig-api-upload/{GRAPH_VERSION}/{kap['id']}"
+    _yukle(adres, video)
+    ig_bekle(kap["id"], deneme=60, aralik=5)
+    yayin = kontrol(HTTP.post(graph(f"{IG_USER_ID}/media_publish"),
+                              data={"creation_id": kap["id"], "access_token": PAGE_TOKEN}, timeout=60))
+    return yayin["id"]
+
+
+def facebook_reel(video, metin):
+    bas = kontrol(HTTP.post(graph(f"{PAGE_ID}/video_reels"),
+                            data={"upload_phase": "start", "access_token": PAGE_TOKEN}, timeout=60))
+    _yukle(bas["upload_url"], video)
+    kontrol(HTTP.post(graph(f"{PAGE_ID}/video_reels"), timeout=60, data={
+        "upload_phase": "finish", "video_id": bas["video_id"], "video_state": "PUBLISHED",
+        "description": metin, "access_token": PAGE_TOKEN}))
+    return bas["video_id"]
+
+
 def instagram_paylas(gorsel_url, metin):
     kap = kontrol(HTTP.post(graph(f"{IG_USER_ID}/media"),
                             data={"image_url": gorsel_url, "caption": metin, "access_token": PAGE_TOKEN},
                             timeout=60))
-    kap_id = kap["id"]
-    for _ in range(30):
-        durum = kontrol(HTTP.get(graph(kap_id), params={"fields": "status_code", "access_token": PAGE_TOKEN},
-                                 timeout=30)).get("status_code")
-        if durum == "FINISHED":
-            break
-        if durum == "ERROR":
-            raise RuntimeError("Instagram görseli işleyemedi")
-        time.sleep(4)
+    ig_bekle(kap["id"])
     yayin = kontrol(HTTP.post(graph(f"{IG_USER_ID}/media_publish"),
-                              data={"creation_id": kap_id, "access_token": PAGE_TOKEN}, timeout=60))
+                              data={"creation_id": kap["id"], "access_token": PAGE_TOKEN}, timeout=60))
     return yayin["id"]
 
 
 # ---------------------------------------------------------------- Ana akış
 
+def viyana_saati():
+    from zoneinfo import ZoneInfo
+    return dt.datetime.now(ZoneInfo("Europe/Vienna")).hour
+
+
+def video_saati_mi():
+    return CALISMA_TURU != "video" or VIDEO_ZORLA or viyana_saati() in VIDEO_SAATLERI
+
+
 def main():
     os.makedirs(CIKTI, exist_ok=True)
+    if not video_saati_mi():
+        log("Bu saat video paylaşım saati değil.")
+        return 0
     paylasilanlar = durum_oku()
     haber = haber_sec(haberleri_getir(), paylasilanlar)
     if not haber:
         log("Paylaşılacak yeni haber yok.")
         return 0
-    log("Seçilen haber:", haber["baslik"])
+    log("Seçilen haber:", haber["baslik"], "|", haber["kategori"])
 
     ic = icerik_hazirla(haber)
     damga = dt.datetime.now().strftime("%Y%m%d-%H%M")
-    gorsel = gorsel_uret(haber, ic, os.path.join(CIKTI, f"{damga}.jpg"))
+    r = HTTP.get(haber["resim"], timeout=60)
+    r.raise_for_status()
+    foto = r.content
+
+    video_akis = SABLON == "manset" and (VIDEO_ZORLA or CALISMA_TURU == "video")
+    story = SABLON == "manset" and bool(IG_USER_ID or DRY_RUN) and (
+        VIDEO_ZORLA or haber["kategori"].casefold() in STORY_KATEGORILERI)
+    log(f"Akışta video: {'evet' if video_akis else 'hayır'} | Story: {'evet' if story else 'hayır'}")
+
     fb_metin = paylasim_metni(haber, ic, "facebook")
     ig_metin = paylasim_metni(haber, ic, "instagram")
     with open(os.path.join(CIKTI, f"{damga}.txt"), "w", encoding="utf-8") as f:
         f.write(f"--- FACEBOOK ---\n{fb_metin}\n\n--- INSTAGRAM ---\n{ig_metin}\n")
-    log("Görsel hazır:", gorsel)
+
+    gorsel = None if video_akis else gorsel_uret(haber, ic, os.path.join(CIKTI, f"{damga}.jpg"), foto)
+    video = None
+    if video_akis or story:
+        import video_uret
+        video = video_uret.video_uret(haber, ic, os.path.join(CIKTI, f"{damga}.mp4"), foto)
+        log("Video hazır:", video)
+    if gorsel:
+        log("Görsel hazır:", gorsel)
 
     if DRY_RUN:
         log("DENEME MODU (DRY_RUN=1): paylaşım yapılmadı.")
@@ -389,24 +468,43 @@ def main():
         log("HATA: META_PAGE_ID / META_PAGE_TOKEN tanımlı değil.")
         return 1
 
-    kayit = {"link": haber["link"], "baslik": haber["baslik"],
+    kayit = {"link": haber["link"], "baslik": haber["baslik"], "tur": "video" if video_akis else "gorsel",
              "zaman": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")}
-    fb_id, gorsel_url = facebook_paylas(gorsel, fb_metin)
-    kayit["facebook"] = fb_id
-    log("Facebook'ta paylaşıldı:", fb_id)
-    # Facebook başarılıysa haberi hemen kaydet; Instagram hata verse bile Facebook'ta tekrar paylaşılmaz
-    paylasilanlar.append(kayit)
-    durum_yaz(paylasilanlar)
 
-    if IG_USER_ID:
-        try:
-            kayit["instagram"] = instagram_paylas(gorsel_url, ig_metin)
-            log("Instagram'da paylaşıldı:", kayit["instagram"])
-        except Exception as e:
-            kayit["instagram_hata"] = str(e)[:300]
-            log("Instagram hatası:", e)
-            gh_hata("Instagram paylaşım hatası", e)
+    def kaydet():
+        if kayit not in paylasilanlar:
+            paylasilanlar.append(kayit)
         durum_yaz(paylasilanlar)
+
+    def dene(ad, is_):
+        try:
+            kayit[ad] = is_()
+            log(f"{ad} paylaşıldı:", kayit[ad])
+        except Exception as e:
+            kayit[f"{ad}_hata"] = str(e)[:300]
+            log(f"{ad} hatası:", e)
+            gh_hata(f"{ad} hatası", e)
+        kaydet()
+
+    if video_akis:
+        dene("facebook_reel", lambda: facebook_reel(video, fb_metin))
+        if IG_USER_ID:
+            dene("instagram_reel", lambda: instagram_video(video, "REELS", ig_metin))
+    else:
+        fb_id, gorsel_url = facebook_paylas(gorsel, fb_metin)
+        kayit["facebook"] = fb_id
+        log("Facebook'ta paylaşıldı:", fb_id)
+        # Facebook başarılıysa haberi hemen kaydet; sonraki adımlar hata verse bile tekrar paylaşılmaz
+        kaydet()
+        if IG_USER_ID:
+            dene("instagram", lambda: instagram_paylas(gorsel_url, ig_metin))
+
+    if story and IG_USER_ID:
+        dene("instagram_story", lambda: instagram_video(video, "STORIES"))
+
+    # Hiçbir platformda paylaşılamadıysa görev hata versin
+    if not any(k in kayit for k in ("facebook", "facebook_reel", "instagram", "instagram_reel")):
+        raise RuntimeError("Haber hiçbir platformda paylaşılamadı (ayrıntılar yukarıdaki notlarda).")
     return 0
 
 
@@ -444,8 +542,8 @@ def baglanti_kontrol():
 
 def yeni_haber_var_mi():
     """Hafif kontrol: paylaşılacak yeni haber var mı? (Ağır kurulumdan önce çalışır.)"""
-    haber = haber_sec(haberleri_getir(), durum_oku())
-    log("Yeni haber:", haber["baslik"] if haber else "yok")
+    haber = haber_sec(haberleri_getir(), durum_oku()) if video_saati_mi() else None
+    log("Yeni haber:", haber["baslik"] if haber else "yok (ya da video saati değil)")
     cikti = os.getenv("GITHUB_OUTPUT")
     if cikti:
         with open(cikti, "a", encoding="utf-8") as f:
