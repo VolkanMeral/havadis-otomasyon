@@ -52,8 +52,14 @@ def _temiz(deger, desen):
     return temiz, len(ham) - len(temiz)
 
 
-PAGE_ID, _ = _temiz(os.getenv("META_PAGE_ID"), r"[^0-9]")
-IG_USER_ID, _ = _temiz(os.getenv("IG_USER_ID"), r"[^0-9]")
+def _id(ad):
+    """ID içindeki ilk uzun rakam dizisini alır (köşeli parantez veya link yapıştırılmışsa da çalışır)."""
+    m = re.search(r"\d{5,}", os.getenv(ad) or "")
+    return m.group(0) if m else ""
+
+
+PAGE_ID = _id("META_PAGE_ID")
+IG_USER_ID = _id("IG_USER_ID")
 # Meta anahtarları sadece harf ve rakamdan oluşur
 PAGE_TOKEN, TOKEN_TEMIZLENEN = _temiz(os.getenv("META_PAGE_TOKEN"), r"[^A-Za-z0-9]")
 
@@ -381,7 +387,9 @@ def gh_hata(baslik, mesaj):
 def baglanti_kontrol():
     """Paylaşımdan önce: anahtar, sayfa ve Instagram hesabı erişilebilir mi?"""
     if not (PAGE_ID and PAGE_TOKEN):
-        raise RuntimeError("META_PAGE_ID veya META_PAGE_TOKEN boş. GitHub Secrets adlarını kontrol edin.")
+        ham = {ad: len(os.getenv(ad) or "") for ad in ("META_PAGE_ID", "META_PAGE_TOKEN", "IG_USER_ID")}
+        raise RuntimeError(f"Eksik değer. Okunan uzunluklar (ham): {ham}; temizlendikten sonra: "
+                           f"META_PAGE_ID={len(PAGE_ID)}, META_PAGE_TOKEN={len(PAGE_TOKEN)}")
     bilgi = (f"Anahtar uzunluğu {len(PAGE_TOKEN)} karakter, başlangıcı {PAGE_TOKEN[:3]}, "
              f"temizlenen fazla karakter {TOKEN_TEMIZLENEN}")
     log(bilgi)
