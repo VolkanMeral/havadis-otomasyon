@@ -45,9 +45,14 @@ PAYLASILACAK_KATEGORILER = {
 }
 SABIT_HASHTAGLER =os.getenv("BASE_HASHTAGS", "#havadis #Avusturya #haber")
 
-PAGE_ID = os.getenv("META_PAGE_ID", "")
-PAGE_TOKEN = os.getenv("META_PAGE_TOKEN", "")
-IG_USER_ID = os.getenv("IG_USER_ID", "")
+def _temiz(deger):
+    """Kopyalarken gelen boşluk, tırnak ve virgülleri temizler."""
+    return (deger or "").strip().strip('",\'').strip()
+
+
+PAGE_ID = _temiz(os.getenv("META_PAGE_ID"))
+PAGE_TOKEN = _temiz(os.getenv("META_PAGE_TOKEN"))
+IG_USER_ID = _temiz(os.getenv("IG_USER_ID"))
 
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 CLAUDE_MODEL = os.getenv("CLAUDE_MODEL", "claude-haiku-5-5")
