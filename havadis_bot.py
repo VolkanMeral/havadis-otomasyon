@@ -38,7 +38,12 @@ MAX_AGE_HOURS = int(os.getenv("MAX_AGE_HOURS", "24"))
 ATLANACAK_KATEGORILER = {
     k.strip().casefold() for k in os.getenv("SKIP_CATEGORIES", "TAZİYE").split(",") if k.strip()
 }
-SABIT_HASHTAGLER = os.getenv("BASE_HASHTAGS", "#havadis #Avusturya #haber")
+# Sadece bu kategorilerdeki haberler paylaşılır (boş bırakılırsa tüm kategoriler)
+PAYLASILACAK_KATEGORILER = {
+    k.strip().casefold()
+    for k in os.getenv("INCLUDE_CATEGORIES", "Avusturya,Vorarlberg,Avrupa,Almanya").split(",") if k.strip()
+}
+SABIT_HASHTAGLER =os.getenv("BASE_HASHTAGS", "#havadis #Avusturya #haber")
 
 PAGE_ID = os.getenv("META_PAGE_ID", "")
 PAGE_TOKEN = os.getenv("META_PAGE_TOKEN", "")
@@ -111,6 +116,8 @@ def haber_sec(haberler, paylasilanlar):
         if not h["link"] or h["link"] in linkler or not h["resim"]:
             continue
         if h["kategori"].casefold() in ATLANACAK_KATEGORILER:
+            continue
+        if PAYLASILACAK_KATEGORILER and h["kategori"].casefold() not in PAYLASILACAK_KATEGORILER:
             continue
         if h["tarih"] and (simdi - h["tarih"]).total_seconds() > MAX_AGE_HOURS * 3600:
             continue
