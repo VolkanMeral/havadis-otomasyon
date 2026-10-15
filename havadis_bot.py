@@ -451,6 +451,16 @@ def facebook_reel(video, metin, kapak=None):
     return bas["video_id"]
 
 
+def facebook_story(video):
+    """Facebook sayfasında video Story paylaşır (Page Stories API)."""
+    bas = kontrol(HTTP.post(graph(f"{PAGE_ID}/video_stories"),
+                            data={"upload_phase": "start", "access_token": PAGE_TOKEN}, timeout=60))
+    _yukle(bas["upload_url"], video)
+    son = kontrol(HTTP.post(graph(f"{PAGE_ID}/video_stories"), timeout=60, data={
+        "upload_phase": "finish", "video_id": bas["video_id"], "access_token": PAGE_TOKEN}))
+    return son.get("post_id") or bas["video_id"]
+
+
 def instagram_paylas(gorsel_url, metin):
     kap = kontrol(HTTP.post(graph(f"{IG_USER_ID}/media"),
                             data={"image_url": gorsel_url, "caption": metin, "access_token": PAGE_TOKEN},
@@ -501,7 +511,7 @@ def main():
     foto = r.content
 
     video_akis = SABLON == "manset" and (VIDEO_ZORLA or CALISMA_TURU == "video")
-    story = SABLON == "manset" and bool(IG_USER_ID or DRY_RUN) and \
+    story = SABLON == "manset" and \
         haber["kategori"].casefold() in STORY_KATEGORILERI
     log(f"Akışta video: {'evet' if video_akis else 'hayır'} | Story: {'evet' if story else 'hayır'}")
 
@@ -558,8 +568,10 @@ def main():
         if IG_USER_ID:
             dene("instagram", lambda: instagram_paylas(gorsel_url, ig_metin))
 
-    if story and IG_USER_ID:
-        dene("instagram_story", lambda: instagram_video(video, "STORIES"))
+    if story:
+        if IG_USER_ID:
+            dene("instagram_story", lambda: instagram_video(video, "STORIES"))
+        dene("facebook_story", lambda: facebook_story(video))
 
     # Hiçbir platformda paylaşılamadıysa görev hata versin
     if not any(k in kayit for k in ("facebook", "facebook_reel", "instagram", "instagram_reel")):
