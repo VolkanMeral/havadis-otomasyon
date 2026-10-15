@@ -1,0 +1,60 @@
+name: Havadis saatlik paylaşım
+
+on:
+  schedule:
+    # Her saat başı, 06:00–20:00 UTC arası = yaz saatinde 08:00–22:00 Viyana (kışın 07:00–21:00)
+    - cron: "0 6-20 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Deneme modu (1 = paylaşma, sadece görsel üret)"
+        default: "1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: havadis-paylasim
+  cancel-in-progress: false
+
+jobs:
+  paylas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Gereksinimleri kur
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Haberi seç, görseli üret, paylaş
+        env:
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || vars.DRY_RUN || '1' }}
+          META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SKIP_CATEGORIES: ${{ vars.SKIP_CATEGORIES || 'TAZİYE' }}
+        run: python havadis_bot.py
+
+      - name: Üretilen görseli sakla
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: paylasim-${{ github.run_number }}
+          path: cikti/
+          if-no-files-found: ignore
+
+      - name: Paylaşılan haber listesini kaydet
+        if: always()
+        run: |
+          git config user.name "havadis-bot"
+          git config user.email "bot@havadis.at"
+          git add posted.json || true
+          git diff --cached --quiet || (git commit -m "Paylaşılan haberler güncellendi" && git push)

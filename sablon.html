@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@500;600;700&display=swap">
+<style>
+  html, body { margin: 0; padding: 0; }
+  body { width: 1080px; height: 1350px; overflow: hidden; background: #070B14; }
+  .kart { position: relative; width: 1080px; height: 1350px; overflow: hidden; color: #fff;
+          font-family: 'Barlow', 'Arial Narrow', sans-serif; background: #070B14; }
+  .foto { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
+  .ust-golge { position: absolute; left: 0; right: 0; top: 0; height: 300px;
+               background: linear-gradient(#070B14cc, #070B1400); }
+  .alt-golge { position: absolute; left: 0; right: 0; bottom: 0; height: 900px;
+               background: linear-gradient(#070B1400 0%, #070B14d9 42%, #070B14 70%); }
+  .ust { position: absolute; left: 64px; right: 64px; top: 64px; display: flex;
+         justify-content: space-between; align-items: center; }
+  .ust img { width: 230px; height: auto; display: block; }
+  .tarih { font-family: 'Barlow Condensed', sans-serif; font-size: 26px; font-weight: 700;
+           letter-spacing: 3px; color: rgba(255,255,255,.9); }
+  .etiket-yuvarlak { position: absolute; right: 70px; top: 230px; width: 190px; height: 190px;
+           border-radius: 50%; background: #E42320; display: flex; flex-direction: column;
+           align-items: center; justify-content: center; transform: rotate(-10deg); text-align: center; }
+  .etiket-yuvarlak b { font-family: 'Barlow Condensed', sans-serif; font-size: 64px; line-height: .9; font-weight: 900; }
+  .etiket-yuvarlak span { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700;
+           letter-spacing: 2px; text-transform: uppercase; padding: 0 16px; }
+  .alt { position: absolute; left: 64px; right: 64px; bottom: 72px; display: flex; flex-direction: column; gap: 28px; }
+  .kategori { display: flex; gap: 12px; align-items: center; }
+  .kategori .k { background: #E42320; font-family: 'Barlow Condensed', sans-serif; font-size: 26px;
+                 font-weight: 800; letter-spacing: 3px; padding: 8px 18px; text-transform: uppercase; }
+  .kategori .ust-baslik { font-family: 'Barlow Condensed', sans-serif; font-size: 26px; font-weight: 700;
+                 letter-spacing: 3px; color: rgba(255,255,255,.88); text-transform: uppercase; }
+  h1 { margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 900;
+       font-size: $baslik_px; line-height: 1; letter-spacing: -1px; text-transform: uppercase; }
+  h1 .vurgu { background: #E42320; padding: 0 14px; line-height: 1.08; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+  .ozet { margin: 0; font-size: 34px; line-height: 1.3; font-weight: 500; color: #E4E8EF;
+          display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .alt-cizgi { display: flex; justify-content: space-between; align-items: center; padding-top: 24px;
+               border-top: 1px solid rgba(255,255,255,.25); }
+  .alt-cizgi .site { font-size: 26px; font-weight: 600; color: rgba(255,255,255,.85); }
+  .alt-cizgi .oku { display: flex; align-items: center; gap: 12px; font-family: 'Barlow Condensed', sans-serif;
+                    font-size: 28px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+</style>
+</head>
+<body>
+<div class="kart">
+  <img class="foto" src="$foto" alt="">
+  <div class="ust-golge"></div>
+  <div class="alt-golge"></div>
+  <div class="ust">
+    <img src="$logo" alt="Havadis.at">
+    <div class="tarih">$tarih</div>
+  </div>
+  $etiket_html
+  <div class="alt">
+    <div class="kategori"><div class="k">$kategori</div>$ust_baslik_html</div>
+    <h1>$baslik_html</h1>
+    $ozet_html
+    <div class="alt-cizgi">
+      <div class="site">havadis.at</div>
+      <div class="oku">Haberin tamamı profilde
+        <svg width="40" height="24" viewBox="0 0 40 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h34M26 3l10 9-10 9"/></svg>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
