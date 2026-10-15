@@ -76,9 +76,19 @@ def cumlelere_bol(metin):
     return [c.strip() for c in re.split(r"(?<=[.!?])\s+", metin) if c.strip()]
 
 
+TTS = os.getenv("TTS", "piper")                  # "piper" (açık kaynak) veya "edge" (Microsoft sinirsel ses)
+SES_ADI = os.getenv("VOICE", "tr-TR-AhmetNeural")  # edge için: tr-TR-AhmetNeural (erkek), tr-TR-EmelNeural (kadın)
+
+
 def seslendir(metin, yol):
-    subprocess.run(["piper", "--model", MODEL, "--output_file", yol], input=metin.encode("utf-8"), check=True,
-                   stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    if TTS == "edge":
+        mp3 = yol[:-4] + ".mp3"
+        subprocess.run(["edge-tts", "--voice", SES_ADI, "--rate", "+5%", "--text", metin, "--write-media", mp3],
+                       check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mp3, "-ar", "24000", "-ac", "1", yol], check=True)
+    else:
+        subprocess.run(["piper", "--model", MODEL, "--output_file", yol], input=metin.encode("utf-8"), check=True,
+                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     with wave.open(yol) as w:
         return w.getnframes() / w.getframerate()
 
