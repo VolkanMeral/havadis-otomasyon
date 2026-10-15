@@ -61,7 +61,7 @@ Anahtar: https://console.anthropic.com (kullanım başına küçük bir ücret a
 | `SKIP_CATEGORIES` | `TAZİYE` | Paylaşılmayacak kategoriler (virgülle) |
 | `MAX_AGE_HOURS` | `24` | Bundan eski haberler paylaşılmaz |
 | `BASE_HASHTAGS` | `#havadis #Avusturya #haber` | Her paylaşıma eklenen hashtag'ler |
-| `GRAPH_VERSION` | `v23.0` | Meta Graph API sürümü |
+| `GRAPH_VERSION` | `v26.0` | Meta Graph API sürümü |
 
 Paylaşım saatlerini değiştirmek için `.github/workflows/paylas.yml` içindeki `cron` satırını düzenleyin (saatler UTC'dir).
 Tasarımı değiştirmek için `sablon.html` dosyasını düzenleyin.
