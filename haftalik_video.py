@@ -92,7 +92,7 @@ def seslendir(metin, yol):
             print("Ses servisi hatası, tekrar deneniyor:", r.stderr.decode()[-200:], flush=True)
             time.sleep(3 * (deneme + 1))
         else:
-            raise RuntimeError("Ses servisi yanıt vermedi")
+            raise RuntimeError(f"Ses servisi yanıt vermedi ({SES_ADI}): {r.stderr.decode()[-400:]}")
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mp3, "-ar", "24000", "-ac", "1", yol], check=True)
     else:
         subprocess.run(["piper", "--model", MODEL, "--output_file", yol], input=metin.encode("utf-8"), check=True,
@@ -333,4 +333,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as hata:
+        print(f"::error title=Sesli video hatası::{type(hata).__name__}: {str(hata)[:800]}".replace("\n", " "), flush=True)
+        raise
