@@ -2,7 +2,7 @@
 
 Bu sistem her saat başı (08:00–22:00) çalışır ve şunları yapar:
 
-1. havadis.at RSS akışından henüz paylaşılmamış **en yeni haberi** seçer (Taziye haberleri atlanır).
+1. havadis.at RSS akışından henüz paylaşılmamış **en yeni haberi** seçer. Sadece Avusturya, Vorarlberg, Avrupa ve Almanya kategorileri paylaşılır.
 2. Haberin fotoğrafını alır, Havadis şablonuyla **1080×1350 kapak görseli** üretir (beyaz logo, kırmızı vurgu bandı, kategori etiketi, özet).
 3. Görseli **Facebook sayfasına** (habere tıklanabilir linkle) ve **Instagram hesabına** paylaşır.
 4. Paylaşılan haberi `posted.json` dosyasına yazar, böylece aynı haber iki kez paylaşılmaz.
@@ -58,6 +58,7 @@ Anahtar: https://console.anthropic.com (kullanım başına küçük bir ücret a
 | Değişken | Varsayılan | Açıklama |
 |---|---|---|
 | `DRY_RUN` | `1` | `1` = paylaşma, sadece görsel üret |
+| `INCLUDE_CATEGORIES` | `Avusturya,Vorarlberg,Avrupa,Almanya` | Sadece bu kategoriler paylaşılır (virgülle; boş = hepsi) |
 | `SKIP_CATEGORIES` | `TAZİYE` | Paylaşılmayacak kategoriler (virgülle) |
 | `MAX_AGE_HOURS` | `24` | Bundan eski haberler paylaşılmaz |
 | `BASE_HASHTAGS` | `#havadis #Avusturya #haber` | Her paylaşıma eklenen hashtag'ler |

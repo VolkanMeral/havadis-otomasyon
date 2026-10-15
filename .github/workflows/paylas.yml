@@ -41,6 +41,7 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SKIP_CATEGORIES: ${{ vars.SKIP_CATEGORIES || 'TAZİYE' }}
+          INCLUDE_CATEGORIES: ${{ vars.INCLUDE_CATEGORIES || 'Avusturya,Vorarlberg,Avrupa,Almanya' }}
         run: python havadis_bot.py
 
       - name: Üretilen görseli sakla
