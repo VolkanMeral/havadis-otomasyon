@@ -1,0 +1,32 @@
+name: Örnek fotoğraf indir (tasarım çalışması için)
+
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "Boşlukla ayrılmış görsel adresleri"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  indir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: İndir
+        run: |
+          mkdir -p ornek
+          i=1
+          for u in ${{ inputs.urls }}; do
+            curl -sSfL -A "HavadisSosyalMedyaBot/1.0" -o "ornek/foto$i.jpg" "$u"
+            i=$((i+1))
+          done
+          ls -la ornek
+      - name: Kaydet
+        run: |
+          git config user.name "havadis-bot"
+          git config user.email "bot@havadis.at"
+          git add ornek
+          git diff --cached --quiet || (git commit -m "Tasarım için örnek fotoğraflar" && git push)
