@@ -384,6 +384,7 @@ def instagram_video(video, tur, metin=None):
         veri["caption"] = metin
     if tur == "REELS":
         veri["share_to_feed"] = "true"
+        veri["thumb_offset"] = "4500"  # kapak: 4,5. saniye (tüm yazılar görünür), ilk kare karanlık
     kap = kontrol(HTTP.post(graph(f"{IG_USER_ID}/media"), data=veri, timeout=60))
     adres = kap.get("uri") or f"https://rupload.facebook.com/ig-api-upload/{GRAPH_VERSION}/{kap['id']}"
     _yukle(adres, video)
@@ -393,13 +394,21 @@ def instagram_video(video, tur, metin=None):
     return yayin["id"]
 
 
-def facebook_reel(video, metin):
+def facebook_reel(video, metin, kapak=None):
     bas = kontrol(HTTP.post(graph(f"{PAGE_ID}/video_reels"),
                             data={"upload_phase": "start", "access_token": PAGE_TOKEN}, timeout=60))
     _yukle(bas["upload_url"], video)
     kontrol(HTTP.post(graph(f"{PAGE_ID}/video_reels"), timeout=60, data={
         "upload_phase": "finish", "video_id": bas["video_id"], "video_state": "PUBLISHED",
         "description": metin, "access_token": PAGE_TOKEN}))
+    if kapak:
+        try:
+            with open(kapak, "rb") as f:
+                kontrol(HTTP.post(graph(f"{bas['video_id']}/thumbnails"), timeout=60,
+                                  data={"is_preferred": "true", "access_token": PAGE_TOKEN},
+                                  files={"source": ("kapak.jpg", f, "image/jpeg")}))
+        except Exception as e:
+            log("Facebook Reels kapağı ayarlanamadı (video yine de yayında):", e)
     return bas["video_id"]
 
 
@@ -457,6 +466,7 @@ def main():
     if video_akis or story:
         import video_uret
         video = video_uret.video_uret(haber, ic, os.path.join(CIKTI, f"{damga}.mp4"), foto)
+        kapak = video_uret.kapak_uret(video, os.path.join(CIKTI, f"{damga}-kapak.jpg"))
         log("Video hazır:", video)
     if gorsel:
         log("Görsel hazır:", gorsel)
@@ -487,7 +497,7 @@ def main():
         kaydet()
 
     if video_akis:
-        dene("facebook_reel", lambda: facebook_reel(video, fb_metin))
+        dene("facebook_reel", lambda: facebook_reel(video, fb_metin, kapak))
         if IG_USER_ID:
             dene("instagram_reel", lambda: instagram_video(video, "REELS", ig_metin))
     else:
