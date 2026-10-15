@@ -31,7 +31,7 @@ jobs:
       IG_USER_ID: ${{ secrets.IG_USER_ID }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       SKIP_CATEGORIES: ${{ vars.SKIP_CATEGORIES || 'TAZİYE' }}
-      TEMPLATE: ${{ vars.TEMPLATE || 'kart' }}
+      TEMPLATE: ${{ vars.TEMPLATE || 'manset' }}
       INCLUDE_CATEGORIES: ${{ github.event.schedule == '30 6-20 * * *' && (vars.HALF_HOUR_CATEGORIES || 'Vorarlberg') || (vars.INCLUDE_CATEGORIES || 'Avusturya,Vorarlberg,Avrupa,Almanya') }}
     steps:
       - uses: actions/checkout@v4

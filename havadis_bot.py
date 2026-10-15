@@ -71,7 +71,7 @@ HTTP.headers["User-Agent"] = "HavadisSosyalMedyaBot/1.0 (+https://havadis.at)"
 
 AYLAR_KISA = ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"]
 # Kullanılacak tasarım: "kart" (sosyal gönderi kartı) veya "manset" (tam ekran manşet)
-SABLON = os.getenv("TEMPLATE", "kart").strip() or "kart"
+SABLON = os.getenv("TEMPLATE", "manset").strip() or "manset"
 AYLAR = ["OCAK", "ŞUBAT", "MART", "NİSAN", "MAYIS", "HAZİRAN",
          "TEMMUZ", "AĞUSTOS", "EYLÜL", "EKİM", "KASIM", "ARALIK"]
 
@@ -253,10 +253,25 @@ def baslik_boyutu(metin):
     return 80
 
 
+def tam_ekran_hazirla(foto, w=1080, h=1350, dikey_odak=0.3):
+    """Küçük fotoğrafı tam ekran için yüksek kaliteyle büyütür, kırpar ve hafifçe keskinleştirir."""
+    from PIL import ImageFilter
+    oran = max(w / foto.width, h / foto.height)
+    yeni = foto.resize((round(foto.width * oran), round(foto.height * oran)), Image.LANCZOS)
+    x = (yeni.width - w) // 2
+    y = int((yeni.height - h) * dikey_odak)
+    yeni = yeni.crop((x, y, x + w, y + h))
+    if oran > 1.2:
+        yeni = yeni.filter(ImageFilter.UnsharpMask(radius=2, percent=70, threshold=2))
+    return yeni
+
+
 def gorsel_uret(h, ic, cikti_yolu):
     r = HTTP.get(h["resim"], timeout=60)
     r.raise_for_status()
     foto = Image.open(BytesIO(r.content)).convert("RGB")
+    if SABLON == "manset":
+        foto = tam_ekran_hazirla(foto)
     tampon = BytesIO()
     foto.save(tampon, "JPEG", quality=92)
 
