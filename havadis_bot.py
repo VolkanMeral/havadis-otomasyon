@@ -356,9 +356,39 @@ def main():
         except Exception as e:
             kayit["instagram_hata"] = str(e)[:300]
             log("Instagram hatası:", e)
+            gh_hata("Instagram paylaşım hatası", e)
         durum_yaz(paylasilanlar)
     return 0
 
 
+def gh_hata(baslik, mesaj):
+    """Hatayı GitHub Actions özetinde görünür bir not olarak yazar (anahtarlar gizlenir)."""
+    mesaj = str(mesaj)
+    if PAGE_TOKEN:
+        mesaj = mesaj.replace(PAGE_TOKEN, "***")
+    mesaj = mesaj.replace("%", "%25").replace("\r", "").replace("\n", "%0A")[:1500]
+    print(f"::error title={baslik}::{mesaj}", flush=True)
+
+
+def baglanti_kontrol():
+    """Paylaşımdan önce: anahtar, sayfa ve Instagram hesabı erişilebilir mi?"""
+    if not (PAGE_ID and PAGE_TOKEN):
+        raise RuntimeError("META_PAGE_ID veya META_PAGE_TOKEN boş. GitHub Secrets adlarını kontrol edin.")
+    sayfa = kontrol(HTTP.get(graph(PAGE_ID), params={"fields": "name", "access_token": PAGE_TOKEN}, timeout=30))
+    log("Facebook sayfası erişilebilir:", sayfa.get("name"))
+    if IG_USER_ID:
+        ig = kontrol(HTTP.get(graph(IG_USER_ID), params={"fields": "username", "access_token": PAGE_TOKEN},
+                              timeout=30))
+        log("Instagram hesabı erişilebilir:", ig.get("username"))
+    else:
+        log("UYARI: IG_USER_ID boş, Instagram'a paylaşım yapılmayacak.")
+
+
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        if not DRY_RUN:
+            baglanti_kontrol()
+        sys.exit(main())
+    except Exception as hata:
+        gh_hata("Havadis paylaşım hatası", f"{type(hata).__name__}: {hata}")
+        sys.exit(1)
