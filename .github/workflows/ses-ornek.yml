@@ -2,6 +2,10 @@ name: Sesli video örneği (paylaşım yapmaz)
 
 on:
   workflow_dispatch:
+    inputs:
+      tur:
+        description: "tekli = tek haber, haftalik = 3 dakikalık haftalık rapor"
+        default: "haftalik"
 
 permissions:
   contents: write
@@ -9,7 +13,7 @@ permissions:
 jobs:
   ornek:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -31,10 +35,15 @@ jobs:
           done
           ls -la ses
       - name: Örnek videoyu üret
-        run: python ses_ornek.py ses/model.onnx ornek/sesli-ornek.mp4
+        run: |
+          if [ "${{ inputs.tur }}" = "tekli" ]; then
+            python ses_ornek.py ses/model.onnx ornek/sesli-ornek.mp4
+          else
+            python haftalik_video.py ses/model.onnx ornek/haftalik-sesli-ornek.mp4 180
+          fi
       - name: Kaydet
         run: |
           git config user.name "havadis-bot"
           git config user.email "bot@havadis.at"
-          git add ornek/sesli-ornek.mp4
+          git add ornek/*.mp4
           git commit -m "Sesli video örneği" && git pull --rebase -q && git push

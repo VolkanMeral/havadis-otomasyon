@@ -18,7 +18,8 @@ ANIMASYON = """
   .foto { inset: 0 0 auto 0 !important; height: 1500px !important; }
   .alt-golge { height: 1250px !important;
                background: linear-gradient(#070B1400 0%, #070B14d9 30%, #070B14 52%) !important; }
-  .ust { top: 110px !important; }
+  .ust-golge { height: 520px !important; }
+  .ust { top: 230px !important; }  /* Story/Reels üst arayüzünün (ilerleme çubuğu, profil adı) altında */
   .alt { bottom: 360px !important; }
   h1 .vurgu { position: relative; }
   .perde { position: absolute; inset: 0; background: #070B14; pointer-events: none; }
