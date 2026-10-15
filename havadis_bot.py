@@ -32,7 +32,7 @@ CIKTI = os.path.join(KOK, "cikti")
 DURUM_DOSYASI = os.path.join(KOK, "posted.json")
 
 RSS_URL = os.getenv("RSS_URL", "https://havadis.at/rss.rss")
-GRAPH_VERSION = os.getenv("GRAPH_VERSION", "v23.0")
+GRAPH_VERSION = os.getenv("GRAPH_VERSION", "v26.0")
 DRY_RUN = os.getenv("DRY_RUN", "1") == "1"
 MAX_AGE_HOURS = int(os.getenv("MAX_AGE_HOURS", "24"))
 ATLANACAK_KATEGORILER = {
