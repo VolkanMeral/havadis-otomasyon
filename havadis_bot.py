@@ -43,6 +43,8 @@ PAYLASILACAK_KATEGORILER = {
     k.strip().casefold()
     for k in os.getenv("INCLUDE_CATEGORIES", "Avusturya,Vorarlberg,Avrupa,Almanya").split(",") if k.strip()
 }
+# Yapay zekâ / otomasyon şeffaflık etiketi (AB Yapay Zekâ Yasası md. 50). Boş bırakılırsa eklenmez.
+KI_ETIKET = os.getenv("AI_LABEL", "Yapay zekâ destekli · KI-unterstützt").strip()
 SABIT_HASHTAGLER =os.getenv("BASE_HASHTAGS", "#havadis #Avusturya #haber")
 
 def _temiz(deger, desen):
@@ -223,7 +225,8 @@ def paylasim_metni(h, ic, platform):
         devam = f"👉 Haberin tamamı: {h['link']}"
     else:
         devam = f"👉 Haberin tamamı: {h['link']}\n(Tıklanabilir link profilimizde)"
-    return f"{h['baslik']}\n\n{ic['metin']}\n\n{devam}\n\n{etiketler}".strip()
+    ki = f"\n\n🤖 {KI_ETIKET}" if KI_ETIKET else ""
+    return f"{h['baslik']}\n\n{ic['metin']}\n\n{devam}{ki}\n\n{etiketler}".strip()
 
 
 # ---------------------------------------------------------------- Görsel
@@ -296,6 +299,7 @@ def gorsel_uret(h, ic, cikti_yolu):
         "ozet_html": f'<p class="ozet">{e(ic["ozet"])}</p>' if ic.get("ozet") else "",
         "etiket_html": etiket_html,
         "tarih_kisa": f"{tarih.day} {AYLAR_KISA[tarih.month - 1]}",
+        "ki_etiket": e(KI_ETIKET),
         "kart_baslik": e(h["baslik"] if h["baslik"][-1:] in ".!?…" else h["baslik"] + "."),
         "kart_ozet": e(kisalt(ic.get("ozet") or "", 170)),
     }

@@ -29,6 +29,8 @@
   .alt { display: flex; justify-content: space-between; align-items: center; padding-top: 4px; }
   .alt .site { font-size: 26px; font-weight: 600; color: #5E5E5E; }
   .alt .oku { font-size: 26px; font-weight: 700; color: #C81D17; }
+  .ki { display: block; font-size: 18px; font-weight: 500; letter-spacing: .5px; color: #7A7A7A; margin-top: 4px; }
+  .ki:empty { display: none; }
 </style>
 </head>
 <body>
@@ -45,7 +47,7 @@
     <p class="metin"><strong>$kart_baslik</strong> <span class="ozet">$kart_ozet</span></p>
     <img class="foto" src="$foto" alt="">
     <div class="alt">
-      <div class="site">havadis.at</div>
+      <div class="site">havadis.at<span class="ki">$ki_etiket</span></div>
       <div class="oku">Haberin tamamı profilde →</div>
     </div>
   </div>
