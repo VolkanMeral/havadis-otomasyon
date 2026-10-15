@@ -45,7 +45,7 @@ ANIMASYON = """
     }
     window.kare = function (t) {
       q('.foto').style.transform = `scale(${1 + 0.08 * t / SURE})`;
-      perde.style.opacity = 1 - yumusak(ilerle(t, 0, 0.9));
+      perde.style.opacity = 0.45 * (1 - yumusak(ilerle(t, 0, 0.9)));
       goster(q('.ust'), yumusak(ilerle(t, 0.2, 0.8)), 0, -20);
       goster(q('.kategori'), yumusak(ilerle(t, 0.7, 1.2)), -60, 0);
       goster(q('h1 .beyaz'), yumusak(ilerle(t, 1.1, 1.7)), 0, 40);
@@ -91,4 +91,14 @@ def video_uret(h, ic, cikti_yolu, foto_bayt=None):
     ffmpeg.stdin.close()
     if ffmpeg.wait() != 0:
         raise RuntimeError("ffmpeg video oluşturamadı")
+    return cikti_yolu
+
+
+KAPAK_SANIYE = 4.5  # bu anda tüm yazılar ekranda: Reels kapağı olarak kullanılır
+
+
+def kapak_uret(video_yolu, cikti_yolu):
+    """Videonun kapak karesini JPEG olarak çıkarır."""
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", str(KAPAK_SANIYE), "-i", video_yolu,
+                    "-frames:v", "1", "-q:v", "2", cikti_yolu], check=True)
     return cikti_yolu
