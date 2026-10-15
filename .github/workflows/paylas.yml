@@ -110,4 +110,12 @@ jobs:
           git config user.name "havadis-bot"
           git config user.email "bot@havadis.at"
           for f in posted.json arsiv.json karusel_durum.json; do [ -f "$f" ] && git add "$f"; done
-          git diff --cached --quiet || (git commit -m "Paylaşılan haberler güncellendi" && git push)
+          git diff --cached --quiet && exit 0
+          git commit -m "Paylaşılan haberler güncellendi"
+          # Depoya aynı anda başka değişiklik geldiyse önce onu al, sonra tekrar dene
+          for i in 1 2 3 4 5; do
+            git push && exit 0
+            git pull --rebase -q || { git rebase --abort; exit 1; }
+            sleep 3
+          done
+          exit 1
