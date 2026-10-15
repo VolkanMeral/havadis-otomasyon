@@ -460,6 +460,15 @@ if __name__ == "__main__":
         except Exception as hata:
             gh_hata("Havadis kontrol hatası", f"{type(hata).__name__}: {hata}")
             sys.exit(1)
+    if os.getenv("CHECK_ONLY") == "1":
+        # Sadece anahtar/sayfa/Instagram erişimini kontrol et, paylaşım yapma
+        try:
+            baglanti_kontrol()
+            log("Bağlantı kontrolü başarılı.")
+            sys.exit(0)
+        except Exception as hata:
+            gh_hata("Bağlantı kontrolü başarısız", f"{type(hata).__name__}: {hata}")
+            sys.exit(1)
     try:
         if not DRY_RUN:
             baglanti_kontrol()

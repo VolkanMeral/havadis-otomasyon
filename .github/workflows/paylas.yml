@@ -12,6 +12,9 @@ on:
       dry_run:
         description: "Deneme modu (1 = paylaşma, sadece görsel üret)"
         default: "1"
+      sadece_kontrol:
+        description: "1 = sadece anahtarı kontrol et (paylaşım yok)"
+        default: "0"
 
 permissions:
   contents: write
@@ -45,7 +48,14 @@ jobs:
       - name: Gereksinimleri kur
         run: pip install -r requirements.txt
 
+      - name: Sadece bağlantı kontrolü
+        if: github.event_name == 'workflow_dispatch' && inputs.sadece_kontrol == '1'
+        env:
+          CHECK_ONLY: "1"
+        run: python havadis_bot.py
+
       - name: Yeni haber var mı?
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.sadece_kontrol == '1') }}
         id: kontrol
         run: python havadis_bot.py --kontrol
 
