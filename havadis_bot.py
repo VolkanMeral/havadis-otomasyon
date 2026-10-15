@@ -80,20 +80,27 @@ def log(*a):
 # ---------------------------------------------------------------- RSS
 
 def haberleri_getir():
+    """RSS'i okur. XML'in tamamı bozuk olsa bile her haberi ayrı ayrı ayıklar
+    (sitedeki tek bir hatalı haber diğerlerini engellemesin diye)."""
     r = HTTP.get(RSS_URL, timeout=30)
     r.raise_for_status()
-    kok = ET.fromstring(r.content)
-    ns = {"media": "http://search.yahoo.com/mrss/"}
+    metin = r.content.decode("utf-8", errors="replace")
+    if "<item" not in metin:
+        raise RuntimeError(f"RSS yerine farklı bir sayfa geldi (ilk 200 karakter): {metin[:200]!r}")
     haberler = []
-    for it in kok.iter("item"):
-        def t(tag):
-            el = it.find(tag)
-            return (el.text or "").strip() if el is not None and el.text else ""
+    for parca in re.findall(r"<item\b[^>]*>(.*?)</item>", metin, re.S):
+        def t(tag, parca=parca):
+            m = re.search(rf"<{tag}\b[^>]*>(.*?)</{tag}>", parca, re.S)
+            if not m:
+                return ""
+            deger = m.group(1).strip()
+            cd = re.fullmatch(r"<!\[CDATA\[(.*?)\]\]>", deger, re.S)
+            return (cd.group(1) if cd else deger).strip()
         resim = t("image")
         if not resim:
-            mc = it.find("media:content", ns)
-            if mc is not None:
-                resim = mc.get("url", "")
+            mc = re.search(r"<media:content\b[^>]*\burl=\"([^\"]+)\"", parca)
+            resim = mc.group(1) if mc else ""
+        resim = html.unescape(resim)
         try:
             tarih = email.utils.parsedate_to_datetime(t("pubDate"))
         except Exception:
@@ -101,7 +108,7 @@ def haberleri_getir():
         ozet = re.sub(r"<[^>]+>", " ", html.unescape(t("description")))
         haberler.append({
             "baslik": html.unescape(t("title")),
-            "link": t("link") or t("guid"),
+            "link": html.unescape(t("link") or t("guid")),
             "ozet": re.sub(r"\s+", " ", ozet).strip(),
             "kategori": html.unescape(t("category")) or "Haber",
             "resim": resim,
