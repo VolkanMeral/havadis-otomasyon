@@ -407,7 +407,24 @@ def baglanti_kontrol():
         log("UYARI: IG_USER_ID boş, Instagram'a paylaşım yapılmayacak.")
 
 
+def yeni_haber_var_mi():
+    """Hafif kontrol: paylaşılacak yeni haber var mı? (Ağır kurulumdan önce çalışır.)"""
+    haber = haber_sec(haberleri_getir(), durum_oku())
+    log("Yeni haber:", haber["baslik"] if haber else "yok")
+    cikti = os.getenv("GITHUB_OUTPUT")
+    if cikti:
+        with open(cikti, "a", encoding="utf-8") as f:
+            f.write(f"yeni={'true' if haber else 'false'}\n")
+
+
 if __name__ == "__main__":
+    if "--kontrol" in sys.argv:
+        try:
+            yeni_haber_var_mi()
+            sys.exit(0)
+        except Exception as hata:
+            gh_hata("Havadis kontrol hatası", f"{type(hata).__name__}: {hata}")
+            sys.exit(1)
     try:
         if not DRY_RUN:
             baglanti_kontrol()

@@ -1,6 +1,8 @@
 # Havadis.at – Otomatik Instagram & Facebook paylaşımı
 
-Bu sistem her saat başı (08:00–22:00) çalışır ve şunları yapar:
+Bu sistem 08:00–22:00 arasında çalışır: **saat başlarında** dört kategoriden (Avusturya, Vorarlberg, Avrupa, Almanya), **buçuklarda** (08:30, 09:30 …) sadece Vorarlberg'den paylaşım yapar. Böylece Vorarlberg haberleri yarım saatte bir çıkar. Yeni haber yoksa o çalışma hiçbir şey paylaşmadan birkaç saniyede biter.
+
+Her çalışmada:
 
 1. havadis.at RSS akışından henüz paylaşılmamış **en yeni haberi** seçer. Sadece Avusturya, Vorarlberg, Avrupa ve Almanya kategorileri paylaşılır.
 2. Haberin fotoğrafını alır, Havadis şablonuyla **1080×1350 kapak görseli** üretir (beyaz logo, kırmızı vurgu bandı, kategori etiketi, özet).
@@ -59,6 +61,7 @@ Anahtar: https://console.anthropic.com (kullanım başına küçük bir ücret a
 |---|---|---|
 | `DRY_RUN` | `1` | `1` = paylaşma, sadece görsel üret |
 | `INCLUDE_CATEGORIES` | `Avusturya,Vorarlberg,Avrupa,Almanya` | Sadece bu kategoriler paylaşılır (virgülle; boş = hepsi) |
+| `HALF_HOUR_CATEGORIES` | `Vorarlberg` | Buçuklardaki ek paylaşımlarda kullanılacak kategoriler |
 | `SKIP_CATEGORIES` | `TAZİYE` | Paylaşılmayacak kategoriler (virgülle) |
 | `MAX_AGE_HOURS` | `24` | Bundan eski haberler paylaşılmaz |
 | `BASE_HASHTAGS` | `#havadis #Avusturya #haber` | Her paylaşıma eklenen hashtag'ler |
@@ -70,6 +73,7 @@ Tasarımı değiştirmek için `sablon.html` dosyasını düzenleyin.
 ## Bilinmesi gerekenler
 - GitHub zamanlanmış görevleri yoğun saatlerde birkaç dakika gecikebilir.
 - Kış saatine geçişte paylaşım saatleri bir saat kayar (07:00–21:00). İsterseniz `cron` satırını `0 7-21 * * *` yapın.
-- Instagram API ile günde en fazla 50 paylaşım yapılabilir; bu sistem günde 15 paylaşım yapar.
+- Instagram API ile 24 saatte en az 50 paylaşım yapılabilir; bu sistem günde en fazla 30 paylaşım yapar (yeni haber yoksa daha az).
+- Özel depolarda GitHub Actions ayda 2.000 dakika ücretsizdir. Yeni haber olmayan çalışmalar ağır kurulumu atladığı için kısa sürer; kullanımı Settings → Billing bölümünden takip edebilirsiniz.
 - Instagram açıklamalarında linkler tıklanmaz; bu yüzden metinde "profildeki link" yönlendirmesi var. Facebook'ta haber linki doğrudan eklenir.
 - Ajans fotoğraflarının sosyal medyada kullanım hakkı ayrı olabilir; sitede kullandığınız fotoğrafların sosyal medya hakkını kontrol edin.
