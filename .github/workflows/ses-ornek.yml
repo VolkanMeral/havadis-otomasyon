@@ -6,6 +6,12 @@ on:
       tur:
         description: "tekli = tek haber, haftalik = 3 dakikalık haftalık rapor"
         default: "haftalik"
+      ses:
+        description: "piper (açık kaynak) veya edge (Microsoft sinirsel ses)"
+        default: "edge"
+      ses_adi:
+        description: "edge için: tr-TR-AhmetNeural veya tr-TR-EmelNeural"
+        default: "tr-TR-AhmetNeural"
 
 permissions:
   contents: write
@@ -14,6 +20,9 @@ jobs:
   ornek:
     runs-on: ubuntu-latest
     timeout-minutes: 40
+    env:
+      TTS: ${{ inputs.ses }}
+      VOICE: ${{ inputs.ses_adi }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -21,10 +30,11 @@ jobs:
           python-version: "3.12"
       - name: Kurulum
         run: |
-          pip install -r requirements.txt piper-tts
+          pip install -r requirements.txt piper-tts edge-tts
           python -m playwright install --with-deps chromium
           which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
-      - name: Türkçe ses modelini indir
+      - name: Türkçe Piper ses modelini indir
+        if: inputs.ses == 'piper'
         run: |
           mkdir -p ses
           for v in fahrettin dfki fettah; do
@@ -33,17 +43,20 @@ jobs:
               echo "Ses: $v"; break
             fi
           done
-          ls -la ses
       - name: Örnek videoyu üret
         run: |
+          AD=$(echo "$VOICE" | sed 's/tr-TR-//; s/Neural//' | tr 'A-Z' 'a-z')
+          [ "$TTS" = "piper" ] && AD=piper
           if [ "${{ inputs.tur }}" = "tekli" ]; then
-            python ses_ornek.py ses/model.onnx ornek/sesli-ornek.mp4
+            python ses_ornek.py ses/model.onnx "ornek/sesli-ornek-$AD.mp4"
           else
-            python haftalik_video.py ses/model.onnx ornek/haftalik-sesli-ornek.mp4 180
+            python haftalik_video.py ses/model.onnx "ornek/haftalik-sesli-$AD.mp4" 180
           fi
       - name: Kaydet
         run: |
           git config user.name "havadis-bot"
           git config user.email "bot@havadis.at"
           git add ornek/*.mp4
-          git commit -m "Sesli video örneği" && git pull --rebase -q && git push
+          git commit -m "Sesli video örneği ($VOICE)"
+          for i in 1 2 3 4 5; do git push && exit 0; git pull --rebase -q; sleep 3; done
+          exit 1
