@@ -443,8 +443,8 @@ def main():
     foto = r.content
 
     video_akis = SABLON == "manset" and (VIDEO_ZORLA or CALISMA_TURU == "video")
-    story = SABLON == "manset" and bool(IG_USER_ID or DRY_RUN) and (
-        VIDEO_ZORLA or haber["kategori"].casefold() in STORY_KATEGORILERI)
+    story = SABLON == "manset" and bool(IG_USER_ID or DRY_RUN) and \
+        haber["kategori"].casefold() in STORY_KATEGORILERI
     log(f"Akışta video: {'evet' if video_akis else 'hayır'} | Story: {'evet' if story else 'hayır'}")
 
     fb_metin = paylasim_metni(haber, ic, "facebook")
