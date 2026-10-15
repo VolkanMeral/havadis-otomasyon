@@ -69,6 +69,9 @@ CLAUDE_MODEL = os.getenv("CLAUDE_MODEL", "claude-haiku-5-5")
 HTTP = requests.Session()
 HTTP.headers["User-Agent"] = "HavadisSosyalMedyaBot/1.0 (+https://havadis.at)"
 
+AYLAR_KISA = ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"]
+# Kullanılacak tasarım: "kart" (sosyal gönderi kartı) veya "manset" (tam ekran manşet)
+SABLON = os.getenv("TEMPLATE", "kart").strip() or "kart"
 AYLAR = ["OCAK", "ŞUBAT", "MART", "NİSAN", "MAYIS", "HAZİRAN",
          "TEMMUZ", "AĞUSTOS", "EYLÜL", "EKİM", "KASIM", "ARALIK"]
 
@@ -230,6 +233,13 @@ def veri_uri(yol_veya_bayt, mime):
     return f"data:{mime};base64," + base64.b64encode(bayt).decode()
 
 
+def kisalt(metin, n):
+    """Metni kelime ortasından bölmeden n karakterle sınırlar."""
+    if len(metin) <= n:
+        return metin
+    return metin[:n].rsplit(" ", 1)[0].rstrip(",;:") + "…"
+
+
 def baslik_boyutu(metin):
     n = len(metin)
     if n <= 28:
@@ -270,8 +280,11 @@ def gorsel_uret(h, ic, cikti_yolu):
         "baslik_px": f"{baslik_boyutu(tam_baslik)}px",
         "ozet_html": f'<p class="ozet">{e(ic["ozet"])}</p>' if ic.get("ozet") else "",
         "etiket_html": etiket_html,
+        "tarih_kisa": f"{tarih.day} {AYLAR_KISA[tarih.month - 1]}",
+        "kart_baslik": e(h["baslik"] if h["baslik"][-1:] in ".!?…" else h["baslik"] + "."),
+        "kart_ozet": e(kisalt(ic.get("ozet") or "", 170)),
     }
-    with open(os.path.join(KOK, "sablon.html"), encoding="utf-8") as f:
+    with open(os.path.join(KOK, f"sablon_{SABLON}.html"), encoding="utf-8") as f:
         sayfa = string.Template(f.read()).safe_substitute(degerler)
 
     from playwright.sync_api import sync_playwright
@@ -280,12 +293,8 @@ def gorsel_uret(h, ic, cikti_yolu):
         sayfa_obj = tarayici.new_page(viewport={"width": 1080, "height": 1350})
         sayfa_obj.set_content(sayfa, wait_until="networkidle", timeout=60000)
         sayfa_obj.evaluate("document.fonts.ready")
-        # Başlık çok uzunsa yazıyı küçült, taşmasın
-        sayfa_obj.evaluate("""() => {
-            const h = document.querySelector('h1'); const alt = document.querySelector('.alt');
-            let px = parseFloat(getComputedStyle(h).fontSize);
-            while (alt.getBoundingClientRect().top < 470 && px > 60) { px -= 4; h.style.fontSize = px + 'px'; }
-        }""")
+        # Her şablon kendi "sigdir" fonksiyonuyla uzun metinleri küçültür, taşma olmaz
+        sayfa_obj.evaluate("() => { if (window.sigdir) window.sigdir(); }")
         png = sayfa_obj.screenshot(clip={"x": 0, "y": 0, "width": 1080, "height": 1350})
         tarayici.close()
     Image.open(BytesIO(png)).convert("RGB").save(cikti_yolu, "JPEG", quality=92)

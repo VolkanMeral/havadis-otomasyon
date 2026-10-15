@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@500;600;700;800&display=swap">
+<style>
+  html, body { margin: 0; padding: 0; }
+  body { width: 1080px; height: 1350px; overflow: hidden; }
+  .zemin { width: 1080px; height: 1350px; box-sizing: border-box; padding: 64px; display: flex;
+           flex-direction: column; justify-content: center; background: #E42320;
+           font-family: 'Barlow', Arial, sans-serif; color: #0B0B0B; }
+  .kart { background: #fff; border-radius: 36px; padding: 48px; display: flex; flex-direction: column;
+          gap: 32px; box-shadow: 0 24px 60px rgba(0,0,0,.25); }
+  .ust { display: flex; align-items: center; gap: 20px; }
+  .avatar { width: 96px; height: 96px; border-radius: 50%; background: #0B0B0B; display: flex;
+            align-items: flex-end; justify-content: center; gap: 2px; padding-bottom: 22px; box-sizing: border-box; flex: none; }
+  .avatar b { font-family: 'Barlow Condensed', sans-serif; font-size: 54px; line-height: .8; font-weight: 900; color: #fff; }
+  .avatar i { width: 12px; height: 12px; border-radius: 50%; background: #E42320; display: block; }
+  .kimlik { display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0; }
+  .ad { font-size: 34px; font-weight: 700; }
+  .hesap { font-size: 26px; font-weight: 500; color: #5E5E5E; }
+  .kategori { background: #E42320; color: #fff; font-family: 'Barlow Condensed', sans-serif; font-size: 24px;
+              font-weight: 800; letter-spacing: 2px; padding: 8px 16px; border-radius: 999px;
+              text-transform: uppercase; white-space: nowrap; flex: none; }
+  .metin { margin: 0; font-size: 46px; line-height: 1.25; font-weight: 600; }
+  .metin strong { font-weight: 800; }
+  .metin .ozet { font-weight: 500; color: #3A3A3A; }
+  .foto { width: 856px; height: 500px; object-fit: cover; border-radius: 24px; display: block; }
+  .alt { display: flex; justify-content: space-between; align-items: center; padding-top: 4px; }
+  .alt .site { font-size: 26px; font-weight: 600; color: #5E5E5E; }
+  .alt .oku { font-size: 26px; font-weight: 700; color: #C81D17; }
+</style>
+</head>
+<body>
+<div class="zemin">
+  <div class="kart">
+    <div class="ust">
+      <div class="avatar"><b>H</b><i></i></div>
+      <div class="kimlik">
+        <div class="ad">Havadis Haber</div>
+        <div class="hesap">@havadis.at · $tarih_kisa</div>
+      </div>
+      <div class="kategori">$kategori</div>
+    </div>
+    <p class="metin"><strong>$kart_baslik</strong> <span class="ozet">$kart_ozet</span></p>
+    <img class="foto" src="$foto" alt="">
+    <div class="alt">
+      <div class="site">havadis.at</div>
+      <div class="oku">Haberin tamamı profilde →</div>
+    </div>
+  </div>
+</div>
+<script>
+  // Metin uzunsa: önce yazıyı küçült, yine sığmazsa özeti kısalt, en son fotoğrafı biraz alçalt
+  window.sigdir = function () {
+    const kart = document.querySelector('.kart'), metin = document.querySelector('.metin');
+    const ozet = document.querySelector('.ozet'), foto = document.querySelector('.foto');
+    const sigmaz = () => kart.getBoundingClientRect().height > 1222;
+    let px = 46;
+    while (sigmaz() && px > 34) { px -= 2; metin.style.fontSize = px + 'px'; }
+    let kelimeler = ozet.textContent.trim().split(/\s+/);
+    while (sigmaz() && kelimeler.length > 0) { kelimeler.pop(); ozet.textContent = kelimeler.length ? kelimeler.join(' ') + '…' : ''; }
+    let fh = 500;
+    while (sigmaz() && fh > 360) { fh -= 20; foto.style.height = fh + 'px'; }
+  };
+</script>
+</body>
+</html>

@@ -5,7 +5,7 @@ Bu sistem 08:00–22:00 arasında çalışır: **saat başlarında** dört kateg
 Her çalışmada:
 
 1. havadis.at RSS akışından henüz paylaşılmamış **en yeni haberi** seçer. Sadece Avusturya, Vorarlberg, Avrupa ve Almanya kategorileri paylaşılır.
-2. Haberin fotoğrafını alır, Havadis şablonuyla **1080×1350 kapak görseli** üretir (beyaz logo, kırmızı vurgu bandı, kategori etiketi, özet).
+2. Haberin fotoğrafını alır, Havadis şablonuyla **1080×1350 görsel** üretir. Varsayılan tasarım **sosyal gönderi kartı**: kırmızı zemin üzerinde beyaz kart, başlık + özet, yuvarlatılmış köşeli fotoğraf.
 3. Görseli **Facebook sayfasına** (habere tıklanabilir linkle) ve **Instagram hesabına** paylaşır.
 4. Paylaşılan haberi `posted.json` dosyasına yazar, böylece aynı haber iki kez paylaşılmaz.
 
@@ -65,10 +65,11 @@ Anahtar: https://console.anthropic.com (kullanım başına küçük bir ücret a
 | `SKIP_CATEGORIES` | `TAZİYE` | Paylaşılmayacak kategoriler (virgülle) |
 | `MAX_AGE_HOURS` | `24` | Bundan eski haberler paylaşılmaz |
 | `BASE_HASHTAGS` | `#havadis #Avusturya #haber` | Her paylaşıma eklenen hashtag'ler |
+| `TEMPLATE` | `kart` | Tasarım: `kart` (sosyal gönderi kartı) veya `manset` (tam ekran manşet) |
 | `GRAPH_VERSION` | `v26.0` | Meta Graph API sürümü |
 
 Paylaşım saatlerini değiştirmek için `.github/workflows/paylas.yml` içindeki `cron` satırını düzenleyin (saatler UTC'dir).
-Tasarımı değiştirmek için `sablon.html` dosyasını düzenleyin.
+Tasarımı değiştirmek için `sablon_kart.html` dosyasını düzenleyin. Eski tam ekran manşet tasarımına dönmek için Variables bölümüne `TEMPLATE` = `manset` ekleyin.
 
 ## Bilinmesi gerekenler
 - GitHub zamanlanmış görevleri yoğun saatlerde birkaç dakika gecikebilir.
