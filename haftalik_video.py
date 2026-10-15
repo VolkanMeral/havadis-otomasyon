@@ -83,8 +83,16 @@ SES_ADI = os.getenv("VOICE", "tr-TR-AhmetNeural")  # edge için: tr-TR-AhmetNeur
 def seslendir(metin, yol):
     if TTS == "edge":
         mp3 = yol[:-4] + ".mp3"
-        subprocess.run(["edge-tts", "--voice", SES_ADI, "--rate", "+5%", "--text", metin, "--write-media", mp3],
-                       check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        import time
+        for deneme in range(5):  # servis anlık hata verirse tekrar dene
+            r = subprocess.run(["edge-tts", "--voice", SES_ADI, "--rate", "+5%", "--text", metin, "--write-media", mp3],
+                               stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
+            if r.returncode == 0 and os.path.exists(mp3) and os.path.getsize(mp3) > 1000:
+                break
+            print("Ses servisi hatası, tekrar deneniyor:", r.stderr.decode()[-200:], flush=True)
+            time.sleep(3 * (deneme + 1))
+        else:
+            raise RuntimeError("Ses servisi yanıt vermedi")
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mp3, "-ar", "24000", "-ac", "1", yol], check=True)
     else:
         subprocess.run(["piper", "--model", MODEL, "--output_file", yol], input=metin.encode("utf-8"), check=True,
