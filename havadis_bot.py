@@ -44,7 +44,7 @@ PAYLASILACAK_KATEGORILER = {
     for k in os.getenv("INCLUDE_CATEGORIES", "Avusturya,Vorarlberg,Avrupa,Almanya").split(",") if k.strip()
 }
 # Yapay zekâ / otomasyon şeffaflık etiketi (AB Yapay Zekâ Yasası md. 50). Boş bırakılırsa eklenmez.
-KI_ETIKET = os.getenv("AI_LABEL", "Yapay zekâ destekli · KI-unterstützt").strip()
+KI_ETIKET = os.getenv("AI_LABEL", "KI-unterstützt").strip()
 SABIT_HASHTAGLER =os.getenv("BASE_HASHTAGS", "#havadis #Avusturya #haber")
 
 def _temiz(deger, desen):
