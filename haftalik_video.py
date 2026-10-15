@@ -243,26 +243,37 @@ def main():
                  f'<div class="karart"></div>{ust("Haftalık özet")}<div class="giris"><h1 class="kos">Vorarlberg’de<br>'
                  f'<span class="bant">bu hafta</span></h1><div class="aralik kos">{aralik.upper()}</div></div></div>')
 
-    # Haberler: hedef süreye ulaşana kadar (kapanış payı ~9 sn)
-    secilen = []
+    # Haberler: önce her günden bir haber, sonra kalanlar; seslendirdikçe süreyi ölç, hedefe gelince dur
+    gunler, sirali = set(), []
     for h in haberler:
-        if z.t > HEDEF - 24 and len(secilen) >= 3:
-            break
-        secilen.append(h)
-    toplam = len(secilen)
-    for i, h in enumerate(secilen):
+        if h["tarih"].date() not in gunler:
+            sirali.append(h); gunler.add(h["tarih"].date())
+    sirali += [h for h in haberler if h not in sirali]
+    KAPANIS_PAYI = 9.0
+    bolum_html = []
+    hiz, harf, sn = 0.075, 0, 0.0   # saniye/harf; gerçek seslendirmeden öğrenilir
+    for h in sirali:
+        metin = h["baslik"].rstrip(".!?") + ". " + h.get("ozet", "")
+        tahmin = len(metin) * (sn / harf if harf else hiz) + 1.5
+        if z.t + tahmin > HEDEF - KAPANIS_PAYI and len(bolum_html) >= 3:   # bu haber hedefi aşacaksa sığanı dene
+            continue
         b = z.t
         z.bekle(0.5)
         baslik = h["baslik"].rstrip(".!?") + "."
+        once = z.t
         z.soyle(baslik + " " + h.get("ozet", ""))
+        harf += len(metin); sn += z.t - once
         z.bekle(0.5)
         bolumler.append((b, z.t))
+        bolum_html.append(h)
+        print(f"{len(bolum_html)}. {h['baslik'][:60]} → {z.t:.1f} sn", flush=True)
+    toplam = len(bolum_html)
+    for i, h in enumerate(bolum_html):
         t = h["tarih"]
         govde.append(f'<div class="b">{ust(f"{i + 1:02d} / {toplam:02d}")}<div class="foto"><img src="{foto(h["resim"], 1080, 640)}" alt=""></div>'
                      f'<div class="bilgi"><div class="no kos"><b>{i + 1:02d}</b><span>/{toplam:02d}</span></div>'
                      f'<div class="gun kos">{karusel.GUNLER[t.weekday()]} · {t.day} {bot.AYLAR[t.month - 1]}</div>'
                      f'<h2 class="kos">{E(h["baslik"])}</h2></div></div>')
-        print(f"{i + 1}. {h['baslik'][:60]} → {z.t:.1f} sn", flush=True)
 
     # Kapanış
     b = z.t
