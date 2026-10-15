@@ -51,7 +51,21 @@ VIDEO_SAATLERI = {int(x) for x in os.getenv("VIDEO_HOURS", "8,11,14,17,20").spli
 STORY_KATEGORILERI = {
     k.strip().casefold() for k in os.getenv("STORY_CATEGORIES", "Avusturya,Vorarlberg").split(",") if k.strip()
 }
-CALISMA_TURU = os.getenv("RUN_SLOT", "")          # "saat" (saat başı), "bucuk" veya "video" (15 geçe)
+# Çalışma türü GitHub zamanlamasından belirlenir
+ZAMANLAMALAR = {
+    "0 6-20 * * *": "saat",          # saat başı: görsel
+    "30 6-20 * * *": "bucuk",        # buçuk: Vorarlberg görsel
+    "15 6-20 * * *": "video",        # 15 geçe: video (sadece VIDEO_HOURS saatlerinde)
+    "45 17,18 * * 0": "haftalik",    # pazar 19:45 Viyana: "Vorarlberg'de bu hafta" karuseli
+    "45 17,18 * * 3": "rehber",      # çarşamba 19:45 Viyana: "Bilmeniz gerekenler" karuseli
+}
+CALISMA_TURU = os.getenv("RUN_SLOT") or ZAMANLAMALAR.get(os.getenv("SCHEDULE", ""), "saat")
+if os.getenv("JOB", "normal") in ("haftalik", "rehber"):   # elle çalıştırma
+    CALISMA_TURU = os.getenv("JOB")
+ELLE = os.getenv("GITHUB_EVENT_NAME") == "workflow_dispatch"
+if CALISMA_TURU == "bucuk":
+    PAYLASILACAK_KATEGORILER = {k.strip().casefold() for k in
+                                os.getenv("HALF_HOUR_CATEGORIES", "Vorarlberg").split(",") if k.strip()}
 VIDEO_ZORLA = os.getenv("FORCE_VIDEO", "0") == "1"  # elle deneme için
 
 # Yapay zekâ / otomasyon şeffaflık etiketi (AB Yapay Zekâ Yasası md. 50). Boş bırakılırsa eklenmez.
@@ -130,7 +144,32 @@ def haberleri_getir():
             "resim": resim,
             "tarih": tarih,
         })
+    try:
+        arsiv_guncelle(haberler)
+    except Exception as e:
+        log("Arşiv güncellenemedi:", e)
     return haberler
+
+
+ARSIV = os.path.join(KOK, "arsiv.json")
+
+
+def arsiv_oku():
+    return json.load(open(ARSIV, encoding="utf-8")) if os.path.exists(ARSIV) else []
+
+
+def arsiv_guncelle(haberler):
+    """RSS'te görülen haberleri 15 gün saklar (haftalık özet için)."""
+    arsiv = {h["link"]: h for h in arsiv_oku()}
+    for h in haberler:
+        if h["link"] and h["tarih"]:
+            arsiv[h["link"]] = {k: h[k] for k in ("baslik", "link", "ozet", "kategori", "resim")} | \
+                               {"tarih": h["tarih"].isoformat()}
+    sinir = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=15)
+    kalan = [h for h in arsiv.values() if dt.datetime.fromisoformat(h["tarih"]) > sinir]
+    kalan.sort(key=lambda h: h["tarih"])
+    with open(ARSIV, "w", encoding="utf-8") as f:
+        json.dump(kalan, f, ensure_ascii=False, indent=1)
 
 
 def durum_oku():
@@ -433,8 +472,18 @@ def video_saati_mi():
     return CALISMA_TURU != "video" or VIDEO_ZORLA or viyana_saati() in VIDEO_SAATLERI
 
 
+def karusel_saati_mi():
+    return ELLE or viyana_saati() == 19
+
+
 def main():
     os.makedirs(CIKTI, exist_ok=True)
+    if CALISMA_TURU in ("haftalik", "rehber"):
+        if not karusel_saati_mi():
+            log("Karusel saati değil.")
+            return 0
+        import karusel
+        return karusel.haftalik_calistir() if CALISMA_TURU == "haftalik" else karusel.rehber_calistir()
     if not video_saati_mi():
         log("Bu saat video paylaşım saati değil.")
         return 0
@@ -552,7 +601,11 @@ def baglanti_kontrol():
 
 def yeni_haber_var_mi():
     """Hafif kontrol: paylaşılacak yeni haber var mı? (Ağır kurulumdan önce çalışır.)"""
-    haber = haber_sec(haberleri_getir(), durum_oku()) if video_saati_mi() else None
+    if CALISMA_TURU in ("haftalik", "rehber"):
+        haberleri_getir()  # arşivi güncel tut
+        haber = {"baslik": f"{CALISMA_TURU} karuseli"} if karusel_saati_mi() else None
+    else:
+        haber = haber_sec(haberleri_getir(), durum_oku()) if video_saati_mi() else None
     log("Yeni haber:", haber["baslik"] if haber else "yok (ya da video saati değil)")
     cikti = os.getenv("GITHUB_OUTPUT")
     if cikti:

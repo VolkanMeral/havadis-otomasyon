@@ -9,11 +9,18 @@ on:
     - cron: "30 6-20 * * *"
     # 15 geçe: video (Reels). Sadece VIDEO_HOURS saatlerinde paylaşır (varsayılan 08,11,14,17,20 Viyana)
     - cron: "15 6-20 * * *"
+    # Pazar 19:45 Viyana: "Vorarlberg'de bu hafta" karuseli (yaz/kış saati için iki saat; sadece 19:45'te çalışır)
+    - cron: "45 17,18 * * 0"
+    # Çarşamba 19:45 Viyana: "Bilmeniz gerekenler" rehber karuseli
+    - cron: "45 17,18 * * 3"
   workflow_dispatch:
     inputs:
       dry_run:
         description: "Deneme modu (1 = paylaşma, sadece görsel üret)"
         default: "1"
+      is:
+        description: "Ne yapılsın? normal / haftalik / rehber"
+        default: "normal"
       video:
         description: "1 = bu çalışmada akışa video paylaş (Story de üretilir)"
         default: "0"
@@ -41,11 +48,13 @@ jobs:
       SKIP_CATEGORIES: ${{ vars.SKIP_CATEGORIES || 'TAZİYE' }}
       TEMPLATE: ${{ vars.TEMPLATE || 'manset' }}
       AI_LABEL: ${{ vars.AI_LABEL || 'KI-unterstützt' }}
-      RUN_SLOT: ${{ github.event.schedule == '30 6-20 * * *' && 'bucuk' || (github.event.schedule == '15 6-20 * * *' && 'video' || 'saat') }}
+      SCHEDULE: ${{ github.event.schedule }}
+      JOB: ${{ github.event_name == 'workflow_dispatch' && inputs.is || 'normal' }}
       FORCE_VIDEO: ${{ github.event_name == 'workflow_dispatch' && inputs.video || '0' }}
       VIDEO_HOURS: ${{ vars.VIDEO_HOURS || '8,11,14,17,20' }}
       STORY_CATEGORIES: ${{ vars.STORY_CATEGORIES || 'Avusturya,Vorarlberg' }}
-      INCLUDE_CATEGORIES: ${{ github.event.schedule == '30 6-20 * * *' && (vars.HALF_HOUR_CATEGORIES || 'Vorarlberg') || (vars.INCLUDE_CATEGORIES || 'Avusturya,Vorarlberg,Avrupa,Almanya') }}
+      INCLUDE_CATEGORIES: ${{ vars.INCLUDE_CATEGORIES || 'Avusturya,Vorarlberg,Avrupa,Almanya' }}
+      HALF_HOUR_CATEGORIES: ${{ vars.HALF_HOUR_CATEGORIES || 'Vorarlberg' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -100,5 +109,5 @@ jobs:
         run: |
           git config user.name "havadis-bot"
           git config user.email "bot@havadis.at"
-          git add posted.json || true
+          for f in posted.json arsiv.json karusel_durum.json; do [ -f "$f" ] && git add "$f"; done
           git diff --cached --quiet || (git commit -m "Paylaşılan haberler güncellendi" && git push)
