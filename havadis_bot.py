@@ -45,14 +45,17 @@ PAYLASILACAK_KATEGORILER = {
 }
 SABIT_HASHTAGLER =os.getenv("BASE_HASHTAGS", "#havadis #Avusturya #haber")
 
-def _temiz(deger):
-    """Kopyalarken gelen boşluk, tırnak ve virgülleri temizler."""
-    return (deger or "").strip().strip('",\'').strip()
+def _temiz(deger, desen):
+    """Kopyalarken araya giren boşluk, tırnak, satır sonu ve görünmez karakterleri temizler."""
+    ham = deger or ""
+    temiz = re.sub(desen, "", ham)
+    return temiz, len(ham) - len(temiz)
 
 
-PAGE_ID = _temiz(os.getenv("META_PAGE_ID"))
-PAGE_TOKEN = _temiz(os.getenv("META_PAGE_TOKEN"))
-IG_USER_ID = _temiz(os.getenv("IG_USER_ID"))
+PAGE_ID, _ = _temiz(os.getenv("META_PAGE_ID"), r"[^0-9]")
+IG_USER_ID, _ = _temiz(os.getenv("IG_USER_ID"), r"[^0-9]")
+# Meta anahtarları sadece harf ve rakamdan oluşur
+PAGE_TOKEN, TOKEN_TEMIZLENEN = _temiz(os.getenv("META_PAGE_TOKEN"), r"[^A-Za-z0-9]")
 
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 CLAUDE_MODEL = os.getenv("CLAUDE_MODEL", "claude-haiku-5-5")
@@ -203,7 +206,7 @@ def paylasim_metni(h, ic, platform):
     if platform == "facebook":
         devam = f"👉 Haberin tamamı: {h['link']}"
     else:
-        devam = "👉 Haberin tamamı için profildeki linke tıklayın: havadis.at"
+        devam = f"👉 Haberin tamamı: {h['link']}\n(Tıklanabilir link profilimizde)"
     return f"{h['baslik']}\n\n{ic['metin']}\n\n{devam}\n\n{etiketler}".strip()
 
 
@@ -379,7 +382,14 @@ def baglanti_kontrol():
     """Paylaşımdan önce: anahtar, sayfa ve Instagram hesabı erişilebilir mi?"""
     if not (PAGE_ID and PAGE_TOKEN):
         raise RuntimeError("META_PAGE_ID veya META_PAGE_TOKEN boş. GitHub Secrets adlarını kontrol edin.")
-    sayfa = kontrol(HTTP.get(graph(PAGE_ID), params={"fields": "name", "access_token": PAGE_TOKEN}, timeout=30))
+    bilgi = (f"Anahtar uzunluğu {len(PAGE_TOKEN)} karakter, başlangıcı {PAGE_TOKEN[:3]}, "
+             f"temizlenen fazla karakter {TOKEN_TEMIZLENEN}")
+    log(bilgi)
+    try:
+        sayfa = kontrol(HTTP.get(graph(PAGE_ID), params={"fields": "name", "access_token": PAGE_TOKEN},
+                                 timeout=30))
+    except Exception as e:
+        raise RuntimeError(f"{e} | {bilgi}")
     log("Facebook sayfası erişilebilir:", sayfa.get("name"))
     if IG_USER_ID:
         ig = kontrol(HTTP.get(graph(IG_USER_ID), params={"fields": "username", "access_token": PAGE_TOKEN},
