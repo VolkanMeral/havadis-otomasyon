@@ -64,5 +64,13 @@
     </div>
   </div>
 </div>
+<script>
+  // Başlık çok uzunsa yazıyı küçült, logonun/etiketin altına taşmasın
+  window.sigdir = function () {
+    const h = document.querySelector('h1'); const alt = document.querySelector('.alt');
+    let px = parseFloat(getComputedStyle(h).fontSize);
+    while (alt.getBoundingClientRect().top < 470 && px > 60) { px -= 4; h.style.fontSize = px + 'px'; }
+  };
+</script>
 </body>
 </html>
