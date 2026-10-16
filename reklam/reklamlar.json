@@ -1,0 +1,468 @@
+{
+ "_aciklama": "Planlı reklamlar. Ayrıntılar reklam.py başında. Bu dosya değişince reklam görevi çalışır.",
+ "reklamlar": [
+  {
+   "id": "tandir-2026-10-16",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-10-16",
+   "saat": "19:00",
+   "turler": [
+    "gonderi",
+    "reels",
+    "story"
+   ],
+   "gorseller": [
+    "reklam/tandir/10-afis-acik-bufe-kahvalti.jpg"
+   ],
+   "metin": "Hafta sonları Tandır Restaurant’ta açık büfe kahvaltı başladı! 🍳🥖\n\nZengin çeşitler, taptaze ürünler ve demli çayla ailenizle keyifli bir kahvaltı sizi bekliyor.\n\n🕗 Cumartesi ve Pazar 08:00–13:00\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant",
+   "story": {
+    "baslik": "Hafta sonu<br>açık büfe kahvaltı",
+    "alt": "Cmt–Paz 08:00–13:00 · Lauterach"
+   },
+   "hemen": true
+  },
+  {
+   "id": "tandir-2026-10-19",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-10-19",
+   "saat": "11:00",
+   "turler": [
+    "gonderi"
+   ],
+   "gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant"
+  },
+  {
+   "id": "tandir-2026-10-23",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-10-23",
+   "saat": "19:00",
+   "turler": [
+    "gonderi",
+    "reels",
+    "story"
+   ],
+   "gorseller": [
+    "reklam/tandir/10-afis-acik-bufe-kahvalti.jpg"
+   ],
+   "metin": "Hafta sonları Tandır Restaurant’ta açık büfe kahvaltı başladı! 🍳🥖\n\nZengin çeşitler, taptaze ürünler ve demli çayla ailenizle keyifli bir kahvaltı sizi bekliyor.\n\n🕗 Cumartesi ve Pazar 08:00–13:00\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant",
+   "story": {
+    "baslik": "Hafta sonu<br>açık büfe kahvaltı",
+    "alt": "Cmt–Paz 08:00–13:00 · Lauterach"
+   }
+  },
+  {
+   "id": "tandir-2026-10-26",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-10-26",
+   "saat": "11:00",
+   "turler": [
+    "gonderi"
+   ],
+   "gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant"
+  },
+  {
+   "id": "tandir-2026-10-30",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-10-30",
+   "saat": "19:00",
+   "turler": [
+    "gonderi",
+    "reels",
+    "story"
+   ],
+   "gorseller": [
+    "reklam/tandir/10-afis-acik-bufe-kahvalti.jpg"
+   ],
+   "metin": "Hafta sonları Tandır Restaurant’ta açık büfe kahvaltı başladı! 🍳🥖\n\nZengin çeşitler, taptaze ürünler ve demli çayla ailenizle keyifli bir kahvaltı sizi bekliyor.\n\n🕗 Cumartesi ve Pazar 08:00–13:00\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant",
+   "story": {
+    "baslik": "Hafta sonu<br>açık büfe kahvaltı",
+    "alt": "Cmt–Paz 08:00–13:00 · Lauterach"
+   }
+  },
+  {
+   "id": "tandir-2026-11-02",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-11-02",
+   "saat": "11:00",
+   "turler": [
+    "gonderi"
+   ],
+   "gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant"
+  },
+  {
+   "id": "tandir-2026-11-06",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-11-06",
+   "saat": "19:00",
+   "turler": [
+    "gonderi",
+    "reels",
+    "story"
+   ],
+   "gorseller": [
+    "reklam/tandir/10-afis-acik-bufe-kahvalti.jpg"
+   ],
+   "metin": "Hafta sonları Tandır Restaurant’ta açık büfe kahvaltı başladı! 🍳🥖\n\nZengin çeşitler, taptaze ürünler ve demli çayla ailenizle keyifli bir kahvaltı sizi bekliyor.\n\n🕗 Cumartesi ve Pazar 08:00–13:00\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant",
+   "story": {
+    "baslik": "Hafta sonu<br>açık büfe kahvaltı",
+    "alt": "Cmt–Paz 08:00–13:00 · Lauterach"
+   }
+  },
+  {
+   "id": "tandir-2026-11-09",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-11-09",
+   "saat": "11:00",
+   "turler": [
+    "gonderi"
+   ],
+   "gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant"
+  },
+  {
+   "id": "tandir-2026-11-13",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-11-13",
+   "saat": "19:00",
+   "turler": [
+    "gonderi",
+    "reels",
+    "story"
+   ],
+   "gorseller": [
+    "reklam/tandir/10-afis-acik-bufe-kahvalti.jpg"
+   ],
+   "metin": "Hafta sonları Tandır Restaurant’ta açık büfe kahvaltı başladı! 🍳🥖\n\nZengin çeşitler, taptaze ürünler ve demli çayla ailenizle keyifli bir kahvaltı sizi bekliyor.\n\n🕗 Cumartesi ve Pazar 08:00–13:00\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant",
+   "story": {
+    "baslik": "Hafta sonu<br>açık büfe kahvaltı",
+    "alt": "Cmt–Paz 08:00–13:00 · Lauterach"
+   }
+  },
+  {
+   "id": "tandir-2026-11-16",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-11-16",
+   "saat": "11:00",
+   "turler": [
+    "gonderi"
+   ],
+   "gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant"
+  },
+  {
+   "id": "tandir-2026-11-20",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-11-20",
+   "saat": "19:00",
+   "turler": [
+    "gonderi",
+    "reels",
+    "story"
+   ],
+   "gorseller": [
+    "reklam/tandir/10-afis-acik-bufe-kahvalti.jpg"
+   ],
+   "metin": "Hafta sonları Tandır Restaurant’ta açık büfe kahvaltı başladı! 🍳🥖\n\nZengin çeşitler, taptaze ürünler ve demli çayla ailenizle keyifli bir kahvaltı sizi bekliyor.\n\n🕗 Cumartesi ve Pazar 08:00–13:00\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant",
+   "story": {
+    "baslik": "Hafta sonu<br>açık büfe kahvaltı",
+    "alt": "Cmt–Paz 08:00–13:00 · Lauterach"
+   }
+  },
+  {
+   "id": "tandir-2026-11-23",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-11-23",
+   "saat": "11:00",
+   "turler": [
+    "gonderi"
+   ],
+   "gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant"
+  },
+  {
+   "id": "tandir-2026-11-27",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-11-27",
+   "saat": "19:00",
+   "turler": [
+    "gonderi",
+    "reels",
+    "story"
+   ],
+   "gorseller": [
+    "reklam/tandir/10-afis-acik-bufe-kahvalti.jpg"
+   ],
+   "metin": "Hafta sonları Tandır Restaurant’ta açık büfe kahvaltı başladı! 🍳🥖\n\nZengin çeşitler, taptaze ürünler ve demli çayla ailenizle keyifli bir kahvaltı sizi bekliyor.\n\n🕗 Cumartesi ve Pazar 08:00–13:00\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant",
+   "story": {
+    "baslik": "Hafta sonu<br>açık büfe kahvaltı",
+    "alt": "Cmt–Paz 08:00–13:00 · Lauterach"
+   }
+  },
+  {
+   "id": "tandir-2026-11-30",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-11-30",
+   "saat": "11:00",
+   "turler": [
+    "gonderi"
+   ],
+   "gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant"
+  },
+  {
+   "id": "tandir-2026-12-04",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-12-04",
+   "saat": "19:00",
+   "turler": [
+    "gonderi",
+    "reels",
+    "story"
+   ],
+   "gorseller": [
+    "reklam/tandir/10-afis-acik-bufe-kahvalti.jpg"
+   ],
+   "metin": "Hafta sonları Tandır Restaurant’ta açık büfe kahvaltı başladı! 🍳🥖\n\nZengin çeşitler, taptaze ürünler ve demli çayla ailenizle keyifli bir kahvaltı sizi bekliyor.\n\n🕗 Cumartesi ve Pazar 08:00–13:00\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant",
+   "story": {
+    "baslik": "Hafta sonu<br>açık büfe kahvaltı",
+    "alt": "Cmt–Paz 08:00–13:00 · Lauterach"
+   }
+  },
+  {
+   "id": "tandir-2026-12-07",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-12-07",
+   "saat": "11:00",
+   "turler": [
+    "gonderi"
+   ],
+   "gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant"
+  },
+  {
+   "id": "tandir-2026-12-11",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-12-11",
+   "saat": "19:00",
+   "turler": [
+    "gonderi",
+    "reels",
+    "story"
+   ],
+   "gorseller": [
+    "reklam/tandir/10-afis-acik-bufe-kahvalti.jpg"
+   ],
+   "metin": "Hafta sonları Tandır Restaurant’ta açık büfe kahvaltı başladı! 🍳🥖\n\nZengin çeşitler, taptaze ürünler ve demli çayla ailenizle keyifli bir kahvaltı sizi bekliyor.\n\n🕗 Cumartesi ve Pazar 08:00–13:00\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant",
+   "story": {
+    "baslik": "Hafta sonu<br>açık büfe kahvaltı",
+    "alt": "Cmt–Paz 08:00–13:00 · Lauterach"
+   }
+  },
+  {
+   "id": "tandir-2026-12-14",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-12-14",
+   "saat": "11:00",
+   "turler": [
+    "gonderi"
+   ],
+   "gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant"
+  },
+  {
+   "id": "tandir-2026-12-18",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-12-18",
+   "saat": "19:00",
+   "turler": [
+    "gonderi",
+    "reels",
+    "story"
+   ],
+   "gorseller": [
+    "reklam/tandir/10-afis-acik-bufe-kahvalti.jpg"
+   ],
+   "metin": "Hafta sonları Tandır Restaurant’ta açık büfe kahvaltı başladı! 🍳🥖\n\nZengin çeşitler, taptaze ürünler ve demli çayla ailenizle keyifli bir kahvaltı sizi bekliyor.\n\n🕗 Cumartesi ve Pazar 08:00–13:00\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant",
+   "story": {
+    "baslik": "Hafta sonu<br>açık büfe kahvaltı",
+    "alt": "Cmt–Paz 08:00–13:00 · Lauterach"
+   }
+  },
+  {
+   "id": "tandir-2026-12-21",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-12-21",
+   "saat": "11:00",
+   "turler": [
+    "gonderi"
+   ],
+   "gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant"
+  },
+  {
+   "id": "tandir-2026-12-25",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-12-25",
+   "saat": "19:00",
+   "turler": [
+    "gonderi",
+    "reels",
+    "story"
+   ],
+   "gorseller": [
+    "reklam/tandir/10-afis-acik-bufe-kahvalti.jpg"
+   ],
+   "metin": "Hafta sonları Tandır Restaurant’ta açık büfe kahvaltı başladı! 🍳🥖\n\nZengin çeşitler, taptaze ürünler ve demli çayla ailenizle keyifli bir kahvaltı sizi bekliyor.\n\n🕗 Cumartesi ve Pazar 08:00–13:00\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant",
+   "story": {
+    "baslik": "Hafta sonu<br>açık büfe kahvaltı",
+    "alt": "Cmt–Paz 08:00–13:00 · Lauterach"
+   }
+  },
+  {
+   "id": "tandir-2026-12-28",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-12-28",
+   "saat": "11:00",
+   "turler": [
+    "gonderi"
+   ],
+   "gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant"
+  }
+ ]
+}
