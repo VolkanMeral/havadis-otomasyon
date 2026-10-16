@@ -1,0 +1,83 @@
+name: Havadis reklam paylaşımı
+
+on:
+  schedule:
+    # Pazartesi 11:00 Viyana (yaz saati 09:00 UTC, kış saati 10:00 UTC; reklam.py zamanı gelmeyeni paylaşmaz)
+    - cron: "0 9,10 * * 1"
+    # Cuma 19:00 Viyana (yaz 17:00 UTC, kış 18:00 UTC)
+    - cron: "0 17,18 * * 5"
+  push:
+    branches: [main]
+    paths:
+      - "reklam/reklamlar.json"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Deneme modu (1 = paylaşma, sadece görsel/video üret)"
+        default: "1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: havadis-reklam
+  cancel-in-progress: false
+
+jobs:
+  reklam:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || vars.DRY_RUN || '1' }}
+      META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+      META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      RUN_SLOT: reklam
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Gereksinimleri kur
+        run: pip install -r requirements.txt
+
+      - name: Tarayıcıyı önbellekten al
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+
+      - name: Tarayıcıyı kur
+        run: python -m playwright install --with-deps chromium
+
+      - name: Video aracını kur
+        run: which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+
+      - name: Sırası gelen reklamları paylaş
+        run: python reklam.py
+
+      - name: Üretilenleri sakla
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reklam-${{ github.run_number }}
+          path: cikti/reklam/
+          if-no-files-found: ignore
+
+      - name: Reklam durumunu kaydet
+        if: always()
+        run: |
+          git config user.name "havadis-bot"
+          git config user.email "bot@havadis.at"
+          [ -f reklam/reklam_durum.json ] && git add reklam/reklam_durum.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Reklam durumu güncellendi"
+          for i in 1 2 3 4 5; do
+            git push && exit 0
+            git pull --rebase -q || { git rebase --abort; exit 1; }
+            sleep 3
+          done
+          exit 1
