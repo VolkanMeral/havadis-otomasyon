@@ -27,6 +27,9 @@ on:
       sadece_kontrol:
         description: "1 = sadece anahtarı kontrol et (paylaşım yok)"
         default: "0"
+      tiktok_kod:
+        description: "TikTok'u bağlamak için: izin verdikten sonra açılan havadis.at adresinin TAMAMI (bir kez)"
+        default: ""
 
 permissions:
   contents: write
@@ -45,6 +48,10 @@ jobs:
       META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
       IG_USER_ID: ${{ secrets.IG_USER_ID }}
       THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+      TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+      TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+      TIKTOK_MODE: ${{ vars.TIKTOK_MODE || 'inbox' }}
+      TIKTOK_HOURS: ${{ vars.TIKTOK_HOURS || '8,11,14,17,20' }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       SKIP_CATEGORIES: ${{ vars.SKIP_CATEGORIES || 'TAZİYE' }}
       TEMPLATE: ${{ vars.TEMPLATE || 'manset' }}
@@ -67,6 +74,18 @@ jobs:
       - name: Gereksinimleri kur
         run: pip install -r requirements.txt
 
+      - name: TikTok'u bağla (bir kez)
+        if: github.event_name == 'workflow_dispatch' && inputs.tiktok_kod != ''
+        env:
+          TIKTOK_KOD: ${{ inputs.tiktok_kod }}
+        run: |
+          echo "::add-mask::$TIKTOK_KOD"
+          python tiktok.py baglan "$TIKTOK_KOD"
+
+      - name: TikTok kontrolü
+        if: github.event_name == 'workflow_dispatch' && inputs.sadece_kontrol == '1' && env.TIKTOK_CLIENT_KEY != ''
+        run: python tiktok.py kontrol
+
       - name: Sadece bağlantı kontrolü
         if: github.event_name == 'workflow_dispatch' && inputs.sadece_kontrol == '1'
         env:
@@ -74,7 +93,7 @@ jobs:
         run: python havadis_bot.py
 
       - name: Yeni haber var mı?
-        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.sadece_kontrol == '1') }}
+        if: ${{ !(github.event_name == 'workflow_dispatch' && (inputs.sadece_kontrol == '1' || inputs.tiktok_kod != '')) }}
         id: kontrol
         run: python havadis_bot.py --kontrol
 
@@ -110,7 +129,7 @@ jobs:
         run: |
           git config user.name "havadis-bot"
           git config user.email "bot@havadis.at"
-          for f in posted.json arsiv.json karusel_durum.json; do [ -f "$f" ] && git add "$f"; done
+          for f in posted.json arsiv.json karusel_durum.json tiktok_token.enc; do [ -f "$f" ] && git add "$f"; done
           git diff --cached --quiet && exit 0
           git commit -m "Paylaşılan haberler güncellendi"
           # Depoya aynı anda başka değişiklik geldiyse önce onu al, sonra tekrar dene
