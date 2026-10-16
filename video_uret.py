@@ -16,12 +16,12 @@ ANIMASYON = """
 <style>
   /* Grafik tasarımını dikey ekrana uyarla: fotoğraf üstte tam genişlikte, yazılar Reels arayüzünün üstünde */
   body, .kart { height: 1920px !important; }
-  .foto { inset: 0 0 auto 0 !important; height: 1500px !important; }
+  .foto { inset: 0 0 auto 0 !important; height: 1640px !important; }
   .alt-golge { height: 1250px !important;
-               background: linear-gradient(#070B1400 0%, #070B14d9 30%, #070B14 52%) !important; }
+               background: linear-gradient(#070B1400 0%, #070B14d9 34%, #070B14 60%) !important; }
   .ust-golge { height: 520px !important; }
   .ust { top: 230px !important; }  /* Story/Reels üst arayüzünün (ilerleme çubuğu, profil adı) altında */
-  .alt { bottom: 360px !important; }
+  .alt { bottom: 270px !important; }  /* Reels açıklama satırının üstünde */
   h1 .vurgu { position: relative; }
   .perde { position: absolute; inset: 0; background: #070B14; pointer-events: none; }
   /* Son 2 saniye: logolu kapanış */
@@ -29,7 +29,7 @@ ANIMASYON = """
              justify-content: center; opacity: 0; z-index: 10; }
   .kapanis img { width: 620px; height: auto; display: block; }
   /* İkinci sayfa: haberin kısa içeriği */
-  .sayfa2 { position: absolute; left: 64px; right: 64px; bottom: 500px; display: flex; flex-direction: column;
+  .sayfa2 { position: absolute; left: 64px; right: 64px; bottom: 410px; display: flex; flex-direction: column;
             gap: 34px; opacity: 0; z-index: 4; }
   .sayfa2 .ust2 { display: flex; gap: 14px; align-items: center; }
   .sayfa2 .k { background: #E42320; font-family: 'Barlow Condensed', sans-serif; font-size: 30px; font-weight: 800;
