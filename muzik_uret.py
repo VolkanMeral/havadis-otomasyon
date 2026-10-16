@@ -98,10 +98,15 @@ for i, v in enumerate(w):
     wy[i] = acc
 ekle(wy * np.sin(np.linspace(0, np.pi, len(w))) ** 2, GECIS - wu * 0.75, 0.25)
 
-# Logo: kısa çan akoru (A – C# – E üst oktav), müzik altında kısılır
+# Logo: kalın, dolgun kapanış – alçak "boom" + derin La majör akor (A2–A3–C#4–E4) + hafif çan parıltısı
 tc = np.arange(int(2.0 * SR)) / SR
-can = sum(np.sin(2 * np.pi * hz(no) * tc) + 0.25 * np.sin(2 * np.pi * 2.76 * hz(no) * tc) for no in (81, 85, 88))
-ekle(can * np.exp(-tc * 2.2), LOGO, 0.07)
+boom = np.sin(2 * np.pi * (38 + 60 * np.exp(-tc * 18)) * tc) * np.exp(-tc * 3.0)
+ekle(boom, LOGO, 0.55)
+akor = sum(np.sin(2 * np.pi * hz(no) * tc) + 0.5 * np.sin(2 * np.pi * 2 * hz(no) * tc) + 0.2 * np.sin(2 * np.pi * 3 * hz(no) * tc)
+           for no in (45, 57, 61, 64))
+ekle(akor * np.exp(-tc * 1.6) * (1 - np.exp(-tc * 60)), LOGO, 0.09)
+can = sum(np.sin(2 * np.pi * hz(no) * tc) for no in (69, 76))
+ekle(can * np.exp(-tc * 3.0), LOGO, 0.03)
 
 # Logo sırasında arka plan kısılır, son 0,5 sn tamamen söner
 son = np.ones(n)
