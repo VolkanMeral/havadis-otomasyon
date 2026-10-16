@@ -47,6 +47,8 @@ PAYLASILACAK_KATEGORILER = {
 # Akışta video (Reels) paylaşılacak saatler (Viyana saati). Video çalışmaları her saat 15 geçe başlar,
 # sadece bu saatlerde gerçekten paylaşım yapar; böylece saat başı/buçuktaki görsellerle çakışmaz.
 VIDEO_SAATLERI = {int(x) for x in os.getenv("VIDEO_HOURS", "7,8,10,11,13,14,16,17,19,20").split(",") if x.strip().isdigit()}
+# TikTok'a video gönderilecek saatler (Viyana). Taslak modunda TikTok en fazla 5 bekleyen taslağa izin verir.
+TIKTOK_SAATLERI = {int(x) for x in os.getenv("TIKTOK_HOURS", "8,11,14,17,20").split(",") if x.strip().isdigit()}
 # Bu kategorilerdeki haberler ayrıca Instagram Story'ye video olarak gider
 STORY_KATEGORILERI = {
     k.strip().casefold() for k in os.getenv("STORY_CATEGORIES", "Avusturya,Vorarlberg").split(",") if k.strip()
@@ -607,6 +609,19 @@ def main():
 
     if THREADS_TOKEN:
         dene("threads", lambda: threads_paylas(th_metin, haber["link"]))
+
+    if video_akis and (VIDEO_ZORLA or viyana_saati() in TIKTOK_SAATLERI):
+        import tiktok
+        if tiktok.hazir_mi():
+            tt_metin = f"{haber['baslik']}\n\n{kisalt(ic['metin'], 300)}\n\nHaberin tamamı havadis.at'de" + \
+                (f"\n\n🤖 {KI_ETIKET}" if KI_ETIKET else "") + "\n\n#havadis #avusturya #haber"
+            dene("tiktok", lambda: tiktok.paylas(video, tt_metin))
+            try:
+                if tiktok.kalan_gun() < 30:
+                    gh_hata("TikTok bağlantısı yakında bitiyor",
+                            f"{tiktok.kalan_gun():.0f} gün kaldı: GitHub'da tiktok_kod ile yeniden bağlayın.")
+            except Exception:
+                pass
 
     # Hiçbir platformda paylaşılamadıysa görev hata versin
     if not any(k in kayit for k in ("facebook", "facebook_reel", "instagram", "instagram_reel")):
