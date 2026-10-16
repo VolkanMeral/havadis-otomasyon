@@ -28,7 +28,9 @@
    "tarih": "2026-10-19",
    "saat": "11:00",
    "turler": [
-    "gonderi"
+    "gonderi",
+    "reels",
+    "story"
    ],
    "gorseller": [
     "reklam/tandir/01-kofte-tabak.jpg",
@@ -42,7 +44,23 @@
     "reklam/tandir/09-afis-tavuk.jpg"
    ],
    "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
-   "etiket": "tandir.restaurant"
+   "etiket": "tandir.restaurant",
+   "reels_gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "story_gorsel": "reklam/tandir/05-afis-adana-kofte.jpg",
+   "story": {
+    "baslik": "Köfte · Adana<br>tavuk çeşitleri",
+    "alt": "11:00–22:00 · Çarşamba kapalı · Lauterach"
+   }
   },
   {
    "id": "tandir-2026-10-23",
@@ -70,7 +88,9 @@
    "tarih": "2026-10-26",
    "saat": "11:00",
    "turler": [
-    "gonderi"
+    "gonderi",
+    "reels",
+    "story"
    ],
    "gorseller": [
     "reklam/tandir/01-kofte-tabak.jpg",
@@ -84,7 +104,23 @@
     "reklam/tandir/09-afis-tavuk.jpg"
    ],
    "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
-   "etiket": "tandir.restaurant"
+   "etiket": "tandir.restaurant",
+   "reels_gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "story_gorsel": "reklam/tandir/05-afis-adana-kofte.jpg",
+   "story": {
+    "baslik": "Köfte · Adana<br>tavuk çeşitleri",
+    "alt": "11:00–22:00 · Çarşamba kapalı · Lauterach"
+   }
   },
   {
    "id": "tandir-2026-10-30",
@@ -112,7 +148,9 @@
    "tarih": "2026-11-02",
    "saat": "11:00",
    "turler": [
-    "gonderi"
+    "gonderi",
+    "reels",
+    "story"
    ],
    "gorseller": [
     "reklam/tandir/01-kofte-tabak.jpg",
@@ -126,7 +164,23 @@
     "reklam/tandir/09-afis-tavuk.jpg"
    ],
    "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
-   "etiket": "tandir.restaurant"
+   "etiket": "tandir.restaurant",
+   "reels_gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "story_gorsel": "reklam/tandir/05-afis-adana-kofte.jpg",
+   "story": {
+    "baslik": "Köfte · Adana<br>tavuk çeşitleri",
+    "alt": "11:00–22:00 · Çarşamba kapalı · Lauterach"
+   }
   },
   {
    "id": "tandir-2026-11-06",
@@ -154,7 +208,9 @@
    "tarih": "2026-11-09",
    "saat": "11:00",
    "turler": [
-    "gonderi"
+    "gonderi",
+    "reels",
+    "story"
    ],
    "gorseller": [
     "reklam/tandir/01-kofte-tabak.jpg",
@@ -168,7 +224,23 @@
     "reklam/tandir/09-afis-tavuk.jpg"
    ],
    "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
-   "etiket": "tandir.restaurant"
+   "etiket": "tandir.restaurant",
+   "reels_gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "story_gorsel": "reklam/tandir/05-afis-adana-kofte.jpg",
+   "story": {
+    "baslik": "Köfte · Adana<br>tavuk çeşitleri",
+    "alt": "11:00–22:00 · Çarşamba kapalı · Lauterach"
+   }
   },
   {
    "id": "tandir-2026-11-13",
@@ -196,7 +268,9 @@
    "tarih": "2026-11-16",
    "saat": "11:00",
    "turler": [
-    "gonderi"
+    "gonderi",
+    "reels",
+    "story"
    ],
    "gorseller": [
     "reklam/tandir/01-kofte-tabak.jpg",
@@ -210,7 +284,23 @@
     "reklam/tandir/09-afis-tavuk.jpg"
    ],
    "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
-   "etiket": "tandir.restaurant"
+   "etiket": "tandir.restaurant",
+   "reels_gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "story_gorsel": "reklam/tandir/05-afis-adana-kofte.jpg",
+   "story": {
+    "baslik": "Köfte · Adana<br>tavuk çeşitleri",
+    "alt": "11:00–22:00 · Çarşamba kapalı · Lauterach"
+   }
   },
   {
    "id": "tandir-2026-11-20",
@@ -238,7 +328,9 @@
    "tarih": "2026-11-23",
    "saat": "11:00",
    "turler": [
-    "gonderi"
+    "gonderi",
+    "reels",
+    "story"
    ],
    "gorseller": [
     "reklam/tandir/01-kofte-tabak.jpg",
@@ -252,7 +344,23 @@
     "reklam/tandir/09-afis-tavuk.jpg"
    ],
    "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
-   "etiket": "tandir.restaurant"
+   "etiket": "tandir.restaurant",
+   "reels_gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "story_gorsel": "reklam/tandir/05-afis-adana-kofte.jpg",
+   "story": {
+    "baslik": "Köfte · Adana<br>tavuk çeşitleri",
+    "alt": "11:00–22:00 · Çarşamba kapalı · Lauterach"
+   }
   },
   {
    "id": "tandir-2026-11-27",
@@ -280,7 +388,9 @@
    "tarih": "2026-11-30",
    "saat": "11:00",
    "turler": [
-    "gonderi"
+    "gonderi",
+    "reels",
+    "story"
    ],
    "gorseller": [
     "reklam/tandir/01-kofte-tabak.jpg",
@@ -294,7 +404,23 @@
     "reklam/tandir/09-afis-tavuk.jpg"
    ],
    "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
-   "etiket": "tandir.restaurant"
+   "etiket": "tandir.restaurant",
+   "reels_gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "story_gorsel": "reklam/tandir/05-afis-adana-kofte.jpg",
+   "story": {
+    "baslik": "Köfte · Adana<br>tavuk çeşitleri",
+    "alt": "11:00–22:00 · Çarşamba kapalı · Lauterach"
+   }
   },
   {
    "id": "tandir-2026-12-04",
@@ -322,7 +448,9 @@
    "tarih": "2026-12-07",
    "saat": "11:00",
    "turler": [
-    "gonderi"
+    "gonderi",
+    "reels",
+    "story"
    ],
    "gorseller": [
     "reklam/tandir/01-kofte-tabak.jpg",
@@ -336,7 +464,23 @@
     "reklam/tandir/09-afis-tavuk.jpg"
    ],
    "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
-   "etiket": "tandir.restaurant"
+   "etiket": "tandir.restaurant",
+   "reels_gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "story_gorsel": "reklam/tandir/05-afis-adana-kofte.jpg",
+   "story": {
+    "baslik": "Köfte · Adana<br>tavuk çeşitleri",
+    "alt": "11:00–22:00 · Çarşamba kapalı · Lauterach"
+   }
   },
   {
    "id": "tandir-2026-12-11",
@@ -364,7 +508,9 @@
    "tarih": "2026-12-14",
    "saat": "11:00",
    "turler": [
-    "gonderi"
+    "gonderi",
+    "reels",
+    "story"
    ],
    "gorseller": [
     "reklam/tandir/01-kofte-tabak.jpg",
@@ -378,7 +524,23 @@
     "reklam/tandir/09-afis-tavuk.jpg"
    ],
    "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
-   "etiket": "tandir.restaurant"
+   "etiket": "tandir.restaurant",
+   "reels_gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "story_gorsel": "reklam/tandir/05-afis-adana-kofte.jpg",
+   "story": {
+    "baslik": "Köfte · Adana<br>tavuk çeşitleri",
+    "alt": "11:00–22:00 · Çarşamba kapalı · Lauterach"
+   }
   },
   {
    "id": "tandir-2026-12-18",
@@ -406,7 +568,9 @@
    "tarih": "2026-12-21",
    "saat": "11:00",
    "turler": [
-    "gonderi"
+    "gonderi",
+    "reels",
+    "story"
    ],
    "gorseller": [
     "reklam/tandir/01-kofte-tabak.jpg",
@@ -420,7 +584,23 @@
     "reklam/tandir/09-afis-tavuk.jpg"
    ],
    "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
-   "etiket": "tandir.restaurant"
+   "etiket": "tandir.restaurant",
+   "reels_gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "story_gorsel": "reklam/tandir/05-afis-adana-kofte.jpg",
+   "story": {
+    "baslik": "Köfte · Adana<br>tavuk çeşitleri",
+    "alt": "11:00–22:00 · Çarşamba kapalı · Lauterach"
+   }
   },
   {
    "id": "tandir-2026-12-25",
@@ -448,7 +628,9 @@
    "tarih": "2026-12-28",
    "saat": "11:00",
    "turler": [
-    "gonderi"
+    "gonderi",
+    "reels",
+    "story"
    ],
    "gorseller": [
     "reklam/tandir/01-kofte-tabak.jpg",
@@ -462,7 +644,23 @@
     "reklam/tandir/09-afis-tavuk.jpg"
    ],
    "metin": "Tandır Restaurant’ta köfte, Adana ve birbirinden lezzetli tavuk çeşitleri; taze malzemeler ve mangal lezzetiyle sofranıza geliyor.\n\nBir kez tadın, lezzetine hayran kalın! 😋\n\n📍 Karl-Höll-Straße 2a, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
-   "etiket": "tandir.restaurant"
+   "etiket": "tandir.restaurant",
+   "reels_gorseller": [
+    "reklam/tandir/01-kofte-tabak.jpg",
+    "reklam/tandir/02-kofte-pilav.jpg",
+    "reklam/tandir/03-adana-patates.jpg",
+    "reklam/tandir/04-afis-kozde-adana.jpg",
+    "reklam/tandir/05-afis-adana-kofte.jpg",
+    "reklam/tandir/06-adana-patates-yakin.jpg",
+    "reklam/tandir/07-afis-iskembe.jpg",
+    "reklam/tandir/08-afis-etli-ekmek.jpg",
+    "reklam/tandir/09-afis-tavuk.jpg"
+   ],
+   "story_gorsel": "reklam/tandir/05-afis-adana-kofte.jpg",
+   "story": {
+    "baslik": "Köfte · Adana<br>tavuk çeşitleri",
+    "alt": "11:00–22:00 · Çarşamba kapalı · Lauterach"
+   }
   }
  ]
 }

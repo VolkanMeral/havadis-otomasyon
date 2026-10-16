@@ -130,13 +130,17 @@ def _ortak_css():
 """
 
 
-def story_html(r, afis_uri):
+def story_html(r, afis_uri, oran=1.0):
     s = r.get("story", {})
+    w = 940 if oran >= 1 else 820
+    h = round(w / oran)
+    ust = 300 if oran >= 1 else 250
+    yazi_ust = ust + h + 60
     hesap = f'<span class="hesap">@{r["etiket"]}</span>' if r.get("etiket") else ""
     return f"""<!doctype html><html lang="tr"><head><meta charset="utf-8">{FONT}<style>{_ortak_css()}
-  .afis {{ position: absolute; left: 70px; top: 300px; width: 940px; height: 940px; border-radius: 26px;
+  .afis {{ position: absolute; left: {(1080 - w) // 2}px; top: {ust}px; width: {w}px; height: {h}px; border-radius: 26px;
            background-size: cover; background-position: center; box-shadow: 0 40px 120px rgba(0,0,0,.55); }}
-  .yazi {{ position: absolute; left: 70px; right: 70px; top: 1300px; display: flex; flex-direction: column;
+  .yazi {{ position: absolute; left: 70px; right: 70px; top: {yazi_ust}px; display: flex; flex-direction: column;
            align-items: center; gap: 28px; text-align: center; }}
 </style></head><body>
 <div class="zemin" style="background-image:url('{afis_uri}')"></div>
@@ -155,7 +159,8 @@ def reels_html(r, afis_uri, logo_uri):
   .yazi {{ position: absolute; left: 70px; right: 70px; top: 1440px; display: flex; flex-direction: column;
            align-items: flex-start; gap: 20px; }}
   .perde, .kapanis {{ position: absolute; inset: 0; background: #070B14; }}
-  .kapanis {{ display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 40px; opacity: 0; }}
+  .kapanis {{ display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 40px; opacity: 0; z-index: 20; }}
+  .perde {{ z-index: 19; }}
   .kapanis img {{ width: 620px; }}
   .kapanis span {{ font-weight: 800; letter-spacing: .1em; text-transform: uppercase; font-size: 30px; color: #A9AEBB; }}
 </style></head><body>
@@ -181,6 +186,53 @@ def reels_html(r, afis_uri, logo_uri):
 </script></body></html>"""
 
 
+SLAYT_SN = 1.4  # çok görselli Reels'te her görselin ekranda kalma süresi
+
+
+def reels_slayt_html(r, uriler, logo_uri, sure):
+    """Birden çok görselli Reels: görseller sırayla geçer, sonda Havadis kapanışı."""
+    hesap = f'<span class="hesap">@{r["etiket"]}</span>' if r.get("etiket") else ""
+    slaytlar = "".join(f'<div class="slayt" style="background-image:url(\'{u}\')"></div>' for u in uriler)
+    gecis = sure - 2
+    return f"""<!doctype html><html lang="tr"><head><meta charset="utf-8">{FONT}<style>{_ortak_css()}
+  .kutu {{ position: absolute; left: 60px; top: 230px; width: 960px; height: 1200px; overflow: hidden; border-radius: 24px; isolation: isolate;
+           box-shadow: 0 40px 120px rgba(0,0,0,.55); }}
+  .slayt {{ position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0; }}
+  .yazi {{ position: absolute; left: 60px; right: 60px; top: 1470px; display: flex; justify-content: space-between;
+           align-items: center; }}
+  .perde, .kapanis {{ position: absolute; inset: 0; background: #070B14; }}
+  .kapanis {{ display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 40px; opacity: 0; z-index: 20; }}
+  .perde {{ z-index: 19; }}
+  .kapanis img {{ width: 620px; }}
+  .kapanis span {{ font-weight: 800; letter-spacing: .1em; text-transform: uppercase; font-size: 30px; color: #A9AEBB; }}
+</style></head><body>
+<div class="zemin" style="background-image:url('{uriler[0]}')"></div>
+<div class="kutu">{slaytlar}</div>
+<div class="yazi">{hesap}<span class="etiket" lang="de" style="position:static">{REKLAM_ETIKET}</span></div>
+<div class="perde"></div>
+<div class="kapanis"><img src="{logo_uri}" alt="Havadis.at"><span lang="de">{REKLAM_ETIKET} · {r.get('firma', '')}</span></div>
+<script>
+  const q = s => document.querySelector(s);
+  const S = [...document.querySelectorAll('.slayt')];
+  const ilerle = (t, a, b) => Math.min(1, Math.max(0, (t - a) / (b - a)));
+  const yum = x => 1 - Math.pow(1 - x, 3);
+  const D = {gecis} / S.length;
+  window.kare = function (t) {{
+    S.forEach((el, i) => {{
+      const a = i * D;
+      const op = i === 0 ? 1 : ilerle(t, a - 0.3, a);
+      el.style.opacity = op;
+      el.style.zIndex = i;
+      el.style.transform = `scale(${{1 + 0.06 * ilerle(t, a - 0.3, a + D)}})`;
+    }});
+    q('.perde').style.opacity = 1 - yum(ilerle(t, 0, 0.6));
+    const k = yum(ilerle(t, {gecis}, {gecis + 0.5}));
+    q('.kapanis').style.opacity = k;
+    q('.kapanis img').style.transform = `scale(${{0.9 + 0.1 * yum(ilerle(t, {gecis}, {gecis + 1}))}})`;
+  }};
+</script></body></html>"""
+
+
 def _sayfa(p, html_):
     s = p.new_page(viewport={"width": 1080, "height": 1920})
     s.set_content(html_, wait_until="networkidle", timeout=60000)
@@ -193,25 +245,36 @@ def story_uret(r, afis, cikti):
     uri = bot.veri_uri(afis, "image/jpeg")
     with sync_playwright() as p:
         b = p.chromium.launch()
-        s = _sayfa(b, story_html(r, uri))
+        with Image.open(afis) as im:
+            oran = max(0.75, min(1.0, im.width / im.height))
+        s = _sayfa(b, story_html(r, uri, oran))
         Image.open(BytesIO(s.screenshot())).convert("RGB").save(cikti, "JPEG", quality=92)
         b.close()
     return cikti
 
 
-def reels_uret(r, afis, cikti):
+def reels_uret(r, kaynaklar, cikti):
     from playwright.sync_api import sync_playwright
-    uri = bot.veri_uri(afis, "image/jpeg")
     logo = bot.veri_uri(os.path.join(KOK, "assets", "logo-beyaz.png"), "image/png")
+    if len(kaynaklar) > 1:
+        uriler = []
+        for i, k in enumerate(kaynaklar):
+            yol = akis_gorseli(k, cikti.replace(".mp4", f"-slayt{i + 1}.jpg"), 960, 1200)
+            uriler.append(bot.veri_uri(yol, "image/jpeg"))
+        sure = round(2 + SLAYT_SN * len(uriler), 2)
+        html_ = reels_slayt_html(r, uriler, logo, sure)
+    else:
+        sure = SURE
+        html_ = reels_html(r, bot.veri_uri(kaynaklar[0], "image/jpeg"), logo)
     ff = subprocess.Popen(
         ["ffmpeg", "-y", "-loglevel", "error", "-f", "image2pipe", "-framerate", str(FPS), "-c:v", "mjpeg", "-i", "-",
-         "-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=44100", "-t", str(SURE),
+         "-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=44100", "-t", str(sure),
          "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
          "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", cikti], stdin=subprocess.PIPE)
     with sync_playwright() as p:
         b = p.chromium.launch()
-        s = _sayfa(b, reels_html(r, uri, logo))
-        for i in range(int(SURE * FPS)):
+        s = _sayfa(b, html_)
+        for i in range(int(sure * FPS)):
             s.evaluate(f"() => window.kare({i / FPS})")
             ff.stdin.write(s.screenshot(type="jpeg", quality=92))
         b.close()
@@ -288,9 +351,11 @@ def reklam_isle(r, turler, durum):
         else:
             hazir["gonderi"] = [tek_gorsel(kaynak[0], os.path.join(klasor, "gonderi.jpg"))]
     if "reels" in turler:
-        hazir["reels"] = reels_uret(r, kaynak[0], os.path.join(klasor, "reels.mp4"))
+        reels_kaynak = [os.path.join(KOK, g) for g in r.get("reels_gorseller", [])] or kaynak[:1]
+        hazir["reels"] = reels_uret(r, reels_kaynak, os.path.join(klasor, "reels.mp4"))
     if "story" in turler:
-        hazir["story"] = story_uret(r, kaynak[0], os.path.join(klasor, "story.jpg"))
+        story_kaynak = os.path.join(KOK, r["story_gorsel"]) if r.get("story_gorsel") else kaynak[0]
+        hazir["story"] = story_uret(r, story_kaynak, os.path.join(klasor, "story.jpg"))
     log(f"{r['id']}: hazır ->", ", ".join(hazir))
 
     if bot.DRY_RUN:
