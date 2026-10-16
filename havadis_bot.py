@@ -94,6 +94,24 @@ PAGE_TOKEN, TOKEN_TEMIZLENEN = _temiz(os.getenv("META_PAGE_TOKEN"), r"[^A-Za-z0-
 # Threads: ayrı bir kullanıcı anahtarı (threads_basic + threads_content_publish). Boşsa Threads atlanır.
 THREADS_TOKEN, _ = _temiz(os.getenv("THREADS_TOKEN"), r"[^A-Za-z0-9]")
 
+
+def _sayfa_anahtari(anahtar):
+    """META_PAGE_TOKEN bir sistem kullanıcısı/kullanıcı anahtarıysa, sayfanın kendi (süresiz) anahtarını alır.
+    Zaten sayfa anahtarıysa veya istek başarısız olursa anahtarı olduğu gibi döndürür."""
+    if not (anahtar and PAGE_ID):
+        return anahtar
+    try:
+        r = requests.get(f"https://graph.facebook.com/{GRAPH_VERSION}/{PAGE_ID}",
+                         params={"fields": "access_token", "access_token": anahtar}, timeout=15)
+        yeni = r.json().get("access_token") if r.status_code == 200 else None
+        return yeni or anahtar
+    except Exception:
+        return anahtar
+
+
+ORIJINAL_TOKEN = PAGE_TOKEN
+PAGE_TOKEN = _sayfa_anahtari(PAGE_TOKEN)
+
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 CLAUDE_MODEL = os.getenv("CLAUDE_MODEL", "claude-haiku-5-5")
 
@@ -632,7 +650,7 @@ def main():
 def gh_hata(baslik, mesaj):
     """Hatayı GitHub Actions özetinde görünür bir not olarak yazar (anahtarlar gizlenir)."""
     mesaj = str(mesaj)
-    for gizli in (PAGE_TOKEN, THREADS_TOKEN):
+    for gizli in (PAGE_TOKEN, ORIJINAL_TOKEN, THREADS_TOKEN):
         if gizli:
             mesaj = mesaj.replace(gizli, "***")
     mesaj = mesaj.replace("%", "%25").replace("\r", "").replace("\n", "%0A")[:1500]
@@ -645,7 +663,8 @@ def baglanti_kontrol():
         ham = {ad: len(os.getenv(ad) or "") for ad in ("META_PAGE_ID", "META_PAGE_TOKEN", "IG_USER_ID")}
         raise RuntimeError(f"Eksik değer. Okunan uzunluklar (ham): {ham}; temizlendikten sonra: "
                            f"META_PAGE_ID={len(PAGE_ID)}, META_PAGE_TOKEN={len(PAGE_TOKEN)}")
-    bilgi = (f"Anahtar uzunluğu {len(PAGE_TOKEN)} karakter, başlangıcı {PAGE_TOKEN[:3]}, "
+    tur = "sistem/kullanıcı anahtarından alınan sayfa anahtarı" if PAGE_TOKEN != ORIJINAL_TOKEN else "doğrudan sayfa anahtarı"
+    bilgi = (f"Anahtar türü: {tur}; uzunluk {len(ORIJINAL_TOKEN)} karakter, başlangıcı {ORIJINAL_TOKEN[:3]}, "
              f"temizlenen fazla karakter {TOKEN_TEMIZLENEN}")
     log(bilgi)
     try:
