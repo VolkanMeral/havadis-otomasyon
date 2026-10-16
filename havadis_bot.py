@@ -46,7 +46,7 @@ PAYLASILACAK_KATEGORILER = {
 # Video ayarları
 # Akışta video (Reels) paylaşılacak saatler (Viyana saati). Video çalışmaları her saat 15 geçe başlar,
 # sadece bu saatlerde gerçekten paylaşım yapar; böylece saat başı/buçuktaki görsellerle çakışmaz.
-VIDEO_SAATLERI = {int(x) for x in os.getenv("VIDEO_HOURS", "8,11,14,17,20").split(",") if x.strip().isdigit()}
+VIDEO_SAATLERI = {int(x) for x in os.getenv("VIDEO_HOURS", "7,8,10,11,13,14,16,17,19,20").split(",") if x.strip().isdigit()}
 # Bu kategorilerdeki haberler ayrıca Instagram Story'ye video olarak gider
 STORY_KATEGORILERI = {
     k.strip().casefold() for k in os.getenv("STORY_CATEGORIES", "Avusturya,Vorarlberg").split(",") if k.strip()
@@ -55,7 +55,7 @@ STORY_KATEGORILERI = {
 ZAMANLAMALAR = {
     "0 6-20 * * *": "saat",          # saat başı: görsel
     "30 6-20 * * *": "bucuk",        # buçuk: Vorarlberg görsel
-    "15 6-20 * * *": "video",        # 15 geçe: video (sadece VIDEO_HOURS saatlerinde)
+    "15 5-20 * * *": "video",        # 15 geçe: video (sadece VIDEO_HOURS saatlerinde)
     "45 17,18 * * 0": "haftalik",    # pazar 19:45 Viyana: "Vorarlberg'de bu hafta" karuseli
     "45 17,18 * * 3": "rehber",      # çarşamba 19:45 Viyana: "Bilmeniz gerekenler" karuseli
 }

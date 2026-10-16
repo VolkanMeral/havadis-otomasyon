@@ -7,8 +7,8 @@ on:
     - cron: "0 6-20 * * *"
     # Buçuklar: sadece Vorarlberg (böylece Vorarlberg haberleri yarım saatte bir çıkar)
     - cron: "30 6-20 * * *"
-    # 15 geçe: video (Reels). Sadece VIDEO_HOURS saatlerinde paylaşır (varsayılan 08,11,14,17,20 Viyana)
-    - cron: "15 6-20 * * *"
+    # 15 geçe: video (Reels). Sadece VIDEO_HOURS saatlerinde paylaşır (varsayılan 07,08,10,11,13,14,16,17,19,20 Viyana; 5-20 UTC yaz/kış saatinde 07:15'i de kapsar)
+    - cron: "15 5-20 * * *"
     # Pazar 19:45 Viyana: "Vorarlberg'de bu hafta" karuseli (yaz/kış saati için iki saat; sadece 19:45'te çalışır)
     - cron: "45 17,18 * * 0"
     # Çarşamba 19:45 Viyana: "Bilmeniz gerekenler" rehber karuseli
@@ -51,7 +51,7 @@ jobs:
       SCHEDULE: ${{ github.event.schedule }}
       JOB: ${{ github.event_name == 'workflow_dispatch' && inputs.is || 'normal' }}
       FORCE_VIDEO: ${{ github.event_name == 'workflow_dispatch' && inputs.video || '0' }}
-      VIDEO_HOURS: ${{ vars.VIDEO_HOURS || '8,11,14,17,20' }}
+      VIDEO_HOURS: ${{ vars.VIDEO_HOURS || '7,8,10,11,13,14,16,17,19,20' }}
       STORY_CATEGORIES: ${{ vars.STORY_CATEGORIES || 'Avusturya,Vorarlberg' }}
       INCLUDE_CATEGORIES: ${{ vars.INCLUDE_CATEGORIES || 'Avusturya,Vorarlberg,Avrupa,Almanya' }}
       HALF_HOUR_CATEGORIES: ${{ vars.HALF_HOUR_CATEGORIES || 'Vorarlberg' }}

@@ -3,8 +3,8 @@
 Bu sistem 08:00–22:30 arasında çalışır:
 - **Saat başlarında** (08:00, 09:00 …): Avusturya, Vorarlberg, Avrupa, Almanya'dan en yeni haber **görsel** olarak.
 - **Buçuklarda** (08:30, 09:30 …): sadece Vorarlberg'den en yeni haber görsel olarak.
-- **15 geçe, günde 5 kez** (08:15, 11:15, 14:15, 17:15, 20:15): en yeni haber **video (Reels)** olarak Instagram ve Facebook'a.
-- **Story:** Avusturya ve Vorarlberg haberleri paylaşıldıkları anda ayrıca Instagram ve Facebook Story'ye 10 saniyelik video olarak gider. (Story'ye tıklanabilir link etiketi otomatik eklenemez; Meta buna izin vermiyor.)
+- **15 geçe, günde 10 kez** (07, 08, 10, 11, 13, 14, 16, 17, 19, 20 saatlerinde): en yeni haber **12 sn'lik müzikli video (Reels)** olarak Instagram ve Facebook'a (0–5 sn manşet, 5–10 sn kısa haber, son 2 sn logo).
+- **Story:** Avusturya ve Vorarlberg haberleri paylaşıldıkları anda ayrıca Instagram ve Facebook Story'ye 12 saniyelik müzikli video olarak gider. (Story'ye tıklanabilir link etiketi otomatik eklenemez; Meta buna izin vermiyor.)
 
 Yeni haber yoksa o çalışma hiçbir şey paylaşmadan birkaç saniyede biter.
 
@@ -72,7 +72,7 @@ Anahtar: https://console.anthropic.com (kullanım başına küçük bir ücret a
 | `MAX_AGE_HOURS` | `24` | Bundan eski haberler paylaşılmaz |
 | `BASE_HASHTAGS` | `#havadis #Avusturya #haber` | Her paylaşıma eklenen hashtag'ler |
 | `AI_LABEL` | `KI-unterstützt` | Görselin altında ve metnin sonunda küçük şeffaflık notu (AB Yapay Zekâ Yasası md. 50) |
-| `VIDEO_HOURS` | `8,11,14,17,20` | 15 geçe video paylaşılacak saatler (Viyana saati) |
+| `VIDEO_HOURS` | `7,8,10,11,13,14,16,17,19,20` | 15 geçe video paylaşılacak saatler (Viyana saati) |
 | `STORY_CATEGORIES` | `Avusturya,Vorarlberg` | Story'ye de giden kategoriler |
 | `TEMPLATE` | `manset` | Tasarım: `manset` (tam ekran manşet) veya `kart` (sosyal gönderi kartı) |
 | `GRAPH_VERSION` | `v26.0` | Meta Graph API sürümü |
