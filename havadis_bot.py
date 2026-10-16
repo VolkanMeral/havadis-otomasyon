@@ -89,6 +89,8 @@ PAGE_ID = _id("META_PAGE_ID")
 IG_USER_ID = _id("IG_USER_ID")
 # Meta anahtarları sadece harf ve rakamdan oluşur
 PAGE_TOKEN, TOKEN_TEMIZLENEN = _temiz(os.getenv("META_PAGE_TOKEN"), r"[^A-Za-z0-9]")
+# Threads: ayrı bir kullanıcı anahtarı (threads_basic + threads_content_publish). Boşsa Threads atlanır.
+THREADS_TOKEN, _ = _temiz(os.getenv("THREADS_TOKEN"), r"[^A-Za-z0-9]")
 
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 CLAUDE_MODEL = os.getenv("CLAUDE_MODEL", "claude-haiku-5-5")
@@ -279,6 +281,17 @@ def paylasim_metni(h, ic, platform):
     return f"{h['baslik']}\n\n{ic['metin']}\n\n{devam}{ki}\n\n{etiketler}".strip()
 
 
+def threads_metni(h, ic):
+    """Threads gönderisi (en fazla 500 karakter): link tıklanabilir ve önizleme kartı olarak görünür."""
+    kat = re.sub(r"[^\wçğıöşüÇĞİÖŞÜ]", "", h["kategori"])
+    ki = f"\n\n🤖 {KI_ETIKET}" if KI_ETIKET else ""
+    son = f"\n\n👉 {h['link']}{ki}" + (f"\n\n#{kat}" if kat else "")
+    bas = f"{h['baslik']}\n\n"
+    yer = min(280, 470 - len(bas) - len(son))  # emojiler bayt olarak sayıldığı için pay bırakılır
+    ozet = kisalt(ic.get("metin") or h.get("ozet") or "", yer) if yer > 40 else ""
+    return (bas + ozet + son).strip()
+
+
 # ---------------------------------------------------------------- Görsel
 
 def veri_uri(yol_veya_bayt, mime):
@@ -393,6 +406,24 @@ def facebook_paylas(gorsel, metin):
     bilgi = kontrol(HTTP.get(graph(foto_id), params={"fields": "images", "access_token": PAGE_TOKEN}, timeout=30))
     en_buyuk = max(bilgi["images"], key=lambda i: i["width"])
     return sonuc.get("post_id", foto_id), en_buyuk["source"]
+
+
+THREADS_API = "https://graph.threads.net/v1.0"
+
+
+def threads_paylas(metin, link):
+    """Threads'e metin + link önizlemesi paylaşır (iki adım: kap oluştur, yayınla)."""
+    kap = kontrol(HTTP.post(f"{THREADS_API}/me/threads", data={
+        "media_type": "TEXT", "text": metin, "link_attachment": link, "access_token": THREADS_TOKEN}, timeout=60))["id"]
+    son_hata = None
+    for bekle in (3, 10, 20, 30):  # Meta, yayınlamadan önce kısa bir bekleme öneriyor
+        time.sleep(bekle)
+        r = HTTP.post(f"{THREADS_API}/me/threads_publish",
+                      data={"creation_id": kap, "access_token": THREADS_TOKEN}, timeout=60)
+        if r.status_code < 400:
+            return r.json()["id"]
+        son_hata = r.text
+    raise RuntimeError(f"Threads yayınlanamadı: {son_hata}")
 
 
 def ig_bekle(kap_id, deneme=30, aralik=4):
@@ -517,8 +548,9 @@ def main():
 
     fb_metin = paylasim_metni(haber, ic, "facebook")
     ig_metin = paylasim_metni(haber, ic, "instagram")
+    th_metin = threads_metni(haber, ic)
     with open(os.path.join(CIKTI, f"{damga}.txt"), "w", encoding="utf-8") as f:
-        f.write(f"--- FACEBOOK ---\n{fb_metin}\n\n--- INSTAGRAM ---\n{ig_metin}\n")
+        f.write(f"--- FACEBOOK ---\n{fb_metin}\n\n--- INSTAGRAM ---\n{ig_metin}\n\n--- THREADS ---\n{th_metin}\n")
 
     gorsel = None if video_akis else gorsel_uret(haber, ic, os.path.join(CIKTI, f"{damga}.jpg"), foto)
     video = None
@@ -573,6 +605,9 @@ def main():
             dene("instagram_story", lambda: instagram_video(video, "STORIES"))
         dene("facebook_story", lambda: facebook_story(video))
 
+    if THREADS_TOKEN:
+        dene("threads", lambda: threads_paylas(th_metin, haber["link"]))
+
     # Hiçbir platformda paylaşılamadıysa görev hata versin
     if not any(k in kayit for k in ("facebook", "facebook_reel", "instagram", "instagram_reel")):
         raise RuntimeError("Haber hiçbir platformda paylaşılamadı (ayrıntılar yukarıdaki notlarda).")
@@ -582,8 +617,9 @@ def main():
 def gh_hata(baslik, mesaj):
     """Hatayı GitHub Actions özetinde görünür bir not olarak yazar (anahtarlar gizlenir)."""
     mesaj = str(mesaj)
-    if PAGE_TOKEN:
-        mesaj = mesaj.replace(PAGE_TOKEN, "***")
+    for gizli in (PAGE_TOKEN, THREADS_TOKEN):
+        if gizli:
+            mesaj = mesaj.replace(gizli, "***")
     mesaj = mesaj.replace("%", "%25").replace("\r", "").replace("\n", "%0A")[:1500]
     print(f"::error title={baslik}::{mesaj}", flush=True)
 
@@ -609,6 +645,12 @@ def baglanti_kontrol():
         log("Instagram hesabı erişilebilir:", ig.get("username"))
     else:
         log("UYARI: IG_USER_ID boş, Instagram'a paylaşım yapılmayacak.")
+    if THREADS_TOKEN:
+        th = kontrol(HTTP.get(f"{THREADS_API}/me", params={"fields": "username", "access_token": THREADS_TOKEN},
+                              timeout=30))
+        log("Threads hesabı erişilebilir:", th.get("username"))
+    else:
+        log("Bilgi: THREADS_TOKEN boş, Threads'e paylaşım yapılmayacak.")
 
 
 def yeni_haber_var_mi():
