@@ -44,6 +44,7 @@ Bu anahtarları kimseyle paylaşmayın; sadece aşağıdaki GitHub "Secrets" ala
 2. Bu klasördeki tüm dosyaları depoya yükleyin (`.github` klasörü dahil).
 3. Depo → Settings → Secrets and variables → **Actions**:
    - **Secrets** sekmesine ekleyin: `META_PAGE_ID`, `META_PAGE_TOKEN`, `IG_USER_ID`
+   - İsteğe bağlı `THREADS_TOKEN`: Threads kullanıcı anahtarı (threads_basic + threads_content_publish, 60 gün geçerli). Tanımlıysa her haber Threads'e de başlık + kısa özet + tıklanabilir link önizlemesiyle gider; boşsa Threads atlanır. Süresi dolmadan yenilenmeli.
    - İsteğe bağlı: `ANTHROPIC_API_KEY` (aşağıya bakın)
    - **Variables** sekmesine ekleyin: `DRY_RUN` = `1` (önce deneme modu)
 
