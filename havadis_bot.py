@@ -290,26 +290,24 @@ def icerik_hazirla(h):
     return basit_icerik(h)
 
 
+def merak_girisi(metin, n=110):
+    """Özetin ilk cümlesinden kısa bir giriş: haberin tamamını vermez, devamı sitede."""
+    ilk = re.split(r"(?<=[.!?])\s+", metin.strip())[0] if metin else ""
+    if len(ilk) > n:
+        ilk = ilk[:n].rsplit(" ", 1)[0].rstrip(",;:")
+    return ilk.rstrip(".!?") + "…" if ilk else ""
+
+
 def paylasim_metni(h, ic, platform):
     kat = re.sub(r"[^\wçğıöşüÇĞİÖŞÜ]", "", h["kategori"])
     etiketler = " ".join(dict.fromkeys((ic["hashtagler"] + " " + SABIT_HASHTAGLER + (f" #{kat}" if kat else "")).split()))
+    ki = f"\n\n🤖 {KI_ETIKET}" if KI_ETIKET else ""
     if platform == "facebook":
-        devam = f"👉 Haberin tamamı: {h['link']}"
-    else:
-        devam = f"👉 Haberin tamamı: {h['link']}\n(Tıklanabilir link profilimizde)"
-    ki = f"\n\n🤖 {KI_ETIKET}" if KI_ETIKET else ""
+        # Facebook'ta link tıklanabilir: haberin tamamını yazma, okuru siteye yönlendir
+        giris = merak_girisi(ic["metin"])
+        return f"{h['baslik']}\n\n{giris}\n\n👉 Devamı havadis.at'de: {h['link']}{ki}\n\n{etiketler}".strip()
+    devam = f"👉 Haberin tamamı: {h['link']}\n(Tıklanabilir link profilimizde)"
     return f"{h['baslik']}\n\n{ic['metin']}\n\n{devam}{ki}\n\n{etiketler}".strip()
-
-
-def threads_metni(h, ic):
-    """Threads gönderisi (en fazla 500 karakter): link tıklanabilir ve önizleme kartı olarak görünür."""
-    kat = re.sub(r"[^\wçğıöşüÇĞİÖŞÜ]", "", h["kategori"])
-    ki = f"\n\n🤖 {KI_ETIKET}" if KI_ETIKET else ""
-    son = f"\n\n👉 {h['link']}{ki}" + (f"\n\n#{kat}" if kat else "")
-    bas = f"{h['baslik']}\n\n"
-    yer = min(280, 470 - len(bas) - len(son))  # emojiler bayt olarak sayıldığı için pay bırakılır
-    ozet = kisalt(ic.get("metin") or h.get("ozet") or "", yer) if yer > 40 else ""
-    return (bas + ozet + son).strip()
 
 
 # ---------------------------------------------------------------- Görsel
@@ -339,20 +337,42 @@ def baslik_boyutu(metin):
     return 80
 
 
-def tam_ekran_hazirla(foto, w=1080, h=1350, dikey_odak=0.3):
-    """Küçük fotoğrafı tam ekran için yüksek kaliteyle büyütür, kırpar ve hafifçe keskinleştirir."""
-    from PIL import ImageFilter
-    oran = max(w / foto.width, h / foto.height)
-    yeni = foto.resize((round(foto.width * oran), round(foto.height * oran)), Image.LANCZOS)
-    x = (yeni.width - w) // 2
-    y = int((yeni.height - h) * dikey_odak)
-    yeni = yeni.crop((x, y, x + w, y + h))
-    if oran > 1.2:
-        yeni = yeni.filter(ImageFilter.UnsharpMask(radius=2, percent=70, threshold=2))
-    return yeni
+def tam_ekran_hazirla(foto, w=1080, h=1350, foto_ust=0, dikey_odak=0.3):
+    """Fotoğrafı tam ekran tasarıma hazırlar.
+    Yatay fotoğraflar KESİLMEZ: fotoğrafın tamamı üstte tam genişlikte durur, arka plan aynı fotoğrafın
+    bulanık ve karartılmış haliyle dolar. Dikey fotoğraflar eskisi gibi tüm alanı kaplar."""
+    from PIL import ImageEnhance, ImageFilter
+    oran_foto = foto.width / foto.height
+
+    def kapla(img, gw, gh):
+        o = max(gw / img.width, gh / img.height)
+        y_ = img.resize((round(img.width * o), round(img.height * o)), Image.LANCZOS)
+        x0, y0 = (y_.width - gw) // 2, int((y_.height - gh) * dikey_odak)
+        return y_.crop((x0, y0, x0 + gw, y0 + gh)), o
+
+    if oran_foto < 1.1:  # dikey/kare fotoğraf: tüm alanı kapla
+        yeni, o = kapla(foto, w, h)
+        return yeni.filter(ImageFilter.UnsharpMask(radius=2, percent=70, threshold=2)) if o > 1.2 else yeni
+
+    # Arka plan: bulanık, karartılmış
+    arka, _ = kapla(foto, w, h)
+    arka = arka.resize((w // 8, h // 8), Image.BILINEAR).filter(ImageFilter.GaussianBlur(4)).resize((w, h), Image.BILINEAR)
+    arka = ImageEnhance.Brightness(arka).enhance(0.45)
+    # Ön plan: fotoğrafın tamamı, tam genişlikte
+    fh = round(w / oran_foto)
+    on = foto.resize((w, fh), Image.LANCZOS)
+    if w / foto.width > 1.2:
+        on = on.filter(ImageFilter.UnsharpMask(radius=2, percent=80, threshold=2))
+    # Alt kenarı arka plana yumuşakça karışsın
+    maske = Image.new("L", (w, fh), 255)
+    gecis = min(160, fh // 4)
+    for i in range(gecis):
+        maske.paste(int(255 * (1 - i / gecis) ** 1.5), (0, fh - gecis + i, w, fh - gecis + i + 1))
+    arka.paste(on, (0, foto_ust), maske)
+    return arka
 
 
-def sayfa_hazirla(h, ic, foto_bayt=None):
+def sayfa_hazirla(h, ic, foto_bayt=None, boyut=(1080, 1350), foto_ust=0):
     """Seçili şablonu haber bilgileriyle doldurup HTML olarak döndürür (görsel ve video aynı tasarımı kullanır)."""
     if foto_bayt is None:
         r = HTTP.get(h["resim"], timeout=60)
@@ -360,7 +380,7 @@ def sayfa_hazirla(h, ic, foto_bayt=None):
         foto_bayt = r.content
     foto = Image.open(BytesIO(foto_bayt)).convert("RGB")
     if SABLON == "manset":
-        foto = tam_ekran_hazirla(foto)
+        foto = tam_ekran_hazirla(foto, boyut[0], boyut[1], foto_ust)
     tampon = BytesIO()
     foto.save(tampon, "JPEG", quality=92)
 

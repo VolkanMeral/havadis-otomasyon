@@ -7,6 +7,7 @@ import subprocess
 import havadis_bot as bot
 
 FPS = 30
+FOTO_UST = 300  # dikey videoda fotoğrafın üst kenarı (logo çubuğunun hemen altı)
 W, H = 1080, 1920
 SURE = float(os.getenv("VIDEO_SECONDS", "12"))
 MUZIK = os.getenv("VIDEO_MUSIC", os.path.join(bot.KOK, "assets", "muzik.wav"))  # boş bırakılırsa sessiz
@@ -48,6 +49,14 @@ ANIMASYON = """
 </style>
 <script>
   (function () {
+    // Dikey videoda başlık fotoğrafın üstüne binmesin: yazı bloğu fotoğrafın alt kenarına kadar insin
+    window.sigdir = function () {
+      const h = document.querySelector('h1'), alt = document.querySelector('.alt'), foto = document.querySelector('.foto');
+      if (!h || !alt) return;
+      const sinir = __FOTO_ALT__;
+      let px = parseFloat(getComputedStyle(h).fontSize);
+      while (alt.getBoundingClientRect().top < sinir && px > 60) { px -= 4; h.style.fontSize = px + 'px'; }
+    };
     const SURE = __SURE__;
     const q = s => document.querySelector(s);
     const ilerle = (t, a, b) => Math.min(1, Math.max(0, (t - a) / (b - a)));
@@ -118,10 +127,10 @@ def video_uret(h, ic, cikti_yolu, foto_bayt=None, ses=None, altyazi=None, sure=N
     if bot.SABLON != "manset":
         raise RuntimeError("Video şu an sadece tam ekran manşet tasarımıyla çalışır (TEMPLATE=manset).")
     sure = float(sure or SURE)
-    sayfa = bot.sayfa_hazirla(h, ic, foto_bayt)
+    sayfa = bot.sayfa_hazirla(h, ic, foto_bayt, boyut=(W, 1500), foto_ust=FOTO_UST)
     ozet2 = bot.kisalt(h.get("ozet") or ic.get("ozet") or "", 420)
     gecis = round(sure * 5 / 12, 2)  # 12 sn'lik videoda 5. saniye
-    anim = (ANIMASYON.replace("__SURE__", str(sure)).replace("__GECIS__", str(gecis))
+    anim = (ANIMASYON.replace("__FOTO_ALT__", str(FOTO_UST + 640)).replace("__SURE__", str(sure)).replace("__GECIS__", str(gecis))
             .replace("__OZET2__", json.dumps(ozet2, ensure_ascii=False))
             .replace("__ALTYAZI__", json.dumps(altyazi or [], ensure_ascii=False)))
     if not ses and MUZIK and os.path.exists(MUZIK):

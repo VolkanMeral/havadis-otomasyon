@@ -11,8 +11,8 @@
   .foto { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
   .ust-golge { position: absolute; left: 0; right: 0; top: 0; height: 300px;
                background: linear-gradient(#070B14cc, #070B1400); }
-  .alt-golge { position: absolute; left: 0; right: 0; bottom: 0; height: 900px;
-               background: linear-gradient(#070B1400 0%, #070B14d9 42%, #070B14 70%); }
+  .alt-golge { position: absolute; left: 0; right: 0; bottom: 0; height: 760px;
+               background: linear-gradient(#070B1400 0%, #070B14cc 35%, #070B14ee 60%); }
   .ust { position: absolute; left: 64px; right: 64px; top: 64px; display: flex;
          justify-content: space-between; align-items: center; }
   .ust img { width: 230px; height: auto; display: block; }
@@ -70,7 +70,7 @@
   window.sigdir = function () {
     const h = document.querySelector('h1'); const alt = document.querySelector('.alt');
     let px = parseFloat(getComputedStyle(h).fontSize);
-    while (alt.getBoundingClientRect().top < 470 && px > 60) { px -= 4; h.style.fontSize = px + 'px'; }
+    while (alt.getBoundingClientRect().top < 600 && px > 60) { px -= 4; h.style.fontSize = px + 'px'; }
   };
 </script>
 </body>
