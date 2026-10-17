@@ -337,6 +337,17 @@ def baslik_boyutu(metin):
     return 80
 
 
+def threads_metni(h, ic):
+    """Threads gönderisi (en fazla 500 karakter): link tıklanabilir ve önizleme kartı olarak görünür."""
+    kat = re.sub(r"[^\wçğıöşüÇĞİÖŞÜ]", "", h["kategori"])
+    ki = f"\n\n🤖 {KI_ETIKET}" if KI_ETIKET else ""
+    son = f"\n\n👉 {h['link']}{ki}" + (f"\n\n#{kat}" if kat else "")
+    bas = f"{h['baslik']}\n\n"
+    yer = min(280, 470 - len(bas) - len(son))  # emojiler bayt olarak sayıldığı için pay bırakılır
+    ozet = kisalt(ic.get("metin") or h.get("ozet") or "", yer) if yer > 40 else ""
+    return (bas + ozet + son).strip()
+
+
 def tam_ekran_hazirla(foto, w=1080, h=1350, foto_ust=0, dikey_odak=0.3):
     """Fotoğrafı tam ekran tasarıma hazırlar.
     Yatay fotoğraflar KESİLMEZ: fotoğrafın tamamı üstte tam genişlikte durur, arka plan aynı fotoğrafın
