@@ -68,7 +68,7 @@ Anahtar: https://console.anthropic.com (kullanım başına küçük bir ücret a
 | Değişken | Varsayılan | Açıklama |
 |---|---|---|
 | `DRY_RUN` | `1` | `1` = paylaşma, sadece görsel üret |
-| `INCLUDE_CATEGORIES` | `Avusturya,Vorarlberg,Avrupa,Almanya` | Sadece bu kategoriler paylaşılır (virgülle; boş = hepsi) |
+| `INCLUDE_CATEGORIES` | `Avusturya,Vorarlberg,Almanya,İsviçre,Sağlık,Dünya,Teknoloji,Havadis Özel,Avrupa` | Sadece bu kategoriler paylaşılır (virgülle; boş = hepsi) |
 | `HALF_HOUR_CATEGORIES` | `Vorarlberg` | Buçuklardaki ek paylaşımlarda kullanılacak kategoriler |
 | `SKIP_CATEGORIES` | `TAZİYE` | Paylaşılmayacak kategoriler (virgülle) |
 | `MAX_AGE_HOURS` | `24` | Bundan eski haberler paylaşılmaz |

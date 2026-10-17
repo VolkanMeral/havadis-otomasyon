@@ -35,13 +35,24 @@ RSS_URL = os.getenv("RSS_URL", "https://havadis.at/rss.rss")
 GRAPH_VERSION = os.getenv("GRAPH_VERSION", "v26.0")
 DRY_RUN = os.getenv("DRY_RUN", "1") == "1"
 MAX_AGE_HOURS = int(os.getenv("MAX_AGE_HOURS", "24"))
+def kat_norm(metin):
+    """Kategori adını karşılaştırma için sadeleştirir (İ/I/ı farkı, büyük-küçük harf)."""
+    return metin.replace("İ", "i").replace("I", "i").replace("ı", "i").casefold().strip()
+
+
+def kategori_eslesir(kategori, kume):
+    """'Teknoloji/Bilim' gibi alt başlıklı kategoriler ilk kelimesiyle de eşleşir (örn. 'Teknoloji')."""
+    n = kat_norm(kategori)
+    return n in kume or n.split("/")[0].strip() in kume
+
+
 ATLANACAK_KATEGORILER = {
-    k.strip().casefold() for k in os.getenv("SKIP_CATEGORIES", "TAZİYE").split(",") if k.strip()
+    kat_norm(k) for k in os.getenv("SKIP_CATEGORIES", "TAZİYE").split(",") if k.strip()
 }
 # Sadece bu kategorilerdeki haberler paylaşılır (boş bırakılırsa tüm kategoriler)
 PAYLASILACAK_KATEGORILER = {
-    k.strip().casefold()
-    for k in os.getenv("INCLUDE_CATEGORIES", "Avusturya,Vorarlberg,Avrupa,Almanya").split(",") if k.strip()
+    kat_norm(k)
+    for k in os.getenv("INCLUDE_CATEGORIES", "Avusturya,Vorarlberg,Almanya,İsviçre,Sağlık,Dünya,Teknoloji,Havadis Özel,Avrupa").split(",") if k.strip()
 }
 # Video ayarları
 # Akışta video (Reels) paylaşılacak saatler (Viyana saati). Video çalışmaları her saat 15 geçe başlar,
@@ -51,7 +62,7 @@ VIDEO_SAATLERI = {int(x) for x in os.getenv("VIDEO_HOURS", "7,8,10,11,13,14,16,1
 TIKTOK_SAATLERI = {int(x) for x in os.getenv("TIKTOK_HOURS", "8,11,14,17,20").split(",") if x.strip().isdigit()}
 # Bu kategorilerdeki haberler ayrıca Instagram Story'ye video olarak gider
 STORY_KATEGORILERI = {
-    k.strip().casefold() for k in os.getenv("STORY_CATEGORIES", "Avusturya,Vorarlberg").split(",") if k.strip()
+    kat_norm(k) for k in os.getenv("STORY_CATEGORIES", "Avusturya,Vorarlberg").split(",") if k.strip()
 }
 # Çalışma türü GitHub zamanlamasından belirlenir
 ZAMANLAMALAR = {
@@ -66,7 +77,7 @@ if os.getenv("JOB", "normal") in ("haftalik", "rehber"):   # elle çalıştırma
     CALISMA_TURU = os.getenv("JOB")
 ELLE = os.getenv("GITHUB_EVENT_NAME") == "workflow_dispatch"
 if CALISMA_TURU == "bucuk":
-    PAYLASILACAK_KATEGORILER = {k.strip().casefold() for k in
+    PAYLASILACAK_KATEGORILER = {kat_norm(k) for k in
                                 os.getenv("HALF_HOUR_CATEGORIES", "Vorarlberg").split(",") if k.strip()}
 VIDEO_ZORLA = os.getenv("FORCE_VIDEO", "0") == "1"  # elle deneme için
 
@@ -213,9 +224,9 @@ def haber_sec(haberler, paylasilanlar):
     for h in haberler:
         if not h["link"] or h["link"] in linkler or not h["resim"]:
             continue
-        if h["kategori"].casefold() in ATLANACAK_KATEGORILER:
+        if kategori_eslesir(h["kategori"], ATLANACAK_KATEGORILER):
             continue
-        if PAYLASILACAK_KATEGORILER and h["kategori"].casefold() not in PAYLASILACAK_KATEGORILER:
+        if PAYLASILACAK_KATEGORILER and not kategori_eslesir(h["kategori"], PAYLASILACAK_KATEGORILER):
             continue
         if h["tarih"] and (simdi - h["tarih"]).total_seconds() > MAX_AGE_HOURS * 3600:
             continue
@@ -594,7 +605,7 @@ def main():
 
     video_akis = SABLON == "manset" and (VIDEO_ZORLA or CALISMA_TURU == "video")
     story = SABLON == "manset" and \
-        haber["kategori"].casefold() in STORY_KATEGORILERI
+        kategori_eslesir(haber["kategori"], STORY_KATEGORILERI)
     log(f"Akışta video: {'evet' if video_akis else 'hayır'} | Story: {'evet' if story else 'hayır'}")
 
     fb_metin = paylasim_metni(haber, ic, "facebook")

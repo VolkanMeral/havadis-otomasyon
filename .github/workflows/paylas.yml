@@ -2,7 +2,7 @@ name: Havadis saatlik paylaşım
 
 on:
   schedule:
-    # Saat başları: 4 kategori (Avusturya, Vorarlberg, Avrupa, Almanya)
+    # Saat başları: Avusturya, Vorarlberg, Almanya, İsviçre, Sağlık, Dünya, Teknoloji, Havadis Özel, Avrupa
     # 06:00–20:00 UTC = yaz saatinde 08:00–22:00 Viyana (kışın 07:00–21:00)
     - cron: "0 6-20 * * *"
     # Buçuklar: sadece Vorarlberg (böylece Vorarlberg haberleri yarım saatte bir çıkar)
@@ -61,7 +61,7 @@ jobs:
       FORCE_VIDEO: ${{ github.event_name == 'workflow_dispatch' && inputs.video || '0' }}
       VIDEO_HOURS: ${{ vars.VIDEO_HOURS || '7,8,10,11,13,14,16,17,19,20' }}
       STORY_CATEGORIES: ${{ vars.STORY_CATEGORIES || 'Avusturya,Vorarlberg' }}
-      INCLUDE_CATEGORIES: ${{ vars.INCLUDE_CATEGORIES || 'Avusturya,Vorarlberg,Avrupa,Almanya' }}
+      INCLUDE_CATEGORIES: ${{ vars.INCLUDE_CATEGORIES || 'Avusturya,Vorarlberg,Almanya,İsviçre,Sağlık,Dünya,Teknoloji,Havadis Özel,Avrupa' }}
       HALF_HOUR_CATEGORIES: ${{ vars.HALF_HOUR_CATEGORIES || 'Vorarlberg' }}
     steps:
       - uses: actions/checkout@v4
