@@ -303,9 +303,9 @@ def paylasim_metni(h, ic, platform):
     etiketler = " ".join(dict.fromkeys((ic["hashtagler"] + " " + SABIT_HASHTAGLER + (f" #{kat}" if kat else "")).split()))
     ki = f"\n\n🤖 {KI_ETIKET}" if KI_ETIKET else ""
     if platform == "facebook":
-        # Facebook'ta link tıklanabilir: haberin tamamını yazma, okuru siteye yönlendir
-        giris = merak_girisi(ic["metin"])
-        return f"{h['baslik']}\n\n{giris}\n\n👉 Devamı havadis.at'de: {h['link']}{ki}\n\n{etiketler}".strip()
+        # Facebook'ta metin alanında sadece haber linki: haberi okumak isteyen linke tıklar.
+        # (Başlık ve "KI-unterstützt" notu görselin üzerinde zaten yazıyor.)
+        return h["link"]
     devam = f"👉 Haberin tamamı: {h['link']}\n(Tıklanabilir link profilimizde)"
     return f"{h['baslik']}\n\n{ic['metin']}\n\n{devam}{ki}\n\n{etiketler}".strip()
 
