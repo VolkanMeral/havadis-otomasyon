@@ -4,6 +4,7 @@ Bu sistem 08:00–22:30 arasında çalışır:
 - **Saat başlarında** (08:00, 09:00 …): Avusturya, Vorarlberg, Avrupa, Almanya'dan en yeni haber **görsel** olarak.
 - **Buçuklarda** (08:30, 09:30 …): sadece Vorarlberg'den en yeni haber görsel olarak.
 - **15 geçe, günde 10 kez** (07, 08, 10, 11, 13, 14, 16, 17, 19, 20 saatlerinde): en yeni haber **12 sn'lik müzikli video (Reels)** olarak Instagram ve Facebook'a (0–5 sn manşet, 5–10 sn kısa haber, son 2 sn logo).
+- **Pazar 11:05: haftalık özet videosu** ("Avusturya'da bu hafta"): son 7 günün 4–6 Avusturya/Vorarlberg haberi, seslendirme yok, özgün müzik + ekranda yazı, en fazla ~88 sn. Facebook Reels, Instagram Reels ve YouTube Shorts olarak paylaşılır (`haftalik_ozet.py`; elle deneme: `is=ozet`, `dry_run=1`).
 - **Story:** Avusturya ve Vorarlberg haberleri paylaşıldıkları anda ayrıca Instagram ve Facebook Story'ye 12 saniyelik müzikli video olarak gider. (Story'ye tıklanabilir link etiketi otomatik eklenemez; Meta buna izin vermiyor.)
 
 Yeni haber yoksa o çalışma hiçbir şey paylaşmadan birkaç saniyede biter.

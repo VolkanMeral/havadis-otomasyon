@@ -71,9 +71,10 @@ ZAMANLAMALAR = {
     "15 5-20 * * *": "video",        # 15 geçe: video (sadece VIDEO_HOURS saatlerinde)
     "45 17,18 * * 0": "haftalik",    # pazar 19:45 Viyana: "Vorarlberg'de bu hafta" karuseli
     "45 17,18 * * 3": "rehber",      # çarşamba 19:45 Viyana: "Bilmeniz gerekenler" karuseli
+    "5 9,10 * * 0": "ozet",          # pazar 11:05 Viyana: "Avusturya'da bu hafta" özet videosu
 }
 CALISMA_TURU = os.getenv("RUN_SLOT") or ZAMANLAMALAR.get(os.getenv("SCHEDULE", ""), "saat")
-if os.getenv("JOB", "normal") in ("haftalik", "rehber"):   # elle çalıştırma
+if os.getenv("JOB", "normal") in ("haftalik", "rehber", "ozet"):   # elle çalıştırma
     CALISMA_TURU = os.getenv("JOB")
 ELLE = os.getenv("GITHUB_EVENT_NAME") == "workflow_dispatch"
 if CALISMA_TURU == "bucuk":
@@ -581,6 +582,12 @@ def karusel_saati_mi():
 
 def main():
     os.makedirs(CIKTI, exist_ok=True)
+    if CALISMA_TURU == "ozet":
+        import haftalik_ozet
+        if not haftalik_ozet.ozet_saati_mi():
+            log("Haftalık özet videosu saati değil.")
+            return 0
+        return haftalik_ozet.calistir()
     if CALISMA_TURU in ("haftalik", "rehber"):
         if not karusel_saati_mi():
             log("Karusel saati değil.")
@@ -744,6 +751,9 @@ def yeni_haber_var_mi():
     if CALISMA_TURU in ("haftalik", "rehber"):
         haberleri_getir()  # arşivi güncel tut
         haber = {"baslik": f"{CALISMA_TURU} karuseli"} if karusel_saati_mi() else None
+    elif CALISMA_TURU == "ozet":
+        haberleri_getir()
+        haber = {"baslik": "haftalık özet videosu"} if (ELLE or viyana_saati() == 11) else None
     else:
         haber = haber_sec(haberleri_getir(), durum_oku()) if video_saati_mi() else None
     log("Yeni haber:", haber["baslik"] if haber else "yok (ya da video saati değil)")
