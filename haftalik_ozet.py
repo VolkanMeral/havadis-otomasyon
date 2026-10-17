@@ -245,7 +245,7 @@ def calistir():
         bot.log("Haftalık özet videosu için yeterli haber yok.")
         return 0
     for i, h in enumerate(veri["haberler"]):
-        bot.log(f"{i + 1}. {h['kategori']} | {h['baslik']}")
+        bot.log(f"{i + 1}. {h['kategori']} | {h['baslik']} | fotoğraf: {h['resim'].rsplit('/', 1)[-1]}")
     video, kapak = video_uret(veri, os.path.join(bot.CIKTI, f"ozet-{hafta}.mp4"))
     bot.log(f"Haftalık özet videosu hazır: {video} ({veri['sure']:.0f} sn, {len(veri['haberler'])} haber)")
 
