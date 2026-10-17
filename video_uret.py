@@ -7,7 +7,7 @@ import subprocess
 import havadis_bot as bot
 
 FPS = 30
-FOTO_UST = 300  # dikey videoda fotoğrafın üst kenarı (logo çubuğunun hemen altı)
+FOTO_UST = 370  # dikey videoda fotoğrafın üst kenarı (logo çubuğunun hemen altı)
 W, H = 1080, 1920
 SURE = float(os.getenv("VIDEO_SECONDS", "12"))
 MUZIK = os.getenv("VIDEO_MUSIC", os.path.join(bot.KOK, "assets", "muzik.wav"))  # boş bırakılırsa sessiz
@@ -21,8 +21,9 @@ ANIMASYON = """
   .alt-golge { height: 1250px !important;
                background: linear-gradient(#070B1400 0%, #070B14d9 34%, #070B14 60%) !important; }
   .ust-golge { height: 520px !important; }
-  .ust { top: 230px !important; }  /* Story/Reels üst arayüzünün (ilerleme çubuğu, profil adı) altında */
-  .alt { bottom: 270px !important; }  /* Reels açıklama satırının üstünde */
+  /* Güvenli alan: YouTube Shorts / Reels / Story düğmeleri üstte ~260 px, sağda ~190 px, altta ~440 px yer kaplar */
+  .ust { top: 290px !important; left: 90px !important; right: 90px !important; }
+  .alt { bottom: 470px !important; left: 90px !important; right: 200px !important; }
   h1 .vurgu { position: relative; }
   .perde { position: absolute; inset: 0; background: #070B14; pointer-events: none; }
   /* Son 2 saniye: logolu kapanış */
@@ -30,7 +31,7 @@ ANIMASYON = """
              justify-content: center; opacity: 0; z-index: 10; }
   .kapanis img { width: 620px; height: auto; display: block; }
   /* İkinci sayfa: haberin kısa içeriği */
-  .sayfa2 { position: absolute; left: 64px; right: 64px; bottom: 410px; display: flex; flex-direction: column;
+  .sayfa2 { position: absolute; left: 90px; right: 200px; bottom: 610px; display: flex; flex-direction: column;
             gap: 34px; opacity: 0; z-index: 4; }
   .sayfa2 .ust2 { display: flex; gap: 14px; align-items: center; }
   .sayfa2 .k { background: #E42320; font-family: 'Barlow Condensed', sans-serif; font-size: 30px; font-weight: 800;
@@ -41,7 +42,7 @@ ANIMASYON = """
   .sayfa2 .metin2 p { margin: 0; font-family: 'Barlow', sans-serif; font-weight: 600; font-size: 54px;
                       line-height: 1.28; color: #fff; }
   /* Sesli videoda altyazı: fotoğrafın üzerinde, ortada */
-  .altyazi { position: absolute; left: 80px; right: 80px; top: 430px; display: flex; justify-content: center;
+  .altyazi { position: absolute; left: 90px; right: 200px; top: 500px; display: flex; justify-content: center;
              z-index: 5; pointer-events: none; }
   .altyazi span { background: rgba(7,11,20,.82); color: #fff; font-family: 'Barlow', Arial, sans-serif;
                   font-weight: 700; font-size: 50px; line-height: 1.25; padding: 12px 22px; border-radius: 12px;
@@ -76,7 +77,7 @@ ANIMASYON = """
     // Uzun metin üstteki logoya taşmasın
     s2.style.opacity = 0;
     let px = 54;
-    while (s2.getBoundingClientRect().top < 420 && px > 36) { px -= 2; pler.forEach(p => p.style.fontSize = px + 'px'); }
+    while (s2.getBoundingClientRect().top < 480 && px > 36) { px -= 2; pler.forEach(p => p.style.fontSize = px + 'px'); }
     const ALTYAZI = __ALTYAZI__;
     const altyazi = document.createElement('div'); altyazi.className = 'altyazi';
     const altyaziMetin = document.createElement('span'); altyazi.appendChild(altyaziMetin);
