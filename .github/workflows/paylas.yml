@@ -13,13 +13,15 @@ on:
     - cron: "45 17,18 * * 0"
     # Çarşamba 19:45 Viyana: "Bilmeniz gerekenler" rehber karuseli
     - cron: "45 17,18 * * 3"
+    # Pazar 11:05 Viyana: "Avusturya'da bu hafta" özet videosu (müzik + yazı; FB/IG Reels + YouTube)
+    - cron: "5 9,10 * * 0"
   workflow_dispatch:
     inputs:
       dry_run:
         description: "Deneme modu (1 = paylaşma, sadece görsel üret)"
         default: "1"
       is:
-        description: "Ne yapılsın? normal / haftalik / rehber"
+        description: "Ne yapılsın? normal / haftalik / rehber / ozet (haftalık özet videosu)"
         default: "normal"
       video:
         description: "1 = bu çalışmada akışa video paylaş (Story de üretilir)"
@@ -41,7 +43,7 @@ concurrency:
 jobs:
   paylas:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     env:
       DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || vars.DRY_RUN || '1' }}
       META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
