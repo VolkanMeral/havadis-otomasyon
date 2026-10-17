@@ -683,6 +683,16 @@ def main():
             except Exception:
                 pass
 
+    if video_akis:
+        import youtube
+        if youtube.hazir_mi():
+            yt_aciklama = (f"{haber['baslik']}\n\n{kisalt(ic['metin'], 600)}\n\n"
+                           f"👉 Haberin tamamı: {haber['link']}"
+                           + (f"\n\n🤖 {KI_ETIKET}" if KI_ETIKET else "") + "\n\n#havadis #Avusturya #haber #Shorts")
+            kat = re.sub(r"[^\wçğıöşüÇĞİÖŞÜ]", "", haber["kategori"])
+            dene("youtube", lambda: youtube.yukle(video, haber["baslik"], yt_aciklama,
+                                                  ["havadis", "Avusturya", "haber", kat]))
+
     # Hiçbir platformda paylaşılamadıysa görev hata versin
     if not any(k in kayit for k in ("facebook", "facebook_reel", "instagram", "instagram_reel")):
         raise RuntimeError("Haber hiçbir platformda paylaşılamadı (ayrıntılar yukarıdaki notlarda).")

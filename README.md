@@ -89,3 +89,12 @@ Tasarımı değiştirmek için `sablon_manset.html` dosyasını düzenleyin. Sos
 - Özel depolarda GitHub Actions ayda 2.000 dakika ücretsizdir. Yeni haber olmayan çalışmalar ağır kurulumu atladığı için kısa sürer; kullanımı Settings → Billing bölümünden takip edebilirsiniz.
 - Instagram açıklamalarında linkler tıklanmaz; bu yüzden metinde "profildeki link" yönlendirmesi var. Facebook'ta haber linki doğrudan eklenir.
 - Ajans fotoğraflarının sosyal medyada kullanım hakkı ayrı olabilir; sitede kullandığınız fotoğrafların sosyal medya hakkını kontrol edin.
+
+
+## YouTube Shorts (isteğe bağlı)
+15 geçe paylaşılan haber videoları, aşağıdaki üç secret tanımlıysa YouTube kanalına Shorts olarak da yüklenir
+(başlık, kısa açıklama, haber linki; kategori "Haberler ve Politika"). Tanımlı değilse bu adım atlanır.
+- `YOUTUBE_CLIENT_ID`, `YOUTUBE_CLIENT_SECRET`: Google Cloud → API'ler ve Hizmetler → Kimlik bilgileri → OAuth istemci kimliği (Web uygulaması)
+- `YOUTUBE_REFRESH_TOKEN`: Google OAuth Playground ile kanal hesabından alınır (kapsam: `https://www.googleapis.com/auth/youtube`)
+OAuth onay ekranı **In production** durumunda olmalı; "Testing" durumunda yenileme anahtarı 7 günde geçersiz olur.
+Kontrol: Actions → elle çalıştır → `sadece_kontrol` = 1 (kanal adını yazar, paylaşım yapmaz).

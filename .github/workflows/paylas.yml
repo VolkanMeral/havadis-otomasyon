@@ -48,6 +48,9 @@ jobs:
       META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
       IG_USER_ID: ${{ secrets.IG_USER_ID }}
       THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+      YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+      YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+      YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
       TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
       TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
       TIKTOK_MODE: ${{ vars.TIKTOK_MODE || 'inbox' }}
@@ -85,6 +88,10 @@ jobs:
       - name: TikTok kontrolü
         if: github.event_name == 'workflow_dispatch' && inputs.sadece_kontrol == '1' && env.TIKTOK_CLIENT_KEY != ''
         run: python tiktok.py kontrol
+
+      - name: YouTube kontrolü
+        if: github.event_name == 'workflow_dispatch' && inputs.sadece_kontrol == '1'
+        run: python youtube.py kontrol
 
       - name: Sadece bağlantı kontrolü
         if: github.event_name == 'workflow_dispatch' && inputs.sadece_kontrol == '1'
