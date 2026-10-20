@@ -327,7 +327,7 @@ def paylasim_metni(h, ic, platform):
         # Facebook'ta metin alanında sadece haber linki: haberi okumak isteyen linke tıklar.
         # (Başlık ve "KI-unterstützt" notu görselin üzerinde zaten yazıyor.)
         return h["link"]
-    devam = f"👉 Haberin tamamı: {h['link']}\n(Tıklanabilir link profilimizde)"
+    devam = f"👉 Haberin tamamı: {h['link']}"
     return f"{h['baslik']}\n\n{ic['metin']}\n\n{devam}{ki}\n\n{etiketler}".strip()
 
 
