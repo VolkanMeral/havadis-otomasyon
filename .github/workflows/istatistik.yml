@@ -21,11 +21,12 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - run: python istatistik.py
+      - run: python istatistik_karsilastir.py
       - name: Kaydet
         run: |
           git config user.name "havadis-bot"
           git config user.email "bot@havadis.at"
-          git add rapor/istatistik.json
+          git add rapor/istatistik.json rapor/karsilastirma.json
           git diff --cached --quiet && exit 0
           git commit -m "İstatistik raporu"
           for i in 1 2 3 4 5; do git push && exit 0; git pull --rebase -q; sleep 3; done
