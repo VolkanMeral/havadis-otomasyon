@@ -146,11 +146,20 @@ def log(*a):
 def haberleri_getir():
     """RSS'i okur. XML'in tamamı bozuk olsa bile her haberi ayrı ayrı ayıklar
     (sitedeki tek bir hatalı haber diğerlerini engellemesin diye)."""
-    r = HTTP.get(RSS_URL, timeout=30)
-    r.raise_for_status()
-    metin = r.content.decode("utf-8", errors="replace")
-    if "<item" not in metin:
-        raise RuntimeError(f"RSS yerine farklı bir sayfa geldi (ilk 200 karakter): {metin[:200]!r}")
+    # Site bazen anlık olarak RSS yerine bir ara sayfa (koruma/bakım) döndürüyor: birkaç kez yeniden dene
+    for deneme in range(4):
+        try:
+            r = HTTP.get(RSS_URL, timeout=30)
+            r.raise_for_status()
+            metin = r.content.decode("utf-8", errors="replace")
+            if "<item" not in metin:
+                raise RuntimeError(f"RSS yerine farklı bir sayfa geldi (ilk 200 karakter): {metin[:200]!r}")
+            break
+        except Exception as hata:
+            if deneme == 3:
+                raise
+            log(f"RSS alınamadı ({hata.__class__.__name__}), {20 * (deneme + 1)} sn sonra yeniden denenecek…")
+            time.sleep(20 * (deneme + 1))
     haberler = []
     for parca in re.findall(r"<item\b[^>]*>(.*?)</item>", metin, re.S):
         def t(tag, parca=parca):
