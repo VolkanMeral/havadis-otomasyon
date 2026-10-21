@@ -23,7 +23,8 @@ for p in platformlar:
     try:
         if p == "instagram":
             try:
-                sonuc[p] = bot.instagram_video(video, "REELS", metin)
+                ig_video = os.path.join(klasor, "video_ig.mp4")
+                sonuc[p] = bot.instagram_video(ig_video if os.path.exists(ig_video) else video, "REELS", metin)
             except Exception as e:
                 # Yedek yol: Facebook'a yüklenmiş aynı videonun adresiyle (video_url) paylaş
                 eski = {}
