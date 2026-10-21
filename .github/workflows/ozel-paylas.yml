@@ -1,0 +1,48 @@
+name: Özel video paylaşımı (elle)
+
+on:
+  workflow_dispatch:
+    inputs:
+      klasor:
+        description: "ozel/ altındaki klasör adı"
+        required: true
+      platformlar:
+        description: "instagram,facebook,youtube"
+        default: "instagram,facebook,youtube"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: havadis-paylasim
+  cancel-in-progress: false
+
+jobs:
+  paylas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      DRY_RUN: "0"
+      META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+      META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+      YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+      YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python ozel_paylas.py "${{ inputs.klasor }}" "${{ inputs.platformlar }}"
+      - name: Sonucu kaydet
+        if: always()
+        run: |
+          git config user.name "havadis-bot"
+          git config user.email "bot@havadis.at"
+          git add ozel/*/sonuc.json || true
+          git diff --cached --quiet && exit 0
+          git commit -m "Özel paylaşım sonucu"
+          for i in 1 2 3 4 5; do git push && exit 0; git pull --rebase -q; sleep 3; done
+          exit 1
