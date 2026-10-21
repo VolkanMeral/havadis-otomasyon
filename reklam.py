@@ -64,16 +64,20 @@ def zamani(r):
     return dt.datetime.strptime(f"{r['tarih']} {r.get('saat') or '12:00'}", "%Y-%m-%d %H:%M").replace(tzinfo=VIYANA)
 
 
+BEKLE = dt.timedelta(minutes=float(os.getenv("REKLAM_BEKLE", "35")))
+
+
 def sirasi_gelenler(plan, durum, simdi):
+    """Zamanı gelmiş (en fazla PENCERE geçmiş) ya da BEKLE süresi içinde gelecek reklamlar, zaman sırasıyla."""
     sec = []
     for r in plan:
         kalan = [t for t in r["turler"] if t not in durum.get(r["id"], {})]
         if not kalan:
             continue
         z = zamani(r)
-        if r.get("hemen") or (z <= simdi <= z + PENCERE):
+        if r.get("hemen") or (z - BEKLE <= simdi <= z + PENCERE):
             sec.append((r, kalan))
-    return sec
+    return sorted(sec, key=lambda x: zamani(x[0]))
 
 
 # ---------------------------------------------------------------- görsel hazırlama
@@ -347,7 +351,14 @@ def reklam_isle(r, turler, durum):
     hazir = {}
     if "gonderi" in turler:
         if len(kaynak) > 1:
-            hazir["gonderi"] = [akis_gorseli(k, os.path.join(klasor, f"karusel-{i + 1}.jpg")) for i, k in enumerate(kaynak)]
+            oranlar = set()
+            for k in kaynak:
+                with Image.open(k) as im:
+                    oranlar.add(round(im.width / im.height, 2))
+            # Hepsi aynı ve Instagram'ın kabul ettiği oranda ise (ör. kare broşürler) kırpılmadan kullanılır
+            ayni = len(oranlar) == 1 and 0.8 <= oranlar.pop() <= 1.91
+            hazirla = tek_gorsel if ayni else akis_gorseli
+            hazir["gonderi"] = [hazirla(k, os.path.join(klasor, f"karusel-{i + 1}.jpg")) for i, k in enumerate(kaynak)]
         else:
             hazir["gonderi"] = [tek_gorsel(kaynak[0], os.path.join(klasor, "gonderi.jpg"))]
     if "reels" in turler:
@@ -425,11 +436,28 @@ def main():
     if not bot.DRY_RUN and not (bot.PAGE_ID and bot.PAGE_TOKEN):
         log("HATA: META_PAGE_ID / META_PAGE_TOKEN tanımlı değil.")
         return 1
+    import time
     for r, turler in gelenler:
+        bekle = (zamani(r) - dt.datetime.now(VIYANA)).total_seconds()
+        if bekle > 0 and not r.get("hemen") and not bot.DRY_RUN:
+            log(f"{r['id']}: paylaşım saatine {int(bekle // 60)} dk {int(bekle % 60)} sn var, bekleniyor.")
+            time.sleep(bekle)
         log(f"Reklam: {r['id']} ({r.get('firma')}) -> {', '.join(turler)}")
         reklam_isle(r, turler, durum)
     return 0
 
 
+def kontrol():
+    """GitHub Actions için: şu an (veya BEKLE süresi içinde) paylaşılacak reklam var mı?"""
+    gelenler = sirasi_gelenler(plan_oku(), durum_oku(), dt.datetime.now(VIYANA))
+    var = "true" if gelenler else "false"
+    log("Sırası gelen reklam:", ", ".join(r["id"] for r, _ in gelenler) or "yok")
+    cikis = os.getenv("GITHUB_OUTPUT")
+    if cikis:
+        with open(cikis, "a") as f:
+            f.write(f"var={var}\n")
+    return 0
+
+
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(kontrol() if "--kontrol" in sys.argv else main())

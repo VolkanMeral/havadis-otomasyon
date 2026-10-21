@@ -2,10 +2,9 @@ name: Havadis reklam paylaşımı
 
 on:
   schedule:
-    # Pazartesi 11:00 Viyana (yaz saati 09:00 UTC, kış saati 10:00 UTC; reklam.py zamanı gelmeyeni paylaşmaz)
-    - cron: "0 9,10 * * 1"
-    # Cuma 19:00 Viyana (yaz 17:00 UTC, kış 18:00 UTC)
-    - cron: "0 17,18 * * 5"
+    # Her saat 25 geçe (Viyana 07:25–22:25 yaz / 06:25–21:25 kış): sonraki 35 dk içinde reklam varsa
+    # reklam.py tam saatini bekleyip paylaşır. Yoksa tarayıcı kurulmadan hemen biter.
+    - cron: "25 5-20 * * *"
   push:
     branches: [main]
     paths:
@@ -26,7 +25,7 @@ concurrency:
 jobs:
   reklam:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 50
     env:
       DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || vars.DRY_RUN || '1' }}
       META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
@@ -41,22 +40,34 @@ jobs:
           python-version: "3.12"
           cache: pip
 
+      - name: Son reklam durumunu al
+        # Sırada bekleyen bir çalışma eski kopyayla başlamasın (aynı reklam iki kez paylaşılmasın)
+        run: git fetch -q origin main && git reset -q --hard origin/main
+
       - name: Gereksinimleri kur
         run: pip install -r requirements.txt
 
+      - name: Sırası gelen reklam var mı?
+        id: kontrol
+        run: python reklam.py --kontrol
+
       - name: Tarayıcıyı önbellekten al
+        if: steps.kontrol.outputs.var == 'true'
         uses: actions/cache@v4
         with:
           path: ~/.cache/ms-playwright
           key: playwright-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
 
       - name: Tarayıcıyı kur
+        if: steps.kontrol.outputs.var == 'true'
         run: python -m playwright install --with-deps chromium
 
       - name: Video aracını kur
+        if: steps.kontrol.outputs.var == 'true'
         run: which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
 
       - name: Sırası gelen reklamları paylaş
+        if: steps.kontrol.outputs.var == 'true'
         run: python reklam.py
 
       - name: Üretilenleri sakla
