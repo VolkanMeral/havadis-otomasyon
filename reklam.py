@@ -364,7 +364,9 @@ def reklam_isle(r, turler, durum):
     if "reels" in turler:
         reels_kaynak = [os.path.join(KOK, g) for g in r.get("reels_gorseller", [])] or kaynak[:1]
         hazir["reels"] = reels_uret(r, reels_kaynak, os.path.join(klasor, "reels.mp4"))
-    if "story" in turler:
+    if "story" in turler and r.get("story_video"):
+        hazir["story_video"] = os.path.join(KOK, r["story_video"])  # hazır dikey video (1080x1920, ≤60 sn)
+    elif "story" in turler:
         story_kaynak = os.path.join(KOK, r["story_gorsel"]) if r.get("story_gorsel") else kaynak[0]
         hazir["story"] = story_uret(r, story_kaynak, os.path.join(klasor, "story.jpg"))
     log(f"{r['id']}: hazır ->", ", ".join(hazir))
@@ -412,7 +414,12 @@ def reklam_isle(r, turler, durum):
         if bot.IG_USER_ID:
             dene("reels", "instagram", lambda: bot.instagram_video(video, "REELS", r["metin"]))
 
-    if "story" in turler:
+    if "story_video" in hazir:
+        video = hazir["story_video"]
+        if bot.IG_USER_ID:
+            dene("story", "instagram", lambda: bot.instagram_video(video, "STORIES"))
+        dene("story", "facebook", lambda: bot.facebook_story(video))
+    elif "story" in turler:
         foto = {}
 
         def yukle():
