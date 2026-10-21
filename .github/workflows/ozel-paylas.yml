@@ -35,7 +35,10 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: python ozel_paylas.py "${{ inputs.klasor }}" "${{ inputs.platformlar }}"
+      - if: inputs.platformlar == 'test'
+        run: python ig_test.py ozel/${{ inputs.klasor }}/test_*.mp4
+      - if: inputs.platformlar != 'test'
+        run: python ozel_paylas.py "${{ inputs.klasor }}" "${{ inputs.platformlar }}"
       - name: Sonucu kaydet
         if: always()
         run: |
