@@ -416,9 +416,11 @@ def reklam_isle(r, turler, durum):
 
     if "story_video" in hazir:
         video = hazir["story_video"]
-        if bot.IG_USER_ID:
+        platformlar = r.get("platformlar", ["facebook", "instagram"])
+        if bot.IG_USER_ID and "instagram" in platformlar:
             dene("story", "instagram", lambda: bot.instagram_video(video, "STORIES"))
-        dene("story", "facebook", lambda: bot.facebook_story(video))
+        if "facebook" in platformlar:
+            dene("story", "facebook", lambda: bot.facebook_story(video))
     elif "story" in turler:
         foto = {}
 
