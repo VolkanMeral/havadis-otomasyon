@@ -16,10 +16,31 @@ kapak = kapak if os.path.exists(kapak) else None
 yb = os.path.join(klasor, "youtube_baslik.txt")
 yt_baslik = open(yb, encoding="utf-8").read().strip() if os.path.exists(yb) else metin.split("\n")[0]
 sonuc, hata = {}, False
+_eski = os.path.join(klasor, "sonuc.json")
+if os.path.exists(_eski):
+    sonuc = {k: v for k, v in json.load(open(_eski)).items() if not str(v).startswith("HATA")}
 for p in platformlar:
     try:
         if p == "instagram":
-            sonuc[p] = bot.instagram_video(video, "REELS", metin)
+            try:
+                sonuc[p] = bot.instagram_video(video, "REELS", metin)
+            except Exception as e:
+                # Yedek yol: Facebook'a yüklenmiş aynı videonun adresiyle (video_url) paylaş
+                eski = {}
+                if os.path.exists(os.path.join(klasor, "sonuc.json")):
+                    eski = json.load(open(os.path.join(klasor, "sonuc.json")))
+                fb_id = sonuc.get("facebook") or eski.get("facebook")
+                if not fb_id or str(fb_id).startswith("HATA"):
+                    raise
+                print("Instagram doğrudan yükleme başarısız, Facebook video adresiyle deneniyor:", e)
+                src = bot.kontrol(bot.HTTP.get(bot.graph(str(fb_id)), timeout=60,
+                                               params={"fields": "source", "access_token": bot.PAGE_TOKEN}))["source"]
+                kap = bot.kontrol(bot.HTTP.post(bot.graph(f"{bot.IG_USER_ID}/media"), timeout=60, data={
+                    "media_type": "REELS", "video_url": src, "caption": metin, "share_to_feed": "true",
+                    "thumb_offset": "3000", "access_token": bot.PAGE_TOKEN}))
+                bot.ig_bekle(kap["id"], deneme=90, aralik=5)
+                sonuc[p] = bot.kontrol(bot.HTTP.post(bot.graph(f"{bot.IG_USER_ID}/media_publish"), timeout=60,
+                                       data={"creation_id": kap["id"], "access_token": bot.PAGE_TOKEN}))["id"]
         elif p == "facebook":
             sonuc[p] = bot.facebook_reel(video, metin, kapak)
         elif p == "youtube":
