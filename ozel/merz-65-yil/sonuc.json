@@ -1,5 +1,5 @@
 {
- "instagram": "HATA: Graph API hatası 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}",
  "facebook": "2746277892466692",
- "youtube": "7W2Jpa1PN4w"
+ "youtube": "7W2Jpa1PN4w",
+ "instagram": "HATA: Instagram medyayı işleyemedi: Error: Media upload has failed with error code 2207076"
 }
