@@ -46,5 +46,11 @@
    "instagram_hata": "Graph API hatası 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}",
    "facebook": "1418566893678474"
   }
+ },
+ "gul-2026-10-21-ig-story-tekrar": {
+  "story": {
+   "zaman": "2026-10-21T15:10:01+00:00",
+   "instagram": "17871820161642565"
+  }
  }
 }
