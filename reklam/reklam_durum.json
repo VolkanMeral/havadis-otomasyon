@@ -40,6 +40,11 @@
    "zaman": "2026-10-21T15:00:00+00:00",
    "facebook": "133738750106746_1780535267218250",
    "instagram": "18152656102486184"
+  },
+  "story": {
+   "zaman": "2026-10-21T15:03:03+00:00",
+   "instagram_hata": "Graph API hatası 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}",
+   "facebook": "1418566893678474"
   }
  }
 }
