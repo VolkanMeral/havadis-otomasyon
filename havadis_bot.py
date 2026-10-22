@@ -143,20 +143,33 @@ def log(*a):
 
 # ---------------------------------------------------------------- RSS
 
+class RssEngeli(RuntimeError):
+    """Site RSS yerine bir koruma/ara sayfa döndürdü (geçici)."""
+
+
 def haberleri_getir():
     """RSS'i okur. XML'in tamamı bozuk olsa bile her haberi ayrı ayrı ayıklar
     (sitedeki tek bir hatalı haber diğerlerini engellemesin diye)."""
-    # Site bazen anlık olarak RSS yerine bir ara sayfa (koruma/bakım) döndürüyor: birkaç kez yeniden dene
+    # Site bazen RSS yerine bir koruma/ara sayfa döndürüyor: farklı tarayıcı kimliğiyle birkaç kez yeniden dene
+    tarayici_basliklari = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+                      "Chrome/130.0 Safari/537.36",
+        "Accept": "application/rss+xml, application/xml;q=0.9, text/xml;q=0.8, */*;q=0.5",
+        "Accept-Language": "tr-TR,tr;q=0.9,de;q=0.8"}
+    metin = ""
     for deneme in range(4):
         try:
-            r = HTTP.get(RSS_URL, timeout=30)
+            r = HTTP.get(RSS_URL, timeout=30, headers=tarayici_basliklari if deneme % 2 else None)
             r.raise_for_status()
             metin = r.content.decode("utf-8", errors="replace")
             if "<item" not in metin:
-                raise RuntimeError(f"RSS yerine farklı bir sayfa geldi (ilk 200 karakter): {metin[:200]!r}")
+                raise RssEngeli(f"RSS yerine farklı bir sayfa geldi (ilk 200 karakter): {metin[:200]!r}")
             break
         except Exception as hata:
             if deneme == 3:
+                if isinstance(hata, RssEngeli):
+                    # Teşhis için sayfanın betik kısmını not düş
+                    print(f"::warning title=RSS koruma sayfası (teşhis)::{metin[:1500]!r}", flush=True)
                 raise
             log(f"RSS alınamadı ({hata.__class__.__name__}), {20 * (deneme + 1)} sn sonra yeniden denenecek…")
             time.sleep(20 * (deneme + 1))
@@ -777,6 +790,13 @@ if __name__ == "__main__":
         try:
             yeni_haber_var_mi()
             sys.exit(0)
+        except (RssEngeli, requests.RequestException) as hata:
+            print(f"::warning title=RSS şu an alınamadı, bu çalışma atlandı::{type(hata).__name__}: {str(hata)[:300]}")
+            cikti = os.getenv("GITHUB_OUTPUT")
+            if cikti:
+                with open(cikti, "a", encoding="utf-8") as f:
+                    f.write("yeni=false\n")
+            sys.exit(0)
         except Exception as hata:
             gh_hata("Havadis kontrol hatası", f"{type(hata).__name__}: {hata}")
             sys.exit(1)
@@ -793,6 +813,9 @@ if __name__ == "__main__":
         if not DRY_RUN:
             baglanti_kontrol()
         sys.exit(main())
+    except (RssEngeli, requests.RequestException) as hata:
+        print(f"::warning title=RSS şu an alınamadı, bu çalışma atlandı::{type(hata).__name__}: {str(hata)[:300]}")
+        sys.exit(0)
     except Exception as hata:
         gh_hata("Havadis paylaşım hatası", f"{type(hata).__name__}: {hata}")
         sys.exit(1)
