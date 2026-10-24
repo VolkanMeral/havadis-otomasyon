@@ -39,6 +39,13 @@ def yazi_oku(adres):
     baslik = meta(sayfa, "og:title") or temiz((re.search(r"<h1[^>]*>(.*?)</h1>", sayfa, re.S) or [None, ""])[1])
     resim = meta(sayfa, "og:image")
     yazar = meta(sayfa, "author") or meta(sayfa, "article:author")
+    # Başlık çoğu zaman "Başlık - Yazar Adı - Havadis Haber" biçiminde
+    parcalar = [x.strip() for x in re.split(r"\s+-\s+", baslik)]
+    if parcalar and parcalar[-1].lower().startswith("havadis"):
+        parcalar = parcalar[:-1]
+    if len(parcalar) >= 2:
+        yazar = yazar or parcalar[-1]
+        baslik = " - ".join(parcalar[:-1])
     # Metin: en çok paragraf içeren blok
     paragraflar = [temiz(p) for p in re.findall(r"<p\b[^>]*>(.*?)</p>", sayfa, re.S | re.I)]
     paragraflar = [p for p in paragraflar if len(p) > 40 and "©" not in p and "çerez" not in p.lower()]
@@ -59,6 +66,8 @@ def instagram_metni(y):
             if kalan > 120:
                 kes = p[:kalan].rsplit(". ", 1)[0] + "."
                 govde = (govde + "\n\n" + kes) if govde else kes
+            if govde.rstrip()[-1:] in ".!?…":
+                return bas + govde + devam.lstrip("…") + son
             return bas + govde + devam + son
         govde = aday
     return bas + govde + son
