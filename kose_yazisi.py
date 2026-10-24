@@ -84,12 +84,12 @@ SABLON = """<!doctype html><html><head><meta charset="utf-8">
  .tarih{font-family:'Barlow Condensed';font-weight:700;font-size:26px;letter-spacing:3px;color:rgba(255,255,255,.8)}
  .etiket{position:absolute;left:72px;top:250px;background:#E42320;font-family:'Barlow Condensed';font-weight:800;
    font-size:32px;letter-spacing:4px;padding:8px 20px}
- .foto{position:absolute;right:72px;top:220px;width:300px;height:300px;border-radius:50%;object-fit:cover;
+ .foto{position:absolute;right:60px;top:180px;width:420px;height:420px;border-radius:50%;object-fit:cover;
    border:8px solid #E42320;box-shadow:0 20px 60px #0008}
- .yazar{position:absolute;left:72px;top:330px;width:560px}
+ .yazar{position:absolute;left:72px;top:330px;width:500px}
  .yazar .ad{font-family:'Barlow Condensed';font-weight:900;font-size:64px;line-height:1;text-transform:uppercase}
  .yazar .alt{font-size:28px;color:rgba(255,255,255,.7);margin-top:10px}
- .tirnak{position:absolute;left:58px;top:560px;font-family:Georgia,serif;font-size:260px;line-height:1;color:#E42320}
+ .tirnak{position:absolute;left:58px;top:575px;font-family:Georgia,serif;font-size:260px;line-height:1;color:#E42320}
  h1{position:absolute;left:72px;right:72px;top:700px;margin:0;font-family:'Barlow Condensed';font-weight:900;
    font-size:$px;line-height:1.02;text-transform:uppercase}
  .giris{position:absolute;left:72px;right:72px;bottom:190px;font-size:32px;line-height:1.35;color:#E4E8EF;
