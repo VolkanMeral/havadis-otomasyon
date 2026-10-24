@@ -1,0 +1,45 @@
+name: Köşe yazısı paylaşımı
+
+on:
+  workflow_dispatch:
+    inputs:
+      adres:
+        description: "Köşe yazısının adresi"
+        required: true
+      paylas:
+        description: "1 = gerçekten paylaş (0 = sadece önizleme)"
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: havadis-paylasim
+  cancel-in-progress: false
+
+jobs:
+  kose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      DRY_RUN: "0"
+      META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+      META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
+      - run: python kose_yazisi.py "${{ inputs.adres }}" ${{ inputs.paylas == '1' && '--paylas' || '' }}
+      - name: Önizlemeyi kaydet
+        if: always()
+        run: |
+          git config user.name "havadis-bot"
+          git config user.email "bot@havadis.at"
+          git add ornek/kose || true
+          git diff --cached --quiet && exit 0
+          git commit -m "Köşe yazısı önizlemesi"
+          for i in 1 2 3 4 5; do git push && exit 0; git pull --rebase -q; sleep 3; done
+          exit 1
