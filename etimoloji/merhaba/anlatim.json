@@ -1,18 +1,82 @@
-{"ses": "tr-TR-AhmetNeural", "hiz": "+4%", "perde": "-3Hz",
+{
+ "ses": "tr-TR-AhmetNeural",
+ "hiz": "+4%",
+ "perde": "-3Hz",
  "parcalar": [
-  {"id": "g1", "sahne": "giris", "metin": "Bu kelimeyi her gün söylüyoruz."},
-  {"id": "g2", "sahne": "giris", "metin": "Ama ne dediğimizi gerçekten biliyor muyuz?"},
-  {"id": "z1", "sahne": "gizem", "metin": "Bu selamın içinde, bir mekân saklı."},
-  {"id": "z2", "sahne": "gizem", "metin": "Bir kapı... ve ardındaki genişlik."},
-  {"id": "k1", "sahne": "kok", "metin": "Kelime Arapçadan geliyor: marhaban."},
-  {"id": "k2", "sahne": "kok", "metin": "Kökü re, ha, be. Anlamı: genişlik, bolluk."},
-  {"id": "a1", "sahne": "anlam", "metin": "Eski sözlüklere göre misafire şöyle denirdi: Evimiz sana geniş, burada rahat et."},
-  {"id": "a2", "sahne": "anlam", "metin": "Aynı zamanda bir duaydı: bolluk ve huzur dilemek."},
-  {"id": "r1", "sahne": "rivayet", "metin": "Bir rivayete göre bu selamı ilk kullanan,"},
-  {"id": "r2", "sahne": "rivayet", "metin": "altıncı yüzyılda yaşamış Himyerî Seyf bin Zûyezen'di."},
-  {"id": "y1", "sahne": "yolculuk", "metin": "Arapçadan Osmanlı Türkçesine geçti,"},
-  {"id": "y2", "sahne": "yolculuk", "metin": "oradan Balkan dillerine kadar yayıldı."},
-  {"id": "s1", "sahne": "kapanis", "metin": "Yani biri size merhaba dediğinde, aslında şunu söylüyor:"},
-  {"id": "s2", "sahne": "kapanis", "metin": "Burada, sana yer var."},
-  {"id": "n1", "sahne": "kunye", "metin": "Kelimelerin Gizli Tarihi. Her kelimenin bir hikâyesi var."}
- ]}
+  {
+   "id": "g1",
+   "sahne": "giris",
+   "metin": "Bu kelimeyi her gün söylüyoruz."
+  },
+  {
+   "id": "g2",
+   "sahne": "giris",
+   "metin": "Ama ne dediğimizi gerçekten biliyor muyuz?"
+  },
+  {
+   "id": "z1",
+   "sahne": "gizem",
+   "metin": "Bu selamın içinde, bir mekân saklı."
+  },
+  {
+   "id": "z2",
+   "sahne": "gizem",
+   "metin": "Bir kapı... ve ardındaki genişlik."
+  },
+  {
+   "id": "k1",
+   "sahne": "kok",
+   "metin": "Kelime Arapçadan geliyor: marhaban."
+  },
+  {
+   "id": "k2",
+   "sahne": "kok",
+   "metin": "Kökü re, ha, be. Anlamı: genişlik, bolluk."
+  },
+  {
+   "id": "a1",
+   "sahne": "anlam",
+   "metin": "Eski sözlüklere göre misafire şöyle denirdi: Evimiz sana geniş, burada rahat et."
+  },
+  {
+   "id": "a2",
+   "sahne": "anlam",
+   "metin": "Aynı zamanda bir duaydı: bolluk ve huzur dilemek."
+  },
+  {
+   "id": "r1",
+   "sahne": "rivayet",
+   "metin": "Bir rivayete göre bu selamı ilk kullanan,"
+  },
+  {
+   "id": "r2",
+   "sahne": "rivayet",
+   "metin": "altıncı yüzyılda yaşamış, Himyeri hükümdar ailesinden Seyf bin Zuyezen."
+  },
+  {
+   "id": "y1",
+   "sahne": "yolculuk",
+   "metin": "Arapçadan Osmanlı Türkçesine geçti,"
+  },
+  {
+   "id": "y2",
+   "sahne": "yolculuk",
+   "metin": "oradan Balkan dillerine kadar yayıldı."
+  },
+  {
+   "id": "s1",
+   "sahne": "kapanis",
+   "metin": "Yani biri size merhaba dediğinde, aslında şunu söylüyor:"
+  },
+  {
+   "id": "s2",
+   "sahne": "kapanis",
+   "metin": "Burada, sana yer var."
+  },
+  {
+   "id": "n1",
+   "sahne": "kunye",
+   "metin": "Kelimelerin Gizli Tarihi. Her kelimenin bir hikâyesi var."
+  }
+ ]
+}
