@@ -1,0 +1,83 @@
+{
+ "ses": "tr-TR-AhmetNeural",
+ "hiz": "-2%",
+ "perde": "-6Hz",
+ "parcalar": [
+  {
+   "id": "gi1",
+   "sahne": "giris",
+   "metin": "Dünyanın pek çok dilinde aynı kelime:"
+  },
+  {
+   "id": "gi2",
+   "sahne": "giris",
+   "metin": "yoğurt. Ve bu kelime Türkçe."
+  },
+  {
+   "id": "gi1",
+   "sahne": "gizem",
+   "metin": "Peki bu kelime ne kadar eski?"
+  },
+  {
+   "id": "gi2",
+   "sahne": "gizem",
+   "metin": "Cevap, dokuz yüz yıllık bir sözlükte saklı."
+  },
+  {
+   "id": "ko1",
+   "sahne": "kok",
+   "metin": "Kökünü çoğu kaynak, koyulaşmak ya da yoğurmak anlamındaki bir fiile bağlar."
+  },
+  {
+   "id": "ko2",
+   "sahne": "kok",
+   "metin": "Ama bu konu hâlâ tartışmalı."
+  },
+  {
+   "id": "an1",
+   "sahne": "anlam",
+   "metin": "Eski Uygur metinlerinde kelime, yuğrut diye geçer."
+  },
+  {
+   "id": "an2",
+   "sahne": "anlam",
+   "metin": "Bugünkü biçim, zamanla bu eski sözcükten gelişti."
+  },
+  {
+   "id": "ri1",
+   "sahne": "rivayet",
+   "metin": "On birinci yüzyılda Kaşgarlı Mahmud, kelimeyi Divanü Lugati't-Türk'e yazdı."
+  },
+  {
+   "id": "ri2",
+   "sahne": "rivayet",
+   "metin": "Aynı dönemde Kutadgu Bilig'de de geçiyor."
+  },
+  {
+   "id": "yo1",
+   "sahne": "yolculuk",
+   "metin": "Kelime Avrupa dillerine Türkçeden geçti."
+  },
+  {
+   "id": "yo2",
+   "sahne": "yolculuk",
+   "metin": "İngilizcede ilk kez, bin altı yüz yirmilerde kayda geçti.",
+   "ekran": "İngilizcede ilk kez 1620’lerde kayda geçti."
+  },
+  {
+   "id": "ka1",
+   "sahne": "kapanis",
+   "metin": "Dokuz yüz yılı aşkın süredir yazıya geçmiş,"
+  },
+  {
+   "id": "ka2",
+   "sahne": "kapanis",
+   "metin": "bir Türkçe kelime: yoğurt."
+  },
+  {
+   "id": "ku1",
+   "sahne": "kunye",
+   "metin": "Kelimelerin Gizli Tarihi. Her kelimenin bir hikâyesi var."
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "aramalar": [
+  {
+   "id": "harita",
+   "sorgu": "Diwan Lughat al-Turk map Kashgari",
+   "adet": 2
+  },
+  {
+   "id": "yogurt",
+   "sorgu": "yogurt bowl",
+   "adet": 3
+  },
+  {
+   "id": "kutadgu",
+   "sorgu": "Kutadgu Bilig manuscript",
+   "adet": 2
+  },
+  {
+   "id": "uygur",
+   "sorgu": "Uyghur manuscript Turfan",
+   "adet": 2
+  },
+  {
+   "id": "yogurtcu",
+   "sorgu": "Ottoman yogurt seller",
+   "adet": 3
+  },
+  {
+   "id": "kasgar",
+   "sorgu": "Kashgar 19th century",
+   "adet": 2
+  }
+ ]
+}

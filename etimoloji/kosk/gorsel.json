@@ -1,0 +1,34 @@
+{
+ "aramalar": [
+  {
+   "id": "bagdat",
+   "sorgu": "Baghdad Kiosk Topkapi",
+   "adet": 3
+  },
+  {
+   "id": "cinili",
+   "sorgu": "Tiled Kiosk Istanbul",
+   "adet": 2
+  },
+  {
+   "id": "paris",
+   "sorgu": "kiosque Paris 19th century",
+   "adet": 3
+  },
+  {
+   "id": "minyatur",
+   "sorgu": "Ottoman miniature pavilion garden",
+   "adet": 3
+  },
+  {
+   "id": "pers",
+   "sorgu": "Persian pavilion miniature",
+   "adet": 2
+  },
+  {
+   "id": "bahce",
+   "sorgu": "garden pavilion engraving 18th century",
+   "adet": 2
+  }
+ ]
+}

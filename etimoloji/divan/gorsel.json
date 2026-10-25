@@ -1,0 +1,34 @@
+{
+ "aramalar": [
+  {
+   "id": "meclis",
+   "sorgu": "Ottoman Imperial Council miniature",
+   "adet": 3
+  },
+  {
+   "id": "kubbealti",
+   "sorgu": "Topkapi Kubbealti Imperial Council Hall",
+   "adet": 2
+  },
+  {
+   "id": "hafiz",
+   "sorgu": "Divan of Hafez manuscript",
+   "adet": 2
+  },
+  {
+   "id": "dogana",
+   "sorgu": "Punta della Dogana Venice painting",
+   "adet": 2
+  },
+  {
+   "id": "sedir",
+   "sorgu": "Ottoman interior sofa divan painting",
+   "adet": 3
+  },
+  {
+   "id": "katip",
+   "sorgu": "Ottoman scribe miniature",
+   "adet": 2
+  }
+ ]
+}
