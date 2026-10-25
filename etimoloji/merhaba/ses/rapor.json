@@ -1,9 +1,11 @@
 {
- "g2": "duz",
- "z1": "duz",
- "k1": "duz",
- "a2": "duz",
- "r2": "duz",
+ "g2": "mevcut",
+ "z1": "mevcut",
+ "k1": "mevcut",
+ "k2": "duz",
+ "a2": "mevcut",
+ "r2": "mevcut",
  "s1": "mevcut",
- "s2": "mevcut"
+ "s2": "mevcut",
+ "n1": "duz"
 }
