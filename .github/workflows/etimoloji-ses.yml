@@ -3,7 +3,7 @@ name: Etimoloji seslendirme (paylaşım yapmaz)
 on:
   push:
     branches: [etimoloji-ses]
-    paths: ["etimoloji/**/anlatim.json"]
+    paths: ["etimoloji/**/anlatim.json", ".github/workflows/etimoloji-ses.yml"]
 
 permissions:
   contents: write
@@ -11,7 +11,7 @@ permissions:
 jobs:
   ses:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - name: Kurulum
@@ -22,12 +22,23 @@ jobs:
           import json, glob, os, subprocess
           for f in glob.glob("etimoloji/*/anlatim.json"):
               d = json.load(open(f)); out = os.path.join(os.path.dirname(f), "ses"); os.makedirs(out, exist_ok=True)
+              import time
+              hatali = []
               for p in d["parcalar"]:
-                  for deneme in range(3):
+                  yol = f"{out}/{p['id']}.mp3"; ok = False
+                  for deneme in range(6):
                       r = subprocess.run(["edge-tts", "--voice", d["ses"], f"--rate={d['hiz']}", f"--pitch={d['perde']}",
-                                          "--text", p["metin"], "--write-media", f"{out}/{p['id']}.mp3"])
-                      if r.returncode == 0: break
-                  print(p["id"], "ok" if r.returncode == 0 else "HATA")
+                                          "--text", p["metin"], "--write-media", yol])
+                      k = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", yol],
+                                         capture_output=True, text=True)
+                      try: ok = r.returncode == 0 and float(k.stdout.strip()) > 0.5
+                      except ValueError: ok = False
+                      if ok: break
+                      time.sleep(3 + deneme * 2)
+                  print(p["id"], "ok" if ok else "HATA", flush=True)
+                  if not ok: hatali.append(p["id"])
+                  time.sleep(1)
+              if hatali: raise SystemExit("eksik: " + ",".join(hatali))
           PY
       - name: Kaydet
         run: |
