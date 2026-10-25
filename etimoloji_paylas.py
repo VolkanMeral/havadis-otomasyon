@@ -37,6 +37,10 @@ def main():
     k = sec(takvim, zorla)
     if not k:
         bot.log("Şu an paylaşılacak onaylı etimoloji bölümü yok."); return 0
+    if zorla and not k.get("onay") and not bot.DRY_RUN:
+        bot.log(f"{zorla} henüz onaylanmadı; paylaşılmadı."); return 0
+    if zorla and k.get("paylasildi") and not bot.DRY_RUN:
+        bot.log(f"{zorla} zaten paylaşıldı ({k['paylasildi']})."); return 0
     m = json.load(open(f"etimoloji/yayin/metinler/{k['kelime']}.json", encoding="utf-8"))
     bot.log(f"Etimoloji bölümü: {k['kelime']} ({k['tarih']} {k['saat']})")
     if bot.DRY_RUN:
