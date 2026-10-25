@@ -1,0 +1,38 @@
+name: Etimoloji seslendirme (paylaşım yapmaz)
+
+on:
+  push:
+    branches: [etimoloji-ses]
+    paths: ["etimoloji/**/anlatim.json"]
+
+permissions:
+  contents: write
+
+jobs:
+  ses:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Kurulum
+        run: pip install edge-tts
+      - name: Seslendir
+        run: |
+          python - <<'PY'
+          import json, glob, os, subprocess
+          for f in glob.glob("etimoloji/*/anlatim.json"):
+              d = json.load(open(f)); out = os.path.join(os.path.dirname(f), "ses"); os.makedirs(out, exist_ok=True)
+              for p in d["parcalar"]:
+                  for deneme in range(3):
+                      r = subprocess.run(["edge-tts", "--voice", d["ses"], f"--rate={d['hiz']}", f"--pitch={d['perde']}",
+                                          "--text", p["metin"], "--write-media", f"{out}/{p['id']}.mp3"])
+                      if r.returncode == 0: break
+                  print(p["id"], "ok" if r.returncode == 0 else "HATA")
+          PY
+      - name: Kaydet
+        run: |
+          git config user.name "havadis-bot"
+          git config user.email "bot@havadis.at"
+          git add etimoloji/*/ses/*.mp3
+          git commit -m "Etimoloji seslendirme parçaları"
+          git push
