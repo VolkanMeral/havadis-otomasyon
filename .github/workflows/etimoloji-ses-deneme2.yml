@@ -1,0 +1,43 @@
+name: Etimoloji ses denemesi 2 (paylaşım yapmaz)
+
+on:
+  push:
+    branches: [etimoloji-ses]
+    paths: ["etimoloji/ses-deneme2/metin.txt", ".github/workflows/etimoloji-ses-deneme2.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  deneme:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install piper-tts edge-tts
+      - name: Piper Türkçe sesleri
+        run: |
+          cd etimoloji/ses-deneme2
+          for v in fahrettin fettah dfki; do
+            base="https://huggingface.co/rhasspy/piper-voices/resolve/main/tr/tr_TR/$v/medium"
+            curl -sSfL -o $v.onnx "$base/tr_TR-$v-medium.onnx" && curl -sSfL -o $v.onnx.json "$base/tr_TR-$v-medium.onnx.json" || { echo "$v yok"; continue; }
+            curl -sSfL -o lisans_$v.md "$base/MODEL_CARD" || true
+            piper --model $v.onnx --length_scale 1.08 --output_file piper_$v.wav < metin.txt || python -m piper --model $v.onnx --length_scale 1.08 --output_file piper_$v.wav < metin.txt
+            rm -f $v.onnx $v.onnx.json
+          done
+      - name: Edge Ahmet varyantları
+        run: |
+          cd etimoloji/ses-deneme2
+          M="$(cat metin.txt)"
+          gen() { for i in 1 2 3 4 5 6; do edge-tts --voice "$1" --rate="$2" --pitch="$3" --text "$M" --write-media "$4" && [ $(stat -c %s "$4") -gt 4000 ] && return 0; sleep 5; done; }
+          gen tr-TR-AhmetNeural "-8%" "-10Hz" edge_ahmet_derin.mp3
+          gen tr-TR-AhmetNeural "+0%" "-2Hz" edge_ahmet_dogal.mp3
+          gen tr-TR-AhmetNeural "-12%" "-14Hz" edge_ahmet_belgesel.mp3
+          gen tr-TR-EmelNeural "-4%" "-2Hz" edge_emel.mp3
+      - name: Kaydet
+        if: always()
+        run: |
+          git config user.name "havadis-bot"; git config user.email "bot@havadis.at"
+          git add -A etimoloji/ses-deneme2
+          git commit -m "Etimoloji ses denemesi 2" || exit 0
+          for i in 1 2 3; do git pull --rebase -q && git push && exit 0; sleep 5; done
