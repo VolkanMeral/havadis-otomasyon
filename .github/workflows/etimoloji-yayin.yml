@@ -1,0 +1,64 @@
+name: Kelimelerin Gizli Tarihi – yayın
+
+on:
+  schedule:
+    # 12:45 ve 18:45 Viyana (yaz/kış saati için iki UTC saati; betik Viyana saatine göre karar verir)
+    - cron: "45 10,11,16,17 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "1 = paylaşma, sadece kontrol et"
+        default: "1"
+      kelime:
+        description: "Boş = takvime göre; dolu = bu bölümü hemen paylaş (onay gerekir)"
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: havadis-paylasim
+  cancel-in-progress: false
+
+jobs:
+  yayin:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || '0' }}
+      META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+      META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+      YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+      YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bugün paylaşılacak bölüm var mı?
+        id: kontrol
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, datetime as dt
+          from zoneinfo import ZoneInfo
+          n = dt.datetime.now(ZoneInfo("Europe/Vienna")); t = json.load(open("etimoloji/yayin/takvim.json"))
+          var = any(k.get("onay") and not k.get("paylasildi") and k["tarih"] == n.date().isoformat() for k in t["kayitlar"])
+          print("var=" + ("1" if var or "${{ inputs.kelime }}" else "0"))
+          PY
+      - if: steps.kontrol.outputs.var == '1'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - if: steps.kontrol.outputs.var == '1'
+        run: pip install -r requirements.txt
+      - if: steps.kontrol.outputs.var == '1'
+        run: |
+          if [ -n "${{ inputs.kelime }}" ]; then python etimoloji_paylas.py --zorla "${{ inputs.kelime }}"; else python etimoloji_paylas.py; fi
+      - name: Sonucu kaydet
+        if: always() && steps.kontrol.outputs.var == '1'
+        run: |
+          git config user.name "havadis-bot"; git config user.email "bot@havadis.at"
+          git add etimoloji/yayin/takvim.json || true
+          git diff --cached --quiet && exit 0
+          git commit -m "Etimoloji yayın kaydı"
+          for i in 1 2 3 4 5; do git push && exit 0; git pull --rebase -q; sleep 3; done
+          exit 1
