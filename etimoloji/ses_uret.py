@@ -31,7 +31,7 @@ def main(f):
             ham = p.get("ses_metni", p["metin"])
             varyant = [ham, ham.rstrip(",.:;!? ") + ".", ham.replace(",", ""), ham.replace("'", "").replace("’", ""), "Evet. " + ham]
             ayarlar = [(d["hiz"], d["perde"]), ("+0%", d["perde"]), (d["hiz"], "-5Hz")]
-            denemeler = [(v, h, pr) for v in varyant for (h, pr) in ayarlar][:12]
+            denemeler = [(v, h, pr) for v in varyant for (h, pr) in ayarlar][:6]
             for deneme, (metin, hiz, perde) in enumerate(denemeler):
                 try:
                     asyncio.run(uret(metin, d["ses"], hiz, perde, yol))

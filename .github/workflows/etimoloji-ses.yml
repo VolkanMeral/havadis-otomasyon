@@ -3,7 +3,7 @@ name: Etimoloji seslendirme (paylaşım yapmaz)
 on:
   push:
     branches: [etimoloji-ses]
-    paths: ["etimoloji/**/anlatim.json", "etimoloji/ses_uret.py", ".github/workflows/etimoloji-ses.yml"]
+    paths: ["etimoloji/**/anlatim.json", "etimoloji/ses_uret.py", "etimoloji/tetik.txt", ".github/workflows/etimoloji-ses.yml"]
 
 permissions:
   contents: write
@@ -14,7 +14,7 @@ jobs:
     timeout-minutes: 25
     strategy:
       fail-fast: false
-      max-parallel: 6
+      max-parallel: 3
       matrix:
         bolum: [merhaba, kahve, yogurt, kosk, lale, divan]
     steps:
