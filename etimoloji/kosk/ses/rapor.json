@@ -1,13 +1,17 @@
 {
  "g1": "mevcut",
  "g2": "mevcut",
+ "z1": "duz -2% -6Hz",
  "z2": "mevcut",
  "k1": "mevcut",
  "k2": "mevcut",
+ "a1": "duz +0% -6Hz",
  "a2": "mevcut",
  "r1": "mevcut",
  "r2": "mevcut",
+ "y1": "duz -2% -6Hz",
  "y2": "mevcut",
  "s1": "mevcut",
- "s2": "mevcut"
+ "s2": "mevcut",
+ "n1": "duz -2% -6Hz"
 }
