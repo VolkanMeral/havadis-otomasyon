@@ -1,13 +1,15 @@
 {
- "g1": "duz -2% -6Hz",
- "z1": "duz +0% -6Hz",
- "k1": "duz -2% -5Hz",
- "a2": "duz -2% -6Hz",
- "r1": "duz +0% -6Hz",
- "r2": "duz -2% -6Hz",
- "r3": "duz +0% -6Hz",
- "y1": "duz -2% -6Hz",
- "y2": "duz -2% -5Hz",
- "s1": "duz +0% -6Hz",
- "n1": "duz -2% -6Hz"
+ "g1": "mevcut",
+ "z1": "mevcut",
+ "z2": "duz -2% -6Hz",
+ "k1": "mevcut",
+ "a1": "duz -2% -6Hz",
+ "a2": "mevcut",
+ "r1": "mevcut",
+ "r2": "mevcut",
+ "r3": "mevcut",
+ "y1": "mevcut",
+ "y2": "mevcut",
+ "s1": "mevcut",
+ "n1": "mevcut"
 }

@@ -8,3 +8,13 @@ Traceback (most recent call last):
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 SystemExit: eksik: g2,z2,k2,a1,s2
 
+etimoloji/lale/anlatim.json
+Traceback (most recent call last):
+  File "/home/runner/work/havadis-otomasyon/havadis-otomasyon/etimoloji/ses_uret.py", line 56, in <module>
+    try: main(f)
+         ^^^^^^^
+  File "/home/runner/work/havadis-otomasyon/havadis-otomasyon/etimoloji/ses_uret.py", line 50, in main
+    if hatali: sys.exit("eksik: " + ",".join(hatali))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SystemExit: eksik: g2,k2,s2
+
