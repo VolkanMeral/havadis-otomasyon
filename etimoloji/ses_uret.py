@@ -28,7 +28,7 @@ def main(f):
         ok = False
         for mod in ([d["dil"], None] if d.get("dil") else [None]):
             DIL = mod
-            ayarlar = [(d["hiz"], d["perde"]), ("+0%", d["perde"]), (d["hiz"], "-5Hz"), ("+1%", "-4Hz")]
+            ayarlar = [(d["hiz"], d["perde"]), ("+0%", d["perde"]), (d["hiz"], "-5Hz"), ("+1%", "-4Hz"), (d["hiz"], d["perde"])]
             for deneme, (hiz, perde) in enumerate(ayarlar):
                 try:
                     asyncio.run(uret(p.get("ses_metni", p["metin"]), d["ses"], hiz, perde, yol))
@@ -36,11 +36,11 @@ def main(f):
                 except Exception as e:
                     print(p["id"], mod, "hata:", type(e).__name__, str(e)[:200], flush=True); ok = False
                 if ok: break
-                time.sleep(2 + deneme * 2)
+                time.sleep(4 + deneme * 4)
             if ok: rapor[p["id"]] = (f"lang={mod}" if mod else "duz") + f" {hiz} {perde}"; break
         print(p["id"], rapor.get(p["id"], "HATA"), flush=True)
         if not ok: hatali.append(p["id"])
-        time.sleep(1)
+        time.sleep(2.5)
     json.dump(rapor, open(f"{out}/rapor.json", "w"), indent=1)
     if hatali: sys.exit("eksik: " + ",".join(hatali))
 

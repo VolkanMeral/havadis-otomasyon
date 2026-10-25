@@ -11,18 +11,22 @@ permissions:
 jobs:
   ses:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        bolum: [merhaba, kahve, yogurt, kosk, lale, divan]
     steps:
       - uses: actions/checkout@v4
-      - name: Kurulum
-        run: pip install edge-tts
+      - run: pip install edge-tts
       - name: Seslendir
-        run: python etimoloji/ses_uret.py etimoloji/*/anlatim.json
+        run: python etimoloji/ses_uret.py etimoloji/${{ matrix.bolum }}/anlatim.json
       - name: Kaydet
         if: always()
         run: |
-          git config user.name "havadis-bot"
-          git config user.email "bot@havadis.at"
-          git add etimoloji/*/ses/ etimoloji/ses_gunluk.txt 2>/dev/null; git add etimoloji/*/ses/
-          git commit -m "Etimoloji seslendirme parçaları" || exit 0
-          git push
+          git config user.name "havadis-bot"; git config user.email "bot@havadis.at"
+          git add -A etimoloji/${{ matrix.bolum }}/ses etimoloji/ses_gunluk.txt 2>/dev/null || git add -A etimoloji/${{ matrix.bolum }}/ses || true
+          git commit -m "Etimoloji seslendirme: ${{ matrix.bolum }}" || exit 0
+          for i in 1 2 3 4 5 6; do git pull --rebase -q && git push && exit 0; sleep $((RANDOM % 8 + 3)); done
+          exit 1

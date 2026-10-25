@@ -4,81 +4,81 @@
  "perde": "-6Hz",
  "parcalar": [
   {
-   "id": "gi1",
+   "id": "g1",
    "sahne": "giris",
    "metin": "Sabah içtiğiniz kahvenin adı,"
   },
   {
-   "id": "gi2",
+   "id": "g2",
    "sahne": "giris",
    "metin": "bir zamanlar şarap demekti."
   },
   {
-   "id": "gi1",
+   "id": "z1",
    "sahne": "gizem",
    "metin": "Peki bu isim nasıl değişti?"
   },
   {
-   "id": "gi2",
+   "id": "z2",
    "sahne": "gizem",
    "metin": "Kimileri Etiyopya'daki Kaffa bölgesini işaret eder. Ama bu görüş tartışmalı."
   },
   {
-   "id": "ko1",
+   "id": "k1",
    "sahne": "kok",
    "metin": "Kelimenin kökü Arapça kahve.",
    "ekran": "Kelimenin kökü Arapça: qahwa."
   },
   {
-   "id": "ko2",
+   "id": "k2",
    "sahne": "kok",
    "metin": "Eski Arapçada bu kelime, şarap anlamına geliyordu."
   },
   {
-   "id": "an1",
+   "id": "a1",
    "sahne": "anlam",
    "metin": "Sözlükçülere göre şaraba bu ad, iştahı kestiği için verilmişti."
   },
   {
-   "id": "an2",
+   "id": "a2",
    "sahne": "anlam",
    "metin": "Sonra aynı ad, yeni içeceğe geçti."
   },
   {
-   "id": "ri1",
+   "id": "r1",
    "sahne": "rivayet",
    "metin": "Kâtip Çelebi'ye göre kahve, 1543'te gemilerle İstanbul'a geldi.",
    "ekran": "Kâtib Çelebi'ye göre kahve, 1543'te gemilerle İstanbul'a geldi."
   },
   {
-   "id": "ri2",
+   "id": "r2",
    "sahne": "rivayet",
    "metin": "Kısa süre sonra Tahtakale'de ilk kahvehaneler açıldı."
   },
   {
-   "id": "yo1",
+   "id": "y1",
    "sahne": "yolculuk",
    "metin": "Osmanlıca kahve, İtalyancada kaffe oldu.",
    "ekran": "Osmanlıca kahve, İtalyancada caffè oldu."
   },
   {
-   "id": "yo2",
+   "id": "y2",
    "sahne": "yolculuk",
    "metin": "Almanlar Kafe, Hollandalılar kofi, İngilizler kofi dedi.",
    "ekran": "Almanlar Kaffee, Hollandalılar koffie, İngilizler coffee dedi."
   },
   {
-   "id": "ka1",
+   "id": "s1",
    "sahne": "kapanis",
    "metin": "Bir zamanlar şarabın adıydı."
   },
   {
-   "id": "ka2",
+   "id": "s2",
    "sahne": "kapanis",
    "metin": "Bugün dünya onu, Türkçeden öğrendiği adla çağırıyor."
   },
   {
-   "id": "ku1",
+   "id": "n1",
    "sahne": "kunye",
    "metin": "Kelimelerin Gizli Tarihi. Her kelimenin bir hikâyesi var."
   }

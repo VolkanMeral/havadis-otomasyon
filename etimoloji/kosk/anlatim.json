@@ -4,79 +4,79 @@
  "perde": "-6Hz",
  "parcalar": [
   {
-   "id": "gi1",
+   "id": "g1",
    "sahne": "giris",
    "metin": "Gazete aldığınız o küçük kulübenin adı: kiosk."
   },
   {
-   "id": "gi2",
+   "id": "g2",
    "sahne": "giris",
    "metin": "Bu kelime, bir zamanlar saray demekti."
   },
   {
-   "id": "gi1",
+   "id": "z1",
    "sahne": "gizem",
    "metin": "Bir saray nasıl sokak büfesine dönüştü?"
   },
   {
-   "id": "gi2",
+   "id": "z2",
    "sahne": "gizem",
    "metin": "Hikâye, Farsçada başlıyor."
   },
   {
-   "id": "ko1",
+   "id": "k1",
    "sahne": "kok",
    "metin": "Kökü Farsça kûşk.",
    "ekran": "Kökü Farsça: kūšk."
   },
   {
-   "id": "ko2",
+   "id": "k2",
    "sahne": "kok",
    "metin": "Anlamı: saray, köşk, revak."
   },
   {
-   "id": "an1",
+   "id": "a1",
    "sahne": "anlam",
    "metin": "Kelime Osmanlı Türkçesine köşk olarak geçti."
   },
   {
-   "id": "an2",
+   "id": "a2",
    "sahne": "anlam",
    "metin": "Avrupa'ya da Türkçeden gitti."
   },
   {
-   "id": "ri1",
+   "id": "r1",
    "sahne": "rivayet",
    "metin": "Topkapı Sarayı'ndaki Bağdat Köşkü, bunların en ünlülerinden."
   },
   {
-   "id": "ri2",
+   "id": "r2",
    "sahne": "rivayet",
    "metin": "Dördüncü Murad onu, Bağdat'ın fethinin hatırasına yaptırdı."
   },
   {
-   "id": "yo1",
+   "id": "y1",
    "sahne": "yolculuk",
    "metin": "Kelime İtalyancaya, oradan Fransızcaya geçti."
   },
   {
-   "id": "yo2",
+   "id": "y2",
    "sahne": "yolculuk",
    "metin": "Bin sekiz yüz elli yedide Paris'te ilk gazete kioskları kuruldu.",
    "ekran": "1857’de Paris’te ilk gazete kioskları kuruldu."
   },
   {
-   "id": "ka1",
+   "id": "s1",
    "sahne": "kapanis",
    "metin": "Sarayın adı,"
   },
   {
-   "id": "ka2",
+   "id": "s2",
    "sahne": "kapanis",
    "metin": "sokağın köşesine kadar yürüdü."
   },
   {
-   "id": "ku1",
+   "id": "n1",
    "sahne": "kunye",
    "metin": "Kelimelerin Gizli Tarihi. Her kelimenin bir hikâyesi var."
   }

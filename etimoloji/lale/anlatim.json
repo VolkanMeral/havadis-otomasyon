@@ -4,85 +4,85 @@
  "perde": "-6Hz",
  "parcalar": [
   {
-   "id": "gi1",
+   "id": "g1",
    "sahne": "giris",
    "metin": "Avrupa bu çiçeğe yüzyıllardır,"
   },
   {
-   "id": "gi2",
+   "id": "g2",
    "sahne": "giris",
    "metin": "bir sarığın adıyla sesleniyor."
   },
   {
-   "id": "gi1",
+   "id": "z1",
    "sahne": "gizem",
    "metin": "Almanlar Tulpe, İngilizler tulip der.",
    "ekran": "Almanlar Tulpe, İngilizler tulip der."
   },
   {
-   "id": "gi2",
+   "id": "z2",
    "sahne": "gizem",
    "metin": "Peki neden?"
   },
   {
-   "id": "ko1",
+   "id": "k1",
    "sahne": "kok",
    "metin": "Kökü Farsça dulbent, yani sarık bezi.",
    "ekran": "Kökü Farsça dulband, yani sarık bezi."
   },
   {
-   "id": "ko2",
+   "id": "k2",
    "sahne": "kok",
    "metin": "Türkçede bu kelime tülbent oldu."
   },
   {
-   "id": "an1",
+   "id": "a1",
    "sahne": "anlam",
    "metin": "Çiçeğin Avrupa'daki adı, sarığa benzetilmesinden doğdu."
   },
   {
-   "id": "an2",
+   "id": "a2",
    "sahne": "anlam",
    "metin": "Sarık ve lale, aynı kökten gelen iki kelime."
   },
   {
-   "id": "ri1",
+   "id": "r1",
    "sahne": "rivayet",
    "metin": "Bin beş yüz ellilerde, Ferdinand'ın elçisi Busbek, Kanuni'nin ülkesine gitti."
   },
   {
-   "id": "ri2",
+   "id": "r2",
    "sahne": "rivayet",
    "metin": "Mektubunda, Türklerin tulipan dediği çiçeklerden söz etti."
   },
   {
-   "id": "ri3",
+   "id": "r3",
    "sahne": "rivayet",
    "metin": "Rivayete göre adını sordu, ona sarığın adı söylendi. Ama bu yalnızca bir varsayım."
   },
   {
-   "id": "yo1",
+   "id": "y1",
    "sahne": "yolculuk",
    "metin": "Bin beş yüz elli dokuzda Augsburg'da, Gesner bu çiçeğe Tulipa dedi.",
    "ekran": "1559’da Augsburg’da Gesner bu çiçeğe “Tulipa” dedi."
   },
   {
-   "id": "yo2",
+   "id": "y2",
    "sahne": "yolculuk",
    "metin": "Hollandaca tulp, Almanca Tulpe, İngilizce tulip oldu."
   },
   {
-   "id": "ka1",
+   "id": "s1",
    "sahne": "kapanis",
    "metin": "Oysa Türkçede adı hep Farsça lâle kaldı."
   },
   {
-   "id": "ka2",
+   "id": "s2",
    "sahne": "kapanis",
    "metin": "Biz ona lâle dedik, Avrupa tülbent."
   },
   {
-   "id": "ku1",
+   "id": "n1",
    "sahne": "kunye",
    "metin": "Kelimelerin Gizli Tarihi. Her kelimenin bir hikâyesi var."
   }
