@@ -1,68 +1,768 @@
 {
- "zaman": "2026-10-22T05:48:29+00:00",
+ "zaman": "2026-10-25T06:18:53+00:00",
  "gun": 45,
  "ig_medya": [
   {
-   "timestamp": "2026-10-21T18:38:40+0000",
+   "timestamp": "2026-10-24T20:10:51+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 25,
-   "comments_count": 0
+   "like_count": 12,
+   "comments_count": 2
   },
   {
-   "timestamp": "2026-10-21T17:00:28+0000",
-   "media_product_type": "FEED",
-   "media_type": "CAROUSEL_ALBUM",
-   "like_count": 31,
-   "comments_count": 0
-  },
-  {
-   "timestamp": "2026-10-21T15:01:34+0000",
-   "media_product_type": "FEED",
-   "media_type": "CAROUSEL_ALBUM",
-   "like_count": 11,
-   "comments_count": 1
-  },
-  {
-   "timestamp": "2026-10-21T14:39:25+0000",
+   "timestamp": "2026-10-24T19:20:10+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 20,
-   "comments_count": 0
-  },
-  {
-   "timestamp": "2026-10-21T14:29:38+0000",
-   "media_product_type": "REELS",
-   "media_type": "VIDEO",
    "like_count": 28,
    "comments_count": 0
   },
   {
-   "timestamp": "2026-10-21T14:14:26+0000",
-   "media_product_type": "FEED",
-   "media_type": "IMAGE",
-   "like_count": 6,
+   "timestamp": "2026-10-24T18:29:44+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 11,
    "comments_count": 0
   },
   {
-   "timestamp": "2026-10-21T13:14:44+0000",
+   "timestamp": "2026-10-24T18:14:23+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 3,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T17:24:14+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 2,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T17:17:44+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 5,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T17:10:34+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 8,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T16:12:49+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 32,
+   "comments_count": 2
+  },
+  {
+   "timestamp": "2026-10-24T15:24:48+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 5,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T15:11:32+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 7,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T14:25:06+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 3,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T14:11:31+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 4,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T13:39:16+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 13,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T13:20:17+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 15,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T12:46:00+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 65,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T12:34:29+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 10,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T11:39:03+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
    "like_count": 9,
    "comments_count": 0
   },
   {
-   "timestamp": "2026-10-21T12:52:08+0000",
+   "timestamp": "2026-10-24T11:24:08+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 6,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T11:10:43+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 27,
+   "comments_count": 3
+  },
+  {
+   "timestamp": "2026-10-24T10:40:22+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 12,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T10:12:24+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 8,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T09:40:59+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 2,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T09:26:48+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 14,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T09:12:09+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 9,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T08:44:07+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 42,
+   "comments_count": 2
+  },
+  {
+   "timestamp": "2026-10-24T08:31:41+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 22,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T08:16:16+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 4,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T07:41:18+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 11,
+   "comments_count": 2
+  },
+  {
+   "timestamp": "2026-10-24T07:13:09+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 2,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T07:01:34+0000",
+   "media_product_type": "FEED",
+   "media_type": "CAROUSEL_ALBUM",
+   "like_count": 4,
+   "comments_count": 2
+  },
+  {
+   "timestamp": "2026-10-24T06:52:26+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 6,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T06:38:14+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 9,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T06:20:19+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 50,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-24T05:26:54+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 1,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T20:42:06+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 26,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T20:12:53+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 3,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T19:40:14+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 5,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T19:12:36+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 8,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T17:37:40+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 2,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T17:10:27+0000",
+   "media_product_type": "FEED",
+   "media_type": "CAROUSEL_ALBUM",
+   "like_count": 20,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T17:02:01+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 2,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T17:01:10+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 6,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T16:52:11+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 13,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T16:13:56+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 7,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T15:30:08+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 25,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T15:12:07+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 15,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T14:45:17+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 11,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T14:32:16+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 9,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T14:21:25+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 18,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T14:14:51+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 6,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T13:44:25+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
    "like_count": 10,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T13:11:48+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 14,
+   "comments_count": 2
+  },
+  {
+   "timestamp": "2026-10-23T12:49:49+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 6,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T12:49:18+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 13,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T12:38:17+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 3,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T12:17:54+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 2,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T12:08:17+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 96,
+   "comments_count": 10
+  },
+  {
+   "timestamp": "2026-10-23T11:28:45+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 2,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T11:12:53+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 20,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T10:41:42+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 30,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T10:13:17+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 6,
+   "comments_count": 1
+  },
+  {
+   "timestamp": "2026-10-23T10:06:27+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 6,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T08:47:42+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 16,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T08:36:15+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 5,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T08:17:12+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 3,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T07:46:29+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 5,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T07:22:55+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 9,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T07:01:39+0000",
+   "media_product_type": "FEED",
+   "media_type": "CAROUSEL_ALBUM",
+   "like_count": 8,
+   "comments_count": 2
+  },
+  {
+   "timestamp": "2026-10-23T06:54:28+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 18,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T06:22:19+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 13,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-23T05:28:05+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 6,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T20:58:42+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 4,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T20:41:58+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 5,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T19:35:31+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 8,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T17:26:10+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 15,
+   "comments_count": 3
+  },
+  {
+   "timestamp": "2026-10-22T16:44:35+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 6,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T16:15:10+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 8,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T15:30:29+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 18,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T14:54:07+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 2,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T14:30:12+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 2,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T14:13:41+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 11,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T13:17:56+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 11,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T12:39:09+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 12,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T12:20:08+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 18,
+   "comments_count": 1
+  },
+  {
+   "timestamp": "2026-10-22T11:55:40+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 20,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T11:12:40+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 49,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T11:00:40+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 14,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T10:20:51+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 48,
+   "comments_count": 2
+  },
+  {
+   "timestamp": "2026-10-22T09:48:49+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 8,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T09:37:57+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 34,
+   "comments_count": 1
+  },
+  {
+   "timestamp": "2026-10-22T09:30:49+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 27,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T09:22:37+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 14,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T08:48:11+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 16,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T08:37:10+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 2,
+   "comments_count": 1
+  },
+  {
+   "timestamp": "2026-10-22T08:12:02+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 30,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T07:46:43+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 4,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T07:30:05+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 9,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T07:00:13+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 2,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T06:46:05+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 15,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-22T06:21:18+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 15,
+   "comments_count": 1
+  },
+  {
+   "timestamp": "2026-10-21T18:38:40+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 29,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-21T17:00:28+0000",
+   "media_product_type": "FEED",
+   "media_type": "CAROUSEL_ALBUM",
+   "like_count": 39,
+   "comments_count": 1
+  },
+  {
+   "timestamp": "2026-10-21T15:01:34+0000",
+   "media_product_type": "FEED",
+   "media_type": "CAROUSEL_ALBUM",
+   "like_count": 12,
+   "comments_count": 1
+  },
+  {
+   "timestamp": "2026-10-21T14:39:25+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 22,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-21T14:29:38+0000",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "like_count": 36,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-21T14:14:26+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 7,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-21T13:14:44+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 11,
+   "comments_count": 0
+  },
+  {
+   "timestamp": "2026-10-21T12:52:08+0000",
+   "media_product_type": "FEED",
+   "media_type": "IMAGE",
+   "like_count": 11,
    "comments_count": 1
   },
   {
    "timestamp": "2026-10-21T12:38:34+0000",
    "media_product_type": "REELS",
    "media_type": "VIDEO",
-   "like_count": 3,
+   "like_count": 4,
    "comments_count": 0
   },
   {
@@ -76,78 +776,78 @@
    "timestamp": "2026-10-21T11:42:44+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 7,
+   "like_count": 10,
    "comments_count": 1
   },
   {
    "timestamp": "2026-10-21T11:27:42+0000",
    "media_product_type": "REELS",
    "media_type": "VIDEO",
-   "like_count": 6,
+   "like_count": 7,
    "comments_count": 0
   },
   {
    "timestamp": "2026-10-21T11:12:08+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 9,
+   "like_count": 10,
    "comments_count": 0
   },
   {
    "timestamp": "2026-10-21T10:43:32+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 9,
+   "like_count": 14,
    "comments_count": 1
   },
   {
    "timestamp": "2026-10-21T10:13:40+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 3,
+   "like_count": 4,
    "comments_count": 0
   },
   {
    "timestamp": "2026-10-21T09:44:20+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 13,
+   "like_count": 15,
    "comments_count": 0
   },
   {
    "timestamp": "2026-10-21T09:31:37+0000",
    "media_product_type": "REELS",
    "media_type": "VIDEO",
-   "like_count": 4,
+   "like_count": 5,
    "comments_count": 0
   },
   {
    "timestamp": "2026-10-21T09:14:49+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 11,
+   "like_count": 12,
    "comments_count": 0
   },
   {
    "timestamp": "2026-10-21T08:48:04+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 4,
-   "comments_count": 1
+   "like_count": 6,
+   "comments_count": 2
   },
   {
    "timestamp": "2026-10-21T08:35:58+0000",
    "media_product_type": "REELS",
    "media_type": "VIDEO",
-   "like_count": 4,
+   "like_count": 6,
    "comments_count": 0
   },
   {
    "timestamp": "2026-10-21T08:30:26+0000",
    "media_product_type": "REELS",
    "media_type": "VIDEO",
-   "like_count": 170,
-   "comments_count": 5
+   "like_count": 193,
+   "comments_count": 7
   },
   {
    "timestamp": "2026-10-21T08:17:41+0000",
@@ -160,42 +860,42 @@
    "timestamp": "2026-10-21T07:47:02+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 42,
+   "like_count": 50,
    "comments_count": 0
   },
   {
    "timestamp": "2026-10-21T07:19:43+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 13,
+   "like_count": 17,
    "comments_count": 1
   },
   {
    "timestamp": "2026-10-21T07:18:21+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 11,
+   "like_count": 12,
    "comments_count": 2
   },
   {
    "timestamp": "2026-10-21T06:58:08+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 14,
+   "like_count": 15,
    "comments_count": 0
   },
   {
    "timestamp": "2026-10-21T06:42:23+0000",
    "media_product_type": "REELS",
    "media_type": "VIDEO",
-   "like_count": 54,
+   "like_count": 60,
    "comments_count": 1
   },
   {
    "timestamp": "2026-10-21T06:21:42+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 13,
+   "like_count": 14,
    "comments_count": 0
   },
   {
@@ -223,7 +923,7 @@
    "timestamp": "2026-10-20T18:05:34+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 114,
+   "like_count": 119,
    "comments_count": 0
   },
   {
@@ -237,14 +937,14 @@
    "timestamp": "2026-10-20T17:14:20+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 35,
+   "like_count": 37,
    "comments_count": 4
   },
   {
    "timestamp": "2026-10-20T16:14:46+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 13,
+   "like_count": 14,
    "comments_count": 0
   },
   {
@@ -265,7 +965,7 @@
    "timestamp": "2026-10-20T15:12:35+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 34,
+   "like_count": 35,
    "comments_count": 3
   },
   {
@@ -293,7 +993,7 @@
    "timestamp": "2026-10-20T13:43:36+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 11,
+   "like_count": 12,
    "comments_count": 0
   },
   {
@@ -349,14 +1049,14 @@
    "timestamp": "2026-10-20T10:22:29+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 21,
+   "like_count": 22,
    "comments_count": 0
   },
   {
    "timestamp": "2026-10-20T10:12:05+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 38,
+   "like_count": 39,
    "comments_count": 2
   },
   {
@@ -370,21 +1070,21 @@
    "timestamp": "2026-10-20T09:31:07+0000",
    "media_product_type": "REELS",
    "media_type": "VIDEO",
-   "like_count": 21,
+   "like_count": 22,
    "comments_count": 1
   },
   {
    "timestamp": "2026-10-20T09:14:42+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 17,
+   "like_count": 19,
    "comments_count": 2
   },
   {
    "timestamp": "2026-10-20T08:47:41+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 209,
+   "like_count": 216,
    "comments_count": 2
   },
   {
@@ -461,7 +1161,7 @@
    "timestamp": "2026-10-19T15:29:02+0000",
    "media_product_type": "REELS",
    "media_type": "VIDEO",
-   "like_count": 42,
+   "like_count": 45,
    "comments_count": 0
   },
   {
@@ -573,7 +1273,7 @@
    "timestamp": "2026-10-19T09:20:29+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 14,
+   "like_count": 15,
    "comments_count": 0
   },
   {
@@ -587,7 +1287,7 @@
    "timestamp": "2026-10-19T09:15:13+0000",
    "media_product_type": "FEED",
    "media_type": "CAROUSEL_ALBUM",
-   "like_count": 49,
+   "like_count": 50,
    "comments_count": 0
   },
   {
@@ -636,7 +1336,7 @@
    "timestamp": "2026-10-19T06:53:35+0000",
    "media_product_type": "REELS",
    "media_type": "VIDEO",
-   "like_count": 2,
+   "like_count": 3,
    "comments_count": 0
   },
   {
@@ -678,14 +1378,14 @@
    "timestamp": "2026-10-18T18:29:02+0000",
    "media_product_type": "REELS",
    "media_type": "VIDEO",
-   "like_count": 8,
+   "like_count": 7,
    "comments_count": 0
   },
   {
    "timestamp": "2026-10-18T18:14:19+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 52,
+   "like_count": 55,
    "comments_count": 0
   },
   {
@@ -720,7 +1420,7 @@
    "timestamp": "2026-10-18T16:13:24+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 107,
+   "like_count": 109,
    "comments_count": 7
   },
   {
@@ -783,7 +1483,7 @@
    "timestamp": "2026-10-18T11:23:14+0000",
    "media_product_type": "REELS",
    "media_type": "VIDEO",
-   "like_count": 6,
+   "like_count": 8,
    "comments_count": 0
   },
   {
@@ -888,7 +1588,7 @@
    "timestamp": "2026-10-18T06:19:42+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 12,
+   "like_count": 13,
    "comments_count": 1
   },
   {
@@ -993,7 +1693,7 @@
    "timestamp": "2026-10-17T12:51:54+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 18,
+   "like_count": 20,
    "comments_count": 10
   },
   {
@@ -1021,7 +1721,7 @@
    "timestamp": "2026-10-17T11:37:32+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 30,
+   "like_count": 31,
    "comments_count": 1
   },
   {
@@ -1084,7 +1784,7 @@
    "timestamp": "2026-10-17T06:37:25+0000",
    "media_product_type": "REELS",
    "media_type": "VIDEO",
-   "like_count": 30,
+   "like_count": 31,
    "comments_count": 2
   },
   {
@@ -1119,7 +1819,7 @@
    "timestamp": "2026-10-16T18:45:10+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 116,
+   "like_count": 115,
    "comments_count": 0
   },
   {
@@ -1134,7 +1834,7 @@
    "media_product_type": "FEED",
    "media_type": "IMAGE",
    "like_count": 24,
-   "comments_count": 4
+   "comments_count": 5
   },
   {
    "timestamp": "2026-10-16T17:39:06+0000",
@@ -1189,7 +1889,7 @@
    "timestamp": "2026-10-16T15:40:29+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 35,
+   "like_count": 36,
    "comments_count": 1
   },
   {
@@ -1252,7 +1952,7 @@
    "timestamp": "2026-10-16T12:19:17+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 22,
+   "like_count": 23,
    "comments_count": 0
   },
   {
@@ -1329,7 +2029,7 @@
    "timestamp": "2026-10-15T19:11:07+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 40,
+   "like_count": 41,
    "comments_count": 1
   },
   {
@@ -1693,7 +2393,7 @@
    "timestamp": "2026-10-02T14:53:24+0000",
    "media_product_type": "REELS",
    "media_type": "VIDEO",
-   "like_count": 691,
+   "like_count": 692,
    "comments_count": 14
   },
   {
@@ -1791,7 +2491,7 @@
    "timestamp": "2026-09-30T10:04:51+0000",
    "media_product_type": "FEED",
    "media_type": "IMAGE",
-   "like_count": 1712,
+   "like_count": 1713,
    "comments_count": 90
   },
   {
@@ -2388,96 +3088,9 @@
    "media_type": "CAROUSEL_ALBUM",
    "like_count": 15,
    "comments_count": 0
-  },
-  {
-   "timestamp": "2026-09-09T21:25:05+0000",
-   "media_product_type": "FEED",
-   "media_type": "IMAGE",
-   "like_count": 15,
-   "comments_count": 9
-  },
-  {
-   "timestamp": "2026-09-09T17:24:13+0000",
-   "media_product_type": "FEED",
-   "media_type": "CAROUSEL_ALBUM",
-   "like_count": 72,
-   "comments_count": 0
-  },
-  {
-   "timestamp": "2026-09-09T06:08:04+0000",
-   "media_product_type": "FEED",
-   "media_type": "CAROUSEL_ALBUM",
-   "like_count": 18,
-   "comments_count": 1
-  },
-  {
-   "timestamp": "2026-09-08T19:41:02+0000",
-   "media_product_type": "FEED",
-   "media_type": "IMAGE",
-   "like_count": 106,
-   "comments_count": 1
-  },
-  {
-   "timestamp": "2026-09-08T12:33:53+0000",
-   "media_product_type": "FEED",
-   "media_type": "CAROUSEL_ALBUM",
-   "like_count": 35,
-   "comments_count": 0
-  },
-  {
-   "timestamp": "2026-09-07T22:09:58+0000",
-   "media_product_type": "FEED",
-   "media_type": "IMAGE",
-   "like_count": 98,
-   "comments_count": 12
-  },
-  {
-   "timestamp": "2026-09-07T16:47:21+0000",
-   "media_product_type": "FEED",
-   "media_type": "IMAGE",
-   "like_count": 92,
-   "comments_count": 23
-  },
-  {
-   "timestamp": "2026-09-07T09:44:41+0000",
-   "media_product_type": "FEED",
-   "media_type": "IMAGE",
-   "like_count": 64,
-   "comments_count": 7
-  },
-  {
-   "timestamp": "2026-09-07T07:26:49+0000",
-   "media_product_type": "FEED",
-   "media_type": "IMAGE",
-   "like_count": 53,
-   "comments_count": 0
-  },
-  {
-   "timestamp": "2026-09-07T07:25:41+0000",
-   "media_product_type": "FEED",
-   "media_type": "IMAGE",
-   "like_count": 28,
-   "comments_count": 1
-  },
-  {
-   "timestamp": "2026-09-07T07:24:07+0000",
-   "media_product_type": "FEED",
-   "media_type": "IMAGE",
-   "like_count": 15,
-   "comments_count": 0
-  },
-  {
-   "timestamp": "2026-09-07T07:22:37+0000",
-   "media_product_type": "FEED",
-   "media_type": "IMAGE",
-   "like_count": 82,
-   "comments_count": 1
   }
  ],
  "ig_erisim": {
-  "2026-09-07": 10621,
-  "2026-09-08": 13224,
-  "2026-09-09": 8308,
   "2026-09-10": 7355,
   "2026-09-11": 8216,
   "2026-09-12": 9212,
@@ -2519,12 +3132,12 @@
   "2026-10-18": 160453,
   "2026-10-19": 64569,
   "2026-10-20": 78062,
-  "2026-10-21": 26794
+  "2026-10-21": 27124,
+  "2026-10-22": 28954,
+  "2026-10-23": 25489,
+  "2026-10-24": 74203
  },
  "ig_takipci": {
-  "2026-10-06": 11,
-  "2026-10-07": 7,
-  "2026-10-08": 8,
   "2026-10-09": 8,
   "2026-10-10": 17,
   "2026-10-11": 8,
@@ -2537,33 +3150,12 @@
   "2026-10-18": 34,
   "2026-10-19": 15,
   "2026-10-20": 28,
-  "2026-10-21": 0
+  "2026-10-21": 15,
+  "2026-10-22": 23,
+  "2026-10-23": 15,
+  "2026-10-24": 0
  },
  "ig_gunluk": {
-  "2026-09-07": {
-   "views": 92144,
-   "profile_views": 513,
-   "website_clicks": 0,
-   "accounts_engaged": 408,
-   "total_interactions": 917,
-   "likes": 370
-  },
-  "2026-09-08": {
-   "views": 57797,
-   "profile_views": 328,
-   "website_clicks": 1,
-   "accounts_engaged": 296,
-   "total_interactions": 495,
-   "likes": 179
-  },
-  "2026-09-09": {
-   "views": 46832,
-   "profile_views": 249,
-   "website_clicks": 0,
-   "accounts_engaged": 180,
-   "total_interactions": 305,
-   "likes": 137
-  },
   "2026-09-10": {
    "views": 40814,
    "profile_views": 233,
@@ -2877,7 +3469,7 @@
    "likes": 755
   },
   "2026-10-19": {
-   "views": 305496,
+   "views": 305497,
    "profile_views": 459,
    "website_clicks": 25,
    "accounts_engaged": 634,
@@ -2885,7 +3477,7 @@
    "likes": 593
   },
   "2026-10-20": {
-   "views": 347358,
+   "views": 347360,
    "profile_views": 612,
    "website_clicks": 54,
    "accounts_engaged": 1018,
@@ -2893,20 +3485,41 @@
    "likes": 869
   },
   "2026-10-21": {
-   "views": 214844,
-   "profile_views": 721,
+   "views": 223372,
+   "profile_views": 746,
    "website_clicks": 23,
-   "accounts_engaged": 817,
-   "total_interactions": 1836,
-   "likes": 695
+   "accounts_engaged": 846,
+   "total_interactions": 1903,
+   "likes": 715
+  },
+  "2026-10-22": {
+   "views": 225114,
+   "profile_views": 529,
+   "website_clicks": 26,
+   "accounts_engaged": 619,
+   "total_interactions": 1450,
+   "likes": 540
+  },
+  "2026-10-23": {
+   "views": 230893,
+   "profile_views": 570,
+   "website_clicks": 9,
+   "accounts_engaged": 568,
+   "total_interactions": 1311,
+   "likes": 566
+  },
+  "2026-10-24": {
+   "views": 322795,
+   "profile_views": 533,
+   "website_clicks": 22,
+   "accounts_engaged": 685,
+   "total_interactions": 1622,
+   "likes": 656
   }
  },
  "fb_gonderi": null,
  "fb_sayfa": {
   "page_media_view": {
-   "2026-09-08": 82157,
-   "2026-09-09": 85364,
-   "2026-09-10": 74023,
    "2026-09-11": 62564,
    "2026-09-12": 48167,
    "2026-09-13": 52671,
@@ -2948,12 +3561,12 @@
    "2026-10-19": 121699,
    "2026-10-20": 115935,
    "2026-10-21": 135217,
-   "2026-10-22": 133576
+   "2026-10-22": 137882,
+   "2026-10-23": 113313,
+   "2026-10-24": 113178,
+   "2026-10-25": 96921
   },
   "page_views_total": {
-   "2026-09-08": 838,
-   "2026-09-09": 737,
-   "2026-09-10": 631,
    "2026-09-11": 536,
    "2026-09-12": 546,
    "2026-09-13": 462,
@@ -2995,12 +3608,12 @@
    "2026-10-19": 770,
    "2026-10-20": 598,
    "2026-10-21": 593,
-   "2026-10-22": 1023
+   "2026-10-22": 1071,
+   "2026-10-23": 678,
+   "2026-10-24": 810,
+   "2026-10-25": 605
   },
   "page_post_engagements": {
-   "2026-09-08": 5678,
-   "2026-09-09": 5377,
-   "2026-09-10": 3497,
    "2026-09-11": 4241,
    "2026-09-12": 2626,
    "2026-09-13": 2793,
@@ -3042,12 +3655,12 @@
    "2026-10-19": 5867,
    "2026-10-20": 6905,
    "2026-10-21": 6848,
-   "2026-10-22": 4755
+   "2026-10-22": 4886,
+   "2026-10-23": 6001,
+   "2026-10-24": 5040,
+   "2026-10-25": 3590
   },
   "page_daily_follows_unique": {
-   "2026-09-08": 4,
-   "2026-09-09": 2,
-   "2026-09-10": 3,
    "2026-09-11": 3,
    "2026-09-12": 1,
    "2026-09-13": 3,
@@ -3089,59 +3702,59 @@
    "2026-10-19": 4,
    "2026-10-20": 7,
    "2026-10-21": 10,
-   "2026-10-22": 38
+   "2026-10-22": 38,
+   "2026-10-23": 8,
+   "2026-10-24": 7,
+   "2026-10-25": 2
   },
   "page_follows": {
-   "2026-09-08": 30263,
-   "2026-09-09": 30263,
-   "2026-09-10": 30265,
-   "2026-09-11": 30268,
-   "2026-09-12": 30268,
-   "2026-09-13": 30271,
-   "2026-09-14": 30274,
-   "2026-09-15": 30277,
-   "2026-09-16": 30279,
-   "2026-09-17": 30281,
-   "2026-09-18": 30285,
-   "2026-09-19": 30286,
-   "2026-09-20": 30288,
-   "2026-09-21": 30289,
-   "2026-09-22": 30291,
-   "2026-09-23": 30292,
-   "2026-09-24": 30294,
-   "2026-09-25": 30303,
-   "2026-09-26": 30310,
-   "2026-09-27": 30315,
-   "2026-09-28": 30316,
-   "2026-09-29": 30316,
-   "2026-09-30": 30322,
-   "2026-10-01": 30324,
-   "2026-10-02": 30326,
-   "2026-10-03": 30332,
-   "2026-10-04": 30332,
-   "2026-10-05": 30334,
-   "2026-10-06": 30338,
-   "2026-10-07": 30344,
-   "2026-10-08": 30342,
-   "2026-10-09": 30344,
-   "2026-10-10": 30346,
-   "2026-10-11": 30345,
-   "2026-10-12": 30345,
-   "2026-10-13": 30348,
-   "2026-10-14": 30350,
-   "2026-10-15": 30356,
-   "2026-10-16": 30355,
-   "2026-10-17": 30358,
-   "2026-10-18": 30360,
-   "2026-10-19": 30364,
-   "2026-10-20": 30368,
-   "2026-10-21": 30376,
-   "2026-10-22": 30406
+   "2026-09-11": 30266,
+   "2026-09-12": 30266,
+   "2026-09-13": 30269,
+   "2026-09-14": 30272,
+   "2026-09-15": 30275,
+   "2026-09-16": 30277,
+   "2026-09-17": 30279,
+   "2026-09-18": 30283,
+   "2026-09-19": 30284,
+   "2026-09-20": 30286,
+   "2026-09-21": 30287,
+   "2026-09-22": 30289,
+   "2026-09-23": 30290,
+   "2026-09-24": 30292,
+   "2026-09-25": 30301,
+   "2026-09-26": 30308,
+   "2026-09-27": 30313,
+   "2026-09-28": 30314,
+   "2026-09-29": 30314,
+   "2026-09-30": 30320,
+   "2026-10-01": 30322,
+   "2026-10-02": 30324,
+   "2026-10-03": 30330,
+   "2026-10-04": 30330,
+   "2026-10-05": 30332,
+   "2026-10-06": 30336,
+   "2026-10-07": 30342,
+   "2026-10-08": 30340,
+   "2026-10-09": 30342,
+   "2026-10-10": 30344,
+   "2026-10-11": 30343,
+   "2026-10-12": 30343,
+   "2026-10-13": 30346,
+   "2026-10-14": 30348,
+   "2026-10-15": 30354,
+   "2026-10-16": 30353,
+   "2026-10-17": 30356,
+   "2026-10-18": 30358,
+   "2026-10-19": 30362,
+   "2026-10-20": 30366,
+   "2026-10-21": 30374,
+   "2026-10-22": 30404,
+   "2026-10-23": 30406,
+   "2026-10-24": 30409,
+   "2026-10-25": 30411
   },
   "page_total_media_view_unique": {
-   "2026-09-08": 14087,
-   "2026-09-09": 13209,
-   "2026-09-10": 14281,
    "2026-09-11": 10275,
    "2026-09-12": 7985,
    "2026-09-13": 8980,
@@ -3183,7 +3796,10 @@
    "2026-10-19": 22457,
    "2026-10-20": 23326,
    "2026-10-21": 25571,
-   "2026-10-22": 49814
+   "2026-10-22": 50343,
+   "2026-10-23": 21327,
+   "2026-10-24": 25257,
+   "2026-10-25": 16019
   }
  },
  "hatalar": {
