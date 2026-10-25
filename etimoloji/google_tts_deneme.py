@@ -16,3 +16,4 @@ for s in sesler:
         open(f"{out}/{s}.mp3", "wb").write(base64.b64decode(r["audioContent"])); print(ad, "ok")
     except Exception as e:
         print(ad, "hata", getattr(e, "read", lambda: b"")()[:300])
+ 
