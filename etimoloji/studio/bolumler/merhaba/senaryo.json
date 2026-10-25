@@ -1,0 +1,237 @@
+{
+ "kelime": "MERHABA",
+ "seri": "Kelimelerin Gizli Tarihi",
+ "slogan": "Her kelimenin bir hikâyesi var.",
+ "sure": 55.0,
+ "sahneler": [
+  {
+   "id": "giris",
+   "bas": 0.0,
+   "son": 4.6,
+   "zemin": "gece",
+   "buyuk": [
+    {
+     "metin": "MERHABA",
+     "t": 0.0,
+     "stil": "acilis"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 0.4,
+     "metin": "Bu kelimeyi her gün söylüyoruz."
+    },
+    {
+     "t": 2.3,
+     "metin": "Ama aslında ne dediğimizi biliyor muyuz?"
+    }
+   ],
+   "gorsel": "elyazmasi_1.jpg",
+   "kredi": "Abdurrahman Hilmi, hat meşki (Osmanlı) · Kamu malı · Wikimedia Commons"
+  },
+  {
+   "id": "gizem",
+   "bas": 4.6,
+   "son": 12.0,
+   "zemin": "kapi",
+   "buyuk": [],
+   "altyazi": [
+    {
+     "t": 4.9,
+     "metin": "Bu selamın içinde bir mekân saklı."
+    },
+    {
+     "t": 8.2,
+     "metin": "Bir kapı… ve ardındaki genişlik."
+    }
+   ],
+   "gorsel": "misafir_2.jpg",
+   "kredi": "Osmanlı saray sahnesi, Hüsrev ü Şirin, 1498–99 (The Met) · Kamu malı · Wikimedia Commons"
+  },
+  {
+   "id": "kok",
+   "bas": 12.0,
+   "son": 21.0,
+   "zemin": "parsomen",
+   "buyuk": [
+    {
+     "metin": "مَرْحَبًا",
+     "t": 12.3,
+     "stil": "arapca"
+    },
+    {
+     "metin": "marḥaban",
+     "t": 13.4,
+     "stil": "translit"
+    },
+    {
+     "metin": "ر ح ب",
+     "t": 15.6,
+     "stil": "kok_ar"
+    },
+    {
+     "metin": "kök: r-ḥ-b  ·  “genişlik, bolluk”",
+     "t": 16.4,
+     "stil": "kok_tr"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 12.5,
+     "metin": "Kelime Arapçadan geliyor: marḥaban."
+    },
+    {
+     "t": 16.2,
+     "metin": "Kökü r-ḥ-b; anlamı “genişlik, bolluk”."
+    }
+   ],
+   "kaynak": "TDV İslâm Ansiklopedisi – “Merhaba” (M. Çağrıcı, 2004)",
+   "gorsel": "elyazmasi_4.jpg",
+   "kredi": "Muhammed Hilmi Efendi, hat icazetnamesi (Walters) · Kamu malı · Wikimedia Commons"
+  },
+  {
+   "id": "anlam",
+   "bas": 21.0,
+   "son": 30.0,
+   "zemin": "kapi_genis",
+   "buyuk": [
+    {
+     "metin": "“Evimiz sana geniş,\nburada rahat et.”",
+     "t": 21.6,
+     "stil": "alinti"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 21.3,
+     "metin": "Eski sözlüklere göre misafire söylenirdi:"
+    },
+    {
+     "t": 25.0,
+     "metin": "Aynı zamanda bir duaydı: bolluk ve huzur dilemek."
+    }
+   ],
+   "kaynak": "TDV İA – “Merhaba”; Lisânü’l-ʿArab ve el-Müfredât’a atıfla",
+   "gorsel": "misafir_1.jpg",
+   "kredi": "Acem elçisinin III. Murad tarafından karşılanması, 1592 · Kamu malı · Wikimedia Commons"
+  },
+  {
+   "id": "rivayet",
+   "bas": 30.0,
+   "son": 38.0,
+   "zemin": "col",
+   "buyuk": [
+    {
+     "metin": "VI. YÜZYIL",
+     "t": 30.4,
+     "stil": "etiket"
+    },
+    {
+     "metin": "Seyf b. Zûyezen",
+     "t": 31.0,
+     "stil": "isim"
+    },
+    {
+     "metin": "Himyerî hükümdar ailesi",
+     "t": 31.8,
+     "stil": "alt_isim"
+    },
+    {
+     "metin": "RİVAYET · KESİN BİLGİ DEĞİL",
+     "t": 34.5,
+     "stil": "uyari"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 30.3,
+     "metin": "Bir rivayete göre bu selamı ilk kullanan,"
+    },
+    {
+     "t": 33.6,
+     "metin": "VI. yüzyılda yaşamış Himyerî Seyf b. Zûyezen’di."
+    }
+   ],
+   "kaynak": "TDV İA – “Merhaba”; İbn Hacer, Fethu’l-bârî (Ebû Hilâl el-Askerî’ye dayanarak)",
+   "gorsel": "himyer_1.jpg",
+   "kredi": "“Sultan Saif-Zuliazan”, Ali Bey, 1847 · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "yolculuk",
+   "bas": 38.0,
+   "son": 45.2,
+   "zemin": "zincir",
+   "zincir": [
+    {
+     "dil": "ARAPÇA",
+     "kelime": "marḥaban",
+     "yazi": "مَرْحَبًا",
+     "t": 38.3
+    },
+    {
+     "dil": "OSMANLI TÜRKÇESİ",
+     "kelime": "merhaba",
+     "yazi": "مرحبا",
+     "t": 39.6
+    },
+    {
+     "dil": "TÜRKİYE TÜRKÇESİ",
+     "kelime": "merhaba",
+     "yazi": "",
+     "t": 40.9
+    },
+    {
+     "dil": "BOŞNAKÇA · SIRPÇA-HIRVATÇA",
+     "kelime": "merhaba",
+     "yazi": "",
+     "t": 42.2
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 38.4,
+     "metin": "Arapçadan Osmanlı Türkçesine geçti,"
+    },
+    {
+     "t": 41.6,
+     "metin": "oradan Balkan dillerine kadar yayıldı."
+    }
+   ],
+   "kaynak": "Wiktionary “merhaba” (Redhouse 2013 ve Nişanyan Sözlük’e atıfla)",
+   "gorsel": "elyazmasi_2.jpg",
+   "kredi": "Hat levhası (Smithsonian, Sackler) · Kamu malı · Wikimedia Commons"
+  },
+  {
+   "id": "kapanis",
+   "bas": 45.2,
+   "son": 50.8,
+   "zemin": "kapi_isik",
+   "buyuk": [
+    {
+     "metin": "Burada\nsana yer var.",
+     "t": 47.4,
+     "stil": "final"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 45.4,
+     "metin": "Yani biri size “merhaba” dediğinde aslında şunu söylüyor:"
+    }
+   ]
+  },
+  {
+   "id": "kunye",
+   "bas": 50.8,
+   "son": 55.0,
+   "zemin": "kunye",
+   "kaynakca": [
+    "M. Çağrıcı, “Merhaba”, TDV İslâm Ansiklopedisi, c. 29, s. 183–184, Ankara 2004.",
+    "Râgıb el-İsfahânî, el-Müfredât, “rḥb” md. (TDV İA aracılığıyla)",
+    "İbn Manzûr, Lisânü’l-ʿArab, “rḥb” md. (TDV İA aracılığıyla)",
+    "Wiktionary, “merhaba” (Redhouse 2013 ve Nişanyan Sözlük’e atıfla)"
+   ]
+  }
+ ],
+ "bolum": 1
+}

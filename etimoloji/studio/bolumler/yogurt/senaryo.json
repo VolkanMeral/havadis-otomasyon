@@ -1,0 +1,173 @@
+{
+ "kelime": "YOĞURT",
+ "bolum": 3,
+ "seri": "Kelimelerin Gizli Tarihi",
+ "slogan": "Her kelimenin bir hikâyesi var.",
+ "sure": 80,
+ "sahneler": [
+  {
+   "id": "giris",
+   "bas": 0,
+   "son": 10,
+   "zemin": "gece",
+   "buyuk": [
+    {
+     "metin": "YOĞURT",
+     "t": 0.0,
+     "stil": "acilis"
+    }
+   ],
+   "altyazi": [],
+   "arapca": "",
+   "gorsel": "yogurt_2.jpg",
+   "kredi": "Yogurt fruit bowl · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "gizem",
+   "bas": 10,
+   "son": 20,
+   "zemin": "kapi",
+   "buyuk": [],
+   "altyazi": [],
+   "gorsel": "harita_1.jpg",
+   "kredi": "Dīwān Lughāt al-Turk (original) · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "kok",
+   "bas": 20,
+   "son": 30,
+   "zemin": "parsomen",
+   "buyuk": [
+    {
+     "metin": "yoğ- · yoğur-",
+     "t": 23.0,
+     "stil": "translit"
+    },
+    {
+     "metin": "KÖK  yoğ-|koyulaşmak · yoğurmak",
+     "t": 26.0,
+     "stil": "kok_tr"
+    },
+    {
+     "metin": "KÖK TARTIŞMALI",
+     "t": 27.5,
+     "stil": "uyari_alt"
+    }
+   ],
+   "altyazi": [],
+   "kaynak": "etymonline “yogurt”; Wikipedia “Yogurt” (Redhouse 1890’a atıfla)",
+   "gorsel": "uygur_1.jpg",
+   "kredi": "Han-Uyghur scripts Buddhist text from the Gaochang era · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "anlam",
+   "bas": 30,
+   "son": 40,
+   "zemin": "kapi_genis",
+   "buyuk": [
+    {
+     "metin": "“yuğrut”",
+     "t": 31.0,
+     "stil": "alinti",
+     "etiket": "ESKİ UYGUR METİNLERİNDE"
+    }
+   ],
+   "altyazi": [],
+   "kaynak": "Wikipedia “Yogurt” (Nişanyan Sözlük’e atıfla) – tek kaynak",
+   "gorsel": "kasgar_1.jpg",
+   "kredi": "Uyghur books 16-19th centuries · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "rivayet",
+   "bas": 40,
+   "son": 50,
+   "zemin": "col",
+   "buyuk": [
+    {
+     "metin": "XI. YÜZYIL",
+     "t": 40.5,
+     "stil": "etiket"
+    },
+    {
+     "metin": "Kaşgarlı Mahmud",
+     "t": 41.2,
+     "stil": "isim"
+    },
+    {
+     "metin": "Dîvânu Lugâti’t-Türk",
+     "t": 42.0,
+     "stil": "alt_isim"
+    }
+   ],
+   "altyazi": [],
+   "kaynak": "Wikipedia “Yogurt” (Toygar 1993, Ögel 1978); A. Özden, “Yoğurdun Tarihi”",
+   "gorsel": "harita_2.jpg",
+   "kredi": "Mahmud al-Kashgari map · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  {
+   "id": "yolculuk",
+   "bas": 50,
+   "son": 60,
+   "zemin": "zincir",
+   "buyuk": [],
+   "altyazi": [],
+   "kaynak": "etymonline “yogurt”; dictionary.com “yogurt”; Petrović–Đinđić 2015",
+   "zincir": [
+    {
+     "dil": "ESKİ TÜRKÇE",
+     "kelime": "yuğrut",
+     "yazi": "",
+     "t": 50.8
+    },
+    {
+     "dil": "TÜRKİYE TÜRKÇESİ",
+     "kelime": "yoğurt",
+     "yazi": "",
+     "t": 52.5
+    },
+    {
+     "dil": "İNGİLİZCE · 1620’ler",
+     "kelime": "yogurt",
+     "yazi": "",
+     "t": 54.2
+    },
+    {
+     "dil": "ALMANCA · SIRPÇA",
+     "kelime": "Joghurt · jogurt",
+     "yazi": "",
+     "t": 55.9
+    }
+   ],
+   "gorsel": "yogurt_2.jpg",
+   "kredi": "Yogurt fruit bowl · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "kapanis",
+   "bas": 60,
+   "son": 70,
+   "zemin": "kapi_isik",
+   "buyuk": [
+    {
+     "metin": "Dokuz asırlık\nbir Türkçe kelime.",
+     "t": 66.0,
+     "stil": "final"
+    }
+   ],
+   "altyazi": []
+  },
+  {
+   "id": "kunye",
+   "bas": 70,
+   "son": 80,
+   "zemin": "kunye",
+   "buyuk": [],
+   "altyazi": [],
+   "kaynakca": [
+    "etymonline, “yogurt”.",
+    "Wikipedia, “Yogurt” (Toygar 1993; Ögel 1978; Nişanyan’a atıfla).",
+    "Ali Özden, “Yoğurdun Tarihi”, Güncel Gastroenteroloji.",
+    "Dictionary.com, “yogurt”; Petrović & Đinđić 2015."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,264 @@
+{
+ "kelime": "KÖŞK",
+ "bolum": 4,
+ "seri": "Kelimelerin Gizli Tarihi",
+ "slogan": "Her kelimenin bir hikâyesi var.",
+ "sure": 54.147,
+ "sahneler": [
+  {
+   "id": "giris",
+   "bas": 0.0,
+   "son": 6.565,
+   "zemin": "gece",
+   "buyuk": [
+    {
+     "metin": "KÖŞK",
+     "t": 0.0,
+     "stil": "acilis"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 0.25,
+     "metin": "Gazete aldığınız o küçük kulübenin adı: kiosk.",
+     "sure": 2.963,
+     "id": "g1"
+    },
+    {
+     "t": 3.493,
+     "metin": "Bu kelime, bir zamanlar saray demekti.",
+     "sure": 2.572,
+     "id": "g2"
+    }
+   ],
+   "arapca": "كوشك",
+   "gorsel": "bagdat_1.jpg",
+   "kredi": "Baghdad Kiosk at the Topkapı Palace in Istanbul, Turkey 001 · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  {
+   "id": "gizem",
+   "bas": 6.565,
+   "son": 12.605,
+   "zemin": "kapi",
+   "buyuk": [],
+   "altyazi": [
+    {
+     "t": 6.865,
+     "metin": "Bir saray nasıl sokak büfesine dönüştü?",
+     "sure": 2.531,
+     "id": "z1"
+    },
+    {
+     "t": 9.677,
+     "metin": "Hikâye, Farsçada başlıyor.",
+     "sure": 1.929,
+     "id": "z2"
+    }
+   ],
+   "gorsel": "paris_1.jpg",
+   "kredi": "Kiosque à jouets et friandises, square des Arts et Métiers, 3ème arr… · CC0 · Wikimedia Commons"
+  },
+  {
+   "id": "kok",
+   "bas": 12.605,
+   "son": 18.043,
+   "zemin": "parsomen",
+   "buyuk": [
+    {
+     "metin": "کوشک",
+     "t": 13.421,
+     "stil": "arapca"
+    },
+    {
+     "metin": "kūšk",
+     "t": 14.237,
+     "stil": "translit"
+    },
+    {
+     "metin": "FARSÇA  kūšk|saray · köşk · revak",
+     "t": 15.532,
+     "stil": "kok_tr"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 12.905,
+     "metin": "Kökü Farsça: kūšk.",
+     "sure": 1.547,
+     "id": "k1"
+    },
+    {
+     "t": 14.732,
+     "metin": "Anlamı: saray, köşk, revak.",
+     "sure": 2.411,
+     "id": "k2"
+    }
+   ],
+   "kaynak": "TDV İslâm Ansiklopedisi – “Köşk” (A. Denknalbant); etymonline “kiosk”",
+   "gorsel": "pers_2.jpg",
+   "kredi": "Bahram Gur in the Black Pavilion, folio from the Khamseh of Nizami,… · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "anlam",
+   "bas": 18.043,
+   "son": 23.996,
+   "zemin": "kapi_genis",
+   "buyuk": [
+    {
+     "metin": "köşk, kiosque,\nKiosk",
+     "t": 18.639,
+     "stil": "alinti",
+     "etiket": "OSMANLI TÜRKÇESİNDEN AVRUPA’YA"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 18.343,
+     "metin": "Kelime Osmanlı Türkçesine köşk olarak geçti.",
+     "sure": 2.765,
+     "id": "a1"
+    },
+    {
+     "t": 21.388,
+     "metin": "Avrupa'ya da Türkçeden gitti.",
+     "sure": 1.808,
+     "id": "a2"
+    }
+   ],
+   "kaynak": "Wiktionary “kiosk”; etymonline “kiosk”",
+   "gorsel": "bahce_1.jpg",
+   "kredi": "Vauxhall - Dr. Johnson, Oliver Goldsmith, Mary Robinson, et al · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "rivayet",
+   "bas": 23.996,
+   "son": 32.856,
+   "zemin": "col",
+   "buyuk": [
+    {
+     "metin": "1638–39",
+     "t": 24.439,
+     "stil": "etiket"
+    },
+    {
+     "metin": "Bağdat Köşkü",
+     "t": 25.06,
+     "stil": "isim"
+    },
+    {
+     "metin": "Topkapı Sarayı · IV. Murad",
+     "t": 25.768,
+     "stil": "alt_isim"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 24.296,
+     "metin": "Topkapı Sarayı'ndaki Bağdat Köşkü, bunların en ünlülerinden.",
+     "sure": 3.683,
+     "id": "r1"
+    },
+    {
+     "t": 28.259,
+     "metin": "Dördüncü Murad onu, Bağdat'ın fethinin hatırasına yaptırdı.",
+     "sure": 3.797,
+     "id": "r2"
+    }
+   ],
+   "kaynak": "TDV İslâm Ansiklopedisi – “Bağdat Köşkü” (S. Eyice)",
+   "gorsel": "bagdat_2.jpg",
+   "kredi": "Baghdad Kiosk Topkapi Palace DSCF1885 · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "yolculuk",
+   "bas": 32.856,
+   "son": 41.402,
+   "zemin": "zincir",
+   "buyuk": [],
+   "altyazi": [
+    {
+     "t": 33.156,
+     "metin": "Kelime İtalyancaya, oradan Fransızcaya geçti.",
+     "sure": 3.242,
+     "id": "y1"
+    },
+    {
+     "t": 36.678,
+     "metin": "1857’de Paris’te ilk gazete kioskları kuruldu.",
+     "sure": 3.824,
+     "id": "y2"
+    }
+   ],
+   "kaynak": "Wiktionary “kiosk”; etymonline; Ville de Paris – kiosques",
+   "zincir": [
+    {
+     "dil": "FARSÇA",
+     "kelime": "kūšk",
+     "yazi": "کوشک",
+     "t": 33.156
+    },
+    {
+     "dil": "OSMANLI TÜRKÇESİ",
+     "kelime": "köşk",
+     "yazi": "كوشك",
+     "t": 35.13
+    },
+    {
+     "dil": "İTALYANCA",
+     "kelime": "chiosco",
+     "yazi": "",
+     "t": 37.105
+    },
+    {
+     "dil": "FRANSIZCA · ALMANCA",
+     "kelime": "kiosque · Kiosk",
+     "yazi": "",
+     "t": 39.079
+    }
+   ],
+   "gorsel": "paris_2.jpg",
+   "kredi": "Pagode Parc de Bagatelle Paris 16e · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  {
+   "id": "kapanis",
+   "bas": 41.402,
+   "son": 47.518,
+   "zemin": "kapi_isik",
+   "buyuk": [
+    {
+     "metin": "Saraydan\nsokağa.",
+     "t": 42.807,
+     "stil": "final"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 41.702,
+     "metin": "Sarayın adı,",
+     "sure": 0.975,
+     "id": "s1"
+    },
+    {
+     "t": 42.957,
+     "metin": "sokağın köşesine kadar yürüdü.",
+     "sure": 1.961,
+     "id": "s2"
+    }
+   ]
+  },
+  {
+   "id": "kunye",
+   "bas": 47.518,
+   "son": 54.147,
+   "zemin": "kunye",
+   "buyuk": [],
+   "altyazi": [],
+   "kaynakca": [
+    "Ayşe Denknalbant, “Köşk”, TDV İslâm Ansiklopedisi. islamansiklopedisi.org.tr/kosk",
+    "Semavi Eyice, “Bağdat Köşkü”, TDV İslâm Ansiklopedisi.",
+    "etymonline, “kiosk”; Wiktionary, “kiosk”.",
+    "Ville de Paris, “Les kiosques à journaux, une page d’histoire parisienne”."
+   ]
+  }
+ ]
+}

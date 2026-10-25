@@ -1,0 +1,83 @@
+{
+ "ses": "tr-TR-AhmetNeural",
+ "hiz": "-2%",
+ "perde": "-6Hz",
+ "parcalar": [
+  {
+   "id": "g1",
+   "sahne": "giris",
+   "metin": "Salonunuzdaki sedirle sınırdaki gümrük,"
+  },
+  {
+   "id": "g2",
+   "sahne": "giris",
+   "metin": "aynı kelimeden geliyor: divan."
+  },
+  {
+   "id": "z1",
+   "sahne": "gizem",
+   "metin": "Bir kelime nasıl hem meclis, hem kitap,"
+  },
+  {
+   "id": "z2",
+   "sahne": "gizem",
+   "metin": "hem de mobilya olabilir?"
+  },
+  {
+   "id": "k1",
+   "sahne": "kok",
+   "metin": "Kelime Farsçadan geliyor. İlk anlamı: kayıt defteri."
+  },
+  {
+   "id": "k2",
+   "sahne": "kok",
+   "metin": "Daha eski kökü ise tartışmalı."
+  },
+  {
+   "id": "a1",
+   "sahne": "anlam",
+   "metin": "Arapçaya geçince, defterlerin tutulduğu daireye ad oldu."
+  },
+  {
+   "id": "a2",
+   "sahne": "anlam",
+   "metin": "Zamanla devletin meclisini anlatır hâle geldi."
+  },
+  {
+   "id": "r1",
+   "sahne": "rivayet",
+   "metin": "Osmanlı'da devletin en önemli meclisi, Divan-ı Hümayun'du."
+  },
+  {
+   "id": "r2",
+   "sahne": "rivayet",
+   "metin": "Topkapı Sarayı'nda, Kubbealtı'nda toplanırdı."
+  },
+  {
+   "id": "y1",
+   "sahne": "yolculuk",
+   "metin": "İtalyancada dogana, Fransızcada duan oldu: gümrük.",
+   "ekran": "İtalyancada dogana, Fransızcada douane oldu: gümrük."
+  },
+  {
+   "id": "y2",
+   "sahne": "yolculuk",
+   "metin": "Avrupa'da ise minderli sedirlere divan denildi."
+  },
+  {
+   "id": "s1",
+   "sahne": "kapanis",
+   "metin": "Bir kâtibin defteriyle başlayan kelime,"
+  },
+  {
+   "id": "s2",
+   "sahne": "kapanis",
+   "metin": "bugün üzerine uzandığınız bir sedirde yaşıyor."
+  },
+  {
+   "id": "n1",
+   "sahne": "kunye",
+   "metin": "Kelimelerin Gizli Tarihi. Her kelimenin bir hikâyesi var."
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "aramalar": [
+  {
+   "id": "kahvehane",
+   "sorgu": "Ottoman coffeehouse miniature",
+   "adet": 3
+  },
+  {
+   "id": "bitki",
+   "sorgu": "Coffea arabica Köhler Medizinal-Pflanzen",
+   "adet": 2
+  },
+  {
+   "id": "mocha",
+   "sorgu": "Mocha Yemen engraving",
+   "adet": 2
+  },
+  {
+   "id": "istanbul",
+   "sorgu": "Constantinople engraving 16th century",
+   "adet": 3
+  },
+  {
+   "id": "cezve",
+   "sorgu": "Turkish coffee pot Ottoman",
+   "adet": 3
+  },
+  {
+   "id": "elyazmasi",
+   "sorgu": "Arabic manuscript page",
+   "adet": 2
+  }
+ ]
+}

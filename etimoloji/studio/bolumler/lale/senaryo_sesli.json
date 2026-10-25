@@ -1,0 +1,275 @@
+{
+ "kelime": "LÂLE",
+ "bolum": 5,
+ "seri": "Kelimelerin Gizli Tarihi",
+ "slogan": "Her kelimenin bir hikâyesi var.",
+ "sure": 66.62,
+ "sahneler": [
+  {
+   "id": "giris",
+   "bas": 0.0,
+   "son": 4.863,
+   "zemin": "gece",
+   "buyuk": [
+    {
+     "metin": "LÂLE",
+     "t": 0.0,
+     "stil": "acilis"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 0.25,
+     "metin": "Avrupa bu çiçeğe yüzyıllardır,",
+     "sure": 1.942,
+     "id": "g1"
+    },
+    {
+     "t": 2.472,
+     "metin": "bir sarığın adıyla sesleniyor.",
+     "sure": 1.891,
+     "id": "g2"
+    }
+   ],
+   "arapca": "لاله",
+   "gorsel": "iznik_2.jpg",
+   "kredi": "Polychrome plate. Iznik, glazed. Last quarter of the 16th century CE… · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "gizem",
+   "bas": 4.863,
+   "son": 10.863,
+   "zemin": "kapi",
+   "buyuk": [],
+   "altyazi": [
+    {
+     "t": 5.163,
+     "metin": "Almanlar Tulpe, İngilizler tulip der.",
+     "sure": 2.565,
+     "id": "z1"
+    },
+    {
+     "t": 8.008,
+     "metin": "Peki neden?",
+     "sure": 0.873,
+     "id": "z2"
+    }
+   ],
+   "gorsel": "gesner_1.jpg",
+   "kredi": "Mira calligraphiae monumenta (Model Book of Calligraphy) G. Bocskay… · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "kok",
+   "bas": 10.863,
+   "son": 17.068,
+   "zemin": "parsomen",
+   "buyuk": [
+    {
+     "metin": "دلبند",
+     "t": 11.794,
+     "stil": "arapca"
+    },
+    {
+     "metin": "dulband · tülbent",
+     "t": 12.724,
+     "stil": "translit"
+    },
+    {
+     "metin": "FARSÇA  dulband|sarık bezi",
+     "t": 14.944,
+     "stil": "kok_tr"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 11.163,
+     "metin": "Kökü Farsça dulband, yani sarık bezi.",
+     "sure": 2.701,
+     "id": "k1"
+    },
+    {
+     "t": 14.144,
+     "metin": "Türkçede bu kelime tülbent oldu.",
+     "sure": 2.024,
+     "id": "k2"
+    }
+   ],
+   "kaynak": "etymonline “tulip”; American Heritage Dictionary “tulip”",
+   "gorsel": "iznik_1.jpg",
+   "kredi": "Tile Iznik Met 64.27.17 · CC BY 2.5 · Wikimedia Commons"
+  },
+  {
+   "id": "anlam",
+   "bas": 17.068,
+   "son": 25.94,
+   "zemin": "kapi_genis",
+   "buyuk": [
+    {
+     "metin": "tülbent, turban,\ntulip",
+     "t": 17.955,
+     "stil": "alinti",
+     "etiket": "AYNI KÖKTEN İKİ KELİME"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 17.368,
+     "metin": "Çiçeğin Avrupa'daki adı, sarığa benzetilmesinden doğdu.",
+     "sure": 3.565,
+     "id": "a1"
+    },
+    {
+     "t": 21.213,
+     "metin": "İngilizcedeki turban ve tulip, aynı kökten gelen iki kelime.",
+     "sure": 3.927,
+     "id": "a2"
+    }
+   ],
+   "kaynak": "etymonline “turban”; Word Histories “turban/tulip”",
+   "gorsel": "clusius_1.jpg",
+   "kredi": "Rariorum aliquot stirpium per Pannoniam by Carolus Clusius Wellcome… · CC BY 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "rivayet",
+   "bas": 25.94,
+   "son": 42.41,
+   "zemin": "col",
+   "buyuk": [
+    {
+     "metin": "1550’LER",
+     "t": 26.763,
+     "stil": "etiket"
+    },
+    {
+     "metin": "Busbecq",
+     "t": 27.916,
+     "stil": "isim"
+    },
+    {
+     "metin": "I. Ferdinand’ın İstanbul elçisi",
+     "t": 29.234,
+     "stil": "alt_isim"
+    },
+    {
+     "metin": "“YANLIŞ ANLAMA” HİKÂYESİ VARSAYIM",
+     "t": 36.276,
+     "stil": "uyari"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 26.24,
+     "metin": "Bin beş yüz ellilerde, Ferdinand'ın elçisi Busbek, Kanuni'nin ülkesine gitti.",
+     "sure": 4.794,
+     "id": "r1"
+    },
+    {
+     "t": 31.314,
+     "metin": "Mektubunda, Türklerin tulipan dediği çiçeklerden söz etti.",
+     "sure": 3.682,
+     "id": "r2"
+    },
+    {
+     "t": 35.276,
+     "metin": "Rivayete göre adını sordu, ona sarığın adı söylendi. Ama bu yalnızca bir varsayım.",
+     "sure": 6.335,
+     "id": "r3"
+    }
+   ],
+   "kaynak": "Penelope/Chicago – Busbecq; TDV İslâm Ansiklopedisi – “Lâle”",
+   "gorsel": "busbecq_1.jpg",
+   "kredi": "Ogier Ghiselin de Busbecq · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "yolculuk",
+   "bas": 42.41,
+   "son": 51.605,
+   "zemin": "zincir",
+   "buyuk": [],
+   "altyazi": [
+    {
+     "t": 42.71,
+     "metin": "1559’da Augsburg’da Gesner bu çiçeğe “Tulipa” dedi.",
+     "sure": 4.111,
+     "id": "y1"
+    },
+    {
+     "t": 47.101,
+     "metin": "Hollandaca tulp, Almanca Tulpe, İngilizce tulip oldu.",
+     "sure": 3.604,
+     "id": "y2"
+    }
+   ],
+   "kaynak": "etymonline “tulip”; Wiktionary “Tulpe”; TDV İslâm Ansiklopedisi – “Lâle”",
+   "zincir": [
+    {
+     "dil": "FARSÇA",
+     "kelime": "dulband",
+     "yazi": "دلبند",
+     "t": 42.71
+    },
+    {
+     "dil": "TÜRKÇE",
+     "kelime": "tülbent",
+     "yazi": "",
+     "t": 44.892
+    },
+    {
+     "dil": "LATİNCE · 1559",
+     "kelime": "tulipa",
+     "yazi": "",
+     "t": 47.075
+    },
+    {
+     "dil": "ALMANCA · İNGİLİZCE",
+     "kelime": "Tulpe · tulip",
+     "yazi": "",
+     "t": 49.257
+    }
+   ],
+   "gorsel": "iznik_3.jpg",
+   "kredi": "Turchia, iznik, mattonella di nicchia, 1555-65 ca. · CC BY 3.0 · Wikimedia Commons"
+  },
+  {
+   "id": "kapanis",
+   "bas": 51.605,
+   "son": 59.991,
+   "zemin": "kapi_isik",
+   "buyuk": [
+    {
+     "metin": "Biz lâle dedik,\nAvrupa tülbent.",
+     "t": 54.729,
+     "stil": "final"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 51.905,
+     "metin": "Oysa Türkçede adı hep Farsça lâle kaldı.",
+     "sure": 2.694,
+     "id": "s1"
+    },
+    {
+     "t": 54.879,
+     "metin": "Biz ona lâle dedik, Avrupa tülbent.",
+     "sure": 2.512,
+     "id": "s2"
+    }
+   ]
+  },
+  {
+   "id": "kunye",
+   "bas": 59.991,
+   "son": 66.62,
+   "zemin": "kunye",
+   "buyuk": [],
+   "altyazi": [],
+   "kaynakca": [
+    "T. Baytop, M. Kurnaz, M. U. Derman, “Lâle”, TDV İslâm Ansiklopedisi, 2003.",
+    "etymonline, “tulip”, “turban”.",
+    "American Heritage Dictionary, “tulip”.",
+    "Penelope (Univ. of Chicago), Busbecq ve Gesner sayfaları; Word Histories."
+   ]
+  }
+ ]
+}

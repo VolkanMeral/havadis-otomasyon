@@ -1,0 +1,178 @@
+{
+ "kelime": "DİVAN",
+ "bolum": 6,
+ "seri": "Kelimelerin Gizli Tarihi",
+ "slogan": "Her kelimenin bir hikâyesi var.",
+ "sure": 80,
+ "sahneler": [
+  {
+   "id": "giris",
+   "bas": 0,
+   "son": 10,
+   "zemin": "gece",
+   "buyuk": [
+    {
+     "metin": "DİVAN",
+     "t": 0.0,
+     "stil": "acilis"
+    }
+   ],
+   "altyazi": [],
+   "arapca": "دیوان",
+   "gorsel": "hafiz_2.jpg",
+   "kredi": "A miniature from a manuscript of the Divan of Hafez, depicting the s… · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "gizem",
+   "bas": 10,
+   "son": 20,
+   "zemin": "kapi",
+   "buyuk": [],
+   "altyazi": [],
+   "gorsel": "dogana_2.jpg",
+   "kredi": "(Treviso) La punta della Dogana e la chiesa della Salute by Giovanni… · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "kok",
+   "bas": 20,
+   "son": 30,
+   "zemin": "parsomen",
+   "buyuk": [
+    {
+     "metin": "دیوان",
+     "t": 21.5,
+     "stil": "arapca"
+    },
+    {
+     "metin": "dēwān · dīwān",
+     "t": 23.0,
+     "stil": "translit"
+    },
+    {
+     "metin": "FARSÇA  dēwān|kayıt defteri",
+     "t": 26.0,
+     "stil": "kok_tr"
+    },
+    {
+     "metin": "DAHA ESKİ KÖKÜ TARTIŞMALI",
+     "t": 27.5,
+     "stil": "uyari_alt"
+    }
+   ],
+   "altyazi": [],
+   "kaynak": "TDV İslâm Ansiklopedisi – “Divan” (A. ed-Dûrî); Encyclopaedia Iranica – “Divan i” (F. de Blois)",
+   "gorsel": "hafiz_1.jpg",
+   "kredi": "A Qajar divan of Hafez, signed, Iran, 19th century Α · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "anlam",
+   "bas": 30,
+   "son": 40,
+   "zemin": "kapi_genis",
+   "buyuk": [
+    {
+     "metin": "defter, daire,\nmeclis",
+     "t": 31.0,
+     "stil": "alinti",
+     "etiket": "ANLAMIN YOLCULUĞU"
+    }
+   ],
+   "altyazi": [],
+   "kaynak": "TDV İslâm Ansiklopedisi – “Divan”; etymonline “divan”",
+   "gorsel": "katip_1.jpg",
+   "kredi": "Endowment Deed of Mihrimah Sultan · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "rivayet",
+   "bas": 40,
+   "son": 50,
+   "zemin": "col",
+   "buyuk": [
+    {
+     "metin": "OSMANLI",
+     "t": 40.5,
+     "stil": "etiket"
+    },
+    {
+     "metin": "Dîvân-ı Hümâyun",
+     "t": 41.2,
+     "stil": "isim"
+    },
+    {
+     "metin": "Kubbealtı · Topkapı Sarayı",
+     "t": 42.0,
+     "stil": "alt_isim"
+    }
+   ],
+   "altyazi": [],
+   "kaynak": "TDV İslâm Ansiklopedisi – “Dîvân-ı Hümâyun” (A. Mumcu)",
+   "gorsel": "kubbealti_1.jpg",
+   "kredi": "Imperial Council Hall Topkapi 2007 005 · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "yolculuk",
+   "bas": 50,
+   "son": 60,
+   "zemin": "zincir",
+   "buyuk": [],
+   "altyazi": [],
+   "kaynak": "Wiktionary “douane”, “dogana”; etymonline “divan”; Duden “Diwan”",
+   "zincir": [
+    {
+     "dil": "FARSÇA",
+     "kelime": "dēwān",
+     "yazi": "دیوان",
+     "t": 50.8
+    },
+    {
+     "dil": "ARAPÇA",
+     "kelime": "dīwān",
+     "yazi": "دِيوَان",
+     "t": 52.5
+    },
+    {
+     "dil": "İTALYANCA · FRANSIZCA",
+     "kelime": "dogana · douane",
+     "yazi": "",
+     "t": 54.2
+    },
+    {
+     "dil": "AVRUPA · SEDİR",
+     "kelime": "divan · Diwan",
+     "yazi": "",
+     "t": 55.9
+    }
+   ],
+   "gorsel": "dogana_1.jpg",
+   "kredi": "(Venice) Veduta del Canal Grande dalla Punta della Dogana - Bernardo… · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "kapanis",
+   "bas": 60,
+   "son": 70,
+   "zemin": "kapi_isik",
+   "buyuk": [
+    {
+     "metin": "Defterden\nsedire.",
+     "t": 66.0,
+     "stil": "final"
+    }
+   ],
+   "altyazi": []
+  },
+  {
+   "id": "kunye",
+   "bas": 70,
+   "son": 80,
+   "zemin": "kunye",
+   "buyuk": [],
+   "altyazi": [],
+   "kaynakca": [
+    "A. A. ed-Dûrî, “Divan”, TDV İslâm Ansiklopedisi.",
+    "F. de Blois, “Divan i. The term”, Encyclopaedia Iranica.",
+    "Ahmet Mumcu, “Dîvân-ı Hümâyun”, TDV İslâm Ansiklopedisi.",
+    "etymonline, “divan”; Wiktionary, “douane”, “dogana”; Duden, “Diwan”."
+   ]
+  }
+ ]
+}

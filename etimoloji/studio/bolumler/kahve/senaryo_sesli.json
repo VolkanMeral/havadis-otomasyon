@@ -1,0 +1,269 @@
+{
+ "kelime": "KAHVE",
+ "bolum": 2,
+ "seri": "Kelimelerin Gizli Tarihi",
+ "slogan": "Her kelimenin bir hikâyesi var.",
+ "sure": 61.3,
+ "sahneler": [
+  {
+   "id": "giris",
+   "bas": 0.0,
+   "son": 4.932,
+   "zemin": "gece",
+   "buyuk": [
+    {
+     "metin": "KAHVE",
+     "t": 0.0,
+     "stil": "acilis"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 0.25,
+     "metin": "Sabah içtiğiniz kahvenin adı,",
+     "sure": 1.954,
+     "id": "g1"
+    },
+    {
+     "t": 2.484,
+     "metin": "bir zamanlar şarap demekti.",
+     "sure": 1.948,
+     "id": "g2"
+    }
+   ],
+   "arapca": "قَهْوَة",
+   "gorsel": "kahvehane_1.jpg",
+   "kredi": "MeddahOttomman · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "gizem",
+   "bas": 4.932,
+   "son": 14.2,
+   "zemin": "kapi",
+   "buyuk": [],
+   "altyazi": [
+    {
+     "t": 5.232,
+     "metin": "Peki bu isim nasıl değişti?",
+     "sure": 1.865,
+     "id": "z1"
+    },
+    {
+     "t": 7.377,
+     "metin": "Kimileri Etiyopya'daki Kaffa bölgesini işaret eder. Ama bu görüş tartışmalı.",
+     "sure": 5.823,
+     "id": "z2"
+    }
+   ],
+   "gorsel": "bitki_1.jpg",
+   "kredi": "Coffea arabica - Köhler–s Medizinal-Pflanzen-189 · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "kok",
+   "bas": 14.2,
+   "son": 20.819,
+   "zemin": "parsomen",
+   "buyuk": [
+    {
+     "metin": "قَهْوَة",
+     "t": 15.193,
+     "stil": "arapca"
+    },
+    {
+     "metin": "qahwa",
+     "t": 16.186,
+     "stil": "translit"
+    },
+    {
+     "metin": "ARAPÇA  qahwa|ilk anlam: şarap",
+     "t": 17.416,
+     "stil": "kok_tr"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 14.5,
+     "metin": "Kelimenin kökü Arapça: qahwa.",
+     "sure": 1.836,
+     "id": "k1"
+    },
+    {
+     "t": 16.616,
+     "metin": "Eski Arapçada bu kelime, şarap anlamına geliyordu.",
+     "sure": 3.302,
+     "id": "k2"
+    }
+   ],
+   "kaynak": "TDV İslâm Ansiklopedisi – “Kahve” (İ. Bostan); Duden – “Kaffee”",
+   "gorsel": "hat_1.jpg",
+   "kredi": "Page of calligraphy (decoupage) (Arthur M. Sackler Gallery S1986.335) · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "anlam",
+   "bas": 20.819,
+   "son": 28.852,
+   "zemin": "kapi_genis",
+   "buyuk": [
+    {
+     "metin": "“İştahı kesen”",
+     "t": 21.622,
+     "stil": "alinti",
+     "etiket": "ARAP SÖZLÜKÇÜLERİNE GÖRE"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 21.119,
+     "metin": "Sözlükçülere göre şaraba bu ad, iştahı kestiği için verilmişti.",
+     "sure": 4.02,
+     "id": "a1"
+    },
+    {
+     "t": 25.419,
+     "metin": "Sonra aynı ad, yeni içeceğe geçti.",
+     "sure": 2.633,
+     "id": "a2"
+    }
+   ],
+   "kaynak": "TDV İslâm Ansiklopedisi – “Kahve”; Wikipedia – History of coffee",
+   "gorsel": "mocha_1.jpg",
+   "kredi": "Siege of Mocha (Yemen) 1737 · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "rivayet",
+   "bas": 28.852,
+   "son": 38.105,
+   "zemin": "col",
+   "buyuk": [
+    {
+     "metin": "1543",
+     "t": 29.315,
+     "stil": "etiket"
+    },
+    {
+     "metin": "İstanbul",
+     "t": 29.962,
+     "stil": "isim"
+    },
+    {
+     "metin": "Kâtib Çelebi’nin aktarımıyla",
+     "t": 30.703,
+     "stil": "alt_isim"
+    },
+    {
+     "metin": "GİRİŞ TARİHİ TARTIŞMALI",
+     "t": 35.086,
+     "stil": "uyari"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 29.152,
+     "metin": "Kâtib Çelebi'ye göre kahve, 1543'te gemilerle İstanbul'a geldi.",
+     "sure": 4.654,
+     "id": "r1"
+    },
+    {
+     "t": 34.086,
+     "metin": "Kısa süre sonra Tahtakale'de ilk kahvehaneler açıldı.",
+     "sure": 3.219,
+     "id": "r2"
+    }
+   ],
+   "kaynak": "TDV İslâm Ansiklopedisi – “Kahve”, “Kahvehane”",
+   "gorsel": "cezve_1.jpg",
+   "kredi": "Silver coffee pot from Turkey, 19th century, Honolulu Museum of Art · CC0 · Wikimedia Commons"
+  },
+  {
+   "id": "yolculuk",
+   "bas": 38.105,
+   "son": 46.501,
+   "zemin": "zincir",
+   "buyuk": [],
+   "altyazi": [
+    {
+     "t": 38.405,
+     "metin": "Osmanlıca kahve, İtalyancada caffè oldu.",
+     "sure": 3.011,
+     "id": "y1"
+    },
+    {
+     "t": 41.696,
+     "metin": "Almanlar Kaffee, Hollandalılar koffie, İngilizler coffee dedi.",
+     "sure": 3.905,
+     "id": "y2"
+    }
+   ],
+   "kaynak": "Wiktionary “coffee”, “kahve”; Duden “Kaffee”; etymonline “coffee”",
+   "zincir": [
+    {
+     "dil": "ARAPÇA",
+     "kelime": "qahwa",
+     "yazi": "قَهْوَة",
+     "t": 38.405
+    },
+    {
+     "dil": "OSMANLI TÜRKÇESİ",
+     "kelime": "kahve",
+     "yazi": "قهوه",
+     "t": 40.33
+    },
+    {
+     "dil": "İTALYANCA",
+     "kelime": "caffè",
+     "yazi": "",
+     "t": 42.254
+    },
+    {
+     "dil": "ALMANCA · İNGİLİZCE",
+     "kelime": "Kaffee · coffee",
+     "yazi": "",
+     "t": 44.178
+    }
+   ],
+   "gorsel": "cezve_2.jpg",
+   "kredi": "Srpska kafa · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "kapanis",
+   "bas": 46.501,
+   "son": 54.807,
+   "zemin": "kapi_isik",
+   "buyuk": [
+    {
+     "metin": "Türkçeden\ndünyaya.",
+     "t": 48.822,
+     "stil": "final"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 46.801,
+     "metin": "Bir zamanlar şarabın adıydı.",
+     "sure": 1.892,
+     "id": "s1"
+    },
+    {
+     "t": 48.972,
+     "metin": "Bugün dünya onu, Türkçeden öğrendiği adla çağırıyor.",
+     "sure": 3.234,
+     "id": "s2"
+    }
+   ]
+  },
+  {
+   "id": "kunye",
+   "bas": 54.807,
+   "son": 61.3,
+   "zemin": "kunye",
+   "buyuk": [],
+   "altyazi": [],
+   "kaynakca": [
+    "İdris Bostan, “Kahve”, TDV İslâm Ansiklopedisi. islamansiklopedisi.org.tr/kahve",
+    "Ahmet Yaşar, “Kahvehane”, TDV İslâm Ansiklopedisi.",
+    "Duden, “Kaffee”.",
+    "etymonline, “coffee”; Wiktionary, “coffee”, “kahve”."
+   ]
+  }
+ ]
+}

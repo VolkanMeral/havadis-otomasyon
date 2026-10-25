@@ -1,0 +1,90 @@
+{
+ "ses": "tr-TR-AhmetNeural",
+ "hiz": "-2%",
+ "perde": "-6Hz",
+ "parcalar": [
+  {
+   "id": "g1",
+   "sahne": "giris",
+   "metin": "Avrupa bu çiçeğe yüzyıllardır,"
+  },
+  {
+   "id": "g2",
+   "sahne": "giris",
+   "metin": "bir sarığın adıyla sesleniyor."
+  },
+  {
+   "id": "z1",
+   "sahne": "gizem",
+   "metin": "Almanlar Tulpe, İngilizler tulip der.",
+   "ekran": "Almanlar Tulpe, İngilizler tulip der."
+  },
+  {
+   "id": "z2",
+   "sahne": "gizem",
+   "metin": "Peki neden?"
+  },
+  {
+   "id": "k1",
+   "sahne": "kok",
+   "metin": "Kökü Farsça dulbent, yani sarık bezi.",
+   "ekran": "Kökü Farsça dulband, yani sarık bezi."
+  },
+  {
+   "id": "k2",
+   "sahne": "kok",
+   "metin": "Türkçede bu kelime tülbent oldu."
+  },
+  {
+   "id": "a1",
+   "sahne": "anlam",
+   "metin": "Çiçeğin Avrupa'daki adı, sarığa benzetilmesinden doğdu."
+  },
+  {
+   "id": "a2",
+   "sahne": "anlam",
+   "metin": "İngilizcedeki turban ve tulip, aynı kökten gelen iki kelime."
+  },
+  {
+   "id": "r1",
+   "sahne": "rivayet",
+   "metin": "Bin beş yüz ellilerde, Ferdinand'ın elçisi Busbek, Kanuni'nin ülkesine gitti."
+  },
+  {
+   "id": "r2",
+   "sahne": "rivayet",
+   "metin": "Mektubunda, Türklerin tulipan dediği çiçeklerden söz etti."
+  },
+  {
+   "id": "r3",
+   "sahne": "rivayet",
+   "metin": "Rivayete göre adını sordu, ona sarığın adı söylendi. Ama bu yalnızca bir varsayım."
+  },
+  {
+   "id": "y1",
+   "sahne": "yolculuk",
+   "metin": "Bin beş yüz elli dokuzda Augsburg'da, Gesner bu çiçeğe Tulipa dedi.",
+   "ekran": "1559’da Augsburg’da Gesner bu çiçeğe “Tulipa” dedi."
+  },
+  {
+   "id": "y2",
+   "sahne": "yolculuk",
+   "metin": "Hollandaca tulp, Almanca Tulpe, İngilizce tulip oldu."
+  },
+  {
+   "id": "s1",
+   "sahne": "kapanis",
+   "metin": "Oysa Türkçede adı hep Farsça lâle kaldı."
+  },
+  {
+   "id": "s2",
+   "sahne": "kapanis",
+   "metin": "Biz ona lâle dedik, Avrupa tülbent."
+  },
+  {
+   "id": "n1",
+   "sahne": "kunye",
+   "metin": "Kelimelerin Gizli Tarihi. Her kelimenin bir hikâyesi var."
+  }
+ ]
+}

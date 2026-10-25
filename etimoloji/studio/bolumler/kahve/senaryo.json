@@ -1,0 +1,178 @@
+{
+ "kelime": "KAHVE",
+ "bolum": 2,
+ "seri": "Kelimelerin Gizli Tarihi",
+ "slogan": "Her kelimenin bir hikâyesi var.",
+ "sure": 80,
+ "sahneler": [
+  {
+   "id": "giris",
+   "bas": 0,
+   "son": 10,
+   "zemin": "gece",
+   "buyuk": [
+    {
+     "metin": "KAHVE",
+     "t": 0.0,
+     "stil": "acilis"
+    }
+   ],
+   "altyazi": [],
+   "arapca": "قَهْوَة",
+   "gorsel": "kahvehane_1.jpg",
+   "kredi": "MeddahOttomman · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "gizem",
+   "bas": 10,
+   "son": 20,
+   "zemin": "kapi",
+   "buyuk": [],
+   "altyazi": [],
+   "gorsel": "bitki_1.jpg",
+   "kredi": "Coffea arabica - Köhler–s Medizinal-Pflanzen-189 · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "kok",
+   "bas": 20,
+   "son": 30,
+   "zemin": "parsomen",
+   "buyuk": [
+    {
+     "metin": "قَهْوَة",
+     "t": 21.5,
+     "stil": "arapca"
+    },
+    {
+     "metin": "qahwa",
+     "t": 23.0,
+     "stil": "translit"
+    },
+    {
+     "metin": "ARAPÇA  qahwa|ilk anlam: şarap",
+     "t": 26.0,
+     "stil": "kok_tr"
+    }
+   ],
+   "altyazi": [],
+   "kaynak": "TDV İslâm Ansiklopedisi – “Kahve” (İ. Bostan); Duden – “Kaffee”",
+   "gorsel": "hat_1.jpg",
+   "kredi": "Page of calligraphy (decoupage) (Arthur M. Sackler Gallery S1986.335) · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "anlam",
+   "bas": 30,
+   "son": 40,
+   "zemin": "kapi_genis",
+   "buyuk": [
+    {
+     "metin": "“İştahı kesen”",
+     "t": 31.0,
+     "stil": "alinti",
+     "etiket": "ARAP SÖZLÜKÇÜLERİNE GÖRE"
+    }
+   ],
+   "altyazi": [],
+   "kaynak": "TDV İslâm Ansiklopedisi – “Kahve”; Wikipedia – History of coffee",
+   "gorsel": "mocha_1.jpg",
+   "kredi": "Siege of Mocha (Yemen) 1737 · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "rivayet",
+   "bas": 40,
+   "son": 50,
+   "zemin": "col",
+   "buyuk": [
+    {
+     "metin": "1543",
+     "t": 40.5,
+     "stil": "etiket"
+    },
+    {
+     "metin": "İstanbul",
+     "t": 41.2,
+     "stil": "isim"
+    },
+    {
+     "metin": "Kâtib Çelebi’nin aktarımıyla",
+     "t": 42.0,
+     "stil": "alt_isim"
+    },
+    {
+     "metin": "GİRİŞ TARİHİ TARTIŞMALI",
+     "t": 45.5,
+     "stil": "uyari"
+    }
+   ],
+   "altyazi": [],
+   "kaynak": "TDV İslâm Ansiklopedisi – “Kahve”, “Kahvehane”",
+   "gorsel": "cezve_1.jpg",
+   "kredi": "Silver coffee pot from Turkey, 19th century, Honolulu Museum of Art · CC0 · Wikimedia Commons"
+  },
+  {
+   "id": "yolculuk",
+   "bas": 50,
+   "son": 60,
+   "zemin": "zincir",
+   "buyuk": [],
+   "altyazi": [],
+   "kaynak": "Wiktionary “coffee”, “kahve”; Duden “Kaffee”; etymonline “coffee”",
+   "zincir": [
+    {
+     "dil": "ARAPÇA",
+     "kelime": "qahwa",
+     "yazi": "قَهْوَة",
+     "t": 50.8
+    },
+    {
+     "dil": "OSMANLI TÜRKÇESİ",
+     "kelime": "kahve",
+     "yazi": "قهوه",
+     "t": 52.5
+    },
+    {
+     "dil": "İTALYANCA",
+     "kelime": "caffè",
+     "yazi": "",
+     "t": 54.2
+    },
+    {
+     "dil": "ALMANCA · İNGİLİZCE",
+     "kelime": "Kaffee · coffee",
+     "yazi": "",
+     "t": 55.9
+    }
+   ],
+   "gorsel": "cezve_2.jpg",
+   "kredi": "Srpska kafa · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "kapanis",
+   "bas": 60,
+   "son": 70,
+   "zemin": "kapi_isik",
+   "buyuk": [
+    {
+     "metin": "Türkçeden\ndünyaya.",
+     "t": 66.0,
+     "stil": "final"
+    }
+   ],
+   "altyazi": []
+  },
+  {
+   "id": "kunye",
+   "bas": 70,
+   "son": 80,
+   "zemin": "kunye",
+   "buyuk": [],
+   "altyazi": [],
+   "kaynakca": [
+    "İdris Bostan, “Kahve”, TDV İslâm Ansiklopedisi. islamansiklopedisi.org.tr/kahve",
+    "Ahmet Yaşar, “Kahvehane”, TDV İslâm Ansiklopedisi.",
+    "Duden, “Kaffee”.",
+    "etymonline, “coffee”; Wiktionary, “coffee”, “kahve”."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,264 @@
+{
+ "kelime": "YOĞURT",
+ "bolum": 3,
+ "seri": "Kelimelerin Gizli Tarihi",
+ "slogan": "Her kelimenin bir hikâyesi var.",
+ "sure": 58.759,
+ "sahneler": [
+  {
+   "id": "giris",
+   "bas": 0.0,
+   "son": 6.548,
+   "zemin": "gece",
+   "buyuk": [
+    {
+     "metin": "YOĞURT",
+     "t": 0.0,
+     "stil": "acilis"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 0.25,
+     "metin": "Dünyanın pek çok dilinde aynı kelime:",
+     "sure": 2.452,
+     "id": "g1"
+    },
+    {
+     "t": 2.982,
+     "metin": "yoğurt. Ve bu kelime Türkçe.",
+     "sure": 3.067,
+     "id": "g2"
+    }
+   ],
+   "arapca": "",
+   "gorsel": "yogurt_2.jpg",
+   "kredi": "Yogurt fruit bowl · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "gizem",
+   "bas": 6.548,
+   "son": 12.9,
+   "zemin": "kapi",
+   "buyuk": [],
+   "altyazi": [
+    {
+     "t": 6.848,
+     "metin": "Peki bu kelime ne kadar eski?",
+     "sure": 1.874,
+     "id": "z1"
+    },
+    {
+     "t": 9.002,
+     "metin": "Cevap, dokuz yüz yıllık bir sözlükte saklı.",
+     "sure": 2.899,
+     "id": "z2"
+    }
+   ],
+   "gorsel": "harita_1.jpg",
+   "kredi": "Dīwān Lughāt al-Turk (original) · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "kok",
+   "bas": 12.9,
+   "son": 20.585,
+   "zemin": "parsomen",
+   "buyuk": [
+    {
+     "metin": "yoğ- · yoğur-",
+     "t": 15.206,
+     "stil": "translit"
+    },
+    {
+     "metin": "KÖK  yoğ-|koyulaşmak · yoğurmak",
+     "t": 18.546,
+     "stil": "kok_tr"
+    },
+    {
+     "metin": "KÖK TARTIŞMALI",
+     "t": 18.346,
+     "stil": "uyari_alt"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 13.2,
+     "metin": "Kökünü çoğu kaynak, koyulaşmak ya da yoğurmak anlamındaki bir fiile bağlar.",
+     "sure": 4.265,
+     "id": "k1"
+    },
+    {
+     "t": 17.746,
+     "metin": "Ama bu konu hâlâ tartışmalı.",
+     "sure": 1.939,
+     "id": "k2"
+    }
+   ],
+   "kaynak": "etymonline “yogurt”; Wikipedia “Yogurt” (Redhouse 1890’a atıfla)",
+   "gorsel": "uygur_1.jpg",
+   "kredi": "Han-Uyghur scripts Buddhist text from the Gaochang era · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "anlam",
+   "bas": 20.585,
+   "son": 28.547,
+   "zemin": "kapi_genis",
+   "buyuk": [
+    {
+     "metin": "“yuğrut”",
+     "t": 21.381,
+     "stil": "alinti",
+     "etiket": "ESKİ UYGUR METİNLERİNDE"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 20.885,
+     "metin": "Eski Uygur metinlerinde kelime, yuğrut diye geçer.",
+     "sure": 3.118,
+     "id": "a1"
+    },
+    {
+     "t": 24.283,
+     "metin": "Bugünkü biçim, zamanla bu eski sözcükten gelişti.",
+     "sure": 3.464,
+     "id": "a2"
+    }
+   ],
+   "kaynak": "Wikipedia “Yogurt” (Nişanyan Sözlük’e atıfla) – tek kaynak",
+   "gorsel": "kasgar_1.jpg",
+   "kredi": "Uyghur books 16-19th centuries · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "rivayet",
+   "bas": 28.547,
+   "son": 36.823,
+   "zemin": "col",
+   "buyuk": [
+    {
+     "metin": "XI. YÜZYIL",
+     "t": 28.961,
+     "stil": "etiket"
+    },
+    {
+     "metin": "Kaşgarlı Mahmud",
+     "t": 29.54,
+     "stil": "isim"
+    },
+    {
+     "metin": "Dîvânu Lugâti’t-Türk",
+     "t": 30.202,
+     "stil": "alt_isim"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 28.847,
+     "metin": "On birinci yüzyılda Kaşgarlı Mahmud, kelimeyi Divanü Lugati't-Türk'e yazdı.",
+     "sure": 4.473,
+     "id": "r1"
+    },
+    {
+     "t": 33.6,
+     "metin": "Aynı dönemde Kutadgu Bilig'de de geçiyor.",
+     "sure": 2.423,
+     "id": "r2"
+    }
+   ],
+   "kaynak": "Wikipedia “Yogurt” (Toygar 1993, Ögel 1978); A. Özden, “Yoğurdun Tarihi”",
+   "gorsel": "harita_2.jpg",
+   "kredi": "Mahmud al-Kashgari map · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  {
+   "id": "yolculuk",
+   "bas": 36.823,
+   "son": 44.475,
+   "zemin": "zincir",
+   "buyuk": [],
+   "altyazi": [
+    {
+     "t": 37.123,
+     "metin": "Kelime Avrupa dillerine Türkçeden geçti.",
+     "sure": 2.506,
+     "id": "y1"
+    },
+    {
+     "t": 39.909,
+     "metin": "İngilizcede ilk kez 1620’lerde kayda geçti.",
+     "sure": 3.665,
+     "id": "y2"
+    }
+   ],
+   "kaynak": "etymonline “yogurt”; dictionary.com “yogurt”; Petrović–Đinđić 2015",
+   "zincir": [
+    {
+     "dil": "ESKİ TÜRKÇE",
+     "kelime": "yuğrut",
+     "yazi": "",
+     "t": 37.123
+    },
+    {
+     "dil": "TÜRKİYE TÜRKÇESİ",
+     "kelime": "yoğurt",
+     "yazi": "",
+     "t": 38.838
+    },
+    {
+     "dil": "İNGİLİZCE · 1620’ler",
+     "kelime": "yogurt",
+     "yazi": "",
+     "t": 40.554
+    },
+    {
+     "dil": "ALMANCA · SIRPÇA",
+     "kelime": "Joghurt · jogurt",
+     "yazi": "",
+     "t": 42.269
+    }
+   ],
+   "gorsel": "yogurt_2.jpg",
+   "kredi": "Yogurt fruit bowl · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "kapanis",
+   "bas": 44.475,
+   "son": 52.215,
+   "zemin": "kapi_isik",
+   "buyuk": [
+    {
+     "metin": "Dokuz asırlık\nbir Türkçe kelime.",
+     "t": 47.557,
+     "stil": "final"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 44.775,
+     "metin": "Dokuz yüz yılı aşkın süredir yazıya geçmiş,",
+     "sure": 2.652,
+     "id": "s1"
+    },
+    {
+     "t": 47.707,
+     "metin": "bir Türkçe kelime: yoğurt.",
+     "sure": 1.909,
+     "id": "s2"
+    }
+   ]
+  },
+  {
+   "id": "kunye",
+   "bas": 52.215,
+   "son": 58.759,
+   "zemin": "kunye",
+   "buyuk": [],
+   "altyazi": [],
+   "kaynakca": [
+    "etymonline, “yogurt”.",
+    "Wikipedia, “Yogurt” (Toygar 1993; Ögel 1978; Nişanyan’a atıfla).",
+    "Ali Özden, “Yoğurdun Tarihi”, Güncel Gastroenteroloji.",
+    "Dictionary.com, “yogurt”; Petrović & Đinđić 2015."
+   ]
+  }
+ ]
+}

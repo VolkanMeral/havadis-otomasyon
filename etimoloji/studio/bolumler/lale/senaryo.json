@@ -1,0 +1,178 @@
+{
+ "kelime": "LÂLE",
+ "bolum": 5,
+ "seri": "Kelimelerin Gizli Tarihi",
+ "slogan": "Her kelimenin bir hikâyesi var.",
+ "sure": 80,
+ "sahneler": [
+  {
+   "id": "giris",
+   "bas": 0,
+   "son": 10,
+   "zemin": "gece",
+   "buyuk": [
+    {
+     "metin": "LÂLE",
+     "t": 0.0,
+     "stil": "acilis"
+    }
+   ],
+   "altyazi": [],
+   "arapca": "لاله",
+   "gorsel": "iznik_2.jpg",
+   "kredi": "Polychrome plate. Iznik, glazed. Last quarter of the 16th century CE… · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "gizem",
+   "bas": 10,
+   "son": 20,
+   "zemin": "kapi",
+   "buyuk": [],
+   "altyazi": [],
+   "gorsel": "gesner_1.jpg",
+   "kredi": "Mira calligraphiae monumenta (Model Book of Calligraphy) G. Bocskay… · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "kok",
+   "bas": 20,
+   "son": 30,
+   "zemin": "parsomen",
+   "buyuk": [
+    {
+     "metin": "دلبند",
+     "t": 21.5,
+     "stil": "arapca"
+    },
+    {
+     "metin": "dulband · tülbent",
+     "t": 23.0,
+     "stil": "translit"
+    },
+    {
+     "metin": "FARSÇA  dulband|sarık bezi",
+     "t": 26.0,
+     "stil": "kok_tr"
+    }
+   ],
+   "altyazi": [],
+   "kaynak": "etymonline “tulip”; American Heritage Dictionary “tulip”",
+   "gorsel": "iznik_1.jpg",
+   "kredi": "Tile Iznik Met 64.27.17 · CC BY 2.5 · Wikimedia Commons"
+  },
+  {
+   "id": "anlam",
+   "bas": 30,
+   "son": 40,
+   "zemin": "kapi_genis",
+   "buyuk": [
+    {
+     "metin": "tülbent, turban,\ntulip",
+     "t": 31.0,
+     "stil": "alinti",
+     "etiket": "AYNI KÖKTEN İKİ KELİME"
+    }
+   ],
+   "altyazi": [],
+   "kaynak": "etymonline “turban”; Word Histories “turban/tulip”",
+   "gorsel": "clusius_1.jpg",
+   "kredi": "Rariorum aliquot stirpium per Pannoniam by Carolus Clusius Wellcome… · CC BY 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "rivayet",
+   "bas": 40,
+   "son": 50,
+   "zemin": "col",
+   "buyuk": [
+    {
+     "metin": "1550’LER",
+     "t": 40.5,
+     "stil": "etiket"
+    },
+    {
+     "metin": "Busbecq",
+     "t": 41.2,
+     "stil": "isim"
+    },
+    {
+     "metin": "I. Ferdinand’ın İstanbul elçisi",
+     "t": 42.0,
+     "stil": "alt_isim"
+    },
+    {
+     "metin": "“YANLIŞ ANLAMA” HİKÂYESİ VARSAYIM",
+     "t": 45.5,
+     "stil": "uyari"
+    }
+   ],
+   "altyazi": [],
+   "kaynak": "Penelope/Chicago – Busbecq; TDV İslâm Ansiklopedisi – “Lâle”",
+   "gorsel": "busbecq_1.jpg",
+   "kredi": "Ogier Ghiselin de Busbecq · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "yolculuk",
+   "bas": 50,
+   "son": 60,
+   "zemin": "zincir",
+   "buyuk": [],
+   "altyazi": [],
+   "kaynak": "etymonline “tulip”; Wiktionary “Tulpe”; TDV İslâm Ansiklopedisi – “Lâle”",
+   "zincir": [
+    {
+     "dil": "FARSÇA",
+     "kelime": "dulband",
+     "yazi": "دلبند",
+     "t": 50.8
+    },
+    {
+     "dil": "TÜRKÇE",
+     "kelime": "tülbent",
+     "yazi": "",
+     "t": 52.5
+    },
+    {
+     "dil": "LATİNCE · 1559",
+     "kelime": "tulipa",
+     "yazi": "",
+     "t": 54.2
+    },
+    {
+     "dil": "ALMANCA · İNGİLİZCE",
+     "kelime": "Tulpe · tulip",
+     "yazi": "",
+     "t": 55.9
+    }
+   ],
+   "gorsel": "iznik_3.jpg",
+   "kredi": "Turchia, iznik, mattonella di nicchia, 1555-65 ca. · CC BY 3.0 · Wikimedia Commons"
+  },
+  {
+   "id": "kapanis",
+   "bas": 60,
+   "son": 70,
+   "zemin": "kapi_isik",
+   "buyuk": [
+    {
+     "metin": "Biz lâle dedik,\nAvrupa tülbent.",
+     "t": 66.0,
+     "stil": "final"
+    }
+   ],
+   "altyazi": []
+  },
+  {
+   "id": "kunye",
+   "bas": 70,
+   "son": 80,
+   "zemin": "kunye",
+   "buyuk": [],
+   "altyazi": [],
+   "kaynakca": [
+    "T. Baytop, M. Kurnaz, M. U. Derman, “Lâle”, TDV İslâm Ansiklopedisi, 2003.",
+    "etymonline, “tulip”, “turban”.",
+    "American Heritage Dictionary, “tulip”.",
+    "Penelope (Univ. of Chicago), Busbecq ve Gesner sayfaları; Word Histories."
+   ]
+  }
+ ]
+}

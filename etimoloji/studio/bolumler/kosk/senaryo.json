@@ -1,0 +1,173 @@
+{
+ "kelime": "KÖŞK",
+ "bolum": 4,
+ "seri": "Kelimelerin Gizli Tarihi",
+ "slogan": "Her kelimenin bir hikâyesi var.",
+ "sure": 80,
+ "sahneler": [
+  {
+   "id": "giris",
+   "bas": 0,
+   "son": 10,
+   "zemin": "gece",
+   "buyuk": [
+    {
+     "metin": "KÖŞK",
+     "t": 0.0,
+     "stil": "acilis"
+    }
+   ],
+   "altyazi": [],
+   "arapca": "كوشك",
+   "gorsel": "bagdat_1.jpg",
+   "kredi": "Baghdad Kiosk at the Topkapı Palace in Istanbul, Turkey 001 · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  {
+   "id": "gizem",
+   "bas": 10,
+   "son": 20,
+   "zemin": "kapi",
+   "buyuk": [],
+   "altyazi": [],
+   "gorsel": "paris_1.jpg",
+   "kredi": "Kiosque à jouets et friandises, square des Arts et Métiers, 3ème arr… · CC0 · Wikimedia Commons"
+  },
+  {
+   "id": "kok",
+   "bas": 20,
+   "son": 30,
+   "zemin": "parsomen",
+   "buyuk": [
+    {
+     "metin": "کوشک",
+     "t": 21.5,
+     "stil": "arapca"
+    },
+    {
+     "metin": "kūšk",
+     "t": 23.0,
+     "stil": "translit"
+    },
+    {
+     "metin": "FARSÇA  kūšk|saray · köşk · revak",
+     "t": 26.0,
+     "stil": "kok_tr"
+    }
+   ],
+   "altyazi": [],
+   "kaynak": "TDV İslâm Ansiklopedisi – “Köşk” (A. Denknalbant); etymonline “kiosk”",
+   "gorsel": "pers_2.jpg",
+   "kredi": "Bahram Gur in the Black Pavilion, folio from the Khamseh of Nizami,… · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "anlam",
+   "bas": 30,
+   "son": 40,
+   "zemin": "kapi_genis",
+   "buyuk": [
+    {
+     "metin": "köşk, kiosque,\nKiosk",
+     "t": 31.0,
+     "stil": "alinti",
+     "etiket": "OSMANLI TÜRKÇESİNDEN AVRUPA’YA"
+    }
+   ],
+   "altyazi": [],
+   "kaynak": "Wiktionary “kiosk”; etymonline “kiosk”",
+   "gorsel": "bahce_1.jpg",
+   "kredi": "Vauxhall - Dr. Johnson, Oliver Goldsmith, Mary Robinson, et al · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "rivayet",
+   "bas": 40,
+   "son": 50,
+   "zemin": "col",
+   "buyuk": [
+    {
+     "metin": "1638–39",
+     "t": 40.5,
+     "stil": "etiket"
+    },
+    {
+     "metin": "Bağdat Köşkü",
+     "t": 41.2,
+     "stil": "isim"
+    },
+    {
+     "metin": "Topkapı Sarayı · IV. Murad",
+     "t": 42.0,
+     "stil": "alt_isim"
+    }
+   ],
+   "altyazi": [],
+   "kaynak": "TDV İslâm Ansiklopedisi – “Bağdat Köşkü” (S. Eyice)",
+   "gorsel": "bagdat_2.jpg",
+   "kredi": "Baghdad Kiosk Topkapi Palace DSCF1885 · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "yolculuk",
+   "bas": 50,
+   "son": 60,
+   "zemin": "zincir",
+   "buyuk": [],
+   "altyazi": [],
+   "kaynak": "Wiktionary “kiosk”; etymonline; Ville de Paris – kiosques",
+   "zincir": [
+    {
+     "dil": "FARSÇA",
+     "kelime": "kūšk",
+     "yazi": "کوشک",
+     "t": 50.8
+    },
+    {
+     "dil": "OSMANLI TÜRKÇESİ",
+     "kelime": "köşk",
+     "yazi": "كوشك",
+     "t": 52.5
+    },
+    {
+     "dil": "İTALYANCA",
+     "kelime": "chiosco",
+     "yazi": "",
+     "t": 54.2
+    },
+    {
+     "dil": "FRANSIZCA · ALMANCA",
+     "kelime": "kiosque · Kiosk",
+     "yazi": "",
+     "t": 55.9
+    }
+   ],
+   "gorsel": "paris_2.jpg",
+   "kredi": "Pagode Parc de Bagatelle Paris 16e · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  {
+   "id": "kapanis",
+   "bas": 60,
+   "son": 70,
+   "zemin": "kapi_isik",
+   "buyuk": [
+    {
+     "metin": "Saraydan\nsokağa.",
+     "t": 66.0,
+     "stil": "final"
+    }
+   ],
+   "altyazi": []
+  },
+  {
+   "id": "kunye",
+   "bas": 70,
+   "son": 80,
+   "zemin": "kunye",
+   "buyuk": [],
+   "altyazi": [],
+   "kaynakca": [
+    "Ayşe Denknalbant, “Köşk”, TDV İslâm Ansiklopedisi. islamansiklopedisi.org.tr/kosk",
+    "Semavi Eyice, “Bağdat Köşkü”, TDV İslâm Ansiklopedisi.",
+    "etymonline, “kiosk”; Wiktionary, “kiosk”.",
+    "Ville de Paris, “Les kiosques à journaux, une page d’histoire parisienne”."
+   ]
+  }
+ ]
+}

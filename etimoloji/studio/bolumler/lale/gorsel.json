@@ -1,0 +1,34 @@
+{
+ "aramalar": [
+  {
+   "id": "busbecq",
+   "sorgu": "Ogier Ghiselin de Busbecq portrait",
+   "adet": 2
+  },
+  {
+   "id": "gesner",
+   "sorgu": "Gesner tulip 1561",
+   "adet": 2
+  },
+  {
+   "id": "iznik",
+   "sorgu": "Iznik tile tulip",
+   "adet": 3
+  },
+  {
+   "id": "lale",
+   "sorgu": "Ottoman tulip miniature",
+   "adet": 3
+  },
+  {
+   "id": "sarik",
+   "sorgu": "Ottoman turban 16th century",
+   "adet": 2
+  },
+  {
+   "id": "clusius",
+   "sorgu": "Clusius tulip woodcut",
+   "adet": 2
+  }
+ ]
+}

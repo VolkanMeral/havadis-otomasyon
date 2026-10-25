@@ -1,0 +1,269 @@
+{
+ "kelime": "DİVAN",
+ "bolum": 6,
+ "seri": "Kelimelerin Gizli Tarihi",
+ "slogan": "Her kelimenin bir hikâyesi var.",
+ "sure": 58.493,
+ "sahneler": [
+  {
+   "id": "giris",
+   "bas": 0.0,
+   "son": 5.525,
+   "zemin": "gece",
+   "buyuk": [
+    {
+     "metin": "DİVAN",
+     "t": 0.0,
+     "stil": "acilis"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 0.25,
+     "metin": "Salonunuzdaki sedirle sınırdaki gümrük,",
+     "sure": 2.434,
+     "id": "g1"
+    },
+    {
+     "t": 2.964,
+     "metin": "aynı kelimeden geliyor: divan.",
+     "sure": 2.061,
+     "id": "g2"
+    }
+   ],
+   "arapca": "دیوان",
+   "gorsel": "hafiz_2.jpg",
+   "kredi": "A miniature from a manuscript of the Divan of Hafez, depicting the s… · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "gizem",
+   "bas": 5.525,
+   "son": 11.525,
+   "zemin": "kapi",
+   "buyuk": [],
+   "altyazi": [
+    {
+     "t": 5.825,
+     "metin": "Bir kelime nasıl hem meclis, hem kitap,",
+     "sure": 2.806,
+     "id": "z1"
+    },
+    {
+     "t": 8.911,
+     "metin": "hem de mobilya olabilir?",
+     "sure": 1.549,
+     "id": "z2"
+    }
+   ],
+   "gorsel": "dogana_2.jpg",
+   "kredi": "(Treviso) La punta della Dogana e la chiesa della Salute by Giovanni… · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  {
+   "id": "kok",
+   "bas": 11.525,
+   "son": 19.756,
+   "zemin": "parsomen",
+   "buyuk": [
+    {
+     "metin": "دیوان",
+     "t": 12.76,
+     "stil": "arapca"
+    },
+    {
+     "metin": "dēwān · dīwān",
+     "t": 13.994,
+     "stil": "translit"
+    },
+    {
+     "metin": "FARSÇA  dēwān|kayıt defteri",
+     "t": 17.628,
+     "stil": "kok_tr"
+    },
+    {
+     "metin": "DAHA ESKİ KÖKÜ TARTIŞMALI",
+     "t": 17.428,
+     "stil": "uyari_alt"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 11.825,
+     "metin": "Kelime Farsçadan geliyor. İlk anlamı: kayıt defteri.",
+     "sure": 4.723,
+     "id": "k1"
+    },
+    {
+     "t": 16.828,
+     "metin": "Daha eski kökü ise tartışmalı.",
+     "sure": 2.028,
+     "id": "k2"
+    }
+   ],
+   "kaynak": "TDV İslâm Ansiklopedisi – “Divan” (A. ed-Dûrî); Encyclopaedia Iranica – “Divan i” (F. de Blois)",
+   "gorsel": "hafiz_1.jpg",
+   "kredi": "A Qajar divan of Hafez, signed, Iran, 19th century Α · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "anlam",
+   "bas": 19.756,
+   "son": 27.724,
+   "zemin": "kapi_genis",
+   "buyuk": [
+    {
+     "metin": "defter, daire,\nmeclis",
+     "t": 20.552,
+     "stil": "alinti",
+     "etiket": "ANLAMIN YOLCULUĞU"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 20.056,
+     "metin": "Arapçaya geçince, defterlerin tutulduğu daireye ad oldu.",
+     "sure": 3.627,
+     "id": "a1"
+    },
+    {
+     "t": 23.963,
+     "metin": "Zamanla devletin meclisini anlatır hâle geldi.",
+     "sure": 2.961,
+     "id": "a2"
+    }
+   ],
+   "kaynak": "TDV İslâm Ansiklopedisi – “Divan”; etymonline “divan”",
+   "gorsel": "katip_1.jpg",
+   "kredi": "Endowment Deed of Mihrimah Sultan · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "rivayet",
+   "bas": 27.724,
+   "son": 35.642,
+   "zemin": "col",
+   "buyuk": [
+    {
+     "metin": "OSMANLI",
+     "t": 28.12,
+     "stil": "etiket"
+    },
+    {
+     "metin": "Dîvân-ı Hümâyun",
+     "t": 28.674,
+     "stil": "isim"
+    },
+    {
+     "metin": "Kubbealtı · Topkapı Sarayı",
+     "t": 29.308,
+     "stil": "alt_isim"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 28.024,
+     "metin": "Osmanlı'da devletin en önemli meclisi, Divan-ı Hümayun'du.",
+     "sure": 3.733,
+     "id": "r1"
+    },
+    {
+     "t": 32.038,
+     "metin": "Topkapı Sarayı'nda, Kubbealtı'nda toplanırdı.",
+     "sure": 2.804,
+     "id": "r2"
+    }
+   ],
+   "kaynak": "TDV İslâm Ansiklopedisi – “Dîvân-ı Hümâyun” (A. Mumcu)",
+   "gorsel": "kubbealti_1.jpg",
+   "kredi": "Imperial Council Hall Topkapi 2007 005 · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "yolculuk",
+   "bas": 35.642,
+   "son": 43.467,
+   "zemin": "zincir",
+   "buyuk": [],
+   "altyazi": [
+    {
+     "t": 35.942,
+     "metin": "İtalyancada dogana, Fransızcada douane oldu: gümrük.",
+     "sure": 3.34,
+     "id": "y1"
+    },
+    {
+     "t": 39.562,
+     "metin": "Avrupa'da ise minderli sedirlere divan denildi.",
+     "sure": 3.005,
+     "id": "y2"
+    }
+   ],
+   "kaynak": "Wiktionary “douane”, “dogana”; etymonline “divan”; Duden “Diwan”",
+   "zincir": [
+    {
+     "dil": "FARSÇA",
+     "kelime": "dēwān",
+     "yazi": "دیوان",
+     "t": 35.942
+    },
+    {
+     "dil": "ARAPÇA",
+     "kelime": "dīwān",
+     "yazi": "دِيوَان",
+     "t": 37.749
+    },
+    {
+     "dil": "İTALYANCA · FRANSIZCA",
+     "kelime": "dogana · douane",
+     "yazi": "",
+     "t": 39.556
+    },
+    {
+     "dil": "AVRUPA · SEDİR",
+     "kelime": "divan · Diwan",
+     "yazi": "",
+     "t": 41.364
+    }
+   ],
+   "gorsel": "dogana_1.jpg",
+   "kredi": "(Venice) Veduta del Canal Grande dalla Punta della Dogana - Bernardo… · Public domain · Wikimedia Commons"
+  },
+  {
+   "id": "kapanis",
+   "bas": 43.467,
+   "son": 51.949,
+   "zemin": "kapi_isik",
+   "buyuk": [
+    {
+     "metin": "Defterden\nsedire.",
+     "t": 46.344,
+     "stil": "final"
+    }
+   ],
+   "altyazi": [
+    {
+     "t": 43.767,
+     "metin": "Bir kâtibin defteriyle başlayan kelime,",
+     "sure": 2.447,
+     "id": "s1"
+    },
+    {
+     "t": 46.494,
+     "metin": "bugün üzerine uzandığınız bir sedirde yaşıyor.",
+     "sure": 2.855,
+     "id": "s2"
+    }
+   ]
+  },
+  {
+   "id": "kunye",
+   "bas": 51.949,
+   "son": 58.493,
+   "zemin": "kunye",
+   "buyuk": [],
+   "altyazi": [],
+   "kaynakca": [
+    "A. A. ed-Dûrî, “Divan”, TDV İslâm Ansiklopedisi.",
+    "F. de Blois, “Divan i. The term”, Encyclopaedia Iranica.",
+    "Ahmet Mumcu, “Dîvân-ı Hümâyun”, TDV İslâm Ansiklopedisi.",
+    "etymonline, “divan”; Wiktionary, “douane”, “dogana”; Duden, “Diwan”."
+   ]
+  }
+ ]
+}
