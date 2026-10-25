@@ -28,15 +28,20 @@ def main(f):
         ok = False
         for mod in ([d["dil"], None] if d.get("dil") else [None]):
             DIL = mod
-            ayarlar = [(d["hiz"], d["perde"]), ("+0%", d["perde"]), (d["hiz"], "-5Hz"), ("+1%", "-4Hz"), (d["hiz"], d["perde"])]
-            for deneme, (hiz, perde) in enumerate(ayarlar):
+            ham = p.get("ses_metni", p["metin"])
+            varyant = [ham, ham.rstrip(",.:;!? ") + ".", ham.replace(",", ""), ham.replace("'", "").replace("’", ""), "Evet. " + ham]
+            ayarlar = [(d["hiz"], d["perde"]), ("+0%", d["perde"]), (d["hiz"], "-5Hz")]
+            denemeler = [(v, h, pr) for v in varyant for (h, pr) in ayarlar][:12]
+            for deneme, (metin, hiz, perde) in enumerate(denemeler):
                 try:
-                    asyncio.run(uret(p.get("ses_metni", p["metin"]), d["ses"], hiz, perde, yol))
+                    asyncio.run(uret(metin, d["ses"], hiz, perde, yol))
                     ok = os.path.getsize(yol) > 4000
                 except Exception as e:
-                    print(p["id"], mod, "hata:", type(e).__name__, str(e)[:200], flush=True); ok = False
-                if ok: break
-                time.sleep(4 + deneme * 4)
+                    print(p["id"], mod, "hata:", type(e).__name__, str(e)[:120], flush=True); ok = False
+                if ok:
+                    if metin.startswith("Evet. "): rapor.setdefault("_kirp", []).append(p["id"])
+                    break
+                time.sleep(3 + (deneme % 3) * 2)
             if ok: rapor[p["id"]] = (f"lang={mod}" if mod else "duz") + f" {hiz} {perde}"; break
         print(p["id"], rapor.get(p["id"], "HATA"), flush=True)
         if not ok: hatali.append(p["id"])
@@ -50,5 +55,5 @@ if __name__ == "__main__":
     for f in sys.argv[1:]:
         try: main(f)
         except BaseException as e:
-            hata.append(f); open("etimoloji/ses_gunluk.txt", "a").write(f"{f}\n{traceback.format_exc()[-2500:]}\n")
+            hata.append(f); open(os.path.join(os.path.dirname(f), "ses_gunluk.txt"), "a").write(f"{f}\n{traceback.format_exc()[-2500:]}\n")
     if hata: sys.exit("hatalı: " + ", ".join(hata))
