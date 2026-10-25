@@ -1,0 +1,88 @@
+{
+ "motor": "google",
+ "ses": "tr-TR-Chirp3-HD-Puck",
+ "hiz": 0.95,
+ "parcalar": [
+  {
+   "id": "g1",
+   "sahne": "giris",
+   "metin": "Mozart'ın Alla Turka'sını hepimiz biliriz.",
+   "ekran": "Mozart’ın “Alla turca”sını hepimiz biliriz."
+  },
+  {
+   "id": "g2",
+   "sahne": "giris",
+   "metin": "Bu eser yeniçeri bandolarının sesini taklit eder."
+  },
+  {
+   "id": "z1",
+   "sahne": "gizem",
+   "metin": "Almanlar onlara Yaniçaren der.",
+   "ekran": "Almanlar onlara “Janitscharen” der."
+  },
+  {
+   "id": "z2",
+   "sahne": "gizem",
+   "metin": "Bu kelimenin içinde iki Türkçe kelime saklı."
+  },
+  {
+   "id": "k1",
+   "sahne": "kok",
+   "metin": "Yeni ve çeri."
+  },
+  {
+   "id": "k2",
+   "sahne": "kok",
+   "metin": "Çeri, eski Türkçede asker demek."
+  },
+  {
+   "id": "a1",
+   "sahne": "anlam",
+   "metin": "Yeniçeri, yeni asker anlamına gelir."
+  },
+  {
+   "id": "a2",
+   "sahne": "anlam",
+   "metin": "Ocak, on dördüncü yüzyılda adım adım ortaya çıktı.",
+   "ekran": "Ocak, 14. yüzyılda adım adım ortaya çıktı."
+  },
+  {
+   "id": "r1",
+   "sahne": "rivayet",
+   "metin": "Yeniçeriler isyan edecekleri zaman kazan kaldırırdı."
+  },
+  {
+   "id": "r2",
+   "sahne": "rivayet",
+   "metin": "Bin sekiz yüz yirmi altıda İkinci Mahmud ocağı kaldırdı.",
+   "ekran": "1826’da II. Mahmud ocağı kaldırdı."
+  },
+  {
+   "id": "y1",
+   "sahne": "yolculuk",
+   "metin": "Kelime İtalyancaya canizero, Fransızcaya janiser olarak geçti.",
+   "ekran": "Kelime İtalyancaya “giannizzero”, Fransızcaya “janissaire” olarak geçti."
+  },
+  {
+   "id": "y2",
+   "sahne": "yolculuk",
+   "metin": "Mehter müziği de on sekizinci yüzyılda Avrupa'yı etkiledi.",
+   "ekran": "Mehter müziği de 18. yüzyılda Avrupa’yı etkiledi."
+  },
+  {
+   "id": "s1",
+   "sahne": "kapanis",
+   "metin": "Ocak kapandı."
+  },
+  {
+   "id": "s2",
+   "sahne": "kapanis",
+   "metin": "Ama adı Avrupa dillerinde, davulu konser salonlarında yaşıyor."
+  },
+  {
+   "id": "n1",
+   "sahne": "kunye",
+   "metin": "Kelimelerin Gizli Tarihi. Her kelimenin bir hikâyesi var."
+  }
+ ]
+}

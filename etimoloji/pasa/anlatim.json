@@ -1,0 +1,85 @@
+{
+ "motor": "google",
+ "ses": "tr-TR-Chirp3-HD-Puck",
+ "hiz": 0.95,
+ "parcalar": [
+  {
+   "id": "g1",
+   "sahne": "giris",
+   "metin": "Almanya'da bir erkeğe Paşa derseniz, iltifat etmiş olmazsınız.",
+   "ekran": "Almanya’da bir erkeğe “Pascha” derseniz, iltifat etmiş olmazsınız."
+  },
+  {
+   "id": "g2",
+   "sahne": "giris",
+   "metin": "Duden'e göre bu, kendine hizmet ettiren erkek demektir."
+  },
+  {
+   "id": "z1",
+   "sahne": "gizem",
+   "metin": "Peki kelime nereden geliyor?"
+  },
+  {
+   "id": "z2",
+   "sahne": "gizem",
+   "metin": "Dilbilimciler bu konuda hâlâ anlaşamıyor."
+  },
+  {
+   "id": "k1",
+   "sahne": "kok",
+   "metin": "Bir görüşe göre Farsça padişah kelimesinden geliyor."
+  },
+  {
+   "id": "k2",
+   "sahne": "kok",
+   "metin": "Başka görüşlere göre ise Türkçe baş ya da beşe kelimesinden."
+  },
+  {
+   "id": "a1",
+   "sahne": "anlam",
+   "metin": "Osmanlı'da paşa, yüksek rütbeli devlet adamlarına verilen bir unvandı."
+  },
+  {
+   "id": "a2",
+   "sahne": "anlam",
+   "metin": "Bu unvanı Osmanlılardan önce Anadolu beyleri de kullanıyordu."
+  },
+  {
+   "id": "r1",
+   "sahne": "rivayet",
+   "metin": "Bin yedi yüz seksen ikide Viyana'da, Mozart'ın Saraydan Kız Kaçırma operası sahnelendi.",
+   "ekran": "1782’de Viyana’da Mozart’ın “Saraydan Kız Kaçırma” operası sahnelendi."
+  },
+  {
+   "id": "r2",
+   "sahne": "rivayet",
+   "metin": "Sahnede bir paşa vardı: Paşa Selim, tek nota söylemeyen bir rol."
+  },
+  {
+   "id": "y1",
+   "sahne": "yolculuk",
+   "metin": "Kelime İngilizceye önce başav, sonra paşa olarak girdi.",
+   "ekran": "Kelime İngilizceye önce “bashaw”, sonra “pasha” olarak girdi."
+  },
+  {
+   "id": "y2",
+   "sahne": "yolculuk",
+   "metin": "Almancada ise zamanla anlamı değişti."
+  },
+  {
+   "id": "s1",
+   "sahne": "kapanis",
+   "metin": "Osmanlı'da bir unvandı."
+  },
+  {
+   "id": "s2",
+   "sahne": "kapanis",
+   "metin": "Almancada bir sitem oldu."
+  },
+  {
+   "id": "n1",
+   "sahne": "kunye",
+   "metin": "Kelimelerin Gizli Tarihi. Her kelimenin bir hikâyesi var."
+  }
+ ]
+}

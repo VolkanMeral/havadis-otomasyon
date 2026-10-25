@@ -1,0 +1,34 @@
+{
+ "aramalar": [
+  {
+   "id": "mersin",
+   "sorgu": "sturgeon engraving",
+   "adet": 3
+  },
+  {
+   "id": "acipenser",
+   "sorgu": "Acipenser illustration 19th century",
+   "adet": 2
+  },
+  {
+   "id": "hamlet",
+   "sorgu": "Hamlet Second Quarto 1604",
+   "adet": 2
+  },
+  {
+   "id": "hazar",
+   "sorgu": "Caspian Sea fishermen 19th century",
+   "adet": 3
+  },
+  {
+   "id": "astrahan",
+   "sorgu": "Astrakhan fishery old photograph",
+   "adet": 2
+  },
+  {
+   "id": "venedik",
+   "sorgu": "Venice galley painting",
+   "adet": 2
+  }
+ ]
+}

@@ -1,0 +1,85 @@
+{
+ "motor": "google",
+ "ses": "tr-TR-Chirp3-HD-Puck",
+ "hiz": 0.95,
+ "parcalar": [
+  {
+   "id": "g1",
+   "sahne": "giris",
+   "metin": "Almanya'da her gün söylenen Döner Kebab'ın yarısı Türkçe,",
+   "ekran": "Almanya’da her gün söylenen “Döner Kebab”ın yarısı Türkçe,"
+  },
+  {
+   "id": "g2",
+   "sahne": "giris",
+   "metin": "yarısı Arapça."
+  },
+  {
+   "id": "z1",
+   "sahne": "gizem",
+   "metin": "Döner, yani dönen."
+  },
+  {
+   "id": "z2",
+   "sahne": "gizem",
+   "metin": "Peki kebap nereden geliyor?"
+  },
+  {
+   "id": "k1",
+   "sahne": "kok",
+   "metin": "Türkçe kebap, Arapça kebab kelimesinden gelir."
+  },
+  {
+   "id": "k2",
+   "sahne": "kok",
+   "metin": "Daha eski bir Akadca kök öne sürülse de, bu kanıtlanmış değil."
+  },
+  {
+   "id": "a1",
+   "sahne": "anlam",
+   "metin": "Duden'e göre kelime, şişte kızartılmış et demek."
+  },
+  {
+   "id": "a2",
+   "sahne": "anlam",
+   "metin": "Bazı kaynaklar ise kökeni Farsçaya bağlıyor."
+  },
+  {
+   "id": "r1",
+   "sahne": "rivayet",
+   "metin": "Bin sekiz yüz altmış yedide Bursa'da, İskender Efendi'nin eti dikey şişe aldığı anlatılır.",
+   "ekran": "1867’de Bursa’da İskender Efendi’nin eti dikey şişe aldığı anlatılır."
+  },
+  {
+   "id": "r2",
+   "sahne": "rivayet",
+   "metin": "Ama daha eski kayıtlar da var."
+  },
+  {
+   "id": "y1",
+   "sahne": "yolculuk",
+   "metin": "Bin dokuz yüz yetmişlerde döner, Berlin'de ekmek arasında yaygınlaştı.",
+   "ekran": "1970’lerde döner, Berlin’de ekmek arasında yaygınlaştı."
+  },
+  {
+   "id": "y2",
+   "sahne": "yolculuk",
+   "metin": "Bugün Almancada döner, sıradan bir kelime."
+  },
+  {
+   "id": "s1",
+   "sahne": "kapanis",
+   "metin": "Şişte kızartılan etin adı, Avrupa sokaklarına kadar yürüdü."
+  },
+  {
+   "id": "s2",
+   "sahne": "kapanis",
+   "metin": "Ama ilk adımı kimse kesin bilmiyor."
+  },
+  {
+   "id": "n1",
+   "sahne": "kunye",
+   "metin": "Kelimelerin Gizli Tarihi. Her kelimenin bir hikâyesi var."
+  }
+ ]
+}

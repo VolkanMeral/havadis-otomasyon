@@ -1,0 +1,89 @@
+{
+ "motor": "google",
+ "ses": "tr-TR-Chirp3-HD-Puck",
+ "hiz": 0.95,
+ "parcalar": [
+  {
+   "id": "g1",
+   "sahne": "giris",
+   "metin": "Avusturya'da bin dokuz yüz seksen yediden beri çakal var.",
+   "ekran": "Avusturya’da 1987’den beri çakal var."
+  },
+  {
+   "id": "g2",
+   "sahne": "giris",
+   "metin": "Almanlar ona Şakal, İngilizler cekıl diyor.",
+   "ekran": "Almanlar ona “Schakal”, İngilizler “jackal” diyor."
+  },
+  {
+   "id": "z1",
+   "sahne": "gizem",
+   "metin": "Peki bu kelimeler aslında kimin?"
+  },
+  {
+   "id": "z2",
+   "sahne": "gizem",
+   "metin": "İz bizi Hindistan'a götürüyor."
+  },
+  {
+   "id": "k1",
+   "sahne": "kok",
+   "metin": "Sanskritçede bu hayvanın adı sıgala.",
+   "ekran": "Sanskritçede bu hayvanın adı sṛgāla."
+  },
+  {
+   "id": "k2",
+   "sahne": "kok",
+   "metin": "Farsçada bu kelime şagal oldu.",
+   "ekran": "Farsçada bu kelime šaġāl oldu."
+  },
+  {
+   "id": "a1",
+   "sahne": "anlam",
+   "metin": "Türkçede ise kelime çakal biçimini aldı."
+  },
+  {
+   "id": "a2",
+   "sahne": "anlam",
+   "metin": "Avrupa dillerine de bu Türkçe biçim geçti."
+  },
+  {
+   "id": "r1",
+   "sahne": "rivayet",
+   "metin": "Kelile ve Dimne'nin iki kahramanı aslında çakaldır."
+  },
+  {
+   "id": "r2",
+   "sahne": "rivayet",
+   "metin": "Masallar altıncı yüzyılda Pehlevîceye çevrildi.",
+   "ekran": "Masallar 6. yüzyılda Pehlevîceye çevrildi."
+  },
+  {
+   "id": "y1",
+   "sahne": "yolculuk",
+   "metin": "Kelime Türkçeden Fransızcaya şakal olarak geçti.",
+   "ekran": "Kelime Türkçeden Fransızcaya “chacal” olarak geçti."
+  },
+  {
+   "id": "y2",
+   "sahne": "yolculuk",
+   "metin": "İngilizcede ise cekıl oldu.",
+   "ekran": "İngilizcede ise “jackal” oldu."
+  },
+  {
+   "id": "s1",
+   "sahne": "kapanis",
+   "metin": "Hindistan'dan Viyana'ya."
+  },
+  {
+   "id": "s2",
+   "sahne": "kapanis",
+   "metin": "Hayvan da kelime de aynı yolu yürüdü."
+  },
+  {
+   "id": "n1",
+   "sahne": "kunye",
+   "metin": "Kelimelerin Gizli Tarihi. Her kelimenin bir hikâyesi var."
+  }
+ ]
+}

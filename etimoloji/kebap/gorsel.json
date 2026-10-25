@@ -1,0 +1,24 @@
+{
+ "aramalar": [
+  {
+   "id": "iskender",
+   "sorgu": "Iskender kebap Bursa",
+   "adet": 3
+  },
+  {
+   "id": "satici",
+   "sorgu": "Ottoman kebab seller",
+   "adet": 3
+  },
+  {
+   "id": "doner",
+   "sorgu": "doner kebab",
+   "adet": 3
+  },
+  {
+   "id": "bursa",
+   "sorgu": "Bursa Koza Han old photograph",
+   "adet": 2
+  }
+ ]
+}

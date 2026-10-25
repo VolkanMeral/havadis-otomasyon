@@ -1,0 +1,29 @@
+{
+ "aramalar": [
+  {
+   "id": "topkapi",
+   "sorgu": "Ottoman kaftan Topkapi",
+   "adet": 3
+  },
+  {
+   "id": "fatih",
+   "sorgu": "kaftan Mehmed II",
+   "adet": 2
+  },
+  {
+   "id": "hilat",
+   "sorgu": "Ottoman miniature robe of honour",
+   "adet": 3
+  },
+  {
+   "id": "surname",
+   "sorgu": "Surname-i Humayun miniature",
+   "adet": 2
+  },
+  {
+   "id": "rus",
+   "sorgu": "Russian kaftan 17th century",
+   "adet": 2
+  }
+ ]
+}

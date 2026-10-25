@@ -1,0 +1,34 @@
+{
+ "aramalar": [
+  {
+   "id": "luther",
+   "sorgu": "Sendbrief vom Dolmetschen 1530",
+   "adet": 2
+  },
+  {
+   "id": "cranach",
+   "sorgu": "Martin Luther Cranach portrait",
+   "adet": 2
+  },
+  {
+   "id": "kutadgu",
+   "sorgu": "Kutadgu Bilig manuscript",
+   "adet": 2
+  },
+  {
+   "id": "dragoman",
+   "sorgu": "dragoman Ottoman engraving",
+   "adet": 3
+  },
+  {
+   "id": "civi",
+   "sorgu": "Akkadian cuneiform tablet",
+   "adet": 2
+  },
+  {
+   "id": "mavrokordatos",
+   "sorgu": "Alexander Mavrocordatos portrait",
+   "adet": 2
+  }
+ ]
+}

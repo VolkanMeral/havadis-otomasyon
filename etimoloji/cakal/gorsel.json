@@ -1,0 +1,24 @@
+{
+ "aramalar": [
+  {
+   "id": "kelile",
+   "sorgu": "Kalila wa Dimna jackals manuscript",
+   "adet": 3
+  },
+  {
+   "id": "altin_cakal",
+   "sorgu": "Canis aureus golden jackal",
+   "adet": 3
+  },
+  {
+   "id": "anvar",
+   "sorgu": "Anvar-i Suhayli jackal miniature",
+   "adet": 2
+  },
+  {
+   "id": "panchatantra",
+   "sorgu": "Panchatantra jackal illustration",
+   "adet": 2
+  }
+ ]
+}

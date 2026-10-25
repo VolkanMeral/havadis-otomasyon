@@ -1,0 +1,29 @@
+{
+ "aramalar": [
+  {
+   "id": "bellini",
+   "sorgu": "Janissary Gentile Bellini",
+   "adet": 2
+  },
+  {
+   "id": "mehter",
+   "sorgu": "Ottoman mehter band miniature",
+   "adet": 3
+  },
+  {
+   "id": "surname",
+   "sorgu": "Surname-i Vehbi janissaries",
+   "adet": 3
+  },
+  {
+   "id": "mozart",
+   "sorgu": "Mozart portrait 1780s",
+   "adet": 2
+  },
+  {
+   "id": "kostum",
+   "sorgu": "Janissary costume engraving",
+   "adet": 3
+  }
+ ]
+}

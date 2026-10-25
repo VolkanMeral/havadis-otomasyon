@@ -1,0 +1,85 @@
+{
+ "motor": "google",
+ "ses": "tr-TR-Chirp3-HD-Puck",
+ "hiz": 0.95,
+ "parcalar": [
+  {
+   "id": "g1",
+   "sahne": "giris",
+   "metin": "Viyana'da kaftan diyen biri, farkında olmadan Farsça bir kelime söylüyor."
+  },
+  {
+   "id": "g2",
+   "sahne": "giris",
+   "metin": "Bu uzun giysinin adı yüzyıllardır yolda."
+  },
+  {
+   "id": "z1",
+   "sahne": "gizem",
+   "metin": "Peki bir giysi nasıl olur da madalyanın yerini tutar?"
+  },
+  {
+   "id": "z2",
+   "sahne": "gizem",
+   "metin": "Cevap savaş meydanında başlıyor."
+  },
+  {
+   "id": "k1",
+   "sahne": "kok",
+   "metin": "Farsçada adı haftandı.",
+   "ekran": "Farsçada adı xaftān’dı."
+  },
+  {
+   "id": "k2",
+   "sahne": "kok",
+   "metin": "Arapçada ise kaftan oldu.",
+   "ekran": "Arapçada ise qafṭān oldu."
+  },
+  {
+   "id": "a1",
+   "sahne": "anlam",
+   "metin": "Başta zırhın altına giyilen askerî bir giysiydi."
+  },
+  {
+   "id": "a2",
+   "sahne": "anlam",
+   "metin": "Duden'e göre adı, aslen askerî üst giysi demekti."
+  },
+  {
+   "id": "r1",
+   "sahne": "rivayet",
+   "metin": "Osmanlı'da padişah, ödüllendirmek istediği kişiye kaftan giydirirdi."
+  },
+  {
+   "id": "r2",
+   "sahne": "rivayet",
+   "metin": "Yabancı elçiler de sarayda kaftan giydirilerek ağırlanırdı."
+  },
+  {
+   "id": "y1",
+   "sahne": "yolculuk",
+   "metin": "Kelime zamanla Avrupa dillerine yayıldı."
+  },
+  {
+   "id": "y2",
+   "sahne": "yolculuk",
+   "metin": "İngilizcede bin beş yüz doksanlarda görülür.",
+   "ekran": "İngilizcede 1590’larda görülür."
+  },
+  {
+   "id": "s1",
+   "sahne": "kapanis",
+   "metin": "Savaşın astarı olarak başladı."
+  },
+  {
+   "id": "s2",
+   "sahne": "kapanis",
+   "metin": "Sarayın madalyası olarak tarihe geçti."
+  },
+  {
+   "id": "n1",
+   "sahne": "kunye",
+   "metin": "Kelimelerin Gizli Tarihi. Her kelimenin bir hikâyesi var."
+  }
+ ]
+}

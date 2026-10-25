@@ -1,0 +1,86 @@
+{
+ "motor": "google",
+ "ses": "tr-TR-Chirp3-HD-Puck",
+ "hiz": 0.95,
+ "parcalar": [
+  {
+   "id": "g1",
+   "sahne": "giris",
+   "metin": "Viyana'da bir resmî dairede size Dolmeçer lazım.",
+   "ekran": "Viyana’da bir resmî dairede size “Dolmetscher” lazım."
+  },
+  {
+   "id": "g2",
+   "sahne": "giris",
+   "metin": "Bu kelimenin kökü Türkçe."
+  },
+  {
+   "id": "z1",
+   "sahne": "gizem",
+   "metin": "Peki biz neden tercüman deriz?"
+  },
+  {
+   "id": "z2",
+   "sahne": "gizem",
+   "metin": "Çünkü aynı iş için iki kelime, iki ayrı yoldan gelmiş."
+  },
+  {
+   "id": "k1",
+   "sahne": "kok",
+   "metin": "Tercüman, Arapça tercüman kelimesinden gelir."
+  },
+  {
+   "id": "k2",
+   "sahne": "kok",
+   "metin": "Daha gerisinde Aramice ve Akadca biçimleri vardır."
+  },
+  {
+   "id": "a1",
+   "sahne": "anlam",
+   "metin": "Dolmeçer'in kökü ise eski Türkçe tılmaç, yani dilmaç.",
+   "ekran": "“Dolmetscher”ın kökü ise eski Türkçe tılmaç, yani dilmaç."
+  },
+  {
+   "id": "a2",
+   "sahne": "anlam",
+   "metin": "Bu kelime Kutadgu Bilig'de, bin altmış dokuzda kayda geçer.",
+   "ekran": "Bu kelime Kutadgu Bilig’de, 1069’da kayda geçer."
+  },
+  {
+   "id": "r1",
+   "sahne": "rivayet",
+   "metin": "Bin beş yüz otuzda Martin Luther, çeviri üzerine ünlü bir mektup yazdı.",
+   "ekran": "1530’da Martin Luther, “Sendbrief vom Dolmetschen” adlı mektubunu yazdı."
+  },
+  {
+   "id": "r2",
+   "sahne": "rivayet",
+   "metin": "Almancada bu kelime artık çeviri demekti."
+  },
+  {
+   "id": "y1",
+   "sahne": "yolculuk",
+   "metin": "Dilmaç, Almancaya büyük olasılıkla Slav ya da Macar dilleri üzerinden geçti."
+  },
+  {
+   "id": "y2",
+   "sahne": "yolculuk",
+   "metin": "Tercüman ise Yunanca ve Latince üzerinden Avrupa'ya dragoman olarak ulaştı."
+  },
+  {
+   "id": "s1",
+   "sahne": "kapanis",
+   "metin": "Aynı mesleğin iki adı var."
+  },
+  {
+   "id": "s2",
+   "sahne": "kapanis",
+   "metin": "Biri Mezopotamya'dan, öteki bozkırdan geliyor."
+  },
+  {
+   "id": "n1",
+   "sahne": "kunye",
+   "metin": "Kelimelerin Gizli Tarihi. Her kelimenin bir hikâyesi var."
+  }
+ ]
+}

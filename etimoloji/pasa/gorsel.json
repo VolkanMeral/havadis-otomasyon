@@ -1,0 +1,29 @@
+{
+ "aramalar": [
+  {
+   "id": "pasa",
+   "sorgu": "Ottoman pasha portrait 19th century",
+   "adet": 3
+  },
+  {
+   "id": "opera",
+   "sorgu": "Die Entführung aus dem Serail 1782",
+   "adet": 2
+  },
+  {
+   "id": "burgtheater",
+   "sorgu": "Burgtheater Michaelerplatz 18th century",
+   "adet": 2
+  },
+  {
+   "id": "vezir",
+   "sorgu": "Ottoman vizier miniature",
+   "adet": 3
+  },
+  {
+   "id": "mozart",
+   "sorgu": "Mozart portrait 1780s",
+   "adet": 2
+  }
+ ]
+}

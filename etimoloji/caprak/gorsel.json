@@ -1,0 +1,29 @@
+{
+ "aramalar": [
+  {
+   "id": "turkenbeute",
+   "sorgu": "Schabracke Türkenbeute",
+   "adet": 3
+  },
+  {
+   "id": "osmanli_at",
+   "sorgu": "Ottoman horse caparison",
+   "adet": 3
+  },
+  {
+   "id": "husar",
+   "sorgu": "Hungarian hussar 18th century painting",
+   "adet": 3
+  },
+  {
+   "id": "eyer",
+   "sorgu": "Ottoman saddle cloth embroidered",
+   "adet": 2
+  },
+  {
+   "id": "shabraque",
+   "sorgu": "shabraque hussar",
+   "adet": 2
+  }
+ ]
+}

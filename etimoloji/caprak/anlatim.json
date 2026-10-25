@@ -1,0 +1,87 @@
+{
+ "motor": "google",
+ "ses": "tr-TR-Chirp3-HD-Puck",
+ "hiz": 0.95,
+ "parcalar": [
+  {
+   "id": "g1",
+   "sahne": "giris",
+   "metin": "Almancada Şabrake, eyer altı örtüsü demek.",
+   "ekran": "Almancada “Schabracke”, eyer altı örtüsü demek."
+  },
+  {
+   "id": "g2",
+   "sahne": "giris",
+   "metin": "Türkçedeki akrabası: çaprak."
+  },
+  {
+   "id": "z1",
+   "sahne": "gizem",
+   "metin": "Ama hangisi önce geldi?"
+  },
+  {
+   "id": "z2",
+   "sahne": "gizem",
+   "metin": "Macar ve Türk dilbilimciler yüz yılı aşkın süredir tartışıyor."
+  },
+  {
+   "id": "k1",
+   "sahne": "kok",
+   "metin": "Bir görüşe göre Türkçe çaprak, Macarcaya çaprag olarak geçti.",
+   "ekran": "Bir görüşe göre Türkçe çaprak, Macarcaya “csáprág” olarak geçti."
+  },
+  {
+   "id": "k2",
+   "sahne": "kok",
+   "metin": "Karşı görüşe göre ise kelime Macarcadan Osmanlıcaya girdi."
+  },
+  {
+   "id": "a1",
+   "sahne": "anlam",
+   "metin": "Çaprak, eyerin altına serilen süslü at örtüsüdür."
+  },
+  {
+   "id": "a2",
+   "sahne": "anlam",
+   "metin": "Avrupa'da bu örtüyü özellikle süvariler kullandı."
+  },
+  {
+   "id": "r1",
+   "sahne": "rivayet",
+   "metin": "Karlsruhe'deki Türk ganimetleri koleksiyonunda, on yedinci yüzyıldan bir Osmanlı çaprağı var.",
+   "ekran": "Karlsruhe’deki “Türkenbeute” koleksiyonunda 17. yüzyıldan bir Osmanlı çaprağı var."
+  },
+  {
+   "id": "r2",
+   "sahne": "rivayet",
+   "metin": "Kırmızı yün üzerine gümüş ve altın telle işlenmiş."
+  },
+  {
+   "id": "y1",
+   "sahne": "yolculuk",
+   "metin": "Kelime Almancadan Fransızcaya şabrak olarak geçti.",
+   "ekran": "Kelime Almancadan Fransızcaya “chabraque” olarak geçti."
+  },
+  {
+   "id": "y2",
+   "sahne": "yolculuk",
+   "metin": "Almancada zamanla köhne eşya anlamını da kazandı."
+  },
+  {
+   "id": "s1",
+   "sahne": "kapanis",
+   "metin": "Viyana'da Şabrake duyduğunuzda bunu hatırlayın.",
+   "ekran": "Viyana’da “Schabracke” duyduğunuzda bunu hatırlayın."
+  },
+  {
+   "id": "s2",
+   "sahne": "kapanis",
+   "metin": "Bu sözün içinde bir at süsünün yolculuğu saklı."
+  },
+  {
+   "id": "n1",
+   "sahne": "kunye",
+   "metin": "Kelimelerin Gizli Tarihi. Her kelimenin bir hikâyesi var."
+  }
+ ]
+}
