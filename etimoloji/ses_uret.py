@@ -1,5 +1,5 @@
 """Etimoloji anlatım parçalarını edge-tts ile üretir.
-dil alanı verilirse (ör. tr-TR) çok dilli seslere metnin dili <lang> etiketiyle bildirilir,
+dil alanı verilirse (ör. tr-TR) çok dilli seslere metnin dili SSML xml:lang ile bildirilir,
 böylece ş, ç, ğ, ı gibi sesler o dilin kurallarıyla okunur. Etiket reddedilirse düz moda düşer."""
 import asyncio, json, os, sys, time
 import edge_tts
@@ -10,7 +10,8 @@ _orj = C.mkssml
 def _mkssml(*a, **k):
     s = _orj(*a, **k)
     if DIL:
-        s = s.replace("<prosody", f"<lang xml:lang='{DIL}'><prosody", 1).replace("</prosody>", "</prosody></lang>", 1)
+        import re
+        s = re.sub(r"xml:lang='[^']*'", f"xml:lang='{DIL}'", s, count=1)
     return s
 C.mkssml = _mkssml
 
