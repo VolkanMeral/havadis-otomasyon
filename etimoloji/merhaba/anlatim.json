@@ -1,7 +1,7 @@
 {
- "ses": "fr-FR-RemyMultilingualNeural",
- "hiz": "+0%",
- "perde": "+0Hz",
+ "ses": "tr-TR-AhmetNeural",
+ "hiz": "-2%",
+ "perde": "-6Hz",
  "parcalar": [
   {
    "id": "g1",
@@ -78,6 +78,5 @@
    "sahne": "kunye",
    "metin": "Kelimelerin Gizli Tarihi. Her kelimenin bir hikâyesi var."
   }
- ],
- "dil": "tr-TR"
+ ]
 }
