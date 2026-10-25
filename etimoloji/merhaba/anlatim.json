@@ -1,5 +1,5 @@
 {
- "ses": "en-US-AndrewMultilingualNeural",
+ "ses": "fr-FR-RemyMultilingualNeural",
  "hiz": "+0%",
  "perde": "+0Hz",
  "parcalar": [
@@ -78,5 +78,6 @@
    "sahne": "kunye",
    "metin": "Kelimelerin Gizli Tarihi. Her kelimenin bir hikâyesi var."
   }
- ]
+ ],
+ "dil": "tr-TR"
 }

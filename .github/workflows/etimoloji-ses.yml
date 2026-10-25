@@ -3,7 +3,7 @@ name: Etimoloji seslendirme (paylaşım yapmaz)
 on:
   push:
     branches: [etimoloji-ses]
-    paths: ["etimoloji/**/anlatim.json", ".github/workflows/etimoloji-ses.yml"]
+    paths: ["etimoloji/**/anlatim.json", "etimoloji/ses_uret.py", ".github/workflows/etimoloji-ses.yml"]
 
 permissions:
   contents: write
@@ -17,29 +17,7 @@ jobs:
       - name: Kurulum
         run: pip install edge-tts
       - name: Seslendir
-        run: |
-          python - <<'PY'
-          import json, glob, os, subprocess
-          for f in glob.glob("etimoloji/*/anlatim.json"):
-              d = json.load(open(f)); out = os.path.join(os.path.dirname(f), "ses"); os.makedirs(out, exist_ok=True)
-              import time
-              hatali = []
-              for p in d["parcalar"]:
-                  yol = f"{out}/{p['id']}.mp3"; ok = False
-                  if os.path.exists(yol) and os.path.getsize(yol) > 4000: print(p["id"], "mevcut"); continue
-                  for deneme in range(6):
-                      r = subprocess.run(["edge-tts", "--voice", d["ses"], f"--rate={d['hiz']}", f"--pitch={d['perde']}",
-                                          "--text", p["metin"], "--write-media", yol], capture_output=True, text=True)
-                      if r.returncode != 0 or deneme == 0:
-                          open(f"{out}/hata.log", "a").write(f"{p['id']} #{deneme} rc={r.returncode}\n{r.stderr[-1500:]}\n")
-                      ok = r.returncode == 0 and os.path.exists(yol) and os.path.getsize(yol) > 4000
-                      if ok: break
-                      time.sleep(3 + deneme * 2)
-                  print(p["id"], "ok" if ok else "HATA", flush=True)
-                  if not ok: hatali.append(p["id"])
-                  time.sleep(1)
-              if hatali: raise SystemExit("eksik: " + ",".join(hatali))
-          PY
+        run: python etimoloji/ses_uret.py etimoloji/*/anlatim.json
       - name: Kaydet
         if: always()
         run: |
