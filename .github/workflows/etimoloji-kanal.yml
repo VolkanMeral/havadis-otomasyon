@@ -1,0 +1,35 @@
+name: Etimoloji YouTube kanal bilgisi
+
+on:
+  push:
+    branches: [etimoloji-ses]
+    paths: [".github/workflows/etimoloji-kanal.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  kanal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install requests
+      - name: Kanal bilgisini al
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          git fetch -q origin main && git show origin/main:youtube.py > /tmp/youtube.py
+          python - <<'PY'
+          import sys, json; sys.path.insert(0, "/tmp")
+          import youtube
+          t = youtube._erisim()
+          j = youtube.HTTP.get("https://www.googleapis.com/youtube/v3/channels", params={"part": "snippet", "mine": "true"},
+                               headers={"Authorization": f"Bearer {t}"}, timeout=30).json()
+          k = j["items"][0]
+          open("etimoloji/kanal.json", "w").write(json.dumps({"id": k["id"], "baslik": k["snippet"]["title"], "customUrl": k["snippet"].get("customUrl")}, ensure_ascii=False))
+          PY
+      - run: |
+          git config user.name "havadis-bot"; git config user.email "bot@havadis.at"
+          git add etimoloji/kanal.json && git commit -m "Etimoloji: YouTube kanal bilgisi" && git push
