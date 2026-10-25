@@ -50,3 +50,33 @@ Traceback (most recent call last):
     raise NoAudioReceived(
 edge_tts.exceptions.NoAudioReceived: No audio was received. Please verify that your parameters are correct.
 
+g1 #0 rc=0
+
+g2 #0 rc=0
+
+z1 #0 rc=0
+
+z2 #0 rc=0
+
+k1 #0 rc=0
+
+k2 #0 rc=0
+
+a1 #0 rc=0
+
+a2 #0 rc=0
+
+r1 #0 rc=0
+
+r2 #0 rc=0
+
+y1 #0 rc=0
+
+y2 #0 rc=0
+
+s1 #0 rc=0
+
+s2 #0 rc=0
+
+n1 #0 rc=0
+
