@@ -21,6 +21,8 @@ jobs:
       - uses: actions/checkout@v4
       - run: pip install edge-tts
       - name: Seslendir
+        env:
+          GOOGLE_TTS_KEY: ${{ secrets.GOOGLE_TTS_KEY }}
         run: python etimoloji/ses_uret.py etimoloji/${{ matrix.bolum }}/anlatim.json
       - name: Kaydet
         if: always()

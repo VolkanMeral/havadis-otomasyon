@@ -15,6 +15,16 @@ def _mkssml(*a, **k):
     return s
 C.mkssml = _mkssml
 
+def google_uret(metin, ses, hiz, yol):
+    import base64, urllib.request
+    key = os.environ["GOOGLE_TTS_KEY"]
+    body = {"input": {"text": metin}, "voice": {"languageCode": "tr-TR", "name": ses},
+            "audioConfig": {"audioEncoding": "MP3", "speakingRate": float(hiz), "sampleRateHertz": 44100}}
+    req = urllib.request.Request(f"https://texttospeech.googleapis.com/v1/text:synthesize?key={key}",
+                                 data=json.dumps(body).encode(), headers={"Content-Type": "application/json"})
+    r = json.load(urllib.request.urlopen(req, timeout=60))
+    open(yol, "wb").write(base64.b64decode(r["audioContent"]))
+
 async def uret(metin, ses, hiz, perde, yol):
     await edge_tts.Communicate(metin, ses, rate=hiz, pitch=perde).save(yol)
 
@@ -24,8 +34,20 @@ def main(f):
     rapor = {}; hatali = []
     for p in d["parcalar"]:
         yol = f"{out}/{p['id']}.mp3"
-        if os.path.exists(yol) and os.path.getsize(yol) > 4000: rapor[p["id"]] = "mevcut"; continue
+        if os.path.exists(yol) and os.path.getsize(yol) > 2000: rapor[p["id"]] = "mevcut"; continue
         ok = False
+        if d.get("motor") == "google":
+            for deneme in range(4):
+                try:
+                    google_uret(p.get("ses_metni", p["metin"]), d["ses"], d.get("hiz", 0.95), yol); ok = os.path.getsize(yol) > 2000
+                except Exception as e:
+                    print(p["id"], "google hata:", str(e)[:200], flush=True)
+                if ok: break
+                time.sleep(3)
+            rapor[p["id"]] = "google" if ok else "HATA"
+            print(p["id"], rapor[p["id"]], flush=True)
+            if not ok: hatali.append(p["id"])
+            continue
         for mod in ([d["dil"], None] if d.get("dil") else [None]):
             DIL = mod
             ham = p.get("ses_metni", p["metin"])

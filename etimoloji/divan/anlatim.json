@@ -1,7 +1,6 @@
 {
- "ses": "tr-TR-AhmetNeural",
- "hiz": "-2%",
- "perde": "-6Hz",
+ "ses": "tr-TR-Chirp3-HD-Puck",
+ "hiz": 0.95,
  "parcalar": [
   {
    "id": "g1",
@@ -79,5 +78,6 @@
    "sahne": "kunye",
    "metin": "Kelimelerin Gizli Tarihi. Her kelimenin bir hikâyesi var."
   }
- ]
+ ],
+ "motor": "google"
 }
