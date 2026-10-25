@@ -26,19 +26,13 @@ jobs:
               hatali = []
               for p in d["parcalar"]:
                   yol = f"{out}/{p['id']}.mp3"; ok = False
-                  k = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", yol], capture_output=True, text=True)
-                  try:
-                      if float(k.stdout.strip()) > 0.5: print(p["id"], "mevcut"); continue
-                  except ValueError: pass
+                  if os.path.exists(yol) and os.path.getsize(yol) > 4000: print(p["id"], "mevcut"); continue
                   for deneme in range(6):
                       r = subprocess.run(["edge-tts", "--voice", d["ses"], f"--rate={d['hiz']}", f"--pitch={d['perde']}",
                                           "--text", p["metin"], "--write-media", yol], capture_output=True, text=True)
                       if r.returncode != 0 or deneme == 0:
                           open(f"{out}/hata.log", "a").write(f"{p['id']} #{deneme} rc={r.returncode}\n{r.stderr[-1500:]}\n")
-                      k = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", yol],
-                                         capture_output=True, text=True)
-                      try: ok = r.returncode == 0 and float(k.stdout.strip()) > 0.5
-                      except ValueError: ok = False
+                      ok = r.returncode == 0 and os.path.exists(yol) and os.path.getsize(yol) > 4000
                       if ok: break
                       time.sleep(3 + deneme * 2)
                   print(p["id"], "ok" if ok else "HATA", flush=True)
