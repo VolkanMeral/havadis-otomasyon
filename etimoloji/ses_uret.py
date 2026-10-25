@@ -45,4 +45,10 @@ def main(f):
     if hatali: sys.exit("eksik: " + ",".join(hatali))
 
 if __name__ == "__main__":
-    for f in sys.argv[1:]: main(f)
+    import traceback
+    hata = []
+    for f in sys.argv[1:]:
+        try: main(f)
+        except BaseException as e:
+            hata.append(f); open("etimoloji/ses_gunluk.txt", "a").write(f"{f}\n{traceback.format_exc()[-2500:]}\n")
+    if hata: sys.exit("hatalı: " + ", ".join(hata))
