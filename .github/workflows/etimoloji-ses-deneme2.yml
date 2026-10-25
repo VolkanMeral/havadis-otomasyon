@@ -3,7 +3,7 @@ name: Etimoloji ses denemesi 2 (paylaşım yapmaz)
 on:
   push:
     branches: [etimoloji-ses]
-    paths: ["etimoloji/ses-deneme2/metin.txt", ".github/workflows/etimoloji-ses-deneme2.yml"]
+    paths: ["etimoloji/ses-deneme2/metin.txt", "etimoloji/google_tts_deneme.py", ".github/workflows/etimoloji-ses-deneme2.yml"]
 
 permissions:
   contents: write
@@ -34,6 +34,10 @@ jobs:
           gen tr-TR-AhmetNeural "+0%" "-2Hz" edge_ahmet_dogal.mp3
           gen tr-TR-AhmetNeural "-12%" "-14Hz" edge_ahmet_belgesel.mp3
           gen tr-TR-EmelNeural "-4%" "-2Hz" edge_emel.mp3
+      - name: Google Chirp 3 HD sesleri
+        env:
+          GOOGLE_TTS_KEY: ${{ secrets.GOOGLE_TTS_KEY }}
+        run: python etimoloji/google_tts_deneme.py
       - name: Kaydet
         if: always()
         run: |
