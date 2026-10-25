@@ -32,7 +32,9 @@ jobs:
                   except ValueError: pass
                   for deneme in range(6):
                       r = subprocess.run(["edge-tts", "--voice", d["ses"], f"--rate={d['hiz']}", f"--pitch={d['perde']}",
-                                          "--text", p["metin"], "--write-media", yol])
+                                          "--text", p["metin"], "--write-media", yol], capture_output=True, text=True)
+                      if r.returncode != 0 or deneme == 0:
+                          open(f"{out}/hata.log", "a").write(f"{p['id']} #{deneme} rc={r.returncode}\n{r.stderr[-1500:]}\n")
                       k = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", yol],
                                          capture_output=True, text=True)
                       try: ok = r.returncode == 0 and float(k.stdout.strip()) > 0.5
@@ -49,6 +51,6 @@ jobs:
         run: |
           git config user.name "havadis-bot"
           git config user.email "bot@havadis.at"
-          git add etimoloji/*/ses/*.mp3
+          git add etimoloji/*/ses/
           git commit -m "Etimoloji seslendirme parçaları" || exit 0
           git push
