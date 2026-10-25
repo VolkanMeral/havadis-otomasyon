@@ -1,0 +1,9 @@
+{"metin": "Bu kelimeyi her gün söylüyoruz. Ama ne dediğimizi gerçekten biliyor muyuz? Bu selamın içinde, bir mekân saklı. Bir kapı... ve ardındaki genişlik.",
+ "sesler": [
+  {"ad": "tr-TR-AhmetNeural", "hiz": "+0%", "perde": "-4Hz"},
+  {"ad": "en-US-AndrewMultilingualNeural", "hiz": "+0%", "perde": "+0Hz"},
+  {"ad": "en-US-BrianMultilingualNeural", "hiz": "+0%", "perde": "+0Hz"},
+  {"ad": "de-DE-FlorianMultilingualNeural", "hiz": "+0%", "perde": "+0Hz"},
+  {"ad": "fr-FR-RemyMultilingualNeural", "hiz": "+0%", "perde": "+0Hz"},
+  {"ad": "it-IT-GiuseppeMultilingualNeural", "hiz": "+0%", "perde": "+0Hz"}
+ ]}

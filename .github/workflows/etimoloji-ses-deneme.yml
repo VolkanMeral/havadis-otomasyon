@@ -1,0 +1,40 @@
+name: Etimoloji ses denemesi (paylaşım yapmaz)
+
+on:
+  push:
+    branches: [etimoloji-ses]
+    paths: ["etimoloji/ses-deneme/deneme.json", ".github/workflows/etimoloji-ses-deneme.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  deneme:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install edge-tts
+      - name: Ses listesi ve örnekler
+        run: |
+          edge-tts --list-voices > etimoloji/ses-deneme/ses_listesi.txt || true
+          python - <<'PY'
+          import json, os, subprocess, time
+          d = json.load(open("etimoloji/ses-deneme/deneme.json")); out = "etimoloji/ses-deneme"
+          for s in d["sesler"]:
+              yol = f"{out}/{s['ad']}.mp3"
+              for deneme in range(5):
+                  r = subprocess.run(["edge-tts", "--voice", s["ad"], f"--rate={s['hiz']}", f"--pitch={s['perde']}",
+                                      "--text", d["metin"], "--write-media", yol], capture_output=True, text=True)
+                  if r.returncode == 0 and os.path.exists(yol) and os.path.getsize(yol) > 4000: break
+                  time.sleep(3)
+              print(s["ad"], os.path.getsize(yol) if os.path.exists(yol) else 0, flush=True)
+              time.sleep(1)
+          PY
+      - name: Kaydet
+        if: always()
+        run: |
+          git config user.name "havadis-bot"; git config user.email "bot@havadis.at"
+          git add etimoloji/ses-deneme/
+          git commit -m "Etimoloji ses denemesi" || exit 0
+          git push
