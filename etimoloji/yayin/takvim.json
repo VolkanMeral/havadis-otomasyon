@@ -40,6 +40,54 @@
    "saat": "18:45",
    "kelime": "divan",
    "onay": false
+  },
+  {
+   "tarih": "2026-10-29",
+   "saat": "12:45",
+   "kelime": "havyar",
+   "onay": false
+  },
+  {
+   "tarih": "2026-10-29",
+   "saat": "18:45",
+   "kelime": "caprak",
+   "onay": false
+  },
+  {
+   "tarih": "2026-10-30",
+   "saat": "12:45",
+   "kelime": "tercuman",
+   "onay": false
+  },
+  {
+   "tarih": "2026-10-30",
+   "saat": "18:45",
+   "kelime": "yeniceri",
+   "onay": false
+  },
+  {
+   "tarih": "2026-10-31",
+   "saat": "12:45",
+   "kelime": "pasa",
+   "onay": false
+  },
+  {
+   "tarih": "2026-10-31",
+   "saat": "18:45",
+   "kelime": "cakal",
+   "onay": false
+  },
+  {
+   "tarih": "2026-11-01",
+   "saat": "12:45",
+   "kelime": "kaftan",
+   "onay": false
+  },
+  {
+   "tarih": "2026-11-01",
+   "saat": "18:45",
+   "kelime": "kebap",
+   "onay": false
   }
  ]
 }
