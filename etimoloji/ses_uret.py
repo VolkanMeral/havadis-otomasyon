@@ -28,15 +28,16 @@ def main(f):
         ok = False
         for mod in ([d["dil"], None] if d.get("dil") else [None]):
             DIL = mod
-            for deneme in range(3):
+            ayarlar = [(d["hiz"], d["perde"]), ("+0%", d["perde"]), (d["hiz"], "-5Hz"), ("+1%", "-4Hz")]
+            for deneme, (hiz, perde) in enumerate(ayarlar):
                 try:
-                    asyncio.run(uret(p.get("ses_metni", p["metin"]), d["ses"], d["hiz"], d["perde"], yol))
+                    asyncio.run(uret(p.get("ses_metni", p["metin"]), d["ses"], hiz, perde, yol))
                     ok = os.path.getsize(yol) > 4000
                 except Exception as e:
                     print(p["id"], mod, "hata:", type(e).__name__, str(e)[:200], flush=True); ok = False
                 if ok: break
                 time.sleep(2 + deneme * 2)
-            if ok: rapor[p["id"]] = f"lang={mod}" if mod else "duz"; break
+            if ok: rapor[p["id"]] = (f"lang={mod}" if mod else "duz") + f" {hiz} {perde}"; break
         print(p["id"], rapor.get(p["id"], "HATA"), flush=True)
         if not ok: hatali.append(p["id"])
         time.sleep(1)
