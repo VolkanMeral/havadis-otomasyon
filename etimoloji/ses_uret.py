@@ -15,10 +15,16 @@ def _mkssml(*a, **k):
     return s
 C.mkssml = _mkssml
 
+def tts_temizle(metin):
+    """Kesme işaretli ekleri (Sarayı'nda, Bağdat'ın) birleştirir; aksi hâlde ses ekleri harf harf okuyor."""
+    import re
+    metin = re.sub(r"(\w)['’‘](\w)", r"\1\2", metin)
+    return metin.replace("“", "").replace("”", "").replace("„", "")
+
 def google_uret(metin, ses, hiz, yol):
     import base64, urllib.request
     key = os.environ["GOOGLE_TTS_KEY"]
-    body = {"input": {"text": metin}, "voice": {"languageCode": "tr-TR", "name": ses},
+    body = {"input": {"text": tts_temizle(metin)}, "voice": {"languageCode": "tr-TR", "name": ses},
             "audioConfig": {"audioEncoding": "MP3", "speakingRate": float(hiz), "sampleRateHertz": 44100}}
     req = urllib.request.Request(f"https://texttospeech.googleapis.com/v1/text:synthesize?key={key}",
                                  data=json.dumps(body).encode(), headers={"Content-Type": "application/json"})
