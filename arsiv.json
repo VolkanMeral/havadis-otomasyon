@@ -1,45 +1,5 @@
 [
  {
-  "baslik": "3 Ülke Maratonunda Rekor Yağmuru: Üç Koşucu Eski Rekoru Geçti",
-  "link": "https://havadis.at/haber/3-ulke-maratonunda-rekor-yagmuru-uc-kosucu-eski-rekoru-gecti-h55920.html",
-  "ozet": "3 Ülke Maratonu'nda Etiyopyalı Fikre Tefera Bekele 2:08:49 ile parkur rekorunu kırarak birinci oldu. İkinci ve üçüncü sıradaki iki Kenyalı atlet de eski rekorun altında koştu. Organizasyonda 11 bin 507 kişinin start almasıyla katılım rekoru da kırıldı.",
-  "kategori": "Spor",
-  "resim": "https://havadis.at/uploads/2026/10/11/172634_triumph-am-seeufer-zieleinlauf.jpg",
-  "tarih": "2026-10-11T17:22:00+02:00"
- },
- {
-  "baslik": "Dornbirn’de İki Araç Çarpıştı: İki Kişi Yaralandı",
-  "link": "https://havadis.at/haber/dornbirnde-iki-arac-carpisti-iki-kisi-yaralandi-h55921.html",
-  "ozet": "Dornbirn’de Haselstauderstraße ile L49/Stiglingen kavşağında iki otomobil çarpıştı. Her iki sürücü hafif yaralanırken, olay yerine itfaiye, sağlık ekipleri ve polis sevk edildi.",
-  "kategori": "Vorarlberg",
-  "resim": "https://havadis.at/uploads/2026/10/11/172933_einsatz-nach-schwerem-verkehrsunfall.jpg",
-  "tarih": "2026-10-11T17:27:00+02:00"
- },
- {
-  "baslik": "Vorarlberg’de Sürücülere Önemli Uyarı",
-  "link": "https://havadis.at/haber/vorarlbergde-suruculere-onemli-uyari-h55922.html",
-  "ozet": "Tirol’de otomobil hırsızlarının elektronik sinyal bozucular kullanarak merkezi kilit sistemini engellediği şüphesi araştırılıyor. Vorarlberg’de şu ana kadar bu yöntemle bağlantılı doğrulanmış bir olay bulunmazken polis, sürücülere araçlarını kilitledikten sonra kapıların gerçekten kapalı olduğunu kontrol etmelerini tavsiye ediyor.",
-  "kategori": "Avusturya",
-  "resim": "https://havadis.at/uploads/2026/10/11/173318_nchtlicher-signalangriff-auf-ein-auto.jpg",
-  "tarih": "2026-10-11T17:31:00+02:00"
- },
- {
-  "baslik": "Vorarlberg’de Güneşli Günler Geri Dönüyor",
-  "link": "https://havadis.at/haber/vorarlbergde-gunesli-gunler-geri-donuyor-h55923.html",
-  "ozet": "Vorarlberg’de yeni hafta çoğunlukla güneşli geçecek. Pazartesi 15, salı 16 dereceye kadar sıcaklık beklenirken, salı sabahı bazı bölgelerde termometreler 0 dereceyi gösterebilir.",
-  "kategori": "Vorarlberg",
-  "resim": "https://havadis.at/uploads/2026/10/11/173703_goldener-herbst-am-seeufer.jpg",
-  "tarih": "2026-10-11T17:34:00+02:00"
- },
- {
-  "baslik": "Dünya Saatinde 55 Yıllık Uygulama Sona Eriyor",
-  "link": "https://havadis.at/haber/dunya-saatinde-55-yillik-uygulama-sona-eriyor-h55924.html",
-  "ozet": "1972’den bu yana dünya saatine 27 kez eklenen “artık saniye” uygulamasının 20 Mayıs 2027’de kaldırılması planlanıyor. Değişiklik Avusturya’yı da kapsıyor ancak yaz-kış saati uygulamasını etkilemeyecek.",
-  "kategori": "Dünya",
-  "resim": "https://havadis.at/uploads/2026/10/11/174326_zeit-im-globalen-wandel.jpg",
-  "tarih": "2026-10-11T17:39:00+02:00"
- },
- {
   "baslik": "Avusturya’dan Ev Sahiplerine 500 Milyon Euroluk Destek",
   "link": "https://havadis.at/haber/avusturyadan-ev-sahiplerine-500-milyon-euroluk-destek-h55925.html",
   "ozet": "Avusturya hükümeti, konut yenileme ve çevreci ısıtma sistemleri için 500 milyon euroluk destek paketi açıkladı. Eski ısıtma sistemlerinin değiştirilmesine yönelik başvurular 2 Kasım 2026’da, yalıtım ve yenileme destekleri ise 4 Ocak 2027’de başlayacak. Pencere değişimi ve dış güneşlik sistemleri için 5.000 euroya kadar destek sağlanabilecek.",
