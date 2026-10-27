@@ -24,7 +24,13 @@
    "saat": "12:45",
    "kelime": "yogurt",
    "onay": true,
-   "onaylayan": "Volkan Meral (sohbet, 25.10.2026 18:41)"
+   "onaylayan": "Volkan Meral (sohbet, 25.10.2026 18:41)",
+   "paylasildi": "2026-10-27T12:54:40+01:00",
+   "sonuc": {
+    "facebook_reel": "1108465732075834",
+    "instagram_reel_hata": "Graph API hatası 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}",
+    "youtube": "ednnJ-oalcM"
+   }
   },
   {
    "tarih": "2026-10-27",
