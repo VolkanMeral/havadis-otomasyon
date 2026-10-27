@@ -37,7 +37,13 @@
    "saat": "18:45",
    "kelime": "kosk",
    "onay": true,
-   "onaylayan": "Volkan Meral (sohbet, 25.10.2026 18:41)"
+   "onaylayan": "Volkan Meral (sohbet, 25.10.2026 18:41)",
+   "paylasildi": "2026-10-27T18:55:00+01:00",
+   "sonuc": {
+    "facebook_reel": "1537549978204983",
+    "instagram_reel_hata": "Graph API hatası 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}",
+    "youtube": "LBMCJoKOMGE"
+   }
   },
   {
    "tarih": "2026-10-28",
