@@ -161,5 +161,12 @@
    "instagram": "18077322704571630",
    "facebook": "1130797472756054"
   }
+ },
+ "ead-story-2026-10-26-telafi": {
+  "story": {
+   "zaman": "2026-10-27T11:10:00+00:00",
+   "instagram_hata": "Graph API hatası 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}",
+   "facebook": "997160692859904"
+  }
  }
 }
