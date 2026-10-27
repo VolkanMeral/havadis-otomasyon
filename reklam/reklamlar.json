@@ -1012,6 +1012,20 @@
     "reklam/salz-pfeffer/01-afis-angebot.jpg"
    ],
    "metin": "Salz & Pfeffer Dornbirn’da Kasım ayına özel kampanya! 🥙🍕\n\nDöner, dürüm, pizza ve pidede Kasım boyunca indirimli fiyatlar: döner 5,90 €’dan, dürüm 6,90 €’dan, pizza 8,90 €’dan, pide 8,50 €’dan başlıyor.\n\n🗓 1–30 Kasım 2026\n🏠 Sadece restoranda verilen siparişlerde geçerli (paket veya yerinde). Online ve telefonla siparişler kampanyaya dahil değil.\n📍 Dr. Anton-Schneider-Straße 11, 6850 Dornbirn\n\nAnzeige"
+  },
+  {
+   "id": "ead-story-2026-10-26-telafi",
+   "firma": "EAD Expo – askfairs EUROPE",
+   "tarih": "2026-10-27",
+   "saat": "12:10",
+   "turler": [
+    "story"
+   ],
+   "gorseller": [
+    "reklam/ead/01-afis-fuar.jpg"
+   ],
+   "metin": "",
+   "story_video": "reklam/ead/story-video.mp4"
   }
  ]
 }
