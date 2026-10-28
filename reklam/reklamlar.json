@@ -1033,7 +1033,8 @@
    "tarih": "2026-10-28",
    "saat": "20:40",
    "turler": [
-    "gonderi"
+    "gonderi",
+    "story"
    ],
    "gorseller": [
     "reklam/gul2/01-bakliyat.jpg",
@@ -1045,7 +1046,8 @@
    ],
    "metin": "🛒 Gül Süpermarket Rankweil’de yeni Süper Angebot!\n\n29–31 Ekim tarihleri arasında helal et, süt ürünleri, sucuk, bakliyat, pirinç, zeytinyağı, çay ile taze sebze ve meyvede kaçırılmayacak fiyatlar. Tüm ürünler için kaydırın 👉\n\n🥩 Dana kıyma 9,99 €/kg · Dana gulasch 14,99 €/kg\n🍌 Muz 0,99 €/kg · Nane, maydanoz, dereotu 0,99 €/demet\n🍵 Çaykur Filiz çay 1 kg 7,99 €\n\n📅 Kampanya: 29.10.–31.10.2026\n🕗 Pzt–Cum 08:00–19:00 · Cmt 08:00–18:00 · Pazar ve tatil 10:00–12:00\n📍 Stiegstraße 65, 6830 Rankweil\n📲 @gul.marketrankweil\n\nAnzeige",
    "etiket": "gul.marketrankweil",
-   "hemen": true
+   "hemen": true,
+   "story_video": "reklam/gul2/story-video.mp4"
   },
   {
    "id": "gul-2026-10-30",
@@ -1053,7 +1055,8 @@
    "tarih": "2026-10-30",
    "saat": "09:00",
    "turler": [
-    "gonderi"
+    "gonderi",
+    "story"
    ],
    "gorseller": [
     "reklam/gul2/01-bakliyat.jpg",
@@ -1064,7 +1067,8 @@
     "reklam/gul2/06-et.jpg"
    ],
    "metin": "🛒 Gül Süpermarket Rankweil’de yeni Süper Angebot!\n\n29–31 Ekim tarihleri arasında helal et, süt ürünleri, sucuk, bakliyat, pirinç, zeytinyağı, çay ile taze sebze ve meyvede kaçırılmayacak fiyatlar. Tüm ürünler için kaydırın 👉\n\n🥩 Dana kıyma 9,99 €/kg · Dana gulasch 14,99 €/kg\n🍌 Muz 0,99 €/kg · Nane, maydanoz, dereotu 0,99 €/demet\n🍵 Çaykur Filiz çay 1 kg 7,99 €\n\n📅 Kampanya: 29.10.–31.10.2026\n🕗 Pzt–Cum 08:00–19:00 · Cmt 08:00–18:00 · Pazar ve tatil 10:00–12:00\n📍 Stiegstraße 65, 6830 Rankweil\n📲 @gul.marketrankweil\n\nAnzeige",
-   "etiket": "gul.marketrankweil"
+   "etiket": "gul.marketrankweil",
+   "story_video": "reklam/gul2/story-video.mp4"
   },
   {
    "id": "gul-2026-10-31",
@@ -1072,7 +1076,8 @@
    "tarih": "2026-10-31",
    "saat": "09:00",
    "turler": [
-    "gonderi"
+    "gonderi",
+    "story"
    ],
    "gorseller": [
     "reklam/gul2/01-bakliyat.jpg",
@@ -1083,7 +1088,8 @@
     "reklam/gul2/06-et.jpg"
    ],
    "metin": "🛒 Gül Süpermarket Rankweil’de yeni Süper Angebot!\n\n29–31 Ekim tarihleri arasında helal et, süt ürünleri, sucuk, bakliyat, pirinç, zeytinyağı, çay ile taze sebze ve meyvede kaçırılmayacak fiyatlar. Tüm ürünler için kaydırın 👉\n\n🥩 Dana kıyma 9,99 €/kg · Dana gulasch 14,99 €/kg\n🍌 Muz 0,99 €/kg · Nane, maydanoz, dereotu 0,99 €/demet\n🍵 Çaykur Filiz çay 1 kg 7,99 €\n\n📅 Kampanya: 29.10.–31.10.2026\n🕗 Pzt–Cum 08:00–19:00 · Cmt 08:00–18:00 · Pazar ve tatil 10:00–12:00\n📍 Stiegstraße 65, 6830 Rankweil\n📲 @gul.marketrankweil\n\nAnzeige",
-   "etiket": "gul.marketrankweil"
+   "etiket": "gul.marketrankweil",
+   "story_video": "reklam/gul2/story-video.mp4"
   }
  ]
 }
