@@ -63,7 +63,13 @@
    "saat": "18:45",
    "kelime": "divan",
    "onay": true,
-   "onaylayan": "Volkan Meral (sohbet, 25.10.2026 18:41)"
+   "onaylayan": "Volkan Meral (sohbet, 25.10.2026 18:41)",
+   "paylasildi": "2026-10-28T18:51:36+01:00",
+   "sonuc": {
+    "facebook_reel": "1102599872678017",
+    "instagram_reel_hata": "Graph API hatası 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}",
+    "youtube": "O1k0YYx4FY4"
+   }
   },
   {
    "tarih": "2026-10-29",
