@@ -81,6 +81,7 @@ if CALISMA_TURU == "bucuk":
     PAYLASILACAK_KATEGORILER = {kat_norm(k) for k in
                                 os.getenv("HALF_HOUR_CATEGORIES", "Vorarlberg").split(",") if k.strip()}
 VIDEO_ZORLA = os.getenv("FORCE_VIDEO", "0") == "1"  # elle deneme için
+ONCELIKLI_LINK = (os.getenv("FORCE_LINK") or "").strip()  # elle: bu haber sıradan önce paylaşılır
 
 # Yapay zekâ / otomasyon şeffaflık etiketi (AB Yapay Zekâ Yasası md. 50). Boş bırakılırsa eklenmez.
 KI_ETIKET = os.getenv("AI_LABEL", "KI-unterstützt").strip()
@@ -240,8 +241,23 @@ def durum_yaz(kayitlar):
         json.dump(kayitlar[-500:], f, ensure_ascii=False, indent=1)
 
 
+def _haber_kimligi(link):
+    m = re.search(r"-h(\d+)\.html", link or "")
+    return m.group(1) if m else (link or "").rstrip("/").split("havadis.at")[-1]
+
+
 def haber_sec(haberler, paylasilanlar):
     linkler = {p["link"] for p in paylasilanlar}
+    if ONCELIKLI_LINK:
+        hedef = _haber_kimligi(ONCELIKLI_LINK)
+        paylasilmis = {_haber_kimligi(l) for l in linkler}
+        for h in haberler:
+            if _haber_kimligi(h["link"]) == hedef:
+                if hedef in paylasilmis:
+                    raise RuntimeError(f"Bu haber zaten paylaşılmış: {ONCELIKLI_LINK}")
+                log("Öne alınan haber:", h["baslik"])
+                return h
+        raise RuntimeError(f"Öne alınacak haber RSS akışında bulunamadı: {ONCELIKLI_LINK}")
     simdi = dt.datetime.now(dt.timezone.utc)
     adaylar = []
     for h in haberler:
