@@ -32,7 +32,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
-      - run: python kose_yazisi.py "${{ inputs.adres }}" ${{ inputs.paylas == '1' && '--paylas' || '' }}
+      - run: python kose_yazisi.py "${{ inputs.adres }}" ${{ inputs.paylas == '1' && '--paylas' || (inputs.paylas == 'fb' && '--fb-son' || '') }}
       - name: Önizlemeyi kaydet
         if: always()
         run: |

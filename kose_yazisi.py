@@ -15,7 +15,7 @@ from PIL import Image
 
 import havadis_bot as bot
 
-IG_SINIR = 2200
+IG_SINIR = 2150  # Instagram sınırı 2200; emoji vb. için pay
 TARAYICI = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
                           "Chrome/130.0 Safari/537.36", "Accept-Language": "tr-TR,tr;q=0.9"}
 
@@ -27,9 +27,13 @@ def temiz(parca):
 
 
 def meta(sayfa, ad):
-    m = re.search(rf'<meta[^>]+(?:property|name)=["\']{ad}["\'][^>]*content=["\']([^"\']*)', sayfa, re.I) or \
-        re.search(rf'<meta[^>]+content=["\']([^"\']*)["\'][^>]*(?:property|name)=["\']{ad}["\']', sayfa, re.I)
-    return H.unescape(m.group(1)).strip() if m else ""
+    for m in re.finditer(r"<meta\b[^>]*>", sayfa, re.I):
+        etiket = m.group(0)
+        if re.search(rf'(?:property|name)\s*=\s*["\']{re.escape(ad)}["\']', etiket, re.I):
+            c = re.search(r'content\s*=\s*"([^"]*)"', etiket) or re.search(r"content\s*=\s*'([^']*)'", etiket)
+            if c:
+                return H.unescape(c.group(1)).strip()
+    return ""
 
 
 def yazi_oku(adres):
@@ -39,6 +43,9 @@ def yazi_oku(adres):
     baslik = meta(sayfa, "og:title") or temiz((re.search(r"<h1[^>]*>(.*?)</h1>", sayfa, re.S) or [None, ""])[1])
     resim = meta(sayfa, "og:image")
     yazar = meta(sayfa, "author") or meta(sayfa, "article:author")
+    ay = re.search(r'class="author-name"[^>]*>\s*(?:<a[^>]*>)?([^<]+)<', sayfa)
+    if ay and not yazar:
+        yazar = H.unescape(ay.group(1)).strip()
     # Başlık çoğu zaman "Başlık - Yazar Adı - Havadis Haber" biçiminde
     parcalar = [x.strip() for x in re.split(r"\s+-\s+", baslik)]
     if parcalar and parcalar[-1].lower().startswith("havadis"):
@@ -160,8 +167,23 @@ if __name__ == "__main__":
     open(os.path.join(klasor, "facebook.txt"), "w", encoding="utf-8").write(adres)
     open(os.path.join(klasor, "sayfa.html"), "w", encoding="utf-8").write(y["ham"])
     print("Başlık:", y["baslik"], "| Yazar:", y["yazar"], "| Paragraf:", len(y["paragraflar"]), "| IG metni:", len(ig))
+    if "--fb-son" in sys.argv:
+        j = bot.kontrol(bot.HTTP.get(bot.graph(f"{bot.PAGE_ID}/photos"), timeout=60, params={
+            "type": "uploaded", "fields": "id,created_time,name,link", "limit": 5, "access_token": bot.PAGE_TOKEN}))
+        import json
+        json.dump(j.get("data", []), open(os.path.join(bot.KOK, "ornek", "kose", "fb_son.json"), "w"),
+                  ensure_ascii=False, indent=1)
     if "--paylas" in sys.argv:
+        if not y["yazar"] or len(y["baslik"]) < 12:
+            raise SystemExit(f"Başlık/yazar okunamadı, paylaşılmadı: {y['baslik']!r} / {y['yazar']!r}")
+        if len(ig) > 2200:
+            raise SystemExit(f"Instagram metni çok uzun ({len(ig)}), paylaşılmadı")
         gorsel_yol = os.path.join(klasor, "gorsel.jpg")
         fb_id, foto_url = bot.facebook_paylas(gorsel_yol, adres)
+        import json
+        sonuc = {"facebook": fb_id}
+        json.dump(sonuc, open(os.path.join(klasor, "sonuc.json"), "w"), indent=1)
         print("Facebook:", fb_id)
-        print("Instagram:", bot.instagram_paylas(foto_url, ig))
+        sonuc["instagram"] = bot.instagram_paylas(foto_url, ig)
+        json.dump(sonuc, open(os.path.join(klasor, "sonuc.json"), "w"), indent=1)
+        print("Instagram:", sonuc["instagram"])
