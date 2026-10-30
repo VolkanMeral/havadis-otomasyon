@@ -80,7 +80,7 @@ def instagram_metni(y):
     return bas + govde + son
 
 
-SABLON = """<!doctype html><html><head><meta charset="utf-8">
+SABLON = """<!doctype html><html lang="tr"><head><meta charset="utf-8">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@500;600;700&display=swap">
 <style>
  html,body{margin:0}
