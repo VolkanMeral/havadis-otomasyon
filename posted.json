@@ -4053,5 +4053,15 @@
   "instagram": "18097653389409122",
   "instagram_story": "18159436915516140",
   "facebook_story": "1133171335755715"
+ },
+ {
+  "link": "https://havadis.at/haber/gebruder-weiss-mars-gorevinde-h56421.html",
+  "baslik": "Gebrüder Weiss Mars Görevinde",
+  "tur": "gorsel",
+  "zaman": "2026-10-31T08:36:34+00:00",
+  "facebook": "133738750106746_1792205936051183",
+  "instagram": "18137011249647714",
+  "instagram_story": "18128227489883362",
+  "facebook_story_hata": "Graph API hatası 400: {\"error\":{\"message\":\"There was a problem uploading your video file. Please try again with another file.\",\"type\":\"OAuthException\",\"code\":6000,\"error_subcode\":1363130,\"is_transient\":false,\"error_user_title\":\"Video Upload Is Missing\",\"error_user_msg\":\"The video was not uploaded.\","
  }
 ]
