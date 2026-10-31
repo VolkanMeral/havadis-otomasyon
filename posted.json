@@ -4063,5 +4063,13 @@
   "instagram": "18137011249647714",
   "instagram_story": "18128227489883362",
   "facebook_story_hata": "Graph API hatası 400: {\"error\":{\"message\":\"There was a problem uploading your video file. Please try again with another file.\",\"type\":\"OAuthException\",\"code\":6000,\"error_subcode\":1363130,\"is_transient\":false,\"error_user_title\":\"Video Upload Is Missing\",\"error_user_msg\":\"The video was not uploaded.\","
+ },
+ {
+  "link": "https://havadis.at/haber/avrupada-kiralar-maaslari-eritiyor-h56428.html",
+  "baslik": "Avrupa’da Kiralar Maaşları Eritiyor!",
+  "tur": "gorsel",
+  "zaman": "2026-10-31T09:08:55+00:00",
+  "facebook": "133738750106746_1792232826048494",
+  "instagram": "18130638322877628"
  }
 ]
