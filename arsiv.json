@@ -1,53 +1,5 @@
 [
  {
-  "baslik": "Avusturya’da Sağlık Sistemine Güven Azalıyor",
-  "link": "https://havadis.at/haber/avusturyada-saglik-sistemine-guven-azaliyor-h56008.html",
-  "ozet": "Avusturya’da sağlık sisteminden memnuniyet yüzde 51’e geriledi. Vatandaşların yaklaşık yarısı uzman doktor randevusu için en az beş hafta beklerken, yüzde 29’u maddi nedenlerle sağlık hizmetlerinden vazgeçtiğini belirtti.",
-  "kategori": "Avusturya",
-  "resim": "https://havadis.at/uploads/2026/10/16/155223_stethoskop-und-sanduhr-im-wartebereich.jpg",
-  "tarih": "2026-10-16T15:50:00+02:00"
- },
- {
-  "baslik": "Amazon Prime Fiyatını Düşürüyor",
-  "link": "https://havadis.at/haber/amazon-prime-fiyatini-dusuruyor-h56009.html",
-  "ozet": "Amazon, Almanya’daki belirli eski Prime üyelerinin aylık ücretini 8,99 Euro’dan 7,99 Euro’ya düşürüyor. Mahkeme kararının ardından gelen indirim otomatik uygulanacak ancak Avusturya’daki müşterileri kapsamayacak.",
-  "kategori": "Almanya",
-  "resim": "https://havadis.at/uploads/2026/10/16/155447_amazon-prime-preissturz_-799-.jpg",
-  "tarih": "2026-10-16T15:53:00+02:00"
- },
- {
-  "baslik": "Soğuk Algınlığında Bu Hatalara Dikkat!",
-  "link": "https://havadis.at/haber/soguk-alginliginda-bu-hatalara-dikkat-h56010.html",
-  "ozet": "Soğuk algınlığında kullanılan bazı geleneksel yöntemler yanlış uygulandığında şikâyetleri artırabiliyor. Uzmanlar, özellikle sert sümkürmekten ve ateşliyken aşırı sıcak banyo yapmaktan kaçınılmasını öneriyor.",
-  "kategori": "Sağlık",
-  "resim": "https://havadis.at/uploads/2026/10/16/155823_hausmittel-bei-erkltung_-was-vermeiden_.jpg",
-  "tarih": "2026-10-16T15:56:00+02:00"
- },
- {
-  "baslik": "Viyana AKH Hastanesinde Tasarruf Alarmı",
-  "link": "https://havadis.at/haber/viyana-akh-hastanesinde-tasarruf-alarmi-h56011.html",
-  "ozet": "Viyana AKH Hastanesinde bütçe kesintileri nedeniyle yaklaşık 700 kadronun finansmanı tehlikeye girebilir. Çalışan temsilcileri, ameliyathanelerin ve bazı bölümlerin kapanabileceği, hastaların tedavi için daha uzun beklemek zorunda kalabileceği uyarısında bulundu.",
-  "kategori": "Avusturya",
-  "resim": "https://havadis.at/uploads/2026/10/16/160113_gesundheitskurzungen-am-wiener-akh.jpg",
-  "tarih": "2026-10-16T16:00:00+02:00"
- },
- {
-  "baslik": "Dünya Saatlerinde Yeni Düzenleme",
-  "link": "https://havadis.at/haber/dunya-saatlerinde-yeni-duzenleme-h56012.html",
-  "ozet": "20 Mayıs 2027’den itibaren dünya zaman ölçümünde ek saniye uygulamasının kaldırılması öngörülüyor. Bilgisayar ve uydu sistemlerinde yaşanabilecek sorunları önlemeyi amaçlayan düzenleme, vatandaşların günlük yaşamını etkilemeyecek.",
-  "kategori": "Dünya",
-  "resim": "https://havadis.at/uploads/2026/10/16/160504_zeitwechsel-uber-der-erde-2.jpg",
-  "tarih": "2026-10-16T16:02:00+02:00"
- },
- {
-  "baslik": "Zayıflama İlaçlarında Yan Etki Uyarısı",
-  "link": "https://havadis.at/haber/zayiflama-ilaclarinda-yan-etki-uyarisi-h56013.html",
-  "ozet": "Ozempic ve benzeri zayıflama ilaçlarını kullanan ünlüler, farklı deneyimlerini paylaştı. Bazıları kilo kontrolünde olumlu sonuçlar alırken, bazıları şiddetli mide bulantısı ve kusma yaşadığını açıkladı. Uzmanlar, ilaçların doktor kontrolünde kullanılmasını öneriyor.",
-  "kategori": "Sağlık",
-  "resim": "https://havadis.at/uploads/2026/10/16/160722_ozempic-gewichtsverlust-und-nebenwirkungen.jpg",
-  "tarih": "2026-10-16T16:05:00+02:00"
- },
- {
   "baslik": "Avusturya’da Erken Grip Salgını Uyarısı",
   "link": "https://havadis.at/haber/avusturyada-erken-grip-salgini-uyarisi-h56014.html",
   "ozet": "Avusturya’da grip vakalarının artması üzerine sağlık yetkilileri erken salgın uyarısında bulundu. Grip dalgasının bu yıl kasım ayının ortasında başlayabileceği belirtilirken, risk grubundaki kişilere aşı yaptırmaları tavsiye edildi.",
