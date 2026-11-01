@@ -1,21 +1,5 @@
 [
  {
-  "baslik": "23 Ekim 2027’de Başlıyor: Uçak Yolculuklarında Yeni Bagaj Kuralları",
-  "link": "https://havadis.at/haber/23-ekim-2027de-basliyor-ucak-yolculuklarinda-yeni-bagaj-kurallari-h56021.html",
-  "ozet": "Avrupa Birliği’nde 23 Ekim 2027’den itibaren el bagajı ve uçak bileti fiyatlarına ilişkin yeni kuralların uygulanması planlanıyor. Küçük kişisel çantaların ücretsiz taşınması ve bagaj dahil bilet fiyatlarının daha açık gösterilmesi hedeflenirken büyük kabin valizleri için ek ücret alınmaya devam edilebilecek. İsviçre çıkışlı uçuşlarda ise farklı kurallar geçerli olabilir.",
-  "kategori": "Avrupa",
-  "resim": "https://havadis.at/uploads/2026/10/17/075651_eu-gepckregeln_-erlaubt-oder-verboten.jpg",
-  "tarih": "2026-10-17T07:54:00+02:00"
- },
- {
-  "baslik": "Tirol’da Bir Deprem Daha: Son Sarsıntı 2,3 Büyüklüğünde",
-  "link": "https://havadis.at/haber/tirolda-bir-deprem-daha-son-sarsinti-23-buyuklugunde-h56022.html",
-  "ozet": "Avusturya’nın Tirol eyaletinde ağustos ayından bu yana devam eden deprem serisine bir yenisi daha eklendi. Innsbruck yakınlarındaki Sistrans bölgesinde 16 Ekim gecesi 2,3 büyüklüğünde deprem meydana geldi. Bölgede son aylarda 3,8 büyüklüğüne ulaşan sarsıntılar kaydedilirken şu ana kadar herhangi bir hasar bildirilmedi.",
-  "kategori": "Avusturya",
-  "resim": "https://havadis.at/uploads/2026/10/17/075954_erdbeben-uber-alpiner-stadt.jpg",
-  "tarih": "2026-10-17T07:58:00+02:00"
- },
- {
   "baslik": "Vorarlberg'de Bisiklet Artık Dört Mevsim Kullanılıyor",
   "link": "https://havadis.at/haber/vorarlbergde-bisiklet-artik-dort-mevsim-kullaniliyor-h56023.html",
   "ozet": "Vorarlberg'de bisiklet kullanımı artık yaz aylarıyla sınırlı değil. Ancak değişen alışkanlıklar, bisiklet sektöründe yeni bir dönemin kapısını aralıyor. Satıcılar ise pazardaki gelişmelere uyum sağlamaya çalışıyor.",
@@ -3390,5 +3374,37 @@
   "kategori": "Almanya",
   "resim": "https://havadis.at/uploads/2026/10/31/161110_gemeinsamer-weg-nach-deutschland.jpg",
   "tarih": "2026-10-31T16:09:00+02:00"
+ },
+ {
+  "baslik": "Vorarlberg'de 400 Milyon Euroluk Projeye Çevre Engeli",
+  "link": "https://havadis.at/haber/vorarlbergde-400-milyon-euroluk-projeye-cevre-engeli-h56442.html",
+  "ozet": "Vorarlberg'den Almanya'ya elektrik taşıyan yaklaşık 100 yıllık enerji hattının yenilenmesi, doğa koruma raporu nedeniyle sekteye uğradı. 400 milyon euroluk projeyi savunan Eyalet Başbakanı Markus Wallner, çevresel itirazlara rağmen çalışmaların sürdürülmesini istiyor.",
+  "kategori": "Vorarlberg",
+  "resim": "https://havadis.at/uploads/2026/11/01/064404_stromtrassen-im-spannungsfeld-der-natur.jpg",
+  "tarih": "2026-11-01T06:41:00+02:00"
+ },
+ {
+  "baslik": "Vorarlberg Polis Teşkilatının Nazi Geçmişi Gün Yüzüne Çıktı",
+  "link": "https://havadis.at/haber/vorarlberg-polis-teskilatinin-nazi-gecmisi-gun-yuzune-cikti-h56443.html",
+  "ozet": "Avusturya'nın Vorarlberg eyaletinde polis teşkilatının Nazi dönemindeki rolü ilk kez kapsamlı biçimde araştırıldı. Daha önce erişime kapalı olan arşivler açılırken, polislerin bir bölümünün Nazi rejiminin işlediği suçlara doğrudan katıldığı ortaya konuldu.",
+  "kategori": "Vorarlberg",
+  "resim": "https://havadis.at/uploads/2026/11/01/065309_historische-erinnerungen-mit-polizeimarke.jpg",
+  "tarih": "2026-11-01T06:45:00+02:00"
+ },
+ {
+  "baslik": "Vorarlberg'de 4 Bin Kişi Tek Tuşla Yardım Çağırıyor",
+  "link": "https://havadis.at/haber/vorarlbergde-4-bin-kisi-tek-tusla-yardim-cagiriyor-h56444.html",
+  "ozet": "Vorarlberg'de Kızılhaç'ın sunduğu acil yardım sistemi, yaklaşık 4 bin kişinin günlük yaşamını daha güvenli hâle getiriyor. Özellikle yalnız yaşayan yaşlıların tercih ettiği sistem, tek tuşla acil yardım çağırma imkânı sağlıyor.",
+  "kategori": "Vorarlberg",
+  "resim": "https://havadis.at/uploads/2026/11/01/070312_notrufarmband-verbindet-hilfe-und-rettung.jpg",
+  "tarih": "2026-11-01T07:01:00+02:00"
+ },
+ {
+  "baslik": "Avusturya'da Bugün Ne Kutlanıyor?",
+  "link": "https://havadis.at/haber/avusturyada-bugun-ne-kutlaniyor-h56445.html",
+  "ozet": "Avusturya'da bugün, 1 Kasım Azizler Günü (Allerheiligen) kutlanıyor. Ülke genelinde resmî tatil olan bu gün, Hristiyanlıkta önemli bir dinî anlam taşıyor. Peki, Azizler Günü nedir, neden kutlanır ve Avusturyalılar bu günde neler yapar?",
+  "kategori": "Avusturya",
+  "resim": "https://havadis.at/uploads/2026/11/01/070848_stimmungsvolle-friedhofskerzen-im-abendlicht.jpg",
+  "tarih": "2026-11-01T07:05:00+02:00"
  }
 ]
