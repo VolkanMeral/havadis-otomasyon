@@ -1,53 +1,5 @@
 [
  {
-  "baslik": "Zürih'te Uyuşturucu Operasyonu: İki Gözaltı",
-  "link": "https://havadis.at/haber/zurihte-uyusturucu-operasyonu-iki-gozalti-h56029.html",
-  "ozet": "İsviçre'nin Zürih kantonunda şüpheli bir buluşmayı takibe alan polis, büyük bir uyuşturucu operasyonuna imza attı. Kaçmaya çalışan şüphelilerden birinin yaptığı hareket ise operasyonun en dikkat çekici ayrıntısı oldu.",
-  "kategori": "Isviçre",
-  "resim": "https://havadis.at/uploads/2026/10/17/131241_beschlagnahmte-drogen-und-eurobargeld.jpg",
-  "tarih": "2026-10-17T13:12:00+02:00"
- },
- {
-  "baslik": "Vorarlberg'de Çocuk Suçluluğunda Büyük Artış",
-  "link": "https://havadis.at/haber/vorarlbergde-cocuk-suclulugunda-buyuk-artis-h56030.html",
-  "ozet": "Vorarlberg'de suça karıştığı şüphesiyle tespit edilen çocukların sayısı son yıllarda dikkat çekici şekilde arttı. Cezaların ağırlaştırılması tartışılırken sosyal hizmet uzmanları, rakamların arkasında göz ardı edilen sorunlar bulunduğuna dikkat çekiyor.",
-  "kategori": "Vorarlberg",
-  "resim": "https://havadis.at/uploads/2026/10/17/132143_jugendliche-im-blaulicht-der-polizei.jpg",
-  "tarih": "2026-10-17T13:18:00+02:00"
- },
- {
-  "baslik": "Huzurevinde Kanlı Saldırı: Bir Ölü, İki Yaralı",
-  "link": "https://havadis.at/haber/huzurevinde-kanli-saldiri-bir-olu-iki-yarali-h56031.html",
-  "ozet": "Almanya'da bir huzurevinde yaşanan bıçaklı saldırı faciayla sonuçlandı. Üç yaşlı kadının hedef alındığı olayda gözaltına alınan şüphelinin kimliği ve saldırının olası nedeni dikkat çekti.",
-  "kategori": "Almanya",
-  "resim": "https://havadis.at/uploads/2026/10/17/132436_rollstuhl-im-einsatz-vor-dem-pflegeheim.jpg",
-  "tarih": "2026-10-17T13:23:00+02:00"
- },
- {
-  "baslik": "Vorarlberg Sınırında Elektrikli Otomobil Alev Alev Yandı",
-  "link": "https://havadis.at/haber/vorarlberg-sinirinda-elektrikli-otomobil-alev-alev-yandi-h56032.html",
-  "ozet": "Vorarlberg sınırına yakın Berneck'te park hâlindeki bir elektrikli otomobil aniden alevlere teslim oldu. İtfaiyenin müdahale ettiği yangın, çevre açısından da ek önlemler alınmasını gerektirdi. Olayın nedeni araştırılıyor.",
-  "kategori": "Isviçre",
-  "resim": "https://havadis.at/uploads/2026/10/17/132729_berneck-2-1-1280x960.jpg",
-  "tarih": "2026-10-17T13:27:00+02:00"
- },
- {
-  "baslik": "Avusturya'da Domates Alarmı: 29 Kişi Hastalandı",
-  "link": "https://havadis.at/haber/avusturyada-domates-alarmi-29-kisi-hastalandi-h56033.html",
-  "ozet": "Avusturya'da bazı domateslerle bağlantılı salmonella vakaları endişe yaratıyor. Çok sayıda kişinin hastalandığı, bazılarının ise hastaneye kaldırıldığı açıklandı. Yetkililer, tüketicileri özellikle belirli bölgelerden gelen ürünler konusunda uyarıyor.",
-  "kategori": "Avusturya",
-  "resim": "https://havadis.at/uploads/2026/10/17/133337_tomatenwarnung-mit-bakterien-und-kochtopf.jpg",
-  "tarih": "2026-10-17T13:31:00+02:00"
- },
- {
-  "baslik": "Avusturya'da Milyonlarca Kişi Ağrılarla Yaşıyor: Tedavi Çağrısı",
-  "link": "https://havadis.at/haber/avusturyada-milyonlarca-kisi-agrilarla-yasiyor-tedavi-cagrisi-h56034.html",
-  "ozet": "Avusturya'da milyonlarca insan, günlük yaşamını ve çalışma hayatını olumsuz etkileyen kronik ağrılarla mücadele ediyor. Dünya Ağrı Günü'nde uzmanlar, mevcut sağlık hizmetlerindeki eksikliklere dikkat çekerek önemli taleplerde bulundu.",
-  "kategori": "Avusturya",
-  "resim": "https://havadis.at/uploads/2026/10/17/133852_schmerzkarte_-rucken-knie-und-kopf.jpg",
-  "tarih": "2026-10-17T13:36:00+02:00"
- },
- {
   "baslik": "Avusturyalı Araştırmacılardan Önemli Alerji Bulgusu",
   "link": "https://havadis.at/haber/avusturyali-arastirmacilardan-onemli-alerji-bulgusu-h56035.html",
   "ozet": "Avusturyalı bilim insanlarının da katıldığı uluslararası araştırma, çocuklarda alerji testlerinin sonuçlarına ilişkin dikkat çekici bulgular ortaya koydu. Uzmanlara göre erken yaşta tespit edilen bazı duyarlılıklar zamanla değişebiliyor.",
@@ -3510,5 +3462,13 @@
   "kategori": "Avusturya",
   "resim": "https://havadis.at/uploads/2026/11/01/120259_erdbebenwarnung-uber-den-alpen.jpg",
   "tarih": "2026-11-01T12:01:00+02:00"
+ },
+ {
+  "baslik": "Avusturya'da Kira Yardımına Zam: Yılda 618 Euroya Kadar Artış",
+  "link": "https://havadis.at/haber/avusturyada-kira-yardimina-zam-yilda-618-euroya-kadar-artis-h56465.html",
+  "ozet": "Avusturya'nın Yukarı Avusturya (Oberösterreich) eyaletinde kira yardımının (Wohnbeihilfe) 1 Ocak 2027'den itibaren artırılması planlanıyor. Yeni düzenlemeyle hanelere ödenen destek, aile büyüklüğüne göre yılda 618 euroya kadar artabilecek.",
+  "kategori": "Avusturya",
+  "resim": "https://havadis.at/uploads/2026/11/01/120738_osterreich_-haus-schlussel-und-eurofinanzierung.jpg",
+  "tarih": "2026-11-01T12:05:00+02:00"
  }
 ]
