@@ -1,15 +1,5 @@
 [
  {
-  "link": "https://havadis.at/haber/pelet-fiyatlari-rekor-artista-bir-kisin-maliyeti-2400-euro-h55974.html",
-  "baslik": "Pelet Fiyatları Rekor Artışta: Bir Kışın Maliyeti 2.400 Euro",
-  "tur": "gorsel",
-  "zaman": "2026-10-16T09:13:58+00:00",
-  "facebook": "133738750106746_1774794801125630",
-  "instagram_hata": "Graph API hatası 400: {\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Yay\\u0131nlanam\\u0131yor\",\"error_user_msg\":\"Medya yay\\u0131nlanmaya haz\\u0131r de\\u011fil. L\\u00fctfen biraz bekle\",\"fbtrace_id\":",
-  "instagram_story": "17941048251366209",
-  "facebook_story": "1886803639366335"
- },
- {
   "link": "https://havadis.at/haber/vorarlbergde-milyonluk-iflas-muller-wohnbau-faaliyetlerini-durdurdu-h55992.html",
   "baslik": "Vorarlberg’de Milyonluk İflas: Müller Wohnbau Faaliyetlerini Durdurdu",
   "tur": "gorsel",
@@ -4947,5 +4937,15 @@
   "instagram_story": "18150190423490004",
   "facebook_story": "1415475894069498",
   "youtube": "rD5TghHP5tU"
+ },
+ {
+  "link": "https://havadis.at/haber/amsden-135-milyon-euro-geri-odeme-maliye-bakanindan-aciklama-h56532.html",
+  "baslik": "AMS'den 135 Milyon Euro Geri Ödeme: Maliye Bakanından Açıklama",
+  "tur": "gorsel",
+  "zaman": "2026-11-03T19:08:42+00:00",
+  "facebook": "133738750106746_1796416602296783",
+  "instagram": "18146915422564733",
+  "instagram_story": "18316440076304948",
+  "facebook_story": "1901062124639795"
  }
 ]
