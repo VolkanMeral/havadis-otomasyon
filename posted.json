@@ -1,13 +1,5 @@
 [
  {
-  "link": "https://havadis.at/haber/amazon-prime-fiyatini-dusuruyor-h56009.html",
-  "baslik": "Amazon Prime Fiyatını Düşürüyor",
-  "tur": "gorsel",
-  "zaman": "2026-10-16T19:10:01+00:00",
-  "facebook": "133738750106746_1775304687741308",
-  "instagram": "17896377312416405"
- },
- {
   "link": "https://havadis.at/haber/avusturyada-saglik-sistemine-guven-azaliyor-h56008.html",
   "baslik": "Avusturya’da Sağlık Sistemine Güven Azalıyor",
   "tur": "gorsel",
@@ -4945,5 +4937,16 @@
   "zaman": "2026-11-04T16:09:22+00:00",
   "facebook": "133738750106746_1797395448865565",
   "instagram": "18130174168874322"
+ },
+ {
+  "link": "https://havadis.at/haber/sos-mitmenschten-vatandaslik-cagrisi-h56557.html",
+  "baslik": "SOS Mitmensch'ten Vatandaşlık Çağrısı",
+  "tur": "video",
+  "zaman": "2026-11-04T16:20:14+00:00",
+  "facebook_reel": "2126599788225301",
+  "instagram_reel": "18149747413533821",
+  "instagram_story": "18117342116593967",
+  "facebook_story": "1643881910539060",
+  "youtube": "T5iJWw48tVs"
  }
 ]
