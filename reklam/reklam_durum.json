@@ -296,5 +296,24 @@
    "facebook": "133738750106746_1795837655688011",
    "instagram": "17875791918650052"
   }
+ },
+ "salzpfeffer-2026-11-05": {
+  "gonderi": {
+   "zaman": "2026-11-05T08:00:00+00:00",
+   "facebook": "133738750106746_1798138508791259",
+   "instagram": "18502269289100426"
+  }
+ },
+ "gul-2026-11-05": {
+  "gonderi": {
+   "zaman": "2026-11-05T08:00:14+00:00",
+   "facebook": "133738750106746_1798139245457852",
+   "instagram": "18142417654621331"
+  },
+  "story": {
+   "zaman": "2026-11-05T08:00:14+00:00",
+   "instagram_hata": "Graph API hatası 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}",
+   "facebook": "1492554342752940"
+  }
  }
 }
