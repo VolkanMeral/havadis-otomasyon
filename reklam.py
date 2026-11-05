@@ -326,6 +326,20 @@ def ig_gorsel(adres, metin, etiket=None):
     return gonder(False)
 
 
+def ig_video_tekrarli(video, tur, metin=None, deneme=3, bekle=30):
+    """Instagram video yüklemesi ara sıra 'ProcessingFailedError' veriyor; ikinci denemede genelde geçiyor.
+    Her denemede yeni bir medya kabı açılır, bu yüzden çift paylaşım olmaz."""
+    import time
+    for i in range(deneme):
+        try:
+            return bot.instagram_video(video, tur, metin)
+        except Exception as e:
+            if i == deneme - 1 or "ProcessingFailed" not in str(e):
+                raise
+            log(f"Instagram video işlenemedi ({i + 1}. deneme), {bekle} sn sonra tekrar deneniyor.")
+            time.sleep(bekle)
+
+
 def ig_story_gorsel(adres):
     kap = bot.kontrol(bot.HTTP.post(bot.graph(f"{bot.IG_USER_ID}/media"), timeout=60, data={
         "image_url": adres, "media_type": "STORIES", "access_token": bot.PAGE_TOKEN}))
@@ -412,13 +426,13 @@ def reklam_isle(r, turler, durum):
         video, kapak = hazir["reels"]
         dene("reels", "facebook", lambda: bot.facebook_reel(video, fb_metin(r), kapak))
         if bot.IG_USER_ID:
-            dene("reels", "instagram", lambda: bot.instagram_video(video, "REELS", r["metin"]))
+            dene("reels", "instagram", lambda: ig_video_tekrarli(video, "REELS", r["metin"]))
 
     if "story_video" in hazir:
         video = hazir["story_video"]
         platformlar = r.get("platformlar", ["facebook", "instagram"])
         if bot.IG_USER_ID and "instagram" in platformlar:
-            dene("story", "instagram", lambda: bot.instagram_video(video, "STORIES"))
+            dene("story", "instagram", lambda: ig_video_tekrarli(video, "STORIES"))
         if "facebook" in platformlar:
             dene("story", "facebook", lambda: bot.facebook_story(video))
     elif "story" in turler:

@@ -1180,6 +1180,33 @@
     "alt": "05.–07.11. · Rankweil"
    },
    "story_video": "reklam/gul3/story-video.mp4"
+  },
+  {
+   "id": "gul-2026-11-05-ig-story-tekrar",
+   "firma": "Gül Süpermarket Rankweil",
+   "tarih": "2026-11-05",
+   "saat": "09:00",
+   "turler": [
+    "story"
+   ],
+   "platformlar": [
+    "instagram"
+   ],
+   "gorseller": [
+    "reklam/gul3/01-temizlik.jpg",
+    "reklam/gul3/02-makarna-salca-pirinc.jpg",
+    "reklam/gul3/03-bakliyat.jpg",
+    "reklam/gul3/04-sut-urunleri.jpg",
+    "reklam/gul3/05-zeytin-yag.jpg",
+    "reklam/gul3/06-cay.jpg",
+    "reklam/gul3/07-tavuk.jpg",
+    "reklam/gul3/08-sucuk-cevapcici.jpg",
+    "reklam/gul3/09-yesillik-lahana.jpg",
+    "reklam/gul3/10-et.jpg"
+   ],
+   "metin": "",
+   "story_video": "reklam/gul3/story-video.mp4",
+   "hemen": true
   }
  ]
 }
