@@ -1090,6 +1090,93 @@
    "metin": "🛒 Gül Süpermarket Rankweil’de yeni Süper Angebot!\n\n29–31 Ekim tarihleri arasında helal et, süt ürünleri, sucuk, bakliyat, pirinç, zeytinyağı, çay ile taze sebze ve meyvede kaçırılmayacak fiyatlar. Tüm ürünler için kaydırın 👉\n\n🥩 Dana kıyma 9,99 €/kg · Dana gulasch 14,99 €/kg\n🍌 Muz 0,99 €/kg · Nane, maydanoz, dereotu 0,99 €/demet\n🍵 Çaykur Filiz çay 1 kg 7,99 €\n\n📅 Kampanya: 29.10.–31.10.2026\n🕗 Pzt–Cum 08:00–19:00 · Cmt 08:00–18:00 · Pazar ve tatil 10:00–12:00\n📍 Stiegstraße 65, 6830 Rankweil\n📲 @gul.marketrankweil\n\nAnzeige",
    "etiket": "gul.marketrankweil",
    "story_video": "reklam/gul2/story-video.mp4"
+  },
+  {
+   "id": "gul-2026-11-05",
+   "firma": "Gül Süpermarket Rankweil",
+   "tarih": "2026-11-05",
+   "saat": "09:00",
+   "turler": [
+    "gonderi",
+    "story"
+   ],
+   "gorseller": [
+    "reklam/gul3/01-temizlik.jpg",
+    "reklam/gul3/02-makarna-salca-pirinc.jpg",
+    "reklam/gul3/03-bakliyat.jpg",
+    "reklam/gul3/04-sut-urunleri.jpg",
+    "reklam/gul3/05-zeytin-yag.jpg",
+    "reklam/gul3/06-cay.jpg",
+    "reklam/gul3/07-tavuk.jpg",
+    "reklam/gul3/08-sucuk-cevapcici.jpg",
+    "reklam/gul3/09-yesillik-lahana.jpg",
+    "reklam/gul3/10-et.jpg"
+   ],
+   "metin": "🛒 Gül Süpermarket Rankweil’de haftanın dev indirimleri!\n\n5–7 Kasım tarihleri arasında seçili ürünlerde %60’a varan indirimler: helal et ve tavuk, sucuk, peynir, yoğurt, zeytin, zeytinyağı, çay, bakliyat, makarna, salça ve temizlik ürünleri. Tüm ürünler için kaydırın 👉\n\n🍗 Tavuk göğsü 5,99 €/kg\n🥩 Dana kıyma 9,99 €/kg · Dana entrecôte 24,99 €/kg\n🫒 Marmara Riviera zeytinyağı 5 L 32,99 €\n🍵 Çaykur Filiz çay 1 kg 7,99 €\n\n📅 Kampanya: 05.11.–07.11.2026\n🕗 Pzt–Cum 08:00–19:00 · Cmt 08:00–18:00 · Pazar ve tatil 10:00–12:00\n📍 Stiegstraße 65, 6830 Rankweil\n📲 @gul.marketrankweil\n\nAnzeige",
+   "etiket": "gul.marketrankweil",
+   "story_gorsel": "reklam/gul3/11-genel-indirim.jpg",
+   "story": {
+    "baslik": "Haftanın<br>dev indirimleri",
+    "alt": "05.–07.11. · Rankweil"
+   }
+  },
+  {
+   "id": "gul-2026-11-06",
+   "firma": "Gül Süpermarket Rankweil",
+   "tarih": "2026-11-06",
+   "saat": "09:00",
+   "turler": [
+    "gonderi",
+    "story"
+   ],
+   "gorseller": [
+    "reklam/gul3/01-temizlik.jpg",
+    "reklam/gul3/02-makarna-salca-pirinc.jpg",
+    "reklam/gul3/03-bakliyat.jpg",
+    "reklam/gul3/04-sut-urunleri.jpg",
+    "reklam/gul3/05-zeytin-yag.jpg",
+    "reklam/gul3/06-cay.jpg",
+    "reklam/gul3/07-tavuk.jpg",
+    "reklam/gul3/08-sucuk-cevapcici.jpg",
+    "reklam/gul3/09-yesillik-lahana.jpg",
+    "reklam/gul3/10-et.jpg"
+   ],
+   "metin": "🛒 Gül Süpermarket Rankweil’de haftanın dev indirimleri!\n\n5–7 Kasım tarihleri arasında seçili ürünlerde %60’a varan indirimler: helal et ve tavuk, sucuk, peynir, yoğurt, zeytin, zeytinyağı, çay, bakliyat, makarna, salça ve temizlik ürünleri. Tüm ürünler için kaydırın 👉\n\n🍗 Tavuk göğsü 5,99 €/kg\n🥩 Dana kıyma 9,99 €/kg · Dana entrecôte 24,99 €/kg\n🫒 Marmara Riviera zeytinyağı 5 L 32,99 €\n🍵 Çaykur Filiz çay 1 kg 7,99 €\n\n📅 Kampanya: 05.11.–07.11.2026\n🕗 Pzt–Cum 08:00–19:00 · Cmt 08:00–18:00 · Pazar ve tatil 10:00–12:00\n📍 Stiegstraße 65, 6830 Rankweil\n📲 @gul.marketrankweil\n\nAnzeige",
+   "etiket": "gul.marketrankweil",
+   "story_gorsel": "reklam/gul3/11-genel-indirim.jpg",
+   "story": {
+    "baslik": "Haftanın<br>dev indirimleri",
+    "alt": "05.–07.11. · Rankweil"
+   }
+  },
+  {
+   "id": "gul-2026-11-07",
+   "firma": "Gül Süpermarket Rankweil",
+   "tarih": "2026-11-07",
+   "saat": "09:00",
+   "turler": [
+    "gonderi",
+    "story"
+   ],
+   "gorseller": [
+    "reklam/gul3/01-temizlik.jpg",
+    "reklam/gul3/02-makarna-salca-pirinc.jpg",
+    "reklam/gul3/03-bakliyat.jpg",
+    "reklam/gul3/04-sut-urunleri.jpg",
+    "reklam/gul3/05-zeytin-yag.jpg",
+    "reklam/gul3/06-cay.jpg",
+    "reklam/gul3/07-tavuk.jpg",
+    "reklam/gul3/08-sucuk-cevapcici.jpg",
+    "reklam/gul3/09-yesillik-lahana.jpg",
+    "reklam/gul3/10-et.jpg"
+   ],
+   "metin": "🛒 Gül Süpermarket Rankweil’de haftanın dev indirimleri!\n\n5–7 Kasım tarihleri arasında seçili ürünlerde %60’a varan indirimler: helal et ve tavuk, sucuk, peynir, yoğurt, zeytin, zeytinyağı, çay, bakliyat, makarna, salça ve temizlik ürünleri. Tüm ürünler için kaydırın 👉\n\n🍗 Tavuk göğsü 5,99 €/kg\n🥩 Dana kıyma 9,99 €/kg · Dana entrecôte 24,99 €/kg\n🫒 Marmara Riviera zeytinyağı 5 L 32,99 €\n🍵 Çaykur Filiz çay 1 kg 7,99 €\n\n📅 Kampanya: 05.11.–07.11.2026\n🕗 Pzt–Cum 08:00–19:00 · Cmt 08:00–18:00 · Pazar ve tatil 10:00–12:00\n📍 Stiegstraße 65, 6830 Rankweil\n📲 @gul.marketrankweil\n\nAnzeige",
+   "etiket": "gul.marketrankweil",
+   "story_gorsel": "reklam/gul3/11-genel-indirim.jpg",
+   "story": {
+    "baslik": "Haftanın<br>dev indirimleri",
+    "alt": "05.–07.11. · Rankweil"
+   }
   }
  ]
 }
