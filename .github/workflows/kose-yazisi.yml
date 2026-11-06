@@ -14,7 +14,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: havadis-paylasim
+  group: havadis-kose-yazisi
   cancel-in-progress: false
 
 jobs:
