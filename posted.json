@@ -1,15 +1,5 @@
 [
  {
-  "link": "https://havadis.at/haber/viyanaya-gelen-ucakta-korku-dolu-saatler-h56088.html",
-  "baslik": "Viyana'ya Gelen Uçakta Korku Dolu Saatler",
-  "tur": "gorsel",
-  "zaman": "2026-10-19T17:11:32+00:00",
-  "facebook": "133738750106746_1778446127427164",
-  "instagram": "17933509647411257",
-  "instagram_story": "17913380160504632",
-  "facebook_story": "1132750635918299"
- },
- {
   "link": "https://havadis.at/haber/nakit-odemelerde-yeni-donem-yasaklar-ve-istisnalar-h56086.html",
   "baslik": "Nakit Ödemelerde Yeni Dönem: Yasaklar ve İstisnalar",
   "tur": "video",
@@ -4955,5 +4945,15 @@
   "instagram": "18223210135345832",
   "instagram_story": "17919914619462424",
   "facebook_story": "1487587059944683"
+ },
+ {
+  "link": "https://havadis.at/haber/lustenauda-vergi-adaleti-tartismasi-h56645.html",
+  "baslik": "Lustenau’da Vergi Adaleti Tartışması",
+  "tur": "gorsel",
+  "zaman": "2026-11-07T20:36:12+00:00",
+  "facebook": "133738750106746_1801112948493815",
+  "instagram_hata": "Graph API hatası 400: {\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Kann nicht ver\\u00f6ffentlicht werden\",\"error_user_msg\":\"Die Medien k\\u00f6nnen noch nicht ver\\u00f6ffentlicht werden. Bitte wart",
+  "instagram_story": "17915796693503423",
+  "facebook_story": "2678905219229210"
  }
 ]
