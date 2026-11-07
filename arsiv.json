@@ -1,29 +1,5 @@
 [
  {
-  "baslik": "İşten Çıkarma Baskısına 11 Bin Euro Fatura!",
-  "link": "https://havadis.at/haber/isten-cikarma-baskisina-11-bin-euro-fatura-h56227.html",
-  "ozet": "Avusturya'da bir şirket, çalışanını birkaç gün içerisinde işten ayrılmaya zorladı. Anlaşmayı imzalamayan çalışan, buna rağmen işten çıkarılmış gibi kayıtlardan düşürüldü. Arbeiterkammer'e başvurmasının ardından şirket, çalışana 11.109,84 euro brüt ödeme yapmak zorunda kaldı. İşçi Odası, çalışanları baskı altında belge imzalamamaları konusunda uyardı.",
-  "kategori": "Avusturya",
-  "resim": "https://havadis.at/uploads/2026/10/23/214208_ak-szene_-kundigung-und-abfindung.jpg",
-  "tarih": "2026-10-23T21:38:00+02:00"
- },
- {
-  "baslik": "Rheintal'de Gizemli Balık Ölümleri!",
-  "link": "https://havadis.at/haber/rheintalde-gizemli-balik-olumleri-h56228.html",
-  "ozet": "Avusturya sınırına yakın İsviçre'nin Widnau kasabasında yaklaşık 100 balık ölü bulundu. Yetkililerin yaptığı su analizlerinde tüm değerler normal çıktı. Balıkların neden öldüğü ise henüz belirlenemedi.",
-  "kategori": "Isviçre",
-  "resim": "https://havadis.at/uploads/2026/10/23/214516_fischsterben-am-verschmutzten-gewsser.jpg",
-  "tarih": "2026-10-23T21:43:00+02:00"
- },
- {
-  "baslik": "Amazon Prime Kullanıcıları Dikkat!",
-  "link": "https://havadis.at/haber/amazon-prime-kullanicilari-dikkat-h56229.html",
-  "ozet": "Amazon Prime kullanıcıları dikkat! Dolandırıcılar, abonelik ödemenizde sorun olduğunu iddia eden sahte e-postalar gönderiyor. Üyeliğinizin iptal edileceği tehdidiyle sizi sahte internet sitelerine yönlendirerek kredi kartı bilgilerinizi ele geçirmeye çalışıyorlar. Şüpheli bağlantılara kesinlikle tıklamayın!",
-  "kategori": "Almanya",
-  "resim": "https://havadis.at/uploads/2026/10/23/214934_phishing-warnung-im-amazon-prime-stil.jpg",
-  "tarih": "2026-10-23T21:47:00+02:00"
- },
- {
   "baslik": "Avusturya Sınırında Yangın Paniği: 31 Tatilci Kurtuldu!",
   "link": "https://havadis.at/haber/avusturya-sinirinda-yangin-panigi-31-tatilci-kurtuldu-h56230.html",
   "ozet": "Avusturya sınırındaki Balderschwang'da gece saatlerinde büyük bir yangın çıktı. Alevlerin sardığı binadaki 31 tatilci son anda dışarı çıkarak kurtuldu. Vorarlberg'den Hittisau İtfaiyesinin de katıldığı söndürme çalışmalarında 167 görevli yer aldı. Bir itfaiyeci dumandan zehirlendi, maddi hasar ise yüz binlerce euroyu buldu.",
@@ -3390,5 +3366,29 @@
   "kategori": "Avusturya",
   "resim": "https://havadis.at/uploads/2026/11/07/203358_energiekosten-senken-ab-2027.jpg",
   "tarih": "2026-11-07T20:32:00+02:00"
+ },
+ {
+  "baslik": "Avusturya’da Ehliyetler Değişiyor: Son Tarih Açıklandı",
+  "link": "https://havadis.at/haber/avusturyada-ehliyetler-degisiyor-son-tarih-aciklandi-h56651.html",
+  "ozet": "Avusturya’da eski tip kâğıt ehliyetler ve bazı plastik kart ehliyetler için zorunlu değişim tarihi belli oldu. Sürücülerin 19 Ocak 2033’e kadar belgelerini yenilemesi gerekiyor. Ayrıca ehliyet sınavları, kopya cezaları ve uluslararası sürücü belgelerinde de önemli değişiklikler yürürlüğe girdi.",
+  "kategori": "Avusturya",
+  "resim": "https://havadis.at/uploads/2026/11/07/204203_osterreichische-fuhrerscheine-im-wandel.jpg",
+  "tarih": "2026-11-07T20:38:00+02:00"
+ },
+ {
+  "baslik": "2027’de Bakım Masraflarına Vergi Kolaylığı",
+  "link": "https://havadis.at/haber/2027de-bakim-masraflarina-vergi-kolayligi-h56652.html",
+  "ozet": "Avusturya’da bakım ihtiyacı veya engellilik nedeniyle yüksek harcamalar yapan çalışanlara vergi kolaylığı sağlanması planlanıyor. Yeni düzenleme kabul edilirse, vergi avantajından yararlanmak için yıl sonundaki vergi iadesini beklemek gerekmeyecek.",
+  "kategori": "Avusturya",
+  "resim": "https://havadis.at/uploads/2026/11/07/204549_fursorge-und-finanzen-in-osterreich.jpg",
+  "tarih": "2026-11-07T20:43:00+02:00"
+ },
+ {
+  "baslik": "Avusturya’da 2027’de Yarı Zamanlı Çalışanların Net Maaşı Artacak",
+  "link": "https://havadis.at/haber/avusturyada-2027de-yari-zamanli-calisanlarin-net-maasi-artacak-h56653.html",
+  "ozet": "Avusturya’da 1 Ocak 2027’den itibaren gelir vergisi dilimlerinin yükseltilmesiyle yarı zamanlı (Teilzeit) çalışanlar da vergi avantajından yararlanabilecek. Ancak maaş artışının miktarı, çalışanların gelir düzeyine göre değişecek.",
+  "kategori": "Avusturya",
+  "resim": "https://havadis.at/uploads/2026/11/07/205132_finanzielles-wachstum-in-osterreich.jpg",
+  "tarih": "2026-11-07T20:46:00+02:00"
  }
 ]
