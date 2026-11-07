@@ -1,29 +1,5 @@
 [
  {
-  "baslik": "Viyana'da 30 Bin Kişilik Protesto!",
-  "link": "https://havadis.at/haber/viyanada-30-bin-kisilik-protesto-h56220.html",
-  "ozet": "Viyana'da binlerce öğrenci ve üniversite çalışanı, eğitim bütçesinin artırılması için gösteri düzenledi. Üniversiteler 2 milyar euro ek kaynak talep ederken, yönetimler her on çalışandan birinin işini kaybedebileceği uyarısında bulunuyor. Hükümet bütçe kararında ısrar ederken grev ihtimali de gündemde.",
-  "kategori": "Avusturya",
-  "resim": "https://havadis.at/uploads/2026/10/23/211107_demonstration-vor-historischer-universitt.jpg",
-  "tarih": "2026-10-23T21:09:00+02:00"
- },
- {
-  "baslik": "21 Yıllık Cinayet Davasında Şaşırtan Beraat Kararı!",
-  "link": "https://havadis.at/haber/21-yillik-cinayet-davasinda-sasirtan-beraat-karari-h56221.html",
-  "ozet": "Avusturya'da 21 yıldır çözülemeyen cinayet davasında dikkat çekici karar! Innsbruck'ta 2005 yılında bıçaklanarak öldürülen 19 yaşındaki Daniela Kammerer'in eski üniversite arkadaşı, jüri tarafından oy birliğiyle beraat ettirildi. Karar henüz kesinleşmezken, genç kadının gerçek katilinin kim olduğu hâlâ bilinmiyor.",
-  "kategori": "Avusturya",
-  "resim": "https://havadis.at/uploads/2026/10/23/211408_gericht-und-gedenken-im-zwielicht.jpg",
-  "tarih": "2026-10-23T21:12:00+02:00"
- },
- {
-  "baslik": "Lidl'den Acil Geri Çağırma!",
-  "link": "https://havadis.at/haber/lidlden-acil-geri-cagirma-h56222.html",
-  "ozet": "Avusturya'da Lidl'den yeni bir ürün uyarısı! Nautica markalı 125 gramlık alabalık filetosunda tehlikeli Listeria bakterisi tespit edildi. Son tüketim tarihi 3 Kasım 2026 olan ürünlerin kesinlikle yenmemesi istendi. Satın alınan ürünler fiş olmadan da iade edilebiliyor.",
-  "kategori": "Avusturya",
-  "resim": "https://havadis.at/uploads/2026/10/23/212025_lidl-forellenfilets-unter-bakterienwarnung-2.jpg",
-  "tarih": "2026-10-23T21:16:00+02:00"
- },
- {
   "baslik": "Avusturya'da Askerlik 9 Aya mı Çıkıyor?",
   "link": "https://havadis.at/haber/avusturyada-askerlik-9-aya-mi-cikiyor-h56223.html",
   "ozet": "Avusturya'da zorunlu askerlik süresinin dokuz aya çıkarılması planlanıyor. Ancak yeni araştırmaya göre gençlerin yüzde 54'ü mevcut altı aylık süreyi yeterli buluyor. Özellikle 17–18 yaş grubunda sivil hizmet daha fazla tercih edilirken, gençlerin yüzde 81'i Avusturya'nın tarafsız kalmasını istiyor.",
@@ -3398,5 +3374,21 @@
   "kategori": "Vorarlberg",
   "resim": "https://havadis.at/uploads/2026/11/07/200250_stadtgarage-dornbirn-am-einkaufsboulevard.jpg",
   "tarih": "2026-11-07T20:02:00+02:00"
+ },
+ {
+  "baslik": "Lustenau’da Vergi Adaleti Tartışması",
+  "link": "https://havadis.at/haber/lustenauda-vergi-adaleti-tartismasi-h56645.html",
+  "ozet": "Vorarlberg’in Lustenau kasabasında ikinci konutlardan alınan vergi, kasım ayı sonunda kaldırılıyor. Belediye, yaklaşık 2.600 dosyanın incelenmesi için 3.000 saatten fazla mesai harcandığını açıklarken muhalefet, diğer belediye ücretleri artırılırken mülk sahiplerine vergi kolaylığı sağlanmasını eleştirdi.",
+  "kategori": "Vorarlberg",
+  "resim": "https://havadis.at/uploads/2026/11/07/200806_lustenau-schafft-zweitwohnsitzabgabe-ab.jpg",
+  "tarih": "2026-11-07T20:07:00+02:00"
+ },
+ {
+  "baslik": "Dornbirn’de Doğum Faciası: Bebek Ömür Boyu Engelli Kaldı",
+  "link": "https://havadis.at/haber/dornbirnde-dogum-faciasi-bebek-omur-boyu-engelli-kaldi-h56646.html",
+  "ozet": "Dornbirn Hastanesinde 2023 yılında dünyaya gelen bir kız çocuğunun kalıcı ve ağır engelli olmasının ardından açılan davada çarpıcı bir gelişme yaşandı. Mahkeme bilirkişisi, doğum sırasında ciddi tıbbi hatalar yapıldığını ve bebeğin beyin hasarının büyük olasılıkla bu ihmallerden kaynaklandığını belirledi. Hastanenin bağlı olduğu Dornbirn Belediyesi ise suçlamaları reddediyor.",
+  "kategori": "Vorarlberg",
+  "resim": "https://havadis.at/uploads/2026/11/07/201331_krankenhaus-dornbirn_-gerichtlicher-fall.jpg",
+  "tarih": "2026-11-07T20:11:00+02:00"
  }
 ]
