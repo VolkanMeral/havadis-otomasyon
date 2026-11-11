@@ -1,16 +1,5 @@
 [
  {
-  "link": "https://havadis.at/haber/hohenemste-otobus-ile-traktor-carpisti-h56177.html",
-  "baslik": "Hohenems’te Otobüs ile Traktör Çarpıştı!",
-  "tur": "video",
-  "zaman": "2026-10-22T14:29:39+00:00",
-  "facebook_reel": "3205350219655282",
-  "instagram_reel": "18467986234186897",
-  "instagram_story": "17998717850825407",
-  "facebook_story": "1641805507319483",
-  "youtube": "rSXuJoavjws"
- },
- {
   "link": "https://havadis.at/haber/vorarlbergde-secim-harcamalarinda-usulsuzluk-ortaya-cikti-h56169.html",
   "baslik": "Vorarlberg’de Seçim Harcamalarında Usulsüzlük Ortaya Çıktı!",
   "tur": "gorsel",
@@ -4951,5 +4940,16 @@
   "instagram_hata": "Graph API hatası 400: {\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Kann nicht ver\\u00f6ffentlicht werden\",\"error_user_msg\":\"Die Medien k\\u00f6nnen noch nicht ver\\u00f6ffentlicht werden. Bitte wart",
   "instagram_story": "18101751641419709",
   "facebook_story": "992929426614031"
+ },
+ {
+  "link": "https://havadis.at/haber/alberschwendede-seyir-halindeki-otomobilin-uzerine-agac-devrildi-h56711.html",
+  "baslik": "Alberschwende’de Seyir Halindeki Otomobilin Üzerine Ağaç Devrildi!",
+  "tur": "video",
+  "zaman": "2026-11-11T10:20:42+00:00",
+  "facebook_reel": "29602889112628029",
+  "instagram_reel": "18645824515001278",
+  "instagram_story": "18116079091866044",
+  "facebook_story": "3100710310277403",
+  "youtube": "MBDZOPh22yE"
  }
 ]
