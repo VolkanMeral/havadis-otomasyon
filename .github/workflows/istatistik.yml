@@ -8,7 +8,7 @@ permissions:
 
 jobs:
   rapor:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     env:
       META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
