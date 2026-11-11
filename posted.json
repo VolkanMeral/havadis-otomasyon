@@ -1,13 +1,5 @@
 [
  {
-  "link": "https://havadis.at/haber/liechtensteinda-kadinlar-sokaga-cikiyor-h56178.html",
-  "baslik": "Liechtenstein’da Kadınlar Sokağa Çıkıyor",
-  "tur": "gorsel",
-  "zaman": "2026-10-22T14:13:27+00:00",
-  "facebook": "133738750106746_1781549830450127",
-  "instagram": "18011903186996499"
- },
- {
   "link": "https://havadis.at/haber/hohenemste-otobus-ile-traktor-carpisti-h56177.html",
   "baslik": "Hohenems’te Otobüs ile Traktör Çarpıştı!",
   "tur": "video",
@@ -4949,5 +4941,15 @@
   "instagram": "18122488405754628",
   "instagram_story": "17940643854122509",
   "facebook_story": "1873633643811422"
+ },
+ {
+  "link": "https://havadis.at/haber/vorarlbergde-bir-fabrika-daha-kuculuyor-h56712.html",
+  "baslik": "Vorarlberg’de Bir Fabrika Daha Küçülüyor",
+  "tur": "gorsel",
+  "zaman": "2026-11-11T10:09:43+00:00",
+  "facebook": "133738750106746_1805611128043997",
+  "instagram_hata": "Graph API hatası 400: {\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Kann nicht ver\\u00f6ffentlicht werden\",\"error_user_msg\":\"Die Medien k\\u00f6nnen noch nicht ver\\u00f6ffentlicht werden. Bitte wart",
+  "instagram_story": "18101751641419709",
+  "facebook_story": "992929426614031"
  }
 ]
