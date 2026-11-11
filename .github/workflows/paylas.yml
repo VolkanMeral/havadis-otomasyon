@@ -119,7 +119,7 @@ jobs:
 
       - name: Tarayıcıyı kur
         if: steps.kontrol.outputs.yeni == 'true'
-        run: python -m playwright install --with-deps chromium
+        run: python -m playwright install chromium && (timeout 240 python -m playwright install-deps chromium || echo "::warning::Sistem paketleri kurulamadı, hazır olanlarla devam")
 
       - name: Video aracını kur
         if: steps.kontrol.outputs.yeni == 'true'

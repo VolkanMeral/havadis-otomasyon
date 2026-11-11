@@ -31,7 +31,7 @@ jobs:
       - name: Kurulum
         run: |
           pip install -r requirements.txt piper-tts edge-tts
-          python -m playwright install --with-deps chromium
+          python -m playwright install chromium && (timeout 240 python -m playwright install-deps chromium || echo "::warning::Sistem paketleri kurulamadı, hazır olanlarla devam")
           which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
       - name: Türkçe Piper ses modelini indir
         if: inputs.ses == 'piper'
