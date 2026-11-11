@@ -1,21 +1,5 @@
 [
  {
-  "baslik": "Genci Yere Fırlatan Polise Soruşturma Kapatıldı",
-  "link": "https://havadis.at/haber/genci-yere-firlatan-polise-sorusturma-kapatildi-h56329.html",
-  "ozet": "Vorarlberg’de motosikletli bir gence yönelik sert polis müdahalesinin görüntüleri büyük tartışma yaratmıştı. Feldkirch Savcılığı, gencin yeniden kaçmasını önlemeye yönelik müdahaleyi orantılı bularak soruşturmayı kapattı.",
-  "kategori": "Vorarlberg",
-  "resim": "https://havadis.at/uploads/2026/10/27/173241_dirtbike-flucht-vor-polizeiwagen.jpg",
-  "tarih": "2026-10-27T17:31:00+02:00"
- },
- {
-  "baslik": "Raiffeisen’de Ülke Genelinde Teknik Sorun",
-  "link": "https://havadis.at/haber/raiffeisende-ulke-genelinde-teknik-sorun-h56330.html",
-  "ozet": "Raiffeisen Bank’ın dijital bankacılık hizmetlerinde Avusturya genelinde teknik aksaklık yaşandı. Mein ELBA uygulaması yeniden çalışmaya başlarken, arızanın nedeni araştırılıyor.",
-  "kategori": "Avusturya",
-  "resim": "https://havadis.at/uploads/2026/10/27/173517_banking-app-mit-warnsymbol-vor-raiffeisen-filiale.jpg",
-  "tarih": "2026-10-27T17:33:00+02:00"
- },
- {
   "baslik": "Vorarlberg Belediyeleri Borç Batağında!",
   "link": "https://havadis.at/haber/vorarlberg-belediyeleri-borc-bataginda-h56331.html",
   "ozet": "Vorarlberg, kişi başına belediye borcu ve bütçe açığında Avusturya’nın en yüksek rakamlarına ulaştı. 96 belediyeden 42’si mali sıkıntı yaşarken, eyalet yönetimi reform ve ek finansman sözü verdi.",
@@ -3166,5 +3150,13 @@
   "kategori": "Avusturya",
   "resim": "https://havadis.at/uploads/2026/11/10/222148_osterreichische-autobahn-mit-tempolimit-60.jpg",
   "tarih": "2026-11-10T22:20:00+02:00"
+ },
+ {
+  "baslik": "13 Yaşındaki Şüpheli Yine Saldırıyla Gündemde",
+  "link": "https://havadis.at/haber/13-yasindaki-supheli-yine-saldiriyla-gundemde-h56725.html",
+  "ozet": "Vorarlberg’in Rankweil kasabasında 64 yaşındaki bir adam, iki gencin saldırısına uğrayarak hastanelik oldu. Olayın şüphelileri 13 ve 15 yaşlarında iki çocuk çıktı. Polis, 13 yaşındaki şüphelinin Dornbirn’de 72 yaşındaki bir adamın ağır yaralandığı başka bir saldırıyla da bağlantılı olduğunu ve bu yıl 300’den fazla suça karıştığından şüphelenildiğini açıkladı.",
+  "kategori": "Vorarlberg",
+  "resim": "https://havadis.at/uploads/2026/11/11/163128_nchtlicher-polizeieinsatz-in-rankweil.jpg",
+  "tarih": "2026-11-11T16:31:00+02:00"
  }
 ]
