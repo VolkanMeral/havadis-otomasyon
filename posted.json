@@ -1,13 +1,5 @@
 [
  {
-  "link": "https://havadis.at/haber/gizemli-virus-ilk-vaka-olumle-sonuclandi-h56197.html",
-  "baslik": "Gizemli Virüs: İlk Vaka Ölümle Sonuçlandı",
-  "tur": "gorsel",
-  "zaman": "2026-10-23T13:11:33+00:00",
-  "facebook": "133738750106746_1782625650342545",
-  "instagram": "18107472182223849"
- },
- {
   "link": "https://havadis.at/haber/bregenze-yeni-genclik-ve-spor-merkezi-h56190.html",
   "baslik": "Bregenz’e Yeni Gençlik ve Spor Merkezi",
   "tur": "gorsel",
@@ -4951,5 +4943,16 @@
   "instagram": "18055746437818178",
   "instagram_story": "18390146413224599",
   "facebook_story": "1162154542995053"
+ },
+ {
+  "link": "https://havadis.at/haber/dornbirn-hastanesinde-dogum-skandali-iddiasi-bebekte-kalici-beyin-hasari-h56744.html",
+  "baslik": "Dornbirn Hastanesinde Doğum Skandalı İddiası: Bebekte Kalıcı Beyin Hasarı",
+  "tur": "video",
+  "zaman": "2026-11-12T16:20:41+00:00",
+  "facebook_reel": "1694729665320825",
+  "instagram_reel": "17982304517917066",
+  "instagram_story": "18171768262415448",
+  "facebook_story": "1512336514078186",
+  "youtube": "MH2VdJaVx3E"
  }
 ]
