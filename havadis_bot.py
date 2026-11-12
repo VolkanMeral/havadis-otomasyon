@@ -124,6 +124,8 @@ def _sayfa_anahtari(anahtar):
 
 ORIJINAL_TOKEN = PAGE_TOKEN
 PAGE_TOKEN = _sayfa_anahtari(PAGE_TOKEN)
+if os.getenv("GITHUB_ACTIONS") and PAGE_TOKEN:
+    print(f"::add-mask::{PAGE_TOKEN}", flush=True)  # türetilen sayfa anahtarı loglarda asla görünmesin
 
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 CLAUDE_MODEL = os.getenv("CLAUDE_MODEL", "claude-haiku-5-5")
