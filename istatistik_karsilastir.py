@@ -108,6 +108,9 @@ for metrik in ("page_impressions_unique", "page_media_view", "page_views_total",
 
 sonuc["hatalar"] = hatalar
 os.makedirs("rapor", exist_ok=True)
-json.dump(sonuc, open("rapor/karsilastirma.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+_metin = json.dumps(sonuc, ensure_ascii=False, indent=1)
+import re as _re  # güvenlik: rapora asla erişim anahtarı yazılmasın
+_metin = _re.sub(r"access_token=[A-Za-z0-9]+", "access_token=REDACTED", _metin)
+open("rapor/karsilastirma.json", "w", encoding="utf-8").write(_metin)
 print("IG medya:", len(sonuc["ig_medya"] or []), "FB gönderi:", len(sonuc["fb_gonderi"] or []),
       "FB metrik:", list(sonuc["fb_sayfa"]), "hatalar:", list(hatalar))

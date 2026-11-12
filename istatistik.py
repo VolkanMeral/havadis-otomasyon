@@ -78,5 +78,8 @@ for p in fb.get("data", []):
 sonuc["fb_sayfa"] = dene("fb_sayfa", lambda: al(bot.PAGE_ID, fields="name,followers_count,fan_count"))
 sonuc["hatalar"] = hatalar
 os.makedirs("rapor", exist_ok=True)
-json.dump(sonuc, open("rapor/istatistik.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+_metin = json.dumps(sonuc, ensure_ascii=False, indent=1)
+import re as _re  # güvenlik: rapora asla erişim anahtarı yazılmasın
+_metin = _re.sub(r"access_token=[A-Za-z0-9]+", "access_token=REDACTED", _metin)
+open("rapor/istatistik.json", "w", encoding="utf-8").write(_metin)
 print("IG:", len(sonuc["instagram"]), "FB:", len(sonuc["facebook"]), "hatalar:", list(hatalar))
