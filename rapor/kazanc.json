@@ -1,0 +1,3026 @@
+{
+ "zaman": "2026-11-13T16:59:38+00:00",
+ "hatalar": {},
+ "content_monetization_earnings": [
+  {
+   "gun": "2026-11-02",
+   "deger": {
+    "currency": "USD",
+    "microAmount": 1624013700
+   }
+  },
+  {
+   "gun": "2026-11-03",
+   "deger": {
+    "currency": "USD",
+    "microAmount": 1055006800
+   }
+  },
+  {
+   "gun": "2026-11-04",
+   "deger": {
+    "currency": "USD",
+    "microAmount": 1381000000
+   }
+  },
+  {
+   "gun": "2026-11-05",
+   "deger": {
+    "currency": "USD",
+    "microAmount": 1154013300
+   }
+  },
+  {
+   "gun": "2026-11-06",
+   "deger": {
+    "currency": "USD",
+    "microAmount": 950013800
+   }
+  },
+  {
+   "gun": "2026-11-07",
+   "deger": {
+    "currency": "USD",
+    "microAmount": 1520013400
+   }
+  },
+  {
+   "gun": "2026-11-08",
+   "deger": {
+    "currency": "USD",
+    "microAmount": 1338017000
+   }
+  },
+  {
+   "gun": "2026-11-09",
+   "deger": {
+    "currency": "USD",
+    "microAmount": 2038000000
+   }
+  },
+  {
+   "gun": "2026-11-10",
+   "deger": {
+    "currency": "USD",
+    "microAmount": 1307000500
+   }
+  },
+  {
+   "gun": "2026-11-11",
+   "deger": {
+    "currency": "USD",
+    "microAmount": 1186000200
+   }
+  },
+  {
+   "gun": "2026-11-12",
+   "deger": {
+    "currency": "USD",
+    "microAmount": 1428000200
+   }
+  },
+  {
+   "gun": "2026-11-13",
+   "deger": {
+    "currency": "USD",
+    "microAmount": 1442000000
+   }
+  },
+  {
+   "gun": "2026-11-14",
+   "deger": {
+    "currency": "USD",
+    "microAmount": 628000000
+   }
+  }
+ ],
+ "monetization_approximate_earnings": [
+  {
+   "gun": "2026-11-02",
+   "deger": 16.240137
+  },
+  {
+   "gun": "2026-11-03",
+   "deger": 10.550068
+  },
+  {
+   "gun": "2026-11-04",
+   "deger": 13.81
+  },
+  {
+   "gun": "2026-11-05",
+   "deger": 11.540133
+  },
+  {
+   "gun": "2026-11-06",
+   "deger": 9.500138
+  },
+  {
+   "gun": "2026-11-07",
+   "deger": 15.200134
+  },
+  {
+   "gun": "2026-11-08",
+   "deger": 13.38017
+  },
+  {
+   "gun": "2026-11-09",
+   "deger": 21.67
+  },
+  {
+   "gun": "2026-11-10",
+   "deger": 14.360005
+  },
+  {
+   "gun": "2026-11-11",
+   "deger": 11.860002
+  },
+  {
+   "gun": "2026-11-12",
+   "deger": 14.280002
+  },
+  {
+   "gun": "2026-11-13",
+   "deger": 14.42
+  },
+  {
+   "gun": "2026-11-14",
+   "deger": 6.28
+  }
+ ],
+ "gonderi_sayisi": 297,
+ "gonderiler": [
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya'da Bugün Ne Kutlanıyor?",
+   "zaman": "2026-11-01T06:14:03+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 49000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Dornbirn'de Bisikletli Ağır Yaralandı",
+   "zaman": "2026-11-01T06:26:55+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Grass'ta Zorlu Süreç: Çalışan Sayısı Azalıyor",
+   "zaman": "2026-11-01T06:38:52+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 130000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Almanya'da Sokaklar Karıştı: Yağma ve Şiddet Olayları",
+   "zaman": "2026-11-01T07:08:48+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 5000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Viyana'da Cadılar Bayramı Gergin Geçti: 5 Gözaltı",
+   "zaman": "2026-11-01T07:20:06+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Doğum Sonrası Her Anne Mutlu Olmayabilir",
+   "zaman": "2026-11-01T07:36:45+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 25000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "AB Dışından Gelen Paketlere 2 Euro Ek Ücret",
+   "zaman": "2026-11-01T08:10:53+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 5000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg'de 4 Bin Kişi Tek Tuşla Yardım Çağırıyor",
+   "zaman": "2026-11-01T08:37:19+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 55000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Almanya'da Büyük Grev Dalgası",
+   "zaman": "2026-11-01T09:08:49+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 30000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Friedrichshafen'da Büyük Polis Operasyonu",
+   "zaman": "2026-11-01T09:19:36+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg Polis Teşkilatının Nazi Geçmişi Gün Yüzüne Çıktı",
+   "zaman": "2026-11-01T09:36:25+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 30000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg'de 400 Milyon Euroluk Projeye Çevre Engeli",
+   "zaman": "2026-11-01T10:09:01+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 55000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg'de Araçların Üzerine Kayalar Düştü",
+   "zaman": "2026-11-01T10:36:40+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 37000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya'da Sabah Saatlerinde Deprem!",
+   "zaman": "2026-11-01T11:09:11+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 20000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Feldkirch'te Benzin İstasyonuna Gece Yarısı Hırsızlık Girişimi",
+   "zaman": "2026-11-01T11:36:53+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 17000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya'da Kira Yardımına Zam: Yılda 618 Euroya Kadar Artış",
+   "zaman": "2026-11-01T12:12:15+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 15000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya'da Çocuklara 500 Euro Destek",
+   "zaman": "2026-11-01T12:22:46+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Ambergtunnel'de Araç Alev Alev Yandı: 6 Kişi Kurtuldu",
+   "zaman": "2026-11-01T12:36:23+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 7000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "AMS'den 250 Bin Kişiye 2.500 Euroya Kadar Geri Ödeme",
+   "zaman": "2026-11-01T13:08:25+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 41000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya Üniversitelerinde Bütçe Krizi: Her 10 İşten Biri Risk Altında",
+   "zaman": "2026-11-01T13:19:51+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Kasım Ayıyla Birlikte Kar Geliyor",
+   "zaman": "2026-11-01T14:08:32+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 12000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Viyana'nın Atık Sularında 150 Farklı Virüs",
+   "zaman": "2026-11-01T15:08:00+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 15000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "İki Genç Aynı Kazada Hayatını Kaybetti",
+   "zaman": "2026-11-01T15:19:30+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya'da Şirket Araçları İçin Vergi Kararı",
+   "zaman": "2026-11-01T16:08:56+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 118000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Lustenau'da İki Ölüm Sonrası Güvenlik Alarmı",
+   "zaman": "2026-11-01T17:07:19+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 31000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Bregenz'de 500 Park Yeri Kaldırılıyor",
+   "zaman": "2026-11-01T17:36:44+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 50000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Salzburg'da Büyük Elektrik Kesintisi: 2 Bin Hane Elektriksiz Kaldı!",
+   "zaman": "2026-11-01T18:09:59+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 9000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Viyana'da Soyguncu Cüzdanını Düşürünce Yakalandı!",
+   "zaman": "2026-11-01T18:20:43+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Hospiz Hizmetlerinde Gönüllü İhtiyacı",
+   "zaman": "2026-11-01T18:37:10+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 12000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Üç Otomobil Çarpıştı, 8 Kişi Hastanelik Oldu",
+   "zaman": "2026-11-01T19:07:32+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 17000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Otomobilde Sigara Yaktı, Araç Havaya Uçtu!",
+   "zaman": "2026-11-01T19:20:00+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Cinayete Teşebbüsten Aranıyor!",
+   "zaman": "2026-11-01T20:08:19+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 33000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "FPÖ'ye Askerî Çadır Soruşturması",
+   "zaman": "2026-11-02T06:19:33+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 9000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya'da Feci Kaza: 4'ü Ağır 5 Yaralı!",
+   "zaman": "2026-11-02T07:11:33+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 15000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya'da Sağlık Sorunu Olan Çalışanlara Yeni Plan",
+   "zaman": "2026-11-02T07:22:36+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "A14'te Can Pazarı: Bir Saatlik Müdahaleyle Hayata Döndürüldü!",
+   "zaman": "2026-11-02T07:36:58+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 60000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Bregenz'de Gizemli Audi!",
+   "zaman": "2026-11-02T08:37:17+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 367000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "2027'de Fazla Mesaiye Daha Fazla Vergi!",
+   "zaman": "2026-11-02T09:13:22+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 58000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Vorarlberg'in Unutulmayan Polis Skandalı: 18 Gün Hücrede Unutuldu!",
+   "zaman": "2026-11-02T09:24:35+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg'de ÖGK'nın Hastalık İzni Kontrolleri Artıyor!",
+   "zaman": "2026-11-02T09:37:10+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 57000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Kasiyerlerin İşini Zorlaştıran Alışkanlıklar",
+   "zaman": "2026-11-02T10:10:10+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 14000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Trafik Cezası Vatandaşlığa Engel Sayılmadı",
+   "zaman": "2026-11-02T10:37:38+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 62000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya'da Isınma Masrafları Artıyor: Yıllık 500 Euro Ek Yük!",
+   "zaman": "2026-11-02T11:09:54+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 42000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya'da 35.700 Kişiye Yardım Kesintisi",
+   "zaman": "2026-11-02T12:13:31+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 11000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Trafik Kazalarında 58. Can Kaybı",
+   "zaman": "2026-11-02T12:26:24+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "FPÖ'den Anaokullarında Domuz Eti Zorunluluğu Önerisi!",
+   "zaman": "2026-11-02T13:11:03+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 105000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya'da Araç Sahiplerine Kötü Haber: 2027'de Masraflar Artıyor!",
+   "zaman": "2026-11-02T13:21:21+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Kasım Maaşlarına Dikkat: 26,85 Euro Kesinti",
+   "zaman": "2026-11-02T14:11:40+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 94000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya'da Araç Tescil Sistemi Çöktü!",
+   "zaman": "2026-11-02T15:10:43+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 31000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Soğuk Havalarda Gizli Tehlike: Susuzluk",
+   "zaman": "2026-11-02T15:21:09+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Gençlerin Protestoları Avrupa'yı Karıştırdı: Yağma, Yangın ve Yüzlerce Gözaltı",
+   "zaman": "2026-11-02T16:10:21+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 13000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Isıtma Sistemini Değiştirene 6.000 Euro",
+   "zaman": "2026-11-02T16:22:27+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya'da Yeni Maaşlar ve Zam Oranları Açıklandı",
+   "zaman": "2026-11-03T06:15:23+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 58000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Messepark İçin 200 Restoran Başvurusu",
+   "zaman": "2026-11-03T06:40:50+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 106000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg’de 55 Yaş Üstü İşsizlere İş Bulmak Giderek Zorlaşıyor",
+   "zaman": "2026-11-03T07:10:38+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 55000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Zengin-Fakir Uçurumu Büyüyor",
+   "zaman": "2026-11-03T07:21:12+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg'de MR Randevusu İçin Bekleme Süresi 36 Güne Çıktı",
+   "zaman": "2026-11-03T07:37:19+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 17000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya'da Vape Alarmı!",
+   "zaman": "2026-11-03T08:14:05+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 47000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "A14'te Araç Arızası Kilometrelerce Kuyruk Oluşturdu",
+   "zaman": "2026-11-03T08:37:24+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 33000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Haftalardır Havalimanında Yaşıyor: Kim Olduğu Bilinmiyor!",
+   "zaman": "2026-11-03T09:09:33+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 13000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya'da 60 Yaş Üstü Çalışanlar İçin Yeni Prim ve Ceza Sistemi",
+   "zaman": "2026-11-03T09:21:15+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg'de Kayak Sezonu Başlıyor: İşte Açılış Tarihleri",
+   "zaman": "2026-11-03T09:37:28+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 3000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da 2027’de Reçete Ücretlerine Yeni Düzenleme",
+   "zaman": "2026-11-03T10:10:00+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 32000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "ÖGK'da 168 Şikâyet, Yanıtlanamayan Sorular",
+   "zaman": "2026-11-03T10:19:18+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg'de İşsizlik Artıyor: 12 Bin Kişi İş Arıyor",
+   "zaman": "2026-11-03T10:37:11+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 46000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya'da Tesla Kararı: Ehliyet Cezası Değişti",
+   "zaman": "2026-11-03T11:09:14+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 120000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg'de Özel Ders Masrafı 9 Milyon Euroya Ulaştı!",
+   "zaman": "2026-11-03T11:36:57+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 14000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "48 Yaşındaki İşçi Beton Blokların Altında Kaldı",
+   "zaman": "2026-11-03T12:12:53+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 95000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "18 Yaşındaki Gence Arkadan Bıçaklı Saldırı",
+   "zaman": "2026-11-03T12:25:15+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Aileler Dikkat: Çikolatalara Çivi Yerleştirmişler",
+   "zaman": "2026-11-03T13:11:44+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 149000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya'da Hanelere 7 Günlük Erzak Tavsiyesi",
+   "zaman": "2026-11-03T13:20:24+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "A2 Otoyolunda Feci Kaza: Bir Ölü",
+   "zaman": "2026-11-03T14:10:00+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 5000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Dornbirn'de Nazi Döneminin Polisleri Anlatılacak",
+   "zaman": "2026-11-03T14:37:34+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 82000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Nazi Selamı Veren Şahsa 1.200 Euro Ceza",
+   "zaman": "2026-11-03T15:09:15+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 13000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya'da Haczedilemeyen Maaş Tutarı Artıyor",
+   "zaman": "2026-11-03T15:21:31+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Bludenz'de Bankamatik Başında Soygun",
+   "zaman": "2026-11-03T15:38:41+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 14000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya'da Fiş Kuralları Değişti: Artık Dijital Fiş Dönemi!",
+   "zaman": "2026-11-03T16:10:55+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 55000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya'ya Aile Birleşimi Uyarısı",
+   "zaman": "2026-11-03T16:20:45+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Bregenz'de 13 Yaşındaki Çocuk İki Polisi Yaraladı",
+   "zaman": "2026-11-03T16:37:25+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 32000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Teletext'e İnternet Bile Engel Olamadı!",
+   "zaman": "2026-11-03T17:10:10+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 34000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Çinli Dev MediaMarkt'ı Satın Alıyor",
+   "zaman": "2026-11-03T18:10:38+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 112000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Spar, Billa ve Lidl'den Siber Saldırı Açıklaması",
+   "zaman": "2026-11-03T18:22:52+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "AMS'den 135 Milyon Euro Geri Ödeme: Maliye Bakanından Açıklama",
+   "zaman": "2026-11-03T19:08:42+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 26000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Bavyera'da 18 Yaşındaki Genç Aranıyor",
+   "zaman": "2026-11-03T19:20:51+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "AMS Başkanı: “Hepimiz Daha Uzun Çalışmak Zorunda Kalacağız”",
+   "zaman": "2026-11-03T20:10:50+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 35000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg'de Otobüs Seferleri Azaltılıyor",
+   "zaman": "2026-11-04T09:36:34+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 72000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Hard'da Rus Müzik Grubunun Barış Konseri İptal Edildi",
+   "zaman": "2026-11-04T10:11:15+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 27000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "İşsizlik Maaşı Ne Zaman Yatacak?",
+   "zaman": "2026-11-04T10:22:40+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg'de Hafta Sonu Hava Nasıl Olacak?",
+   "zaman": "2026-11-04T10:37:37+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 21000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya'da Kira ve Enerji Borcu Olanlara Devlet Desteği",
+   "zaman": "2026-11-04T11:09:37+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 14000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya'da Ailelere Acil Şekerleme Uyarısı",
+   "zaman": "2026-11-04T12:13:08+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 57000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Viyana'da İki Çocuk Annesi Kadın Öldürüldü",
+   "zaman": "2026-11-04T12:24:59+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Dornbirn'de İndirim Günleri Başlıyor",
+   "zaman": "2026-11-04T12:38:13+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 35000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "AMS, İşsizlere Üç Yıllık Maaş Farkını Geri Ödeyecek",
+   "zaman": "2026-11-04T13:09:27+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 288000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Lauterach'ta Trafik Kazası: Bir Yaralı",
+   "zaman": "2026-11-04T13:37:22+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 45000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avrupa Semalarında Bomba Paniği!",
+   "zaman": "2026-11-04T14:10:48+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 36000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Feldkirch'te Kiralık Araç Davası",
+   "zaman": "2026-11-04T14:37:19+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 13000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya'da Maaş Pazarlığı: İşverenlerden Yüzde 2,1 Zam Teklifi",
+   "zaman": "2026-11-04T15:12:21+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 160000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya'da Erkekler Kadınlardan Neden Daha Erken Ölüyor?",
+   "zaman": "2026-11-04T15:22:02+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Çocuk Suçlarına Karşı Daha Sert Önlem Çağrısı",
+   "zaman": "2026-11-04T15:37:35+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 5000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "ABD Senatosunda Bir İlk: Müslüman Senatör",
+   "zaman": "2026-11-04T16:09:22+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 23000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "SOS Mitmensch'ten Vatandaşlık Çağrısı",
+   "zaman": "2026-11-04T16:20:14+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "AK Vorarlberg'de Gizlenen Rapor Tartışması",
+   "zaman": "2026-11-04T16:38:30+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 51000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya'da Bakım Parası Artıyor: 2027'de Kim Ne Kadar Alacak?",
+   "zaman": "2026-11-04T17:10:02+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 50000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Red Bull ve Rauch İçin 17 Hektar Orman Kesiliyor",
+   "zaman": "2026-11-04T18:09:58+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 33000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "ÖGK'da 156 Milyon Euro Zarar",
+   "zaman": "2026-11-04T18:21:48+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avrupa'da Kış Lastiği Kuralları: Nerede Ne Zorunlu?",
+   "zaman": "2026-11-04T19:06:52+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 51000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avrupa'da Siber Saldırı: Evleriniz de Risk Altında",
+   "zaman": "2026-11-04T19:19:26+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg Sanayisinde Kriz Derinleşiyor: İşe Alımlar Durdu!",
+   "zaman": "2026-11-04T19:48:24+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 127000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg'de İkinci El Kayak Malzemelerine Yoğun İlgi!",
+   "zaman": "2026-11-04T20:10:40+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 38000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Hohenems'e 2 Milyar Avroluk Dev Teknoloji Yatırımı",
+   "zaman": "2026-11-04T20:37:03+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 29000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya'da Direksiyon Başında Telefon Kullananlara Yeni Radar Önerisi",
+   "zaman": "2026-11-05T06:14:36+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 73000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya'da Elektrik Üretimi Düştü, Tüketim Arttı",
+   "zaman": "2026-11-05T06:29:32+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "BMW'nin Kârı 1,45 Milyar Euroya Geriledi",
+   "zaman": "2026-11-05T07:09:45+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 6000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya'da Enflasyon Yüzde 3,6 Açıklandı",
+   "zaman": "2026-11-05T07:20:35+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg'den Viyana'ya Rest: “Baskıyı Artıracağız”",
+   "zaman": "2026-11-05T08:14:31+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 14000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da Doğalgaz Fiyatları Üçe Katlandı: Hanelere Yeni Zam Uyarısı!",
+   "zaman": "2026-11-05T09:10:36+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 116000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya’da Otoban Vinyetinde Yeni Dönem: 2027’den İtibaren Sadece Dijital Olacak",
+   "zaman": "2026-11-05T09:21:57+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "2027’de Eczanelerde Aşı Yapılacak",
+   "zaman": "2026-11-05T10:10:59+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 7000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "St. Gallen’de İki Otomobil Çarpıştı, Biri Tren Raylarına Savruldu",
+   "zaman": "2026-11-05T10:20:20+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Dornbirn’de Otel Havuzunda Korku Dolu Anlar: 8 Yaşındaki Çocuk Ölümden Döndü",
+   "zaman": "2026-11-05T10:37:29+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 35000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Dizel Fiyatlarında Rekor Fark: ÖAMTC Akaryakıt Fiyatlarının İncelenmesini İstiyor",
+   "zaman": "2026-11-05T11:09:26+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 19000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Baba ve 2 Yaşındaki Oğlu Ölü Bulundu",
+   "zaman": "2026-11-05T12:12:55+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 81000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya Ekonomi Odası 200 Kişiyi İşten Çıkaracak",
+   "zaman": "2026-11-05T12:26:03+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Bosch'ta 23 Bin Kişiyi Aşan İşten Çıkarma Planı",
+   "zaman": "2026-11-05T13:09:54+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 59000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Demiryolu Çalışanlarına Zam Pazarlığı Çıkmaza Girdi",
+   "zaman": "2026-11-05T13:20:16+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Alman Bakan Otel Odasında Ölü Bulundu",
+   "zaman": "2026-11-05T14:10:09+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 14000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Prostat Kanserinde Erken Teşhis Hayat Kurtarabilir",
+   "zaman": "2026-11-05T15:09:28+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 59000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "14 Yaşındaki Sanık Suçlamaları Reddetti",
+   "zaman": "2026-11-05T16:11:08+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 14000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya Ordusunda Asker Alarmı",
+   "zaman": "2026-11-05T16:22:50+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da Her Yıl 30 Kişi Alkollü Trafik Kazalarında Ölüyor",
+   "zaman": "2026-11-05T16:43:38+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 10000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Arkadaşını Bıçaklayarak Öldürdü",
+   "zaman": "2026-11-05T17:09:03+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 12000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Bregenz’de Gece Yarısı Polis Kovalamacası",
+   "zaman": "2026-11-05T17:36:28+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 25000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Sağlığınıza bugünden yatırım yapın: Hard’da kişiye özel destek",
+   "zaman": "2026-11-05T18:11:48+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 63000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya’da Josef Fritzl’e Bir Kez Daha Tahliye Reddi!",
+   "zaman": "2026-11-05T18:22:44+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg’de Lüks Otomobil Operasyonu: 100 Milyon Avroluk Vergi Vurgunu!",
+   "zaman": "2026-11-05T18:37:27+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 44000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da Noel İkramiyesi Sürprizi: 2026’da Kim Ne Kadar Alacak?",
+   "zaman": "2026-11-05T19:07:54+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 123000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya’da Aile Yardımları Yarın Hesaplara Yatıyor!",
+   "zaman": "2026-11-05T19:20:15+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da 2 Bin Çocuğun Sağlık Güvencesi Yok",
+   "zaman": "2026-11-05T20:09:55+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 20000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da 2027’de Yeni Depozito Düzenlemesi: Neler Değişecek?",
+   "zaman": "2026-11-06T06:15:41+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 135000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Maaşlarda Şeffaflık: Avusturya AB Süresini Kaçırdı",
+   "zaman": "2026-11-06T06:28:19+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da Rahat Yaşam İçin 4.568 Avro: Bu Rakam Ne Anlama Geliyor?",
+   "zaman": "2026-11-06T07:09:29+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 123000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Evden İş Vaadiyle Milyonluk Vurgun!",
+   "zaman": "2026-11-06T07:20:23+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da Halloween Şekerleriyle İlgili Şaşırtıcı Gelişme",
+   "zaman": "2026-11-06T08:12:06+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 5000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Yapay Zekâyla Sahte Pickerl Yaptı, Cezası Ağır Oldu!",
+   "zaman": "2026-11-06T08:36:51+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 88000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da 9 Adrese Eş Zamanlı Operasyon",
+   "zaman": "2026-11-06T09:10:49+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 23000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Hohenems’te Dev Veri Merkezi Planı: Gözler Enerji Tüketiminde",
+   "zaman": "2026-11-06T10:09:34+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 62000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "SPÖ’de Büyük Oy Kaybı: Babler Döneminde Yarım Milyon Seçmen Uzaklaştı!",
+   "zaman": "2026-11-06T10:20:04+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Dornbirn’de 5 Bin Euroluk Danışman Krizi",
+   "zaman": "2026-11-06T10:37:26+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 15000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Ambalaj Başka, İçerik Başka: Avusturya’da Tüketicilere Oylama Çağrısı",
+   "zaman": "2026-11-06T11:09:24+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 30000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Bregenz’de Acı Veda: Kasap Ustası Ailesiyle Türkiye’ye Gitmek Zorunda Kaldı",
+   "zaman": "2026-11-06T11:36:04+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 718000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da 2027 Vergi Değişiklikleri: Kim Daha Fazla Ödeyecek, Kim Kazanacak?",
+   "zaman": "2026-11-06T12:12:31+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 39000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya’da TIR Geçişlerine Zam Gündemde!",
+   "zaman": "2026-11-06T12:24:49+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’ya Kasım Ortasında Kar Sürprizi: Hava Tahminleri Değişti!",
+   "zaman": "2026-11-06T13:09:08+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 38000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Lustenau’da 2 Yıllık Soygun Dosyasında Gözaltı!",
+   "zaman": "2026-11-06T13:45:00+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 18000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da Uzun Yaşamın Sırrı Araştırıldı: Sağlıklı Yaşlanmak İçin Neler Yapılmalı?",
+   "zaman": "2026-11-06T14:10:16+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 8000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da Sağlık Sistemine Güven Sarsılıyor!",
+   "zaman": "2026-11-06T15:09:04+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 19000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya’da Paket Vergisine Tüketici Tepkisi",
+   "zaman": "2026-11-06T15:19:24+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Hörbranz’daki Krone, Volkan Özgün ile Yeniden Açılıyor",
+   "zaman": "2026-11-06T16:09:54+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 213000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Feldkirch’te Ölüm Tehdidine Mahkûmiyet",
+   "zaman": "2026-11-06T16:45:41+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 127000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "“Otel Havuzundaki Korkunç Kazaya Soruşturma”",
+   "zaman": "2026-11-06T17:45:57+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 19000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "60’lık Yolda 160’la Gitti, Aracından Oldu!",
+   "zaman": "2026-11-06T18:12:11+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 172000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Frastanz’da Apartman Yangını: 2 Yaralı, 14 Kişi Tahliye Edildi",
+   "zaman": "2026-11-06T18:22:51+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "18 Yaşındaki Genç Dağda Ölü Bulundu",
+   "zaman": "2026-11-06T19:33:01+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Gençler Doktora Değil, Fenomenlere Güveniyor!",
+   "zaman": "2026-11-07T06:13:10+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 35000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya’da 2027 Zam Dalgası: Su, Çöp, Isınma ve Ulaşım Pahalanıyor",
+   "zaman": "2026-11-07T06:25:33+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "A2’de Ölümcül Kaza: Kurtarma Saatler Sürdü",
+   "zaman": "2026-11-07T07:09:21+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 50000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "B210’da Feci Kaza: Bir Ölü",
+   "zaman": "2026-11-07T07:19:28+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Schönbrunn’a Arabayla Gidecekler Dikkat!",
+   "zaman": "2026-11-07T08:11:01+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 12000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "İsviçre’de Otomobil Dereye Uçtu: Sürücü Ölümden Döndü",
+   "zaman": "2026-11-07T09:08:56+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 11000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Feldkirch Hastanesinde Torpil İddiası: Gözler Üst Yönetimde",
+   "zaman": "2026-11-07T09:36:35+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 45000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "İsrail’in içinden yükselen çağrı Innsbruck’ta: Filistinlilerin geri dönüş hakkı",
+   "zaman": "2026-11-07T10:08:07+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 54000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Seyahat Edecekler Dikkat: 15 Ülkede Risk Arttı!",
+   "zaman": "2026-11-07T10:19:20+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Hohenems’te Dev Veri Merkezi: 125 Bin Hanenin Elektriğini Tüketebilir!",
+   "zaman": "2026-11-07T10:36:11+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 77000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Gökyüzünden Otoyola Düştüler: İki Kişi Öldü",
+   "zaman": "2026-11-07T11:06:52+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 24000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Hard Limanı’nda Aileye Devir Ayrıcalığı",
+   "zaman": "2026-11-07T11:36:08+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 30000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Almanya’da Feci Kaza: İki Ölü, İki Ağır Yaralı!",
+   "zaman": "2026-11-07T12:22:38+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Hard’da Korkutan Kaza: Araç Hurdaya Döndü!",
+   "zaman": "2026-11-07T12:36:03+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 56000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Eyaletlerden Hükümete 2027 Çağrısı",
+   "zaman": "2026-11-07T13:19:32+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Feldkirch Cezaevinde Alarm: Mahkûm Sayısı Kapasiteyi Aştı",
+   "zaman": "2026-11-07T13:36:20+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 48000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avrupa’da Bomba Alarmı!",
+   "zaman": "2026-11-07T14:07:41+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 17000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Aynı Ürün, Farklı Fiyat: Avusturya’da Alışveriş Daha Pahalı",
+   "zaman": "2026-11-07T15:18:56+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Dornbirn’de 7 Milyon Euroluk Yatırım Kendini Amorti Etti",
+   "zaman": "2026-11-07T19:07:15+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 148000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Dornbirn’de Doğum Faciası: Bebek Ömür Boyu Engelli Kaldı",
+   "zaman": "2026-11-07T19:19:14+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Yeni Messepark İçin Vatandaşların Tercihi: Zara, Primark ve KFC Öne Çıktı",
+   "zaman": "2026-11-07T19:35:58+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 485000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da 2027’de Yarı Zamanlı Çalışanların Net Maaşı Artacak",
+   "zaman": "2026-11-07T20:08:20+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 355000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Lustenau’da Vergi Adaleti Tartışması",
+   "zaman": "2026-11-07T20:36:12+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 75000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "2027’de Bakım Masraflarına Vergi Kolaylığı",
+   "zaman": "2026-11-08T06:13:43+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 6000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya’da Ehliyetler Değişiyor: Son Tarih Açıklandı",
+   "zaman": "2026-11-08T06:25:52+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Götzis’te Yangın Paniği: 140 İtfaiyeci Seferber Oldu",
+   "zaman": "2026-11-08T06:38:58+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 71000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Elektrikli Araç Sahiplerine Yeni Maliyet Uyarısı",
+   "zaman": "2026-11-08T07:09:58+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 73000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Amazon Müşterileri Dikkat: Ödeme Sistemi Değişiyor!",
+   "zaman": "2026-11-08T07:19:07+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "İsviçre’de Polisten Kaçış Faciaya Dönüştü",
+   "zaman": "2026-11-08T08:10:35+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 55000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg’i Sarsan Köpek Kasabı Hikâyesi",
+   "zaman": "2026-11-08T10:08:06+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 50000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Tirol’de Korkunç Patlama: 11 Yaşındaki Çocuğun Parmakları Koptu",
+   "zaman": "2026-11-08T10:19:39+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg’de Demans Hastaları İçin Polise Özel Eğitim",
+   "zaman": "2026-11-08T10:36:17+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 32000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da Çöp Kuralları Sertleşebilir",
+   "zaman": "2026-11-08T11:07:43+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 76000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg’de Odunla Isınmaya İlgi Artıyor: Fiyatlar Sabit Kaldı",
+   "zaman": "2026-11-08T11:36:31+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 35000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da Familienbonus Plus Değişiyor: Bazı Aileler Vergi Avantajını Tam Kullanamayabilir!",
+   "zaman": "2026-11-08T12:11:30+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 21000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya’da Tarantula Hareketliliği",
+   "zaman": "2026-11-08T12:22:37+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Austria Wien’den Acun Ilıcalı İddialarına Yalanlama",
+   "zaman": "2026-11-08T13:08:18+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 17000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya’da Konut İnşaatı 14 Yılın En Düşük Seviyesinde!",
+   "zaman": "2026-11-08T13:18:38+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da Emeklilere Yeni Vergi Avantajı: Peki Kimler Dışarıda Kalacak?",
+   "zaman": "2026-11-08T14:08:14+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 207000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da Çocuk Başına 240 Euro Destek: 4.500 Başvuru Hâlâ Sonuç Bekliyor!",
+   "zaman": "2026-11-08T15:07:36+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 371000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Reçete Ücretlerinde Yeni Dönem: Daha Az Ödeme",
+   "zaman": "2026-11-08T15:18:59+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Erkekler Dikkat: Prostat Kanserinde Erken Teşhis İçin Özel Gece",
+   "zaman": "2026-11-08T16:09:11+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 203000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Innsbruck’ta Kontrollü Uyuşturucu Kullanım Merkezi Planı",
+   "zaman": "2026-11-08T16:19:30+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Polonya’da Kanlı Saldırı: 6 Kişi Öldü, Şüphelinin Evinde 3 Ceset Daha Bulundu",
+   "zaman": "2026-11-08T17:06:59+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 39000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da KDV Kuralları Değişiyor",
+   "zaman": "2026-11-08T18:09:32+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 13000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "2027’de Evden Çalışma Ödeneğine Vergi Geliyor",
+   "zaman": "2026-11-08T19:06:58+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 75000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "IGMG Genel Başkanlığına Murat İleri seçildi",
+   "zaman": "2026-11-08T19:57:48+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 317000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Viyana Polisi Harekete Geçti: 25 Yıl Önce Kaybolan Bu Adam Kim?",
+   "zaman": "2026-11-09T06:18:56+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 84000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Grip Sonrası Bu Belirtiler Varsa Kalbiniz Tehlikede Olabilir!",
+   "zaman": "2026-11-09T06:35:23+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Lauterach’ta Korkutan Yangın",
+   "zaman": "2026-11-09T06:48:44+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 31000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Dornbirn Schwefel’de Trafik Kazası",
+   "zaman": "2026-11-09T07:11:53+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 78000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Hohenems’i Havaya Uçurmakla Tehdit Eden Şahsa Hapis Cezası",
+   "zaman": "2026-11-09T16:37:01+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 35000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "200 Yıllık Meslek Teknolojiye Direniyor",
+   "zaman": "2026-11-09T17:09:16+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 47000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg’de Evsizler İçin Alarm: Acil Barınma Merkezleri Yıl Boyunca Dolu!",
+   "zaman": "2026-11-09T17:37:38+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 22000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Götzis’te Ölümcül Kaza",
+   "zaman": "2026-11-09T18:36:49+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 97000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "St. Gallen’de Kafa Kafaya Çarpışma: Kadının Durumu Ağır",
+   "zaman": "2026-11-09T19:07:03+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 30000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Sıcak Yazın Ardından Alplerde Çığ Tehlikesi",
+   "zaman": "2026-11-09T19:19:54+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Bregenz’de Reçeteyle Müze Ziyareti",
+   "zaman": "2026-11-09T19:36:53+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 95000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Dornbirn Belediyesi’ne Maliye Şoku: 36.800 Euro Vergi Talebi",
+   "zaman": "2026-11-09T20:37:08+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 124000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Hackerlar Brenner Tüneli’nden Fidye İstiyor!",
+   "zaman": "2026-11-10T06:13:42+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 62000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Üç Gün Bagajda Esir Tutuldu!",
+   "zaman": "2026-11-10T06:28:41+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Çocukları Hedef Alan Gizli Ağlara Dikkat!",
+   "zaman": "2026-11-10T07:10:23+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 39000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya’ya Sigara Getirenler Dikkat!",
+   "zaman": "2026-11-10T07:19:51+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "13 Yaşındaki Kızın Ölümünde Korkunç Şüphe!",
+   "zaman": "2026-11-10T08:11:44+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 63000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg’de Kan Bağışçıları Yaşlanıyor: Kızılhaç Gençlere Çağrı Yapıyor",
+   "zaman": "2026-11-10T11:11:26+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 49000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "16 Dereceden 3 Dereceye: Vorarlberg’de Hava Sert Değişecek",
+   "zaman": "2026-11-10T11:56:31+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 69000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da Ailelere Kötü Haber: 2027’de Maddi Destekler Azalıyor!",
+   "zaman": "2026-11-10T12:30:58+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 85000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Rankweil’de İki Araç Çarpıştı: Sabah Trafiği Kilitlendi!",
+   "zaman": "2026-11-10T12:38:18+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 40000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Yapay Zekâ Vodafone’da İşleri Devralıyor",
+   "zaman": "2026-11-10T13:18:33+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 10000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg’de Anneler İçin Üç Hastanede Özel Sağlık Takibi",
+   "zaman": "2026-11-10T13:37:37+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 17000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Bregenz’de Türkçe Demans Konferansı: Ailelere Önemli Davet",
+   "zaman": "2026-11-10T14:15:45+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 92000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Schwarzach ve Wolfurt’ta Sabah Saatlerinde Elektrik Kesintisi",
+   "zaman": "2026-11-10T14:37:32+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 69000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Hollanda’da Kayıp Mahir Güngör’ün Öldürüldüğü Kesinleşti",
+   "zaman": "2026-11-10T15:08:46+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 13000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avrupa’da 72 Saatten 10 Güne Kadar Acil Durum Hazırlığı Çağrısı",
+   "zaman": "2026-11-10T15:20:13+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "FinanzOnline’da Yeni Dönem: Eski Şifreler Kaldırılıyor",
+   "zaman": "2026-11-10T16:10:41+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 59000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya’da 2.500 Emekliye Reçete ve ORF Muafiyeti Fırsatı",
+   "zaman": "2026-11-10T16:21:06+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Motosiklet ve Scooter Sahiplerine Kış Uyarısı!",
+   "zaman": "2026-11-10T17:08:56+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 14000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Almanya’da Gece Yarısı Faciası: Dört Genç Aynı Araçta Can Verdi",
+   "zaman": "2026-11-10T18:09:27+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 50000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Askerlik Tercih Edilmeyince Sivil Hizmete 11 Ay Talebi",
+   "zaman": "2026-11-10T18:24:30+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Eski Ehliyeti Olanlar Dikkat! Son Tarih Açıklandı",
+   "zaman": "2026-11-10T19:08:03+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 38000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya’da Otoban Vinyetleri Tamamen Dijital Oluyor!",
+   "zaman": "2026-11-10T19:19:31+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Dornbirn’de Trafik Denetimi: 3 Sürücünün Ehliyetine El Konuldu",
+   "zaman": "2026-11-10T20:36:18+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 92000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da Sürücülerin Bilmediği Hız Kuralı",
+   "zaman": "2026-11-11T06:14:54+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 59000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Dünyanın Sonu İçin Verilen Tarih Geldi",
+   "zaman": "2026-11-11T06:28:24+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Götzis Tren İstasyonu Baştan Yenileniyor",
+   "zaman": "2026-11-11T06:41:45+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 55000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "AMS’den 100 Bin Kişiye Çağrı: Lütfen Bizi Aramayın!",
+   "zaman": "2026-11-11T07:10:17+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 56000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya’da Elektrikli Otomobil Satışları Patladı: Benzinli ve Dizel Geriliyor",
+   "zaman": "2026-11-11T07:20:37+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Hohenems’in Merkezine 69 Odalı Yeni Otel Geliyor",
+   "zaman": "2026-11-11T07:37:04+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 70000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Yasa Dışı Havai Fişeklere Sıkı Denetim!",
+   "zaman": "2026-11-11T08:12:15+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 35000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg’de Prostat Kontrolüne Rekor İlgi",
+   "zaman": "2026-11-11T08:38:04+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 57000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Kaçan Hırsızı Öldürdü, Beraat Etti",
+   "zaman": "2026-11-11T09:10:14+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 26000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya’da Elektrik Faturaları Düşecek: Hanelere 50 Avro Tasarruf",
+   "zaman": "2026-11-11T09:20:56+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Kış Sporlarında Vorarlberg Zirvede",
+   "zaman": "2026-11-11T09:37:12+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 23000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg’de Bir Fabrika Daha Küçülüyor",
+   "zaman": "2026-11-11T10:09:43+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 164000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Alberschwende’de Seyir Halindeki Otomobilin Üzerine Ağaç Devrildi!",
+   "zaman": "2026-11-11T10:20:42+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg’de Konut Krizi: Uygun Fiyatlı Evler İçin Siyasi Tartışma",
+   "zaman": "2026-11-11T10:37:13+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 25000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg’de Marketi Olmayan Belediye Sayısı 14’e Yükseldi",
+   "zaman": "2026-11-11T11:09:10+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 21000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Meiningen’de Korkutan Yangın: Bir Kişi Hastanelik Oldu",
+   "zaman": "2026-11-11T16:27:21+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Feldkirch’te Yer Altında Mühendislik Başarısı",
+   "zaman": "2026-11-11T16:41:15+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 12000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg’in Dünya Markası: Blum’un Başarı Hikâyesi",
+   "zaman": "2026-11-11T17:09:15+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 163000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da Emeklilik Kasasına Göçmenlerden Yılda 12 Milyar Euro",
+   "zaman": "2026-11-11T17:25:26+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 104000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Haftalar Sonra Bodensee’de Sevindiren Gelişme",
+   "zaman": "2026-11-11T17:37:13+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 62000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Wolfurt’ta Akılalmaz Kaza: Para Çekerken Otomobil ATM’ye Çarptı!",
+   "zaman": "2026-11-11T18:09:56+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 25000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya Vatandaşlığına Yoğun İlgi: Türkler Üçüncü Sırada!",
+   "zaman": "2026-11-11T18:20:16+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg’de Sabırlar Taştı: Adalet Bakanlığı’na Acil Yasa Çağrısı",
+   "zaman": "2026-11-11T18:37:34+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 78000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Feldkirch’te 350 Bin Euroluk Dolandırıcılık",
+   "zaman": "2026-11-11T19:08:24+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 53000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya’da Askerlik Krizi: Subayların Sabrı Tükendi!",
+   "zaman": "2026-11-11T19:19:18+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’nın En Büyük Hapishanesinde Bulaşıcı Hastalık Tespit Edildi",
+   "zaman": "2026-11-11T20:10:01+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 34000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Feldkirch’te Tüp Bebek Tedavisinde 40. Yıl: Yeni Merkez Hizmete Açıldı",
+   "zaman": "2026-11-11T21:05:51+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 22000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Oyun Dünyasında GTA 6 Çılgınlığı",
+   "zaman": "2026-11-12T06:14:48+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 8000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Viyana’da Okul Önlerinde Aşırı Sağcı Bildiri Dağıtımı Tepki Çekti",
+   "zaman": "2026-11-12T06:29:02+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "13 Yaşındaki Şüpheli Yine Saldırıyla Gündemde",
+   "zaman": "2026-11-12T06:41:54+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 52000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "13 Yaşında, Aynı Arabayı İki Kez Çaldı!",
+   "zaman": "2026-11-12T07:10:27+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 48000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da Elektrikli Kamyon 1.000’i Aştı!",
+   "zaman": "2026-11-12T14:05:08+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 39000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Feldkirch’te Hırsızlık: Türk Kuaför ve Market Sahibi Mağdur Oldu",
+   "zaman": "2026-11-12T14:34:40+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 387000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Suriyeli Sığınmacıdan Entegrasyon Bakanına Almanca Dersi!",
+   "zaman": "2026-11-12T15:05:16+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 80000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya’da Emeklilere Zam Müjdesi, Enflasyon Gölgesi!",
+   "zaman": "2026-11-12T15:19:08+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Hard’da Diş Kliniğinde Kuşak Değişimi",
+   "zaman": "2026-11-12T15:35:18+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 153000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Klarna ile Alışverişte Yeni Dönem",
+   "zaman": "2026-11-12T16:05:43+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 143000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Dornbirn Hastanesinde Doğum Skandalı İddiası: Bebekte Kalıcı Beyin Hasarı",
+   "zaman": "2026-11-12T16:20:41+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg’de 60 Bin Eve Fiber İnternet Geliyor",
+   "zaman": "2026-11-12T16:34:30+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 41000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya’da Adalet Bakanı’ndan Kesin Karar: Ceza Sorumluluğu Yaşı Düşmeyecek!",
+   "zaman": "2026-11-12T17:04:54+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 24000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Kalp Krizinde Kadınların Dikkat Etmesi Gereken Belirtiler!",
+   "zaman": "2026-11-12T18:05:29+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 108000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Dornbirn’de 14 Yaşındaki Çocuk Yine Hırsızlıkla Gündemde!",
+   "zaman": "2026-11-13T06:06:40+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 66000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Wolford’un Yeni Üretim Adresi Belli Oldu!",
+   "zaman": "2026-11-13T14:05:03+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 30000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg’in Yüksek Kesimlerine İlk Kar Yağışı",
+   "zaman": "2026-11-13T14:34:26+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 17000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Microsoft’ta Dünya Çapında Büyük Kesinti",
+   "zaman": "2026-11-13T15:04:23+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 4000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Avusturya’da Çocuklara 500 Euro Başlangıç Parası Planı Tartışma Yarattı!",
+   "zaman": "2026-11-13T15:17:41+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg’de Elma Hasadı: Kuraklık Elmaları Kıpkırmızı Yaptı!",
+   "zaman": "2026-11-13T15:34:13+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 2000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "HaK Fraksiyonunun Yeni Başkanı Bayram Çeper Oldu",
+   "zaman": "2026-11-13T16:00:19+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 38000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Avusturya'da Suçluların Yeni Korkusu: Yüzleri Asla Unutmuyorlar!",
+   "zaman": "2026-11-13T16:05:29+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 15000000
+    }
+   ]
+  },
+  {
+   "tur": "facebook_reel",
+   "baslik": "Dornbirn’de Belediye Başkanının Danışmanına Ödenen 5 Bin Euro Tartışma Yarattı",
+   "zaman": "2026-11-13T16:20:00+00:00",
+   "content_monetization_earnings_hata": "(#100) Tried accessing nonexisting field (insights)"
+  },
+  {
+   "tur": "facebook",
+   "baslik": "Vorarlberg’de 7 Otobüs Hattı Kaldırılıyor, 19 Hatta Değişiklik!",
+   "zaman": "2026-11-13T16:34:35+00:00",
+   "content_monetization_earnings": [
+    {
+     "currency": "USD",
+     "microAmount": 3000000
+    }
+   ]
+  }
+ ]
+}
