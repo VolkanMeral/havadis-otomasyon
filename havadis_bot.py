@@ -649,6 +649,16 @@ def main():
         return 0
     log("Seçilen haber:", haber["baslik"], "|", haber["kategori"])
 
+    if not (haber.get("ozet") or "").strip():
+        # RSS'te özet yoksa haber sayfasının açıklamasından al (görseldeki özet, video 2. sayfa, IG metni)
+        try:
+            sayfa = HTTP.get(haber["link"], timeout=30).content.decode("utf-8", errors="replace")
+            m = re.search(r'<meta[^>]+(?:property|name)=["\'](?:og:)?description["\'][^>]*content="([^"]+)"', sayfa, re.I)
+            if m:
+                haber["ozet"] = html.unescape(m.group(1)).strip()
+                log("Özet sayfadan alındı:", haber["ozet"][:80])
+        except Exception as hata:
+            log("Özet sayfadan alınamadı:", hata)
     ic = icerik_hazirla(haber)
     vurgu = (os.getenv("FORCE_VURGU") or "").strip()  # elle: başlıkta kırmızı banda alınacak kısım
     if vurgu and ONCELIKLI_LINK:

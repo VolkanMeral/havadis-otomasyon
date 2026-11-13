@@ -94,8 +94,10 @@ ANIMASYON = """
       // 1. sayfa çıkışı / 2. sayfa girişi
       const cik = yumusak(ilerle(t, GECIS - 0.35, GECIS + 0.15)), gir = yumusak(ilerle(t, GECIS, GECIS + 0.6));
       goster(q('.kategori'), yumusak(ilerle(t, 0.7, 1.2)) * (1 - cik), -60, 0);
-      goster(q('h1 .beyaz'), yumusak(ilerle(t, 1.1, 1.7)) * (1 - cik), 0, 40);
       const v = yumusak(ilerle(t, 1.7, 2.4)) * (1 - cik);
+      // ilk beyaz kısım önce, vurgudan sonra gelen beyaz kısım (ör. "OLDU") vurguyla birlikte
+      document.querySelectorAll('h1 .beyaz').forEach((b, i) =>
+        goster(b, i === 0 ? yumusak(ilerle(t, 1.1, 1.7)) * (1 - cik) : v, i === 0 ? 0 : -40, i === 0 ? 40 : 0));
       const vurgu = q('h1 .vurgu'); vurgu.style.opacity = v; vurgu.style.left = `${-80 * (1 - v)}px`;
       goster(q('.ozet'), yumusak(ilerle(t, 2.6, 3.2)) * (1 - cik), 0, 30);
       q('.alt').style.transform = `translateY(${-60 * cik}px)`;
