@@ -652,11 +652,18 @@ def main():
     if not (haber.get("ozet") or "").strip():
         # RSS'te özet yoksa haber sayfasının açıklamasından al (görseldeki özet, video 2. sayfa, IG metni)
         try:
-            sayfa = HTTP.get(haber["link"], timeout=30).content.decode("utf-8", errors="replace")
+            sayfa = HTTP.get(haber["link"], timeout=30, headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+                              "Chrome/130.0 Safari/537.36"}).content.decode("utf-8", errors="replace")
+            paragraflar = [html.unescape(re.sub(r"<[^>]+>", "", p)).strip()
+                           for p in re.findall(r"<p\b[^>]*>(.*?)</p>", sayfa, re.S | re.I)]
+            paragraflar = [re.sub(r"\s+", " ", p) for p in paragraflar if len(p) > 60 and "©" not in p]
             m = re.search(r'<meta[^>]+(?:property|name)=["\'](?:og:)?description["\'][^>]*content="([^"]+)"', sayfa, re.I)
-            if m:
+            if paragraflar:
+                haber["ozet"] = " ".join(paragraflar[:2])
+            elif m:
                 haber["ozet"] = html.unescape(m.group(1)).strip()
-                log("Özet sayfadan alındı:", haber["ozet"][:80])
+            log("Özet sayfadan alındı:", (haber.get("ozet") or "")[:80])
         except Exception as hata:
             log("Özet sayfadan alınamadı:", hata)
     ic = icerik_hazirla(haber)
