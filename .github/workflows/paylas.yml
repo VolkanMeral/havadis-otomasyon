@@ -137,6 +137,13 @@ jobs:
           path: cikti/
           if-no-files-found: ignore
 
+      - name: Önizlemeyi depoya koy (elle, deneme modu + link)
+        if: always() && github.event_name == 'workflow_dispatch' && inputs.dry_run == '1' && inputs.link != ''
+        run: |
+          rm -rf ornek/onizleme && mkdir -p ornek/onizleme
+          cp cikti/* ornek/onizleme/ 2>/dev/null || true
+          git add -A ornek/onizleme
+
       - name: Paylaşılan haber listesini kaydet
         if: always()
         run: |
