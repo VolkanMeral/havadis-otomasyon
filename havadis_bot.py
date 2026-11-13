@@ -450,9 +450,13 @@ def sayfa_hazirla(h, ic, foto_bayt=None, boyut=(1080, 1350), foto_ust=0):
     tarih = h["tarih"] or dt.datetime.now()
     e = html.escape
     tam_baslik = f"{ic['baslik_beyaz']} {ic['baslik_vurgu']} {ic.get('baslik_son', '')}".strip()
-    baslik_html = (f'<span class="beyaz">{e(ic["baslik_beyaz"])}</span><br>' if ic["baslik_beyaz"] else "") + \
-        f'<span class="vurgu">{e(ic["baslik_vurgu"])}</span>' + \
-        (f'<span class="beyaz"> {e(ic["baslik_son"])}</span>' if ic.get("baslik_son") else "")
+    def e_b(metin):
+        # "HaK", "McDonald's" gibi karışık harfli kısaltmalar büyük harfe çevrilmesin
+        return re.sub(r"(?<![\w&])([A-ZÇĞİÖŞÜ][a-zçğıöşü]+[A-ZÇĞİÖŞÜ][\wçğıöşüÇĞİÖŞÜ]*)",
+                      r'<span style="text-transform:none">\1</span>', e(metin))
+    baslik_html = (f'<span class="beyaz">{e_b(ic["baslik_beyaz"])}</span><br>' if ic["baslik_beyaz"] else "") + \
+        f'<span class="vurgu">{e_b(ic["baslik_vurgu"])}</span>' + \
+        (f'<span class="beyaz"> {e_b(ic["baslik_son"])}</span>' if ic.get("baslik_son") else "")
     degerler = {
         "foto": veri_uri(tampon.getvalue(), "image/jpeg"),
         "logo": veri_uri(os.path.join(KOK, "assets", "logo-beyaz.png"), "image/png"),
