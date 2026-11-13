@@ -35,6 +35,9 @@ on:
       foto:
         description: "Link ile birlikte: depodaki özel fotoğrafın yolu (ör. ozel_foto/x.jpg)"
         default: ""
+      vurgu:
+        description: "Link ile birlikte: başlıkta kırmızı banda alınacak kelimeler"
+        default: ""
       tiktok_kod:
         description: "TikTok'u bağlamak için: izin verdikten sonra açılan havadis.at adresinin TAMAMI (bir kez)"
         default: ""
@@ -72,6 +75,7 @@ jobs:
       FORCE_VIDEO: ${{ github.event_name == 'workflow_dispatch' && inputs.video || '0' }}
       FORCE_LINK: ${{ github.event_name == 'workflow_dispatch' && inputs.link || '' }}
       FORCE_PHOTO: ${{ github.event_name == 'workflow_dispatch' && inputs.foto || '' }}
+      FORCE_VURGU: ${{ github.event_name == 'workflow_dispatch' && inputs.vurgu || '' }}
       VIDEO_HOURS: ${{ vars.VIDEO_HOURS || '7,8,10,11,13,14,16,17,19,20' }}
       STORY_CATEGORIES: ${{ vars.STORY_CATEGORIES || 'Avusturya,Vorarlberg' }}
       INCLUDE_CATEGORIES: ${{ vars.INCLUDE_CATEGORIES || 'Avusturya,Vorarlberg,Almanya,İsviçre,Sağlık,Dünya,Teknoloji,Havadis Özel,Avrupa' }}

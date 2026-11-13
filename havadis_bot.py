@@ -449,9 +449,10 @@ def sayfa_hazirla(h, ic, foto_bayt=None, boyut=(1080, 1350), foto_ust=0):
 
     tarih = h["tarih"] or dt.datetime.now()
     e = html.escape
-    tam_baslik = f"{ic['baslik_beyaz']} {ic['baslik_vurgu']}".strip()
+    tam_baslik = f"{ic['baslik_beyaz']} {ic['baslik_vurgu']} {ic.get('baslik_son', '')}".strip()
     baslik_html = (f'<span class="beyaz">{e(ic["baslik_beyaz"])}</span><br>' if ic["baslik_beyaz"] else "") + \
-        f'<span class="vurgu">{e(ic["baslik_vurgu"])}</span>'
+        f'<span class="vurgu">{e(ic["baslik_vurgu"])}</span>' + \
+        (f'<span class="beyaz"> {e(ic["baslik_son"])}</span>' if ic.get("baslik_son") else "")
     degerler = {
         "foto": veri_uri(tampon.getvalue(), "image/jpeg"),
         "logo": veri_uri(os.path.join(KOK, "assets", "logo-beyaz.png"), "image/png"),
@@ -645,6 +646,15 @@ def main():
     log("Seçilen haber:", haber["baslik"], "|", haber["kategori"])
 
     ic = icerik_hazirla(haber)
+    vurgu = (os.getenv("FORCE_VURGU") or "").strip()  # elle: başlıkta kırmızı banda alınacak kısım
+    if vurgu and ONCELIKLI_LINK:
+        i = haber["baslik"].lower().find(vurgu.lower())
+        if i >= 0:
+            ic["baslik_beyaz"] = haber["baslik"][:i].strip()
+            ic["baslik_vurgu"] = haber["baslik"][i:i + len(vurgu)]
+            ic["baslik_son"] = haber["baslik"][i + len(vurgu):].strip()
+        else:
+            log("Uyarı: vurgu başlıkta bulunamadı:", vurgu)
     damga = dt.datetime.now().strftime("%Y%m%d-%H%M")
     ozel_foto = (os.getenv("FORCE_PHOTO") or "").strip()  # elle: depodaki başka bir fotoğrafı kullan
     if ozel_foto and ONCELIKLI_LINK:
