@@ -1,13 +1,5 @@
 [
  {
-  "baslik": "Avusturya’da Hava Değişiyor: Kasım Yağışlı Geçebilir!",
-  "link": "https://havadis.at/haber/avusturyada-hava-degisiyor-kasim-yagisli-gecebilir-h56395.html",
-  "ozet": "Avusturya’da alışılmadık derecede sıcak ve kurak geçen sonbaharın ardından hava koşullarında değişim bekleniyor. Uzun vadeli tahminlere göre kasım ayında yağışlar artabilir. Ancak sıcaklıkların mevsim normallerinin üzerinde kalması öngörülüyor.",
-  "kategori": "Avusturya",
-  "resim": "https://havadis.at/uploads/2026/10/29/191235_goldener-herbst-trifft-sturm-am-alpensee.jpg",
-  "tarih": "2026-10-29T19:10:00+02:00"
- },
- {
   "baslik": "Lustenau’da Kaza Elektrikleri Kesti!",
   "link": "https://havadis.at/haber/lustenauda-kaza-elektrikleri-kesti-h56396.html",
   "ozet": "Vorarlberg’in Lustenau kasabasında bir otomobilin elektrik dağıtım kutusuna çarpması sonucu bazı evlerde elektrik kesintisi yaşandı. Kazada en az bir kişi yaralanırken, ekipler elektrik akışını yeniden sağlamak için çalışma başlattı.",
@@ -2998,5 +2990,21 @@
   "kategori": "Almanya",
   "resim": "https://havadis.at/uploads/2026/11/13/175453_unbenannt.jpg",
   "tarih": "2026-11-13T17:54:00+02:00"
+ },
+ {
+  "baslik": "İsviçre’de İki Otomobil Kafa Kafaya Çarpıştı",
+  "link": "https://havadis.at/haber/isvicrede-iki-otomobil-kafa-kafaya-carpisti-h56770.html",
+  "ozet": "İsviçre’nin St. Gallen kantonuna bağlı Salez’de iki otomobilin kafa kafaya çarpışması sonucu 40 yaşındaki bir kadın yaralandı. Her iki aracın da kullanılamaz hâle geldiği kazada maddi hasar on binlerce franka ulaştı.",
+  "kategori": "Isviçre",
+  "resim": "https://havadis.at/uploads/2026/11/13/175825_salez_1-1-1280x854.jpg",
+  "tarih": "2026-11-13T17:58:00+02:00"
+ },
+ {
+  "baslik": "Kıdem Tazminatında (Abfertigung Neu) Kurallar Değişiyor: 2028’den İtibaren İki Seçenek",
+  "link": "https://havadis.at/haber/kidem-tazminatinda-abfertigung-neu-kurallar-degisiyor-2028den-itibaren-iki-secenek-h56771.html",
+  "ozet": "Avusturya’da çalışanları yakından ilgilendiren kıdem tazminatı (Abfertigung Neu) sisteminde önemli bir değişiklik kabul edildi. 2028’den itibaren çalışanlar, birikimlerini daha yüksek getiri potansiyeli sunan yatırım modelinde değerlendirebilecek. Ancak bu seçeneğin önemli bir riski bulunuyor.",
+  "kategori": "Avusturya",
+  "resim": "https://havadis.at/uploads/2026/11/13/182203_euro-aufschwung-bis-2028.jpg",
+  "tarih": "2026-11-13T18:18:00+02:00"
  }
 ]
