@@ -646,9 +646,14 @@ def main():
 
     ic = icerik_hazirla(haber)
     damga = dt.datetime.now().strftime("%Y%m%d-%H%M")
-    r = HTTP.get(haber["resim"], timeout=60)
-    r.raise_for_status()
-    foto = r.content
+    ozel_foto = (os.getenv("FORCE_PHOTO") or "").strip()  # elle: depodaki başka bir fotoğrafı kullan
+    if ozel_foto and ONCELIKLI_LINK:
+        foto = open(os.path.join(KOK, ozel_foto), "rb").read()
+        log("Özel fotoğraf kullanılıyor:", ozel_foto)
+    else:
+        r = HTTP.get(haber["resim"], timeout=60)
+        r.raise_for_status()
+        foto = r.content
 
     video_akis = SABLON == "manset" and (VIDEO_ZORLA or CALISMA_TURU == "video")
     story = SABLON == "manset" and \
