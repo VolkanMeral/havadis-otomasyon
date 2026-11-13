@@ -1207,6 +1207,26 @@
    "metin": "",
    "story_video": "reklam/gul3/story-video.mp4",
    "hemen": true
+  },
+  {
+   "id": "tandir-cekilis-2026-11-13",
+   "firma": "Tandır Restaurant Lauterach",
+   "tarih": "2026-11-13",
+   "saat": "13:45",
+   "turler": [
+    "gonderi",
+    "story"
+   ],
+   "gorseller": [
+    "reklam/tandir/20-afis-cekilis.jpg"
+   ],
+   "metin": "🎁 Tandır Restaurant’ta büyük çekiliş! „Der Chef dreht durch!“\n\n13–29 Kasım 2026 tarihleri arasında Tandır Restaurant’ta sizi sürprizler bekliyor:\n\n🥇 1 kişiye yarım altın\n🥈 2 kişiye birer çeyrek altın\n🍽️ 3 kişiye birer yemek\n\nHer ay heyecanlı çekilişler ve güzel hediyeler! Rezervasyon yapmayı unutmayın.\n\n🇦🇹 Gewinnspiel im Tandır Restaurant: 1× halbe Goldmünze, 2× Viertel-Goldmünze, 3× ein Essen. Aktionszeitraum 13.–29.11.2026. Reservieren nicht vergessen!\n\n📍 Karl-Höll-Straße 4, 6923 Lauterach\n📞 0660 808 67 08\n📲 @tandir.restaurant\n\nAnzeige",
+   "etiket": "tandir.restaurant",
+   "story": {
+    "baslik": "Büyük çekiliş<br>13.–29.11.",
+    "alt": "Yarım altın · çeyrek altın · yemek · Lauterach"
+   },
+   "hemen": true
   }
  ]
 }
