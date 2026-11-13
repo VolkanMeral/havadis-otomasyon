@@ -649,8 +649,10 @@ def main():
         return 0
     log("Seçilen haber:", haber["baslik"], "|", haber["kategori"])
 
-    if not (haber.get("ozet") or "").strip():
-        # RSS'te özet yoksa haber sayfasının açıklamasından al (görseldeki özet, video 2. sayfa, IG metni)
+    tam_metin = os.getenv("FULL_TEXT", "0") == "1" and ONCELIKLI_LINK
+    paragraflar = []
+    if tam_metin or not (haber.get("ozet") or "").strip():
+        # Haber sayfasının paragrafları: RSS özeti boşsa özet, istenirse Instagram'da tam metin
         try:
             sayfa = HTTP.get(haber["link"], timeout=30, headers={
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -658,14 +660,15 @@ def main():
             paragraflar = [html.unescape(re.sub(r"<[^>]+>", "", p)).strip()
                            for p in re.findall(r"<p\b[^>]*>(.*?)</p>", sayfa, re.S | re.I)]
             paragraflar = [re.sub(r"\s+", " ", p) for p in paragraflar if len(p) > 60 and "©" not in p]
-            m = re.search(r'<meta[^>]+(?:property|name)=["\'](?:og:)?description["\'][^>]*content="([^"]+)"', sayfa, re.I)
-            if paragraflar:
-                haber["ozet"] = " ".join(paragraflar[:2])
-            elif m:
-                haber["ozet"] = html.unescape(m.group(1)).strip()
-            log("Özet sayfadan alındı:", (haber.get("ozet") or "")[:80])
+            if not (haber.get("ozet") or "").strip():
+                m = re.search(r'<meta[^>]+(?:property|name)=["\'](?:og:)?description["\'][^>]*content="([^"]+)"', sayfa, re.I)
+                if paragraflar:
+                    haber["ozet"] = " ".join(paragraflar[:2])
+                elif m:
+                    haber["ozet"] = html.unescape(m.group(1)).strip()
+                log("Özet sayfadan alındı:", (haber.get("ozet") or "")[:80])
         except Exception as hata:
-            log("Özet sayfadan alınamadı:", hata)
+            log("Haber sayfası okunamadı:", hata)
     ic = icerik_hazirla(haber)
     vurgu = (os.getenv("FORCE_VURGU") or "").strip()  # elle: başlıkta kırmızı banda alınacak kısım
     if vurgu and ONCELIKLI_LINK:
@@ -691,6 +694,17 @@ def main():
         kategori_eslesir(haber["kategori"], STORY_KATEGORILERI)
     log(f"Akışta video: {'evet' if video_akis else 'hayır'} | Story: {'evet' if story else 'hayır'}")
 
+    if tam_metin and paragraflar:
+        # Instagram açıklaması en fazla 2.200 karakter: sığan paragraflar eklenir
+        bos = paylasim_metni(haber, dict(ic, metin=""), "instagram")
+        yer = 2150 - len(bos)
+        govde = ""
+        for p in paragraflar:
+            if len(govde) + len(p) + 2 > yer:
+                break
+            govde = (govde + "\n\n" + p) if govde else p
+        if govde:
+            ic["metin"] = govde
     fb_metin = paylasim_metni(haber, ic, "facebook")
     ig_metin = paylasim_metni(haber, ic, "instagram")
     th_metin = threads_metni(haber, ic)
