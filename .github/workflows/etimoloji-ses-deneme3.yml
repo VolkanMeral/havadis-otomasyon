@@ -1,0 +1,20 @@
+name: Etimoloji ses denemesi 3 (paylaşım yapmaz)
+on:
+  push:
+    branches: [etimoloji-ses]
+    paths: ["etimoloji/ses-deneme3/metin.txt", "etimoloji/google_tts_deneme3.py", ".github/workflows/etimoloji-ses-deneme3.yml"]
+permissions:
+  contents: write
+jobs:
+  deneme:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          GOOGLE_TTS_KEY: ${{ secrets.GOOGLE_TTS_KEY }}
+        run: python etimoloji/google_tts_deneme3.py
+      - run: |
+          git config user.name "havadis-bot"; git config user.email "bot@havadis.at"
+          git add -A etimoloji/ses-deneme3; git commit -m "Etimoloji ses denemesi 3" || exit 0
+          for i in 1 2 3; do git pull --rebase -q && git push && exit 0; sleep 5; done
