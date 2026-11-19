@@ -1,15 +1,5 @@
 [
  {
-  "link": "https://havadis.at/haber/vorarlbergde-istilaci-esek-arisi-yayiliyor-h56360.html",
-  "baslik": "Vorarlberg’de İstilacı Eşek Arısı Yayılıyor!",
-  "tur": "gorsel",
-  "zaman": "2026-10-28T17:38:12+00:00",
-  "facebook": "133738750106746_1788934499711660",
-  "instagram": "18112967090608884",
-  "instagram_story": "18177360616445872",
-  "facebook_story": "1167898119121011"
- },
- {
   "link": "https://havadis.at/haber/avusturyada-ek-ise-darbe-2027de-sinir-dondu-vergi-yuku-artiyor-h56371.html",
   "baslik": "Avusturya’da Ek İşe Darbe: 2027’de Sınır Dondu, Vergi Yükü Artıyor!",
   "tur": "gorsel",
@@ -4982,5 +4972,16 @@
   "zaman": "2026-11-19T09:08:42+00:00",
   "facebook": "133738750106746_1816531326951977",
   "instagram": "17999837504834708"
+ },
+ {
+  "link": "https://havadis.at/haber/viyanada-400-bin-euroluk-mucevher-hirsizligi-polis-uc-supheliyi-ariyor-h56905.html",
+  "baslik": "Viyana’da 400 Bin Euroluk Mücevher Hırsızlığı: Polis Üç Şüpheliyi Arıyor",
+  "tur": "video",
+  "zaman": "2026-11-19T09:21:25+00:00",
+  "facebook_reel": "4532562236983727",
+  "instagram_reel": "18192988756412977",
+  "instagram_story": "17886842826625857",
+  "facebook_story": "1020218647003541",
+  "youtube": "PZ7v2-mKeus"
  }
 ]
