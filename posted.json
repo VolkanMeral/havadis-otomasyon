@@ -1,14 +1,5 @@
 [
  {
-  "link": "https://havadis.at/haber/avrupa-merkez-bankasinda-surpriz-ayrilik-h56381.html",
-  "baslik": "Avrupa Merkez Bankası'nda Sürpriz Ayrılık",
-  "tur": "video",
-  "zaman": "2026-10-29T16:23:59+00:00",
-  "facebook_reel": "1473007951372037",
-  "instagram_reel": "18109832795233043",
-  "youtube": "oFNjWu0WLD8"
- },
- {
   "link": "https://havadis.at/haber/vorarlbergde-hastalik-izinleri-artiyor-h56375.html",
   "baslik": "Vorarlberg’de Hastalık İzinleri Artıyor!",
   "tur": "gorsel",
@@ -4982,5 +4973,15 @@
   "instagram": "18097590410166810",
   "instagram_story": "18099014315140653",
   "facebook_story": "1613439476689249"
+ },
+ {
+  "link": "https://havadis.at/haber/avusturyada-vergi-iadesi-icin-son-tarih-yuzlerce-euro-geri-alabilirsiniz-h56929.html",
+  "baslik": "Avusturya'da Vergi İadesi İçin Son Tarih: Yüzlerce Euro Geri Alabilirsiniz",
+  "tur": "gorsel",
+  "zaman": "2026-11-20T10:05:41+00:00",
+  "facebook": "133738750106746_1818066766798433",
+  "instagram": "17960378355271093",
+  "instagram_story_hata": "Graph API hatası 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}",
+  "facebook_story": "1491701676212762"
  }
 ]
