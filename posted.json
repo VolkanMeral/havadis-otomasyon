@@ -1,14 +1,5 @@
 [
  {
-  "link": "https://havadis.at/haber/ezbden-faiz-karari-yuzde-250-h56391.html",
-  "baslik": "EZB'den Faiz Kararı: Yüzde 2,50",
-  "tur": "video",
-  "zaman": "2026-10-29T19:19:27+00:00",
-  "facebook_reel": "1510998297524908",
-  "instagram_reel": "18241286887317300",
-  "youtube": "7U8GBK7PSjE"
- },
- {
   "link": "https://havadis.at/haber/vorarlbergde-30-kms-siniri-yayginlasiyor-h56388.html",
   "baslik": "Vorarlberg’de 30 km/s Sınırı Yaygınlaşıyor!",
   "tur": "gorsel",
@@ -4980,5 +4971,16 @@
   "instagram": "18009598757990231",
   "instagram_story": "17977660170193270",
   "facebook_story": "2211374339480320"
+ },
+ {
+  "link": "https://havadis.at/haber/avusturyada-a1-sebekesinde-buyuk-ariza-binlerce-kullanici-etkilendi-h56920.html",
+  "baslik": "Avusturya'da A1 Şebekesinde Büyük Arıza: Binlerce Kullanıcı Etkilendi",
+  "tur": "video",
+  "zaman": "2026-11-20T13:18:56+00:00",
+  "facebook_reel": "2240092696857079",
+  "instagram_reel": "18026876729712843",
+  "instagram_story": "18139383406567772",
+  "facebook_story": "2177165403228348",
+  "youtube": "NBUpEzuztFI"
  }
 ]
