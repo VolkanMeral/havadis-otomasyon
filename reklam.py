@@ -244,7 +244,32 @@ def _sayfa(p, html_):
     return s
 
 
+def story_tam_uret(afis, cikti):
+    """Uzun afişler (alt kısmında yasal metin olanlar) Story'ye kırpılmadan sığdırılır:
+    bulanık zemin, ortada afişin tamamı, sağ altta reklam etiketi."""
+    from PIL import ImageDraw, ImageFont
+    W, H = 1080, 1920
+    img = Image.open(afis).convert("RGB")
+    zemin = _cover(img, W, H).filter(ImageFilter.GaussianBlur(40))
+    zemin = Image.eval(zemin, lambda v: int(v * 0.5))
+    o = min((W - 40) / img.width, (H - 220) / img.height)
+    fg = img.resize((round(img.width * o), round(img.height * o)), Image.LANCZOS)
+    zemin.paste(fg, ((W - fg.width) // 2, 90))
+    d = ImageDraw.Draw(zemin)
+    try:
+        font = ImageFont.truetype("DejaVuSans-Bold.ttf", 34)
+    except OSError:
+        font = ImageFont.load_default()
+    t = REKLAM_ETIKET.upper()
+    tw = d.textlength(t, font=font)
+    d.text((W - 60 - tw, H - 95), t, font=font, fill=(255, 255, 255))
+    zemin.save(cikti, "JPEG", quality=92)
+    return cikti
+
+
 def story_uret(r, afis, cikti):
+    if r.get("story_tam"):
+        return story_tam_uret(afis, cikti)
     from playwright.sync_api import sync_playwright
     uri = bot.veri_uri(afis, "image/jpeg")
     with sync_playwright() as p:
