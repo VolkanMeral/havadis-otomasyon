@@ -1,15 +1,5 @@
 [
  {
-  "link": "https://havadis.at/haber/vorarlbergde-hastalik-izinleri-artiyor-h56375.html",
-  "baslik": "Vorarlberg’de Hastalık İzinleri Artıyor!",
-  "tur": "gorsel",
-  "zaman": "2026-10-29T16:38:14+00:00",
-  "facebook": "133738750106746_1790155519589558",
-  "instagram": "17930985819421817",
-  "instagram_story": "18154781536535362",
-  "facebook_story": "2426267318183099"
- },
- {
   "link": "https://havadis.at/haber/97-urun-karsilastirildi-83u-avusturyada-daha-pahali-h56379.html",
   "baslik": "97 Ürün Karşılaştırıldı: 83'ü Avusturya'da Daha Pahalı",
   "tur": "gorsel",
@@ -4983,5 +4973,14 @@
   "instagram": "17960378355271093",
   "instagram_story_hata": "Graph API hatası 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}",
   "facebook_story": "1491701676212762"
+ },
+ {
+  "link": "https://havadis.at/haber/cinde-sac-dokulmesine-karsi-umut-veren-bulus-gercekten-sac-cikariyor-mu-h56930.html",
+  "baslik": "“Çin'de Saç Dökülmesine Karşı Umut Veren Buluş: Gerçekten Saç Çıkarıyor mu?”",
+  "tur": "video",
+  "zaman": "2026-11-20T10:18:54+00:00",
+  "facebook_reel": "29498425829795560",
+  "instagram_reel": "17913120294574823",
+  "youtube": "1jHjP7kh0SA"
  }
 ]
