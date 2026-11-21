@@ -1,15 +1,5 @@
 [
  {
-  "link": "https://havadis.at/haber/gebruder-weiss-mars-gorevinde-h56421.html",
-  "baslik": "Gebrüder Weiss Mars Görevinde",
-  "tur": "gorsel",
-  "zaman": "2026-10-31T08:36:34+00:00",
-  "facebook": "133738750106746_1792205936051183",
-  "instagram": "18137011249647714",
-  "instagram_story": "18128227489883362",
-  "facebook_story_hata": "Graph API hatası 400: {\"error\":{\"message\":\"There was a problem uploading your video file. Please try again with another file.\",\"type\":\"OAuthException\",\"code\":6000,\"error_subcode\":1363130,\"is_transient\":false,\"error_user_title\":\"Video Upload Is Missing\",\"error_user_msg\":\"The video was not uploaded.\","
- },
- {
   "link": "https://havadis.at/haber/avrupada-kiralar-maaslari-eritiyor-h56428.html",
   "baslik": "Avrupa’da Kiralar Maaşları Eritiyor!",
   "tur": "gorsel",
@@ -4987,5 +4977,14 @@
   "instagram": "17874720333647496",
   "instagram_story": "18161847274513349",
   "facebook_story": "1044290692029416"
+ },
+ {
+  "link": "https://havadis.at/haber/luks-yolcu-gemisinde-salgin-panigi-148-hasta-h56954.html",
+  "baslik": "Lüks Yolcu Gemisinde Salgın Paniği: 148 Hasta",
+  "tur": "video",
+  "zaman": "2026-11-21T18:18:45+00:00",
+  "facebook_reel": "1712412883933232",
+  "instagram_reel": "18146662069586538",
+  "youtube": "y78Bgj3lZC8"
  }
 ]
