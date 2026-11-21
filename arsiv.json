@@ -1,37 +1,5 @@
 [
  {
-  "baslik": "Frastanz’da Apartman Yangını: 2 Yaralı, 14 Kişi Tahliye Edildi",
-  "link": "https://havadis.at/haber/frastanzda-apartman-yangini-2-yarali-14-kisi-tahliye-edildi-h56622.html",
-  "ozet": "Vorarlberg’in Frastanz kasabasında bir apartman dairesinde çıkan yangın paniğe neden oldu. Yoğun duman nedeniyle 14 kişi tahliye edilirken, yaralanan iki kişi hastaneye kaldırıldı. Yangında üç köpek de kurtarıldı.",
-  "kategori": "Vorarlberg",
-  "resim": "https://havadis.at/uploads/2026/11/06/191839_feuerwehreinsatz-bei-wohnungsbrand.jpg",
-  "tarih": "2026-11-06T19:14:00+02:00"
- },
- {
-  "baslik": "Schönbrunn’a Arabayla Gidecekler Dikkat!",
-  "link": "https://havadis.at/haber/schonbrunna-arabayla-gidecekler-dikkat-h56623.html",
-  "ozet": "Viyana’daki Schönbrunn Noel Pazarı’nın 6 Kasım’da açılmasıyla birlikte bölgede trafik yoğunluğu ve park sorunu bekleniyor. Avusturya Otomobil Kulübü ÖAMTC, sürücüleri yanlış park nedeniyle yüzlerce euroluk masrafla karşılaşmamaları konusunda uyardı.",
-  "kategori": "Avusturya",
-  "resim": "https://havadis.at/uploads/2026/11/06/192459_weihnachtsmarkt-vor-schloss-schonbrunn.jpg",
-  "tarih": "2026-11-06T19:22:00+02:00"
- },
- {
-  "baslik": "B210’da Feci Kaza: Bir Ölü",
-  "link": "https://havadis.at/haber/b210da-feci-kaza-bir-olu-h56624.html",
-  "ozet": "Niederösterreich eyaletinde meydana gelen trafik kazasında, 30 yaşındaki Slovakya vatandaşı sürücü otomobiliyle yoldan çıkarak ağaca çarptı. Genç adam olay yerinde yaşamını yitirdi.",
-  "kategori": "Avusturya",
-  "resim": "https://havadis.at/uploads/2026/11/06/192658_zavniccddeddw6cy8o6w.jpg",
-  "tarih": "2026-11-06T19:26:00+02:00"
- },
- {
-  "baslik": "A2’de Ölümcül Kaza: Kurtarma Saatler Sürdü",
-  "link": "https://havadis.at/haber/a2de-olumcul-kaza-kurtarma-saatler-surdu-h56625.html",
-  "ozet": "Niederösterreich eyaletinde A2 otoyolunda meydana gelen ağır trafik kazasında iki tır çarpıştı. Bir sürücü olay yerinde hayatını kaybederken, yaralanan bir kişi helikopterle hastaneye kaldırıldı.",
-  "kategori": "Avusturya",
-  "resim": "https://havadis.at/uploads/2026/11/06/193139_if0adjvbbbwxaoulj5pb.jpg",
-  "tarih": "2026-11-06T19:30:00+02:00"
- },
- {
   "baslik": "Avusturya’da 2027 Zam Dalgası: Su, Çöp, Isınma ve Ulaşım Pahalanıyor",
   "link": "https://havadis.at/haber/avusturyada-2027-zam-dalgasi-su-cop-isinma-ve-ulasim-pahalaniyor-h56626.html",
   "ozet": "Avusturya’da 2027 yılıyla birlikte birçok hanenin zorunlu giderleri artacak. Viyana’da su, kanalizasyon, çöp toplama ve toplu taşıma ücretlerine zam gelirken, Graz ve Salzburg’da otopark ücretleri yükselecek. Bazı artışlar yüzde 20’yi aşacak.",
@@ -2638,5 +2606,29 @@
   "kategori": "Avusturya",
   "resim": "https://havadis.at/uploads/2026/11/21/115752__sro8074.jpg",
   "tarih": "2026-11-21T11:56:00+02:00"
+ },
+ {
+  "baslik": "Vorarlberg’de Mutfak Firması Mahkemelik: 37 Mağdur",
+  "link": "https://havadis.at/haber/vorarlbergde-mutfak-firmasi-mahkemelik-37-magdur-h56953.html",
+  "ozet": "Vorarlberg’de bir mutfak firmasının eski sahibi, müşterilerden peşinat almasına rağmen siparişleri teslim etmediği iddiasıyla Feldkirch Eyalet Mahkemesinde yargılanıyor. Toplam zarar 500 bin euroyu aşarken, duruşmada hâkimin sanığa yönelik sözleri dikkat çekti.",
+  "kategori": "Vorarlberg",
+  "resim": "https://havadis.at/uploads/2026/11/21/180943_moderne-gerichtsszene-mit-angeklagtem.jpg",
+  "tarih": "2026-11-21T18:06:00+02:00"
+ },
+ {
+  "baslik": "Lüks Yolcu Gemisinde Salgın Paniği: 148 Hasta",
+  "link": "https://havadis.at/haber/luks-yolcu-gemisinde-salgin-panigi-148-hasta-h56954.html",
+  "ozet": "Karayipler'de seyreden “Caribbean Princess” adlı yolcu gemisinde 148 kişi mide ve bağırsak rahatsızlığına yakalandı. Kusma ve ishal şikâyetleri üzerine ABD sağlık yetkilileri inceleme başlatırken gemide hijyen önlemleri artırıldı.",
+  "kategori": "Dünya",
+  "resim": "https://havadis.at/uploads/2026/11/21/181321_kreuzfahrt-mit-virusalarm.jpg",
+  "tarih": "2026-11-21T18:11:00+02:00"
+ },
+ {
+  "baslik": "Avusturya AB'ye Rest Çekti: Üç Şartımız Var",
+  "link": "https://havadis.at/haber/avusturya-abye-rest-cekti-uc-sartimiz-var-h56955.html",
+  "ozet": "Avusturya, Avrupa Birliği'nin 2028–2034 dönemini kapsayan yeni bütçesine onay vermek için üç koşul öne sürdü. Avrupa Bakanı Claudia Bauer, mevcut kesintileri yetersiz bulduklarını belirterek yıl sonuna kadar anlaşmaya varılamayabileceği uyarısında bulundu.",
+  "kategori": "Avusturya",
+  "resim": "https://havadis.at/uploads/2026/11/21/181537__sro9427.jpg",
+  "tarih": "2026-11-21T18:14:00+02:00"
  }
 ]
