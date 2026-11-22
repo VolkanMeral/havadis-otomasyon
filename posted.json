@@ -1,14 +1,5 @@
 [
  {
-  "link": "https://havadis.at/haber/ren-nehrindeki-ceset-parcalariyla-ilgili-gozalti-h56419.html",
-  "baslik": "Ren Nehri'ndeki Ceset Parçalarıyla İlgili Gözaltı!",
-  "tur": "video",
-  "zaman": "2026-10-31T18:19:48+00:00",
-  "facebook_reel": "1994421687904449",
-  "instagram_reel": "17870079180662242",
-  "youtube": "wm9X767D_YQ"
- },
- {
   "link": "https://havadis.at/haber/bilim-dunyasindan-saglik-alarmi-h56416.html",
   "baslik": "Bilim Dünyasından Sağlık Alarmı",
   "tur": "gorsel",
@@ -4996,5 +4987,15 @@
   "instagram_story": "18106968962058562",
   "facebook_story": "1147930957939709",
   "youtube": "PTShcb8i1jc"
+ },
+ {
+  "link": "https://havadis.at/haber/avusturyada-polis-ve-ovpli-siyasetci-hakkinda-nazi-sorusturmasi-h56963.html",
+  "baslik": "Avusturya'da Polis ve ÖVP'li Siyasetçi Hakkında Nazi Soruşturması",
+  "tur": "gorsel",
+  "zaman": "2026-11-22T20:04:59+00:00",
+  "facebook": "133738750106746_1821025266502583",
+  "instagram_hata": "Graph API hatası 400: {\"error\":{\"message\":\"Media ID is not available\",\"code\":9007,\"type\":\"OAuthException\",\"error_subcode\":2207027,\"is_transient\":false,\"error_user_msg\":\"Die Medien können noch nicht veröffentlicht werden. Bitte warte noch einen Moment.\",\"error_user_title\":\"Kann nicht veröffentlicht w",
+  "instagram_story": "18111606137251118",
+  "facebook_story": "1099577493070901"
  }
 ]
