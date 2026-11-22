@@ -1,21 +1,5 @@
 [
  {
-  "baslik": "Almanya’da Feci Kaza: İki Ölü, İki Ağır Yaralı!",
-  "link": "https://havadis.at/haber/almanyada-feci-kaza-iki-olu-iki-agir-yarali-h56641.html",
-  "ozet": "Almanya’nın Nordrhein-Westfalen eyaletinde iki otomobilin kafa kafaya çarpışması sonucu iki kişi hayatını kaybetti, iki kişi ağır yaralandı. Kazanın ardından bölgeye çok sayıda sağlık ekibi ve kurtarma helikopteri sevk edildi.",
-  "kategori": "Almanya",
-  "resim": "https://havadis.at/uploads/2026/11/07/114047_nchtlicher-rettungseinsatz-mit-warnsignal.jpg",
-  "tarih": "2026-11-07T11:37:00+02:00"
- },
- {
-  "baslik": "Gökyüzünden Otoyola Düştüler: İki Kişi Öldü",
-  "link": "https://havadis.at/haber/gokyuzunden-otoyola-dustuler-iki-kisi-oldu-h56642.html",
-  "ozet": "Almanya’nın Magdeburg kenti yakınlarında küçük bir uçak, A2 otoyoluna düşerek alev aldı. Uçaktaki iki kişi yaşamını yitirirken kazanın nedeni henüz belirlenemedi.",
-  "kategori": "Almanya",
-  "resim": "https://havadis.at/uploads/2026/11/07/114609_flugzeugabsturz-auf-herbstlicher-autobahn.jpg",
-  "tarih": "2026-11-07T11:43:00+02:00"
- },
- {
   "baslik": "Götzis’te Yangın Paniği: 140 İtfaiyeci Seferber Oldu",
   "link": "https://havadis.at/haber/gotziste-yangin-panigi-140-itfaiyeci-seferber-oldu-h56643.html",
   "ozet": "Vorarlberg’in Götzis kasabasındaki Garnmarkt alışveriş bölgesinin yer altı otoparkında bir otomobil alev aldı. Yoğun duman nedeniyle beş ayrı itfaiye teşkilatından yaklaşık 140 görevli olay yerine sevk edildi. Otomatik yangın söndürme sistemi daha büyük bir felaketi önledi.",
@@ -2510,5 +2494,13 @@
   "kategori": "Avusturya",
   "resim": "https://havadis.at/uploads/2026/11/21/181537__sro9427.jpg",
   "tarih": "2026-11-21T18:14:00+02:00"
+ },
+ {
+  "baslik": "Vorarlberg'de Orman Mezarlıklarına İlgi Artıyor",
+  "link": "https://havadis.at/haber/vorarlbergde-orman-mezarliklarina-ilgi-artiyor-h56956.html",
+  "ozet": "Vorarlberg'de geleneksel mezarlıklar yerine orman ve çayırlık alanlarda defnedilmeyi tercih edenlerin sayısı artıyor. Lochau'da yeni bir orman mezarlığı açılırken, Katolik Kilisesi de mezarlıklarda ağaç ve çayır mezarları oluşturmaya hazırlanıyor.",
+  "kategori": "Vorarlberg",
+  "resim": "https://havadis.at/uploads/2026/11/22/110103_waldgedenken-im-goldenen-herbstlicht.jpg",
+  "tarih": "2026-11-22T10:58:00+02:00"
  }
 ]
