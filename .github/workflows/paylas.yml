@@ -85,7 +85,10 @@ jobs:
       INCLUDE_CATEGORIES: ${{ vars.INCLUDE_CATEGORIES || 'Avusturya,Vorarlberg,Almanya,İsviçre,Sağlık,Dünya,Teknoloji,Havadis Özel,Avrupa' }}
       HALF_HOUR_CATEGORIES: ${{ vars.HALF_HOUR_CATEGORIES || 'Vorarlberg' }}
     steps:
+      # Kuyrukta bekleyen çalışma da dalın EN GÜNCEL hâlini alsın (github.sha eski kalabiliyor)
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
 
       - uses: actions/setup-python@v5
         with:
@@ -163,11 +166,20 @@ jobs:
           git config user.email "bot@havadis.at"
           for f in posted.json arsiv.json karusel_durum.json tiktok_token.enc; do [ -f "$f" ] && git add "$f"; done
           git diff --cached --quiet && exit 0
-          git commit -m "Paylaşılan haberler güncellendi"
-          # Depoya aynı anda başka değişiklik geldiyse önce onu al, sonra tekrar dene
-          for i in 1 2 3 4 5; do
-            git push && exit 0
-            git pull --rebase -q || { git rebase --abort; exit 1; }
-            sleep 3
+          git commit -q -m "Paylaşılan haberler güncellendi"
+          # Depoya aynı anda başka değişiklik geldiyse: güncel hâli al, JSON'ları
+          # kayıt kaybetmeden birleştir (git rebase JSON'da çakışma veriyordu), tekrar dene
+          YEDEK=$(mktemp -d)
+          for f in posted.json arsiv.json karusel_durum.json tiktok_token.enc; do [ -f "$f" ] && cp "$f" "$YEDEK/"; done
+          for i in 1 2 3 4 5 6; do
+            git push -q origin HEAD:${{ github.ref_name }} && exit 0
+            sleep $((i * 4))
+            git fetch -q origin ${{ github.ref_name }}
+            git reset -q --hard origin/${{ github.ref_name }}
+            python durum_birlestir.py "$YEDEK"
+            [ -f "$YEDEK/tiktok_token.enc" ] && cp "$YEDEK/tiktok_token.enc" .
+            for f in posted.json arsiv.json karusel_durum.json tiktok_token.enc; do [ -f "$f" ] && git add "$f"; done
+            git diff --cached --quiet && exit 0
+            git commit -q -m "Paylaşılan haberler güncellendi (birleştirildi)"
           done
           exit 1
