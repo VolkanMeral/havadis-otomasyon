@@ -63,11 +63,13 @@ def yazi_oku(adres):
 def instagram_metni(y):
     bas = f"✍️ {y['yazar']} yazdı:\n{y['baslik']}\n\n" if y["yazar"] else f"{y['baslik']}\n\n"
     son = "\n\n#havadis #köşeyazısı #Avusturya #gündem"
-    devam = "…\n\n📰 Yazının devamı www.havadis.at web sitemizde"
+    uygulama = ("📲 Yazının tamamını www.havadis.at web sitemizden veya App Store ve Google Play'den "
+                "ücretsiz indirebileceğiniz Havadis uygulamamızdan okuyabilirsiniz.")
+    devam = "…\n\n" + uygulama
     govde = ""
     for p in y["paragraflar"]:
         aday = (govde + "\n\n" + p) if govde else p
-        if len(bas + aday + son) > IG_SINIR:
+        if len(bas + aday + "\n\n" + uygulama + son) > IG_SINIR:
             # sığmayan paragrafı cümle sınırından kes
             kalan = IG_SINIR - len(bas + govde + devam + son) - 2
             if kalan > 120:
@@ -77,7 +79,7 @@ def instagram_metni(y):
                 return bas + govde + devam.lstrip("…") + son
             return bas + govde + devam + son
         govde = aday
-    return bas + govde + son
+    return bas + govde + "\n\n" + uygulama.replace("Yazının tamamını", "Diğer yazılarımızı") + son
 
 
 SABLON = """<!doctype html><html lang="tr"><head><meta charset="utf-8">
