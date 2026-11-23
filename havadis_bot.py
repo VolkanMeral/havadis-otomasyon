@@ -358,7 +358,9 @@ def paylasim_metni(h, ic, platform):
         # Facebook'ta metin alanında sadece haber linki: haberi okumak isteyen linke tıklar.
         # (Başlık ve "KI-unterstützt" notu görselin üzerinde zaten yazıyor.)
         return h["link"]
-    devam = f"👉 Haberin tamamı: {h['link']}"
+    # Instagram'da link tıklanmadığı için link yerine siteye ve uygulamaya yönlendirme
+    devam = ("📲 Haberin detaylarını www.havadis.at web sitemizden veya App Store ve Google Play'den "
+             "ücretsiz indirebileceğiniz Havadis uygulamamızdan okuyabilirsiniz.")
     return f"{h['baslik']}\n\n{ic['metin']}\n\n{devam}{ki}\n\n{etiketler}".strip()
 
 
