@@ -137,7 +137,8 @@ def gorsel(y, cikti):
         logo=bot.veri_uri(os.path.join(bot.KOK, "assets", "logo-beyaz.png"), "image/png"),
         foto=bot.veri_uri(foto.getvalue(), "image/jpeg") if y["resim"] else "",
         tarih=f"{bugun.day} {bot.AYLAR[bugun.month - 1]} {bugun.year}",
-        yazar=H.escape(y["yazar"]), baslik=H.escape(y["baslik"]), px="96px",
+        yazar=H.escape(y["yazar"]), baslik=re.sub(r"(?<![\w&])([A-ZÇĞİÖŞÜ][a-zçğıöşü]+[A-ZÇĞİÖŞÜ][\wçğıöşüÇĞİÖŞÜ]*)",
+                      r'<span style="text-transform:none">\1</span>', H.escape(y["baslik"])), px="96px",
         giris=H.escape(bot.kisalt(giris, 190)))
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
