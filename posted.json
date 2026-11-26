@@ -1,13 +1,5 @@
 [
  {
-  "link": "https://havadis.at/haber/cinli-dev-mediamarkti-satin-aliyor-h56534.html",
-  "baslik": "Çinli Dev MediaMarkt'ı Satın Alıyor",
-  "tur": "gorsel",
-  "zaman": "2026-11-03T18:10:38+00:00",
-  "facebook": "133738750106746_1796374308967679",
-  "instagram": "17916316578500526"
- },
- {
   "link": "https://havadis.at/haber/spar-billa-ve-lidlden-siber-saldiri-aciklamasi-h56533.html",
   "baslik": "Spar, Billa ve Lidl'den Siber Saldırı Açıklaması",
   "tur": "video",
@@ -5003,5 +4995,15 @@
   "instagram": "18148870474606716",
   "instagram_story": "18151982407564490",
   "facebook_story": "1817757796009368"
+ },
+ {
+  "link": "https://havadis.at/haber/avusturyada-15700-guvenlik-calisanina-yuzde-33-zam-h57081.html",
+  "baslik": "Avusturya’da 15.700 Güvenlik Çalışanına Yüzde 3,3 Zam",
+  "tur": "gorsel",
+  "zaman": "2026-11-26T06:06:49+00:00",
+  "facebook": "133738750106746_1825073676097742",
+  "instagram": "18202279483383199",
+  "instagram_story": "18419695951092247",
+  "facebook_story": "2186850865271497"
  }
 ]
