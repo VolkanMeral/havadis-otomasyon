@@ -37,9 +37,16 @@ def meta(sayfa, ad):
 
 
 def yazi_oku(adres):
-    r = bot.HTTP.get(adres, timeout=60, headers=TARAYICI)
-    r.raise_for_status()
-    sayfa = r.content.decode("utf-8", errors="replace")
+    # Site bazen önce "Bir dakika lütfen…" koruma sayfası gösteriyor: birkaç kez bekleyip yeniden dene
+    import time
+    for deneme in range(5):
+        r = bot.HTTP.get(adres, timeout=60, headers=TARAYICI)
+        r.raise_for_status()
+        sayfa = r.content.decode("utf-8", errors="replace")
+        if "og:title" in sayfa or "<h1" in sayfa:
+            break
+        print(f"Koruma sayfası geldi, {15 * (deneme + 1)} sn sonra yeniden denenecek", flush=True)
+        time.sleep(15 * (deneme + 1))
     baslik = meta(sayfa, "og:title") or temiz((re.search(r"<h1[^>]*>(.*?)</h1>", sayfa, re.S) or [None, ""])[1])
     resim = meta(sayfa, "og:image")
     yazar = meta(sayfa, "author") or meta(sayfa, "article:author")
