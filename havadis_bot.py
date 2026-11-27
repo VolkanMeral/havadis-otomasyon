@@ -146,6 +146,31 @@ def log(*a):
 
 # ---------------------------------------------------------------- RSS
 
+def rss_tarayici_ile():
+    """Sitenin 'Bir dakika lütfen…' koruma sayfasını gerçek bir tarayıcıyla geçip RSS metnini döndürür."""
+    import subprocess
+    subprocess.run([sys.executable, "-m", "playwright", "install", "chromium"], check=False,
+                   stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=300)
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        t = p.chromium.launch()
+        s = t.new_page(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+                                  "Chrome/130.0 Safari/537.36")
+        metin = ""
+        for _ in range(4):
+            yanit = s.goto(RSS_URL, wait_until="load", timeout=60000)
+            metin = yanit.text() if yanit else ""
+            if "<item" in metin:
+                break
+            s.wait_for_timeout(7000)  # koruma sayfası 5 sn sonra kendini yeniler
+            yanit = s.goto(RSS_URL, wait_until="load", timeout=60000)
+            metin = yanit.text() if yanit else ""
+            if "<item" in metin:
+                break
+        t.close()
+    return metin
+
+
 class RssEngeli(RuntimeError):
     """Site RSS yerine bir koruma/ara sayfa döndürdü (geçici)."""
 
@@ -169,6 +194,15 @@ def haberleri_getir():
                 raise RssEngeli(f"RSS yerine farklı bir sayfa geldi (ilk 200 karakter): {metin[:200]!r}")
             break
         except Exception as hata:
+            if deneme == 3 and isinstance(hata, RssEngeli):
+                # Son çare: koruma sayfası JavaScript ile geçiliyor → gerçek tarayıcıyla aç
+                try:
+                    metin = rss_tarayici_ile()
+                    if "<item" in metin:
+                        print("::notice title=RSS::Koruma sayfası tarayıcıyla geçildi", flush=True)
+                        break
+                except Exception as th:
+                    print(f"::warning title=RSS tarayıcı denemesi::{type(th).__name__}: {str(th)[:200]}", flush=True)
             if deneme == 3:
                 if isinstance(hata, RssEngeli):
                     # Teşhis için sayfanın betik kısmını not düş
