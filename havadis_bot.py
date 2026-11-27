@@ -157,7 +157,7 @@ def haberleri_getir():
     tarayici_basliklari = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
                       "Chrome/130.0 Safari/537.36",
-        "Accept": "application/rss+xml, application/xml;q=0.9, text/xml;q=0.8, */*;q=0.5",
+        "Accept": "*/*",  # özel RSS türü istemek sunucudan 415 hatası alıyordu
         "Accept-Language": "tr-TR,tr;q=0.9,de;q=0.8"}
     metin = ""
     for deneme in range(4):
@@ -174,6 +174,7 @@ def haberleri_getir():
                     # Teşhis için sayfanın betik kısmını not düş
                     print(f"::warning title=RSS koruma sayfası (teşhis)::{metin[:1500]!r}", flush=True)
                 raise
+            print(f"::notice title=RSS deneme {deneme + 1}::{type(hata).__name__}: {str(hata)[:150]}", flush=True)
             log(f"RSS alınamadı ({hata.__class__.__name__}), {20 * (deneme + 1)} sn sonra yeniden denenecek…")
             time.sleep(20 * (deneme + 1))
     haberler = []
