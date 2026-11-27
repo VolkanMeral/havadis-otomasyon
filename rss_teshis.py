@@ -21,5 +21,5 @@ os.environ.setdefault("DRY_RUN", "1")
 import havadis_bot as bot
 for i in range(3):
     r = bot.HTTP.get(bot.RSS_URL, timeout=30)
-    print(f"::warning title=BOT oturumu deneme {i}::{r.status_code} item={'<item' in r.text} istek-başlıkları={dict(r.request.headers)}")
+    print(f"::error title=BOT oturumu deneme {i}::{r.status_code} item={'<item' in r.text} istek-başlıkları={dict(r.request.headers)}")
     time.sleep(3)
