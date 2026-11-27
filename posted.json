@@ -1,13 +1,5 @@
 [
  {
-  "link": "https://havadis.at/haber/bmwnin-kri-145-milyar-euroya-geriledi-h56546.html",
-  "baslik": "BMW'nin Kârı 1,45 Milyar Euroya Geriledi",
-  "tur": "gorsel",
-  "zaman": "2026-11-05T07:09:45+00:00",
-  "facebook": "133738750106746_1798100768795033",
-  "instagram": "18465823459137682"
- },
- {
   "link": "https://havadis.at/haber/avusturyada-enflasyon-yuzde-36-aciklandi-h56545.html",
   "baslik": "Avusturya'da Enflasyon Yüzde 3,6 Açıklandı",
   "tur": "video",
@@ -5007,5 +4999,14 @@
   "instagram": "18132994058494393",
   "instagram_story": "18654515458057572",
   "facebook_story": "3589176401256702"
+ },
+ {
+  "link": "https://havadis.at/haber/isvicrede-37-arac-birbirine-girdi-10-yarali-h57110.html",
+  "baslik": "İsviçre’de 37 araç birbirine girdi: 10 yaralı",
+  "tur": "video",
+  "zaman": "2026-11-27T18:20:47+00:00",
+  "facebook_reel": "1048764188240795",
+  "instagram_reel": "18031030895874119",
+  "youtube": "JgnFsU7YPK0"
  }
 ]
